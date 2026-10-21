@@ -1,0 +1,1814 @@
+[
+  {
+    "id": 1,
+    "tema": "tema1",
+    "temaNombre": "Tema 1: Siderurgia y Aceros",
+    "pregunta": "El arrabio producido en el alto horno presenta un contenido en carbono típicamente comprendido entre el 3% y el 4.5% en peso, además de cantidades significativas de silicio, manganeso, fósforo y azufre.",
+    "respuesta": true,
+    "explicacion": "En el alto horno, el mineral de hierro se reduce en presencia de coque y fundentes a temperaturas de hasta 1600 °C. El hierro líquido se satura de carbono procedente del coque (alcanzando entre 3.5% y 4.5% C) y disuelve otros elementos (Si, Mn, P, S). Este producto intermedio es el arrabio (líquido o en lingotes), el cual es sumamente frágil y debe someterse a un posterior proceso de afino en convertidor para transformarse en acero (%C < 2.11%).",
+    "palabrasClave": [
+      "Arrabio",
+      "Alto horno",
+      "Carbono",
+      "Siderurgia"
+    ],
+    "trampa": "Confundir arrabio con acero afinado y aplicar al primero la composición final del segundo."
+  },
+  {
+    "id": 2,
+    "tema": "tema1",
+    "temaNombre": "Tema 1: Siderurgia y Aceros",
+    "pregunta": "En el convertidor LD de afino de acero, la descarburación del arrabio se logra inyectando aire atmosférico enriquecido con nitrógeno por el fondo del crisol.",
+    "respuesta": false,
+    "explicacion": "En el proceso LD (Linz-Donawitz), el afino se realiza inyectando una lanza de oxígeno puro (99.5%) por la parte superior a velocidad supersónica sobre el baño de arrabio líquido. El uso de aire atmosférico o nitrógeno introduciría nitrógeno en el acero líquido, lo cual provocaría una fragilización perjudicial por envejecimiento por nitrógeno; por ello se emplea estrictamente oxígeno puro.",
+    "palabrasClave": [
+      "Convertidor LD",
+      "Afino",
+      "Oxígeno",
+      "Descarburación"
+    ],
+    "trampa": "Confundir el oxígeno de la lanza superior del LD con aire o con una inyección inferior de nitrógeno."
+  },
+  {
+    "id": 3,
+    "tema": "tema1",
+    "temaNombre": "Tema 1: Siderurgia y Aceros",
+    "pregunta": "La desoxidación o calmado del acero antes de la colada se realiza habitualmente adicionando elementos con mayor afinidad por el oxígeno que el hierro, tales como aluminio, silicio o ferromanganeso.",
+    "respuesta": true,
+    "explicacion": "Al finalizar el afino en convertidor, el acero líquido contiene una cantidad disuelta de oxígeno que al enfriar y solidificar reaccionaría con el carbono formando gas monóxido de carbono (CO), generando porosidades y sopladuras (acero efervescente). Para evitarlo, se calma el acero añadiendo desoxidantes potentes como Al (forma alúmina Al2O3) y Si (forma sílice SiO2), que fijan el oxígeno en la escoria.",
+    "palabrasClave": [
+      "Desoxidación",
+      "Acero calmado",
+      "Aluminio",
+      "Silicio"
+    ],
+    "trampa": "Creer que el calmado se logra dejando escapar el oxígeno sin añadir desoxidantes."
+  },
+  {
+    "id": 4,
+    "tema": "tema1",
+    "temaNombre": "Tema 1: Siderurgia y Aceros",
+    "pregunta": "En el proceso de colada continua, el distribuidor o 'tundish' actúa como depósito regulador intermedio entre la cuchara y la lingotera oscilante, permitiendo el cambio continuo de cucharas sin interrumpir el flujo.",
+    "respuesta": true,
+    "explicacion": "El tundish (distribuidor) regula el caudal metalostático y la distribución del acero líquido hacia las lingoteras o turquesas oscilantes de cobre refrigeradas por agua. Permite alimentar de forma ininterrumpida varias líneas de colada durante el cambio de cucharas de colada y facilita que floten las inclusiones no metálicas hacia la escoria protectora superior.",
+    "palabrasClave": [
+      "Colada continua",
+      "Tundish",
+      "Distribuidor",
+      "Lingotera"
+    ],
+    "trampa": "Confundir el tundish con la cuchara o con la lingotera y olvidar su función reguladora."
+  },
+  {
+    "id": 5,
+    "tema": "tema1",
+    "temaNombre": "Tema 1: Siderurgia y Aceros",
+    "pregunta": "La cementita (Fe3C) es una fase termodinámicamente metaestable en el diagrama de fases hierro-carbono, siendo el grafito la forma termodinámicamente estable del carbono.",
+    "respuesta": true,
+    "explicacion": "En condiciones de equilibrio termodinámico absoluto a presión atmosférica, el carbono puro cristaliza como grafito (diagrama Fe-C estable). La cementita (Fe3C con 6.67% C en peso) es metaestable; descompone en ferrita y grafito a temperaturas elevadas si se mantienen tiempos de recocido extremadamente prolongados o en presencia de elementos grafitizantes como el silicio.",
+    "palabrasClave": [
+      "Cementita",
+      "Grafito",
+      "Metaestable",
+      "Fe-Fe3C"
+    ],
+    "trampa": "Confundir una fase metaestable habitual con la fase estable de equilibrio termodinámico."
+  },
+  {
+    "id": 6,
+    "tema": "tema1",
+    "temaNombre": "Tema 1: Siderurgia y Aceros",
+    "pregunta": "La solubilidad máxima del carbono en la red de ferrita alfa (BCC) es superior a la solubilidad máxima del carbono en la austenita gamma (FCC) debido a que la red BCC presenta un menor factor de empaquetamiento atómico (0.68 frente a 0.74).",
+    "respuesta": false,
+    "explicacion": "Aunque la red BCC (ferrita) está menos empaquetada globalmente (0.68) que la FCC (0.74), sus huecos intersticiales son muy asimétricos y mucho más pequeños (hueco octaédrico de radio ~0.019 nm frente a ~0.053 nm en FCC). El hueco octaédrico de la red FCC austenítica es significativamente más espacioso, lo que permite alojar hasta un 2.11% en peso de carbono a 1148 °C, mientras que la ferrita alfa sólo admite un máximo de 0.022% C a 727 °C.",
+    "palabrasClave": [
+      "Ferrita",
+      "Austenita",
+      "Solubilidad intersticial",
+      "Hueco octaédrico"
+    ],
+    "trampa": "Inferir la solubilidad intersticial solo a partir del factor de empaquetamiento de la red."
+  },
+  {
+    "id": 7,
+    "tema": "tema1",
+    "temaNombre": "Tema 1: Siderurgia y Aceros",
+    "pregunta": "Todos los elementos de aleación en los aceros reducen tanto la temperatura eutectoide (A1) como el porcentaje de carbono del punto eutectoide.",
+    "respuesta": false,
+    "explicacion": "Todos los elementos de aleación comunes reducen el porcentaje de carbono del punto eutectoide (%C eutectoide cae siempre por debajo de 0.77%), pero NO todos disminuyen la temperatura eutectoide A1. Los elementos gammágenos (Ni, Mn) bajan A1, mientras que los alfágenos (Cr, Mo, W, V, Si, Ti) elevan significativamente la temperatura eutectoide A1.",
+    "palabrasClave": [
+      "Elementos de aleación",
+      "Temperatura eutectoide",
+      "Alfágenos",
+      "Gammágenos"
+    ],
+    "trampa": "Suponer que todos los aleantes desplazan A1 en la misma dirección."
+  },
+  {
+    "id": 8,
+    "tema": "tema1",
+    "temaNombre": "Tema 1: Siderurgia y Aceros",
+    "pregunta": "Los elementos de aleación alfágenos (como Cr, Mo, V, Si y W) estabilizan la red ferrítica (BCC) y cierran el bucle de la fase austenítica gamma en el diagrama de fases binario con hierro.",
+    "respuesta": true,
+    "explicacion": "Los elementos alfágenos tienen una solubilidad preferente en la fase ferrítica BCC o forman carburos estables. Al aumentar su concentración, reducen la estabilidad de la fase austenítica, disminuyendo el rango de temperaturas en el que existe la austenita (cerrando el denominado bucle gamma) y ampliando el dominio de la ferrita desde la temperatura ambiente hasta la temperatura de fusión.",
+    "palabrasClave": [
+      "Alfágenos",
+      "Bucle gamma",
+      "Ferrita",
+      "Cr",
+      "Mo"
+    ],
+    "trampa": "Confundir estabilizar ferrita con ampliar el campo de estabilidad de austenita."
+  },
+  {
+    "id": 9,
+    "tema": "tema1",
+    "temaNombre": "Tema 1: Siderurgia y Aceros",
+    "pregunta": "En los aceros inoxidables, un contenido de cromo de al menos aproximadamente 10,5 % en masa permite formar una capa pasiva rica en cromo, aunque la resistencia efectiva a la corrosión también depende del medio y de la composición completa.",
+    "respuesta": true,
+    "explicacion": "El umbral de alrededor del 10,5 % Cr se usa como referencia para clasificar los aceros inoxidables. La pasividad procede de una película superficial rica en óxido de cromo que puede regenerarse en condiciones adecuadas; no significa inmunidad a toda corrosión ni exige un intervalo fijo de 10,5-12 % de cromo libre.",
+    "palabrasClave": [
+      "Acero inoxidable",
+      "Cromo",
+      "Capa pasiva",
+      "Cr2O3"
+    ],
+    "trampa": "Tomar 10,5 % Cr como garantía de inmunidad frente a cualquier medio corrosivo."
+  },
+  {
+    "id": 10,
+    "tema": "tema1",
+    "temaNombre": "Tema 1: Siderurgia y Aceros",
+    "pregunta": "Los aceros inoxidables austeníticos (serie AISI 300, como el AISI 304 o 316) son ferromagnéticos a temperatura ambiente y se pueden endurecer mediante un temple térmico clásico.",
+    "respuesta": false,
+    "explicacion": "Los aceros inoxidables austeníticos (18% Cr - 8% Ni típicamente) mantienen una estructura FCC a temperatura ambiente gracias a la acción gammágena del níquel. Al no experimentar transformación alotrópica de gamma a alfa al enfriar, no pueden templarse térmicamente para formar martensita. Además, la red austenítica FCC es paramagnética (no ferromagnética). Solo se endurecen por deformación plástica en frío (acritud).",
+    "palabrasClave": [
+      "Acero austenítico",
+      "AISI 304",
+      "Ferromagnetismo",
+      "Temple"
+    ],
+    "trampa": "Confundir el endurecimiento por deformación de austeníticos con el temple martensítico."
+  },
+  {
+    "id": 11,
+    "tema": "tema1",
+    "temaNombre": "Tema 1: Siderurgia y Aceros",
+    "pregunta": "La adición de molibdeno a los aceros inoxidables austeníticos (por ejemplo en el AISI 316 frente al AISI 304) mejora notablemente la resistencia a la corrosión por picaduras (pitting) en medios salinos y marinos.",
+    "respuesta": true,
+    "explicacion": "El molibdeno (típicamente entre 2% y 3% en peso en el AISI 316) estabiliza y refuerza la capa pasiva frente a la ruptura localizada por iones cloruro (Cl-). El índice normalizado PREN (Pitting Resistance Equivalent Number = %Cr + 3.3*%Mo + 16*%N) cuantifica matemáticamente este incremento de resistencia frente a picaduras.",
+    "palabrasClave": [
+      "Molibdeno",
+      "AISI 316",
+      "Picaduras",
+      "PREN"
+    ],
+    "trampa": "Atribuir al molibdeno protección universal contra toda forma de corrosión."
+  },
+  {
+    "id": 12,
+    "tema": "tema1",
+    "temaNombre": "Tema 1: Siderurgia y Aceros",
+    "pregunta": "Los aceros avanzados de alta resistencia de fase dual (DP, Dual Phase) presentan una microestructura constituida por una matriz austenítica continua en la que se encuentran dispersas partículas duras de ferrita proeutectoide.",
+    "respuesta": false,
+    "explicacion": "Es exactamente al revés: los aceros DP (Dual Phase) constan de una matriz ferrítica continua, blanda y muy dúctil (70-85% en volumen), en la que se encuentran dispersas islas duras de martensita (15-30% en volumen). Esta morfología confiere un alto límite de fluencia continuo sin escalón de cedencia, una elevada tasa inicial de endurecimiento por deformación y excelente conformabilidad para piezas estructurales de automoción.",
+    "palabrasClave": [
+      "Aceros DP",
+      "Dual Phase",
+      "Ferrita",
+      "Martensita"
+    ],
+    "trampa": "Invertir la matriz ferrítica continua y las islas martensíticas de los aceros DP."
+  },
+  {
+    "id": 13,
+    "tema": "tema1",
+    "temaNombre": "Tema 1: Siderurgia y Aceros",
+    "pregunta": "En los aceros TRIP (Transformation Induced Plasticity), la deformación plástica inducida durante el conformado provoca la transformación de la austenita retenida metaestable en martensita, aumentando simultáneamente la resistencia y la elongación antes de rotura.",
+    "respuesta": true,
+    "explicacion": "El efecto TRIP se basa en la transformación martensítica inducida mecánicamente en la austenita retenida metaestable durante el conformado plástico. Dicha transformación absorbe energía mecánica, retrasa activamente la formación de estricción (necking) y aporta simultáneamente una resistencia mecánica elevada junto con una deformación uniforme extraordinaria.",
+    "palabrasClave": [
+      "Aceros TRIP",
+      "Austenita retenida",
+      "Transformación inducida",
+      "Automoción"
+    ],
+    "trampa": "Confundir la transformación inducida por deformación de TRIP con una transformación térmica durante el temple."
+  },
+  {
+    "id": 14,
+    "tema": "tema1",
+    "temaNombre": "Tema 1: Siderurgia y Aceros",
+    "pregunta": "Los aceros TWIP (Twinning Induced Plasticity) basan su deformación plástica a temperatura ambiente en la formación masiva de maclas mecánicas dentro de una matriz completamente austenítica con alto contenido en manganeso.",
+    "respuesta": true,
+    "explicacion": "Los aceros TWIP contienen un elevado porcentaje de manganeso (15-30% Mn) y un valor controlado de energía de falta de apilamiento (SFE entre 18 y 45 mJ/m²). Esto favorece el maclado mecánico como mecanismo de deformación primario, creando barreras que bloquean el movimiento de dislocaciones (efecto Hall-Petch dinámico) y proporcionando ductilidades superiores al 50% con límites de rotura de ~1000 MPa.",
+    "palabrasClave": [
+      "Aceros TWIP",
+      "Maclado mecánico",
+      "Manganeso",
+      "SFE"
+    ],
+    "trampa": "Confundir el maclado mecánico de TWIP con la transformación martensítica de TRIP."
+  },
+  {
+    "id": 15,
+    "tema": "tema1",
+    "temaNombre": "Tema 1: Siderurgia y Aceros",
+    "pregunta": "La fundición de hierro blanca se caracteriza por presentar prácticamente todo su carbono en forma de nódulos esferoidales de grafito inmersos en una matriz ferrítica blanda.",
+    "respuesta": false,
+    "explicacion": "En la fundición blanca el carbono solidifica según el sistema metaestable Fe-Fe3C, encontrándose casi en su totalidad en forma de carburos masivos de hierro (cementita libre y ledeburita transformada). No contiene grafito. Por ello es de color blanco brillante en fractura, extremadamente dura, muy quebradiza y resistente al desgaste abrasivo, pero no mecanizable por métodos convencionales.",
+    "palabrasClave": [
+      "Fundición blanca",
+      "Cementita",
+      "Ledeburita",
+      "Fragilidad"
+    ],
+    "trampa": "Confundir fundición blanca con fundición nodular por la forma del carbono."
+  },
+  {
+    "id": 16,
+    "tema": "tema1",
+    "temaNombre": "Tema 1: Siderurgia y Aceros",
+    "pregunta": "La fundición gris posee un excelente coeficiente de amortiguamiento de vibraciones y muy buena maquinabilidad, pero una baja tenacidad a tracción debido a la concentración de tensiones en los extremos afilados de las láminas de grafito.",
+    "respuesta": true,
+    "explicacion": "Las láminas interconectadas tridimensionalmente de grafito presentan bordes puntiagudos que actúan como microentallas severas concentradoras de tensiones, iniciando grietas con facilidad ante esfuerzos de tracción. En contrapartida, estas mismas láminas disipan vibraciones elásticas con enorme eficacia y fragmentan la viruta con facilidad durante el corte, confiriendo una excelente maquinabilidad.",
+    "palabrasClave": [
+      "Fundición gris",
+      "Grafito laminar",
+      "Amortiguamiento",
+      "Concentración de tensiones"
+    ],
+    "trampa": "Atribuir simultáneamente buena tenacidad a tracción y grafito laminar sin considerar las entallas."
+  },
+  {
+    "id": 17,
+    "tema": "tema1",
+    "temaNombre": "Tema 1: Siderurgia y Aceros",
+    "pregunta": "Para fabricar fundición nodular o esferoidal (dúctil), se añade una pequeña cantidad de magnesio o cerio al metal líquido antes de la colada para neutralizar la acción de elementos tensioactivos y permitir el crecimiento radial del grafito en forma de esferoides.",
+    "respuesta": true,
+    "explicacion": "El magnesio o cerio (en dosis controladas de ~0.04% a 0.06% residual) desoxida y desulfura enérgicamente el baño de metal fundido. Al eliminar la adsorción superficial de azufre y oxígeno en las caras del grafito, se altera la velocidad de crecimiento cristalográfico interfacial, forzando al grafito a crecer radialmente en forma de nódulos esferoidales compactos que no concentran tensiones mecánicas.",
+    "palabrasClave": [
+      "Fundición nodular",
+      "Magnesio",
+      "Grafito esferoidal",
+      "Ductilidad"
+    ],
+    "trampa": "Suponer que el grafito esferoidal aparece sin tratamiento de nodulización del baño."
+  },
+  {
+    "id": 18,
+    "tema": "tema1",
+    "temaNombre": "Tema 1: Siderurgia y Aceros",
+    "pregunta": "La fundición maleable se obtiene directamente por enfriamiento rápido en molde metálico sin necesidad de ningún tratamiento térmico posterior.",
+    "respuesta": false,
+    "explicacion": "La fundición maleable no se obtiene directamente en la colada: se cuela primero como fundición blanca (con todo el carbono en forma de cementita, sin grafito), y luego se somete a un prolongado tratamiento térmico de recocido de grafitización (de 2 a 3 días entre 900 y 950 °C). Durante este recocido, la cementita metaestable se disocia lentamente formando copos irregulares de grafito de recocido ('tempercarbon').",
+    "palabrasClave": [
+      "Fundición maleable",
+      "Recocido de grafitización",
+      "Tempercarbon",
+      "Fundición blanca"
+    ],
+    "trampa": "Confundir fundición maleable con fundición nodular obtenida directamente en colada."
+  },
+  {
+    "id": 19,
+    "tema": "tema1",
+    "temaNombre": "Tema 1: Siderurgia y Aceros",
+    "pregunta": "En un acero hipoeutectoide (%C < 0.77%) enfriado lentamente en condiciones de equilibrio desde el campo austenítico, la ferrita proeutectoide comienza a nuclear en los límites de grano de la austenita al cruzar la línea A3.",
+    "respuesta": true,
+    "explicacion": "En un acero hipoeutectoide enfriado lentamente, al cruzar A3 empieza a formarse ferrita proeutectoide, a menudo en los límites de grano austeníticos. La ferrita admite menos carbono que la austenita, por lo que el carbono se concentra progresivamente en la austenita restante hasta que esta alcanza la composición eutectoide.",
+    "palabrasClave": [
+      "Ferrita proeutectoide",
+      "Línea A3",
+      "Borde de grano",
+      "Hipoeutectoide"
+    ],
+    "trampa": "Situar el comienzo de ferrita proeutectoide en A1 en vez de en A3 para acero hipoeutectoide."
+  },
+  {
+    "id": 20,
+    "tema": "tema1",
+    "temaNombre": "Tema 1: Siderurgia y Aceros",
+    "pregunta": "Los aceros efervescentes presentan menor macrosegregación química de carbono, fósforo y azufre a lo largo del lingote que los aceros completamente calmados con aluminio.",
+    "respuesta": false,
+    "explicacion": "Los aceros efervescentes sufren un intenso desprendimiento de burbujas de gas CO durante la solidificación, lo que genera una fuerte ebullición y agitación en el molde. Esta convección promueve una intensa macrosegregación positiva de C, P y S hacia la parte superior y central del lingote. Los aceros calmados, al no generar ebullición de gas, solidifican con mucha mayor uniformidad química.",
+    "palabrasClave": [
+      "Acero efervescente",
+      "Segregación química",
+      "Acero calmado",
+      "Lingote"
+    ],
+    "trampa": "Confundir agitación por CO en el acero efervescente con menor segregación química."
+  },
+  {
+    "id": 21,
+    "tema": "tema1",
+    "temaNombre": "Tema 1: Siderurgia y Aceros",
+    "pregunta": "En los aceros al carbono hipereutectoides (%C > 0.77%), la fase que precipita de forma proeutectoide entre la línea Acm y la línea A1 es la cementita secundaria en los bordes de grano de la austenita.",
+    "respuesta": true,
+    "explicacion": "Al cruzar la línea Acm, el contenido de carbono supera el límite de solubilidad de la austenita. El exceso de carbono precipita como carburo de hierro (Fe3C o cementita secundaria proeutectoide), habitualmente como una red continua en los bordes de grano austeníticos si la velocidad de enfriamiento es suficientemente lenta.",
+    "palabrasClave": [
+      "Hipereutectoide",
+      "Línea Acm",
+      "Cementita secundaria",
+      "Red intergranular"
+    ],
+    "trampa": "Intercambiar la fase proeutectoide de aceros hipoeutectoides e hipereutectoides."
+  },
+  {
+    "id": 22,
+    "tema": "tema1",
+    "temaNombre": "Tema 1: Siderurgia y Aceros",
+    "pregunta": "Un acero microaleado (HSLA) contiene porcentajes superiores al 5% en peso de titanio, niobio y vanadio para formar fases intermetálicas masivas.",
+    "respuesta": false,
+    "explicacion": "Los aceros microaleados o de alta resistencia y baja aleación (HSLA) contienen adiciones diminutas de elementos microaleantes (Nb, V, Ti, normalmente en cantidades individuales de 0.01% a 0.05%, e inferiores al 0.15% en total). Su efecto se basa en el afino de grano ferrítico durante el laminado termomecánico controlado y en la precipitación de carbonitruros nanométricos extremadamente finos.",
+    "palabrasClave": [
+      "Aceros microaleados",
+      "HSLA",
+      "Niobio",
+      "Vanadio",
+      "Afino de grano"
+    ],
+    "trampa": "Confundir microaleación en pequeñas cantidades con alta aleación en porcentajes enteros."
+  },
+  {
+    "id": 23,
+    "tema": "tema1",
+    "temaNombre": "Tema 1: Siderurgia y Aceros",
+    "pregunta": "La corrosión intergranular en aceros inoxidables austeníticos se produce típicamente por calentamiento en el rango de 500 a 800 °C debido a la precipitación de carburos de cromo (Cr23C6) en los límites de grano y el empobrecimiento local de cromo adyacente.",
+    "respuesta": true,
+    "explicacion": "La sensibilización puede ocurrir durante exposiciones en un intervalo aproximado que depende del grado, el tiempo y la historia térmica. La precipitación de carburos ricos en cromo en los límites de grano deja zonas adyacentes empobrecidas en cromo y susceptibles a corrosión intergranular. Los aceros de bajo carbono o estabilizados reducen este riesgo.",
+    "palabrasClave": [
+      "Sensibilización",
+      "Corrosión intergranular",
+      "Cr23C6",
+      "Inoxidable austenítico"
+    ],
+    "trampa": "Atribuir la sensibilización a corrosión uniforme en vez de al empobrecimiento local de cromo."
+  },
+  {
+    "id": 24,
+    "tema": "tema1",
+    "temaNombre": "Tema 1: Siderurgia y Aceros",
+    "pregunta": "La colada de acero en lingotera por sifón (llenado por el fondo) genera mayores turbulencias y mayor salpicado de metal en las paredes que la colada directa por la parte superior.",
+    "respuesta": false,
+    "explicacion": "La colada por sifón (colada por el fondo) permite que el acero líquido ascienda suave y calmadamente por el fondo de la lingotera, minimizando las salpicaduras, las oxidaciones secundarias en contacto con el aire y los defectos superficiales, a diferencia de la colada directa por la cabeza, donde el chorro cae libremente impactando el fondo con gran turbulencia.",
+    "palabrasClave": [
+      "Colada por sifón",
+      "Lingotera",
+      "Turbulencia",
+      "Calidad superficial"
+    ],
+    "trampa": "Confundir llenado por sifón desde abajo con caída libre y salpicaduras desde arriba."
+  },
+  {
+    "id": 25,
+    "tema": "tema1",
+    "temaNombre": "Tema 1: Siderurgia y Aceros",
+    "pregunta": "Los aceros inoxidables ferríticos comunes, como el AISI 430, mantienen normalmente una estructura ferrítica BCC durante los tratamientos habituales y no se endurecen mediante un temple martensítico convencional.",
+    "respuesta": true,
+    "explicacion": "En los grados ferríticos comunes, la composición estabiliza la ferrita y no permite la secuencia de austenización y transformación martensítica que se usa para templar aceros martensíticos. La afirmación se refiere a los grados y tratamientos habituales, no a cualquier composición imaginable de acero ferrítico.",
+    "palabrasClave": [
+      "Inoxidable ferrítico",
+      "AISI 430",
+      "BCC",
+      "Bucle gamma cerrado"
+    ],
+    "trampa": "Generalizar el comportamiento de grados ferríticos comunes a cualquier composición y tratamiento."
+  },
+  {
+    "id": 26,
+    "tema": "tema2",
+    "temaNombre": "Tema 2: Tratamientos Térmicos",
+    "pregunta": "En el recocido de regeneración o normalizado de un acero hipoeutectoide, la temperatura de calentamiento óptima se sitúa unos 30-50 °C por encima de la línea de transformación crítica superior Ac3.",
+    "respuesta": true,
+    "explicacion": "En aceros hipoeutectoides, es necesario superar Ac3 para entrar completamente en el campo monofásico austenítico gamma y disolver por completo la ferrita proeutectoide previa. El normalizado utiliza un enfriamiento al aire en calma posterior, obteniendo una microestructura perlítica fina y homogénea con grano refinado.",
+    "palabrasClave": [
+      "Normalizado",
+      "Ac3",
+      "Austenización",
+      "Hipoeutectoide"
+    ],
+    "trampa": "Confundir la temperatura de austenización con una temperatura fija independiente de la composición."
+  },
+  {
+    "id": 27,
+    "tema": "tema2",
+    "temaNombre": "Tema 2: Tratamientos Térmicos",
+    "pregunta": "Para el temple de un acero hipereutectoide (%C = 1.2%), se recomienda calentar por encima de la línea Acm para disolver toda la cementita proeutectoide en la austenita.",
+    "respuesta": false,
+    "explicacion": "Calentar por encima de Acm requiere temperaturas muy elevadas que provocan un crecimiento excesivo del grano austenítico, alta descarburación, elevado riesgo de tensiones y grietas de temple, y un exceso de austenita retenida a temperatura ambiente por bajada de Ms. Por ello, los aceros hipereutectoides se calientan solo entre Ac1 y Acm (Ac1 + 30-50 °C), manteniendo pequeñas partículas globulares de cementita que aumentan la resistencia al desgaste y bloquean el crecimiento de grano.",
+    "palabrasClave": [
+      "Temple",
+      "Hipereutectoide",
+      "Línea Acm",
+      "Cementita globular"
+    ],
+    "trampa": "Suponer que disolver toda la cementita antes del temple es siempre deseable en acero hipereutectoide."
+  },
+  {
+    "id": 28,
+    "tema": "tema2",
+    "temaNombre": "Tema 2: Tratamientos Térmicos",
+    "pregunta": "La transformación de austenita a martensita durante el enfriamiento rápido es un proceso adifusional y de naturaleza predominantemente atérmica en la mayoría de aceros comerciales.",
+    "respuesta": true,
+    "explicacion": "La transformación martensítica ocurre mediante un cizallamiento coordinado de la red cristalina sin difusión atómica de carbono o hierro. La fracción de martensita formada no depende del tiempo de mantenimiento a una temperatura determinada, sino únicamente del grado de subenfriamiento por debajo de la temperatura de inicio martensítico Ms.",
+    "palabrasClave": [
+      "Martensita",
+      "Atérmica",
+      "Adifusional",
+      "Temperatura Ms"
+    ],
+    "trampa": "Confundir una transformación sin difusión con una transformación controlada por mantenimiento isotérmico."
+  },
+  {
+    "id": 29,
+    "tema": "tema2",
+    "temaNombre": "Tema 2: Tratamientos Térmicos",
+    "pregunta": "La estructura cristalina de la martensita en aceros al carbono es tetragonal centrada en el cuerpo (BCT), distorsionada debido a la retención forzada de los átomos de carbono en huecos octaédricos de la red.",
+    "respuesta": true,
+    "explicacion": "Al enfriar con velocidad superior a la crítica de temple, el carbono no tiene tiempo de difundir fuera de la celda. Al pasar la red de FCC a BCC, los átomos de carbono quedan atrapados en un conjunto específico de huecos octaédricos orientados paralelamente, elongando uno de los ejes de la celdilla (eje c) y contrayendo los otros dos (ejes a), dando lugar a la red BCT. La relación c/a aumenta linealmente con el % de carbono.",
+    "palabrasClave": [
+      "Martensita BCT",
+      "Huecos octaédricos",
+      "Relación c/a",
+      "Tetragonal"
+    ],
+    "trampa": "Confundir la tetragonalidad de la martensita con una red cúbica sin distorsión."
+  },
+  {
+    "id": 30,
+    "tema": "tema2",
+    "temaNombre": "Tema 2: Tratamientos Térmicos",
+    "pregunta": "En un diagrama de transformación isotérmica (TTT), la bainita superior se forma a temperaturas más bajas que la bainita inferior y presenta mayor dureza y tenacidad que esta última.",
+    "respuesta": false,
+    "explicacion": "La bainita superior se forma en el rango térmico superior y la bainita inferior a temperaturas menores; esta última suele ser más fina y dura para un mismo acero. La tenacidad al impacto no debe ordenarse como una regla universal sin fijar composición, fracción transformada y condiciones de tratamiento.",
+    "palabrasClave": [
+      "Bainita superior",
+      "Bainita inferior",
+      "Curvas TTT",
+      "Tenacidad"
+    ],
+    "trampa": "Invertir bainita superior e inferior al comparar temperatura de formación y dureza."
+  },
+  {
+    "id": 31,
+    "tema": "tema2",
+    "temaNombre": "Tema 2: Tratamientos Térmicos",
+    "pregunta": "El tratamiento térmico de 'austempering' consiste en enfriar bruscamente la pieza austenizada hasta una temperatura intermedia por encima de Ms y mantenerla isotérmicamente hasta que se completa la transformación bainítica.",
+    "respuesta": true,
+    "explicacion": "El austempering busca obtener una estructura 100% bainítica sin pasar por martensita. Al mantener la pieza en un baño de sales calientes a temperatura constante superior a Ms, la austenita transforma en bainita. Este proceso minimiza las tensiones térmicas y de transformación, eliminando la necesidad de un revenido posterior y evitando grietas de temple.",
+    "palabrasClave": [
+      "Austempering",
+      "Bainita",
+      "Temple isotérmico",
+      "Tensiones residuales"
+    ],
+    "trampa": "Confundir el mantenimiento isotérmico de austempering con el de martempering."
+  },
+  {
+    "id": 32,
+    "tema": "tema2",
+    "temaNombre": "Tema 2: Tratamientos Térmicos",
+    "pregunta": "La dureza máxima alcanzable por la martensita recién templada depende primordialmente de los elementos de aleación presentes (como cromo, níquel y molibdeno) y apenas varía con el porcentaje de carbono.",
+    "respuesta": false,
+    "explicacion": "La dureza de la martensita recién formada depende principalmente del carbono que queda disuelto en ella. Los elementos de aleación influyen de manera destacada en la templabilidad y también pueden afectar las transformaciones y la dureza; no es correcto decir que apenas varía con el carbono.",
+    "palabrasClave": [
+      "Dureza de martensita",
+      "% Carbono",
+      "Templabilidad",
+      "Aleantes"
+    ],
+    "trampa": "Atribuir la dureza de la martensita principalmente a aleantes que afectan sobre todo la templabilidad."
+  },
+  {
+    "id": 33,
+    "tema": "tema2",
+    "temaNombre": "Tema 2: Tratamientos Térmicos",
+    "pregunta": "La templabilidad de un acero es la propiedad que cuantifica la facilidad con la que el acero puede formar martensita a cierta profundidad respecto a la superficie exterior durante el temple.",
+    "respuesta": true,
+    "explicacion": "La templabilidad (hardenability) no debe confundirse con la dureza máxima. Refleja la profundidad y distribución de dureza obtenida tras el enfriamiento. Un acero de alta templabilidad forma martensita con velocidades de enfriamiento más lentas (hacia el interior de piezas gruesas), gracias al retardo que inducen los elementos de aleación en la descomposición de la austenita en ferrita y perlita.",
+    "palabrasClave": [
+      "Templabilidad",
+      "Hardenability",
+      "Profundidad de temple",
+      "Martensita"
+    ],
+    "trampa": "Confundir templabilidad, que mide penetración, con dureza de una zona ya martensítica."
+  },
+  {
+    "id": 34,
+    "tema": "tema2",
+    "temaNombre": "Tema 2: Tratamientos Térmicos",
+    "pregunta": "En el ensayo de templabilidad Jominy, una probeta cilíndrica de dimensiones normalizadas se enfría sumergiéndola completamente en un baño de agua agitada a 20 °C.",
+    "respuesta": false,
+    "explicacion": "En el ensayo Jominy (UNE-EN ISO 642), la probeta cilíndrica estandarizada (25 mm de diámetro y 100 mm de longitud) tras austenizarse se coloca verticalmente en un soporte y se enfría exclusivamente por su base inferior mediante un chorro de agua controlado a caudal y presión normalizados. El resto de la probeta se enfría por conducción a lo largo de su longitud, generando un gradiente continuo de velocidades de enfriamiento.",
+    "palabrasClave": [
+      "Ensayo Jominy",
+      "Probeta normalizada",
+      "Enfriamiento por chorro",
+      "Gradiente térmico"
+    ],
+    "trampa": "Confundir el chorro Jominy en un extremo con inmersión de toda la probeta."
+  },
+  {
+    "id": 35,
+    "tema": "tema2",
+    "temaNombre": "Tema 2: Tratamientos Térmicos",
+    "pregunta": "La primera etapa del revenido de un acero al carbono templado (entre 100 °C y 200 °C) implica la precipitación de carburo épsilon (Fe2.4C) nanométrico y la relajación parcial de la tetragonicidad de la martensita.",
+    "respuesta": true,
+    "explicacion": "A temperaturas entre 100 y 200 °C, el carbono difunde distancias muy cortas y precipita como un carburo de transición coherente llamado carburo épsilon (Fe2-3C o Fe2.4C), reduciendo el carbono en solución sólida en la matriz BCT hacia una matriz cúbica con ~0.25% C, disminuyendo las tensiones internas sin pérdida acusada de dureza.",
+    "palabrasClave": [
+      "Revenido 1ª etapa",
+      "Carburo épsilon",
+      "Tetragonicidad",
+      "Alivio de tensiones"
+    ],
+    "trampa": "Confundir la primera etapa del revenido con la transformación completa de la austenita retenida."
+  },
+  {
+    "id": 36,
+    "tema": "tema2",
+    "temaNombre": "Tema 2: Tratamientos Térmicos",
+    "pregunta": "La austenita retenida presente tras el temple de aceros aleados se descompone típicamente durante la segunda etapa del revenido (entre 200 °C y 300 °C), transformándose en ferrita y carburos o bainita.",
+    "respuesta": true,
+    "explicacion": "La segunda etapa del revenido se caracteriza por la descomposición térmica de la austenita residual metaestable que no transformó durante el temple, convirtiéndose en ferrita y carburos ultrafinos (microestructura similar a la bainita inferior), lo que produce a menudo un ligero aumento de volumen local.",
+    "palabrasClave": [
+      "Revenido 2ª etapa",
+      "Austenita retenida",
+      "Descomposición",
+      "Bainita"
+    ],
+    "trampa": "Ubicar la descomposición de austenita retenida en una etapa incorrecta del revenido."
+  },
+  {
+    "id": 37,
+    "tema": "tema2",
+    "temaNombre": "Tema 2: Tratamientos Térmicos",
+    "pregunta": "La fragilidad de revenido reversible (temper embrittlement) ocurre al calentar o enfriar lentamente aceros aleados en el intervalo de 350 °C a 550 °C debido a la segregación de impurezas (P, Sn, Sb, As) en los límites de grano.",
+    "respuesta": true,
+    "explicacion": "En este rango de temperaturas, elementos traza residuales como fósforo, estaño, antimonio y arsénico difunden hacia los bordes de grano austéniticos previos, reduciendo su cohesión intergranular y provocando roturas frágiles intergranulares al impacto. Se mitiga añadiendo molibdeno (0.2-0.5% Mo) o enfriando rápidamente a través de ese intervalo crítico tras el revenido.",
+    "palabrasClave": [
+      "Fragilidad de revenido",
+      "Segregación intergranular",
+      "Fósforo",
+      "Molibdeno"
+    ],
+    "trampa": "Confundir fragilidad reversible por segregación de impurezas con fragilidad de martensita sin revenir."
+  },
+  {
+    "id": 38,
+    "tema": "tema2",
+    "temaNombre": "Tema 2: Tratamientos Térmicos",
+    "pregunta": "El fenómeno de endurecimiento secundario en el revenido de aceros rápidos y de herramientas aleados con Cr, Mo, W y V se produce por la precipitación coherente de carburos de aleación ultrafinos a temperaturas superiores a 500 °C.",
+    "respuesta": true,
+    "explicacion": "A temperaturas elevadas de revenido (500-600 °C), los carburos de hierro iniciales se redisuelven y los elementos aleantes fuertes formadores de carburos (Mo, W, V) difunden para nuclear carburos de aleación nanométricos finamente dispersos (MC, M2C), produciendo un notable incremento de la dureza que supera incluso la dureza del estado recién templado.",
+    "palabrasClave": [
+      "Endurecimiento secundario",
+      "Aceros rápidos",
+      "Carburos de aleación",
+      "W y V"
+    ],
+    "trampa": "Confundir ablandamiento habitual del revenido con el endurecimiento secundario de algunos aceros aleados."
+  },
+  {
+    "id": 39,
+    "tema": "tema2",
+    "temaNombre": "Tema 2: Tratamientos Térmicos",
+    "pregunta": "Durante el enfriamiento rápido en el temple de un cilindro de acero masivo, la transformación de la austenita a martensita va acompañada de una contracción volumétrica de la red cristalina del orden del 10%.",
+    "respuesta": false,
+    "explicacion": "La transformación de austenita (FCC, más compacta) a martensita (BCT, menos densa) produce una EXPANSIÓN volumétrica neta del 2% al 4.5% (dependiendo del %C). Esta dilatación estructural, combinada con la contracción térmica previa diferencial entre superficie y núcleo, es la causa fundamental de las tensiones residuales de tracción y las posibles grietas de temple.",
+    "palabrasClave": [
+      "Expansión volumétrica",
+      "Martensita",
+      "Grietas de temple",
+      "Tensiones de transformación"
+    ],
+    "trampa": "Confundir contracción térmica con la expansión asociada a la transformación martensítica."
+  },
+  {
+    "id": 40,
+    "tema": "tema2",
+    "temaNombre": "Tema 2: Tratamientos Térmicos",
+    "pregunta": "Para un mismo acero y condiciones comparables, las transformaciones difusivas suelen requerir mayor subenfriamiento durante el enfriamiento continuo que en una transformación isotérmica, por lo que los diagramas CCT no se leen como una copia directa de los TTT.",
+    "respuesta": true,
+    "explicacion": "En un CCT la temperatura cambia continuamente, mientras que en un TTT la muestra se mantiene a temperatura constante. Por eso las curvas y productos de transformación difieren; su desplazamiento depende del acero, de las condiciones de austenización y de cómo se definan las curvas. Evita afirmar que todas las curvas CCT siempre se desplazan de forma idéntica.",
+    "palabrasClave": [
+      "Diagrama CCT",
+      "Diagrama TTT",
+      "Retardo de transformación",
+      "Enfriamiento continuo"
+    ],
+    "trampa": "Tratar el desplazamiento CCT/TTT como una regla idéntica para todos los aceros y condiciones."
+  },
+  {
+    "id": 41,
+    "tema": "tema2",
+    "temaNombre": "Tema 2: Tratamientos Térmicos",
+    "pregunta": "La severidad de temple de Grossmann (coeficiente H) del agua en calma es menor que la del aceite mineral agitado enérgicamente.",
+    "respuesta": false,
+    "explicacion": "El agua en calma presenta un poder de extracción calorífica mayor que el aceite mineral. Típicamente, el agua en calma tiene un valor H de ~1.0 pulg⁻¹, mientras que el aceite en calma es ~0.25-0.30 pulg⁻¹ y con agitación enérgica alcanza entre 0.50 y 0.70 pulg⁻¹, siendo aún inferior a la severidad del agua ordinaria.",
+    "palabrasClave": [
+      "Severidad de temple",
+      "Coeficiente H",
+      "Grossmann",
+      "Agua vs Aceite"
+    ],
+    "trampa": "Suponer que aceite con agitación intensa siempre extrae calor más rápido que agua en calma."
+  },
+  {
+    "id": 42,
+    "tema": "tema2",
+    "temaNombre": "Tema 2: Tratamientos Térmicos",
+    "pregunta": "La cementación o carburación es un tratamiento termoquímico que se aplica habitualmente a aceros de bajo contenido en carbono (0.15% - 0.25% C) a temperaturas de entre 900 °C y 950 °C en campo austenítico.",
+    "respuesta": true,
+    "explicacion": "La cementación introduce carbono en la capa superficial mediante difusión atómica a alta temperatura en austenita (donde la solubilidad del carbono es elevada). Tras el posterior temple y revenido bajo, se obtiene una pieza con una capa superficial hipereutectoide de altísima dureza y resistencia al desgaste con un núcleo tenaz y resistente a impactos.",
+    "palabrasClave": [
+      "Cementación",
+      "Carburación",
+      "Termoquímico",
+      "Austenita"
+    ],
+    "trampa": "Confundir cementación, que aporta carbono superficial, con nitruración."
+  },
+  {
+    "id": 43,
+    "tema": "tema2",
+    "temaNombre": "Tema 2: Tratamientos Térmicos",
+    "pregunta": "La nitruración gaseosa requiere austenizar completamente la pieza a 900 °C y templarla inmediatamente en agua para que se formen los nitruros de hierro.",
+    "respuesta": false,
+    "explicacion": "La nitruración se realiza en el campo ferrítico a temperaturas mucho más moderadas (500 °C - 560 °C), muy por debajo de la temperatura eutectoide Ac1. No hay cambio de fase de ferrita a austenita ni requiere temple posterior; las tensiones residuales y distorsiones dimensionales son mínimas, formándose nitruros muy duros con elementos aleantes como Al, Cr y Mo.",
+    "palabrasClave": [
+      "Nitruración",
+      "Campo ferrítico",
+      "Nitruros",
+      "Distorsión mínima"
+    ],
+    "trampa": "Confundir nitruración subcrítica con austenización y temple en agua."
+  },
+  {
+    "id": 44,
+    "tema": "tema2",
+    "temaNombre": "Tema 2: Tratamientos Térmicos",
+    "pregunta": "El tratamiento de recocido contra acritud (recristalización) de un acero al carbono deformado en frío se realiza habitualmente a temperaturas subcríticas, por debajo de A1 (entre 550 °C y 650 °C).",
+    "respuesta": true,
+    "explicacion": "El recocido de recristalización subcrítico no cruza las líneas de transformación de fase allotrópica. La energía acumulada por la deformación en frío (densidad de dislocaciones) impulsa la nucleación y crecimiento de nuevos granos ferríticos libres de tensiones, restaurando la ductilidad original del material sin necesidad de transformar a austenita.",
+    "palabrasClave": [
+      "Recocido contra acritud",
+      "Recristalización",
+      "Subcrítico",
+      "Disfunción de deformación"
+    ],
+    "trampa": "Confundir recristalización subcrítica con un recocido de regeneración que austeniza."
+  },
+  {
+    "id": 45,
+    "tema": "tema2",
+    "temaNombre": "Tema 2: Tratamientos Térmicos",
+    "pregunta": "En el temple superficial por inducción electromagnética, el calentamiento de la capa periférica de la pieza se produce debido a las corrientes inducidas de Foucault (efecto pelicular o skin effect) generadas por un campo magnético de alta frecuencia.",
+    "respuesta": true,
+    "explicacion": "Las corrientes alternas de alta frecuencia circulan preferentemente por la periferia del conductor debido a la inducción electromagnética. Esto permite calentar a temperatura de austenización exclusivamente la capa superficial en cuestión de segundos, seguido inmediatamente de una ducha de temple, dejando el núcleo inalterado.",
+    "palabrasClave": [
+      "Temple por inducción",
+      "Efecto pelicular",
+      "Skin effect",
+      "Corrientes de Foucault"
+    ],
+    "trampa": "Atribuir el calentamiento por inducción a conducción desde la superficie en vez de corrientes inducidas."
+  },
+  {
+    "id": 46,
+    "tema": "tema2",
+    "temaNombre": "Tema 2: Tratamientos Térmicos",
+    "pregunta": "El revenido de un acero recién templado aumenta su dureza y su límite elástico a la vez que reduce drásticamente su tenacidad al impacto.",
+    "respuesta": false,
+    "explicacion": "El objetivo del revenido es el opuesto: alivia las tensiones residuales de temple, reduce la excesiva fragilidad de la martensita recién formada y AUMENTA la tenacidad y ductilidad, a costa de una reducción controlada de la dureza y del límite elástico.",
+    "palabrasClave": [
+      "Revenido",
+      "Tenacidad",
+      "Fragilidad",
+      "Alivio de tensiones"
+    ],
+    "trampa": "Suponer que el revenido aumenta siempre la dureza y reduce la tenacidad."
+  },
+  {
+    "id": 47,
+    "tema": "tema2",
+    "temaNombre": "Tema 2: Tratamientos Térmicos",
+    "pregunta": "El diámetro crítico ideal (Di) de un acero es el diámetro máximo de una barra cilíndrica que desarrollaría un 50% de martensita en su centro geométrico al enfriarse en un medio de severidad de temple infinita (H = ∞).",
+    "respuesta": true,
+    "explicacion": "Por definición en el método de Grossmann, el diámetro crítico ideal Di es una propiedad intrínseca de templabilidad del acero, desacoplada del medio refrigerante real, asumiendo una velocidad infinita de transferencia térmica en la superficie (la superficie alcanza instantáneamente la temperatura del medio enfriador).",
+    "palabrasClave": [
+      "Diámetro crítico ideal",
+      "Di",
+      "Grossmann",
+      "50% Martensita"
+    ],
+    "trampa": "Confundir diámetro crítico ideal con un diámetro real templado en cualquier medio."
+  },
+  {
+    "id": 48,
+    "tema": "tema2",
+    "temaNombre": "Tema 2: Tratamientos Térmicos",
+    "pregunta": "La presencia de grano austenítico grueso previo al temple disminuye la templabilidad del acero porque proporciona una mayor densidad de límites de grano para la nucleación de perlita.",
+    "respuesta": false,
+    "explicacion": "Un tamaño de grano austenítico grueso presenta MENOR área de bordes de grano por unidad de volumen. Como los límites de grano son los sitios preferentes para la nucleación heterogénea de perlita y ferrita, un grano grueso retarda la formación de perlita, desplazando las curvas TTT hacia la derecha y AUMENTANDO la templabilidad (aunque empeora la tenacidad de la martensita final).",
+    "palabrasClave": [
+      "Tamaño de grano austenítico",
+      "Templabilidad",
+      "Bordes de grano",
+      "Nucleación perlítica"
+    ],
+    "trampa": "Confundir grano grueso, que suele retrasar nucleación difusiva, con más sitios de nucleación."
+  },
+  {
+    "id": 49,
+    "tema": "tema2",
+    "temaNombre": "Tema 2: Tratamientos Térmicos",
+    "pregunta": "En el tratamiento de martempering (marquenching), la pieza se enfría rápidamente hasta una temperatura ligeramente superior a Ms, se mantiene allí hasta igualar la temperatura en toda la sección y se enfría luego al aire para que la martensita se forme homogéneamente.",
+    "respuesta": true,
+    "explicacion": "El martempering busca eliminar el gradiente térmico entre superficie y núcleo antes de que empiece la transformación martensítica. Al igualar la temperatura de la pieza en el baño de sales por encima de Ms y enfriar luego lentamente al aire, la martensita se forma simultáneamente en toda la pieza, minimizando las tensiones de transformación y las deformaciones.",
+    "palabrasClave": [
+      "Martempering",
+      "Marquenching",
+      "Gradiente térmico",
+      "Prevención de grietas"
+    ],
+    "trampa": "Confundir martempering, que busca martensita con menos gradiente, con austempering, que busca bainita."
+  },
+  {
+    "id": 50,
+    "tema": "tema2",
+    "temaNombre": "Tema 2: Tratamientos Térmicos",
+    "pregunta": "El aumento del contenido de carbono en un acero al carbono no aleado provoca un desplazamiento de las temperaturas Ms y Mf hacia valores más altos.",
+    "respuesta": false,
+    "explicacion": "El carbono estabiliza la austenita y disminuye las temperaturas de inicio (Ms) y fin (Mf) de la transformación martensítica de forma muy acusada. En aceros con más de aproximadamente 0.6% - 0.7% C, Mf cae por debajo de la temperatura ambiente (20 °C), lo que provoca la presencia de austenita retenida no transformada tras el temple a temperatura ambiente.",
+    "palabrasClave": [
+      "Temperatura Ms",
+      "Temperatura Mf",
+      "% Carbono",
+      "Austenita retenida"
+    ],
+    "trampa": "Invertir la relación entre carbono y las temperaturas Ms y Mf."
+  },
+  {
+    "id": 51,
+    "tema": "tema3",
+    "temaNombre": "Tema 3: Aluminio y Solidificación",
+    "pregunta": "El aluminio y sus aleaciones no presentan una temperatura de transición dúctil-frágil al descender la temperatura debido a su estructura cristalina cúbica centrada en las caras (FCC).",
+    "respuesta": true,
+    "explicacion": "Los metales con estructura FCC (como el Al, Cu, Ni y aceros austeníticos) disponen de 12 sistemas de deslizamiento independientes muy compactos {111}<110> cuya tensión de cizalladura crítica resuelta (tensión de Peierls-Nabarro) apenas depende térmicamente de la temperatura, manteniendo una excelente tenacidad y ductilidad incluso a temperaturas criogénicas.",
+    "palabrasClave": [
+      "Aluminio FCC",
+      "Transición dúctil-frágil",
+      "Criogenia",
+      "Sistemas de deslizamiento"
+    ],
+    "trampa": "Confundir una transición dúctil-frágil típica de ciertas redes BCC con el comportamiento general FCC."
+  },
+  {
+    "id": 52,
+    "tema": "tema3",
+    "temaNombre": "Tema 3: Aluminio y Solidificación",
+    "pregunta": "Las aleaciones de aluminio de la serie 1xxx, 3xxx (Al-Mn) y 5xxx (Al-Mg) son aleaciones tratables térmicamente por temple y maduración para incrementar sustancialmente su límite elástico.",
+    "respuesta": false,
+    "explicacion": "Las series 1xxx, 3xxx y 5xxx son aleaciones NO tratables térmicamente. No presentan suficiente variación de solubilidad sólida con la temperatura para producir endurecimiento por precipitación apreciable. Su endurecimiento se obtiene únicamente mediante solución sólida y, sobre todo, por deformación plástica en frío (estados H).",
+    "palabrasClave": [
+      "Aleaciones no tratables",
+      "Serie 3xxx",
+      "Serie 5xxx",
+      "Acritud"
+    ],
+    "trampa": "Confundir las series no tratables por precipitación con las series endurecibles por envejecimiento."
+  },
+  {
+    "id": 53,
+    "tema": "tema3",
+    "temaNombre": "Tema 3: Aluminio y Solidificación",
+    "pregunta": "Las aleaciones de aluminio de la serie 2xxx (Al-Cu), 6xxx (Al-Mg-Si) y 7xxx (Al-Zn-Mg) son aleaciones endurecibles por precipitación o maduración.",
+    "respuesta": true,
+    "explicacion": "Estas aleaciones muestran una solubilidad en estado sólido que decrece marcadamente al bajar la temperatura, lo que permite realizar los tres pasos del endurecimiento por precipitación: solubilización a alta temperatura, temple brusco para obtener una solución sólida sobresaturada metaestable, y envejecimiento térmico controlado para precipitar fases secundarias nanométricas coherentes.",
+    "palabrasClave": [
+      "Aleaciones tratables",
+      "Serie 2xxx",
+      "Serie 6xxx",
+      "Serie 7xxx",
+      "Precipitación"
+    ],
+    "trampa": "Suponer que todas las series de aluminio responden igual al tratamiento térmico."
+  },
+  {
+    "id": 54,
+    "tema": "tema3",
+    "temaNombre": "Tema 3: Aluminio y Solidificación",
+    "pregunta": "En la designación de los tratamientos térmicos de aleaciones de aluminio, el estado T6 indica que el material ha sido solubilizado, templado y envejecido artificialmente; la designación por sí sola no fija un pico matemático de dureza.",
+    "respuesta": true,
+    "explicacion": "T6 identifica una condición de solubilización, temple y envejecimiento artificial posterior. No significa que todas las aleaciones y lotes se hayan envejecido exactamente hasta el máximo matemático de dureza: composición, temperatura, tiempo y norma de suministro definen el estado y las propiedades requeridas. Algunas especificaciones sitúan el envejecimiento cerca de la resistencia máxima; otras buscan una combinación distinta de resistencia, ductilidad y estabilidad.",
+    "palabrasClave": [
+      "Estado T6",
+      "Maduración artificial",
+      "Pico de dureza",
+      "Tratamiento T4"
+    ],
+    "trampa": "Confundir el estado T6 con un simple temple sin envejecimiento artificial."
+  },
+  {
+    "id": 55,
+    "tema": "tema3",
+    "temaNombre": "Tema 3: Aluminio y Solidificación",
+    "pregunta": "Durante el envejecimiento de una aleación Al-Cu (tipo duraluminio), la primera fase que precipita desde la solución sólida sobresaturada es la fase de equilibrio termodinámico teta (CuAl2) completamente incoherente.",
+    "respuesta": false,
+    "explicacion": "La formación directa de la fase de equilibrio theta (CuAl2) requiere una elevada energía interfacial y gran difusión. La nucleación sigue una secuencia de fases metaestables con menor barrera de energía: Solución sobresaturada -> Zonas Guinier-Preston I (GP I, monocapas coherentes de átomos de Cu) -> Zonas GP II o theta'' -> Precipitados theta' semicoherentes -> y finalmente la fase theta de equilibrio incoherente en caso de sobreenvejecimiento.",
+    "palabrasClave": [
+      "Zonas GP",
+      "Secuencia de precipitación",
+      "Al-Cu",
+      "CuAl2"
+    ],
+    "trampa": "Suponer que precipita primero la fase de equilibrio aunque existan etapas metaestables coherentes."
+  },
+  {
+    "id": 56,
+    "tema": "tema3",
+    "temaNombre": "Tema 3: Aluminio y Solidificación",
+    "pregunta": "El estado T7 corresponde a un envejecimiento más allá del pico de resistencia, o a una condición estabilizada; frente al pico, suele reducir resistencia al coarsening de precipitados, aunque no siempre se explica solo por pérdida de coherencia.",
+    "respuesta": true,
+    "explicacion": "T7 designa una condición de envejecimiento más allá del pico o de estabilización, según la aleación y la especificación. Respecto al estado de resistencia máxima, el sobreenvejecimiento suele reducir el límite elástico al aumentar el tamaño y el espaciamiento de precipitados; también pueden cambiar coherencia y mecanismo de interacción con dislocaciones. El objetivo puede ser mejorar estabilidad dimensional o resistencia a corrosión bajo tensión. No es correcto atribuir siempre la caída solo a pérdida de coherencia u Orowan.",
+    "palabrasClave": [
+      "Sobreenvejecimiento",
+      "Estado T7",
+      "Ostwald ripening",
+      "Mecanismo de Orowan"
+    ],
+    "trampa": "Confundir sobreenvejecimiento con el pico de resistencia del envejecimiento."
+  },
+  {
+    "id": 57,
+    "tema": "tema3",
+    "temaNombre": "Tema 3: Aluminio y Solidificación",
+    "pregunta": "Las zonas de Guinier-Preston (GP) son agrupaciones atómicas de soluto coherentes con la red cristalina del aluminio que generan campos locales de deformación elástica que obstaculizan el movimiento de las dislocaciones.",
+    "respuesta": true,
+    "explicacion": "Al ser perfectamente coherentes con la matriz de aluminio, las zonas GP distorsionan los planos cristalográficos circundantes debido a la diferencia de radios atómicos entre el soluto (como el cobre) y la matriz. Este campo elástico ejerce una fuerza de repulsión o frenado sobre las dislocaciones que intentan desplazarse, elevando notablemente el límite elástico del material.",
+    "palabrasClave": [
+      "Zonas Guinier-Preston",
+      "Coherencia de red",
+      "Deformación elástica",
+      "Dislocaciones"
+    ],
+    "trampa": "Confundir zonas GP coherentes con precipitados gruesos incoherentes de equilibrio."
+  },
+  {
+    "id": 58,
+    "tema": "tema3",
+    "temaNombre": "Tema 3: Aluminio y Solidificación",
+    "pregunta": "En el proceso de nucleación homogénea durante la solidificación de un metal líquido puro, el radio crítico de núcleo r* aumenta proporcionalmente al aumentar el subenfriamiento (Delta T) del baño.",
+    "respuesta": false,
+    "explicacion": "El radio crítico es inversamente proporcional al subenfriamiento: r* = (2 * gamma_SL * Tm) / (Delta Hf * Delta T). A mayor subenfriamiento (Delta T mayor), mayor es la fuerza motriz termodinámica volumétrica (Delta Gv), por lo que el radio crítico del núcleo estable se hace más PEQUEÑO, permitiendo que agrupaciones atómicas de menor tamaño sean termodinámicamente estables y proliferen activamente.",
+    "palabrasClave": [
+      "Nucleación homogénea",
+      "Radio crítico r*",
+      "Subenfriamiento",
+      "Delta T"
+    ],
+    "trampa": "Invertir la relación entre subenfriamiento y radio crítico del núcleo."
+  },
+  {
+    "id": 59,
+    "tema": "tema3",
+    "temaNombre": "Tema 3: Aluminio y Solidificación",
+    "pregunta": "La nucleación heterogénea requiere un subenfriamiento significativamente menor que la nucleación homogénea debido a que el sustrato sólido o impureza reduce la barrera de energía libre superficial necesaria para formar el núcleo.",
+    "respuesta": true,
+    "explicacion": "En la nucleación heterogénea, el embrión sólido se forma sobre una superficie previa (pared del molde, partículas de óxido, inoculantes). El factor de forma geométrico f(theta) = (2 - 3*cos theta + cos³ theta)/4 reduce la barrera energética Delta G* a una fracción diminuta de la requerida en la nucleación homogénea, permitiendo que la solidificación ocurra con subenfriamientos de apenas unos pocos grados o décimas de grado Celsius.",
+    "palabrasClave": [
+      "Nucleación heterogénea",
+      "Ángulo de contacto",
+      "Barrera energética",
+      "Inoculantes"
+    ],
+    "trampa": "Invertir el efecto de un sustrato sobre la barrera de nucleación."
+  },
+  {
+    "id": 60,
+    "tema": "tema3",
+    "temaNombre": "Tema 3: Aluminio y Solidificación",
+    "pregunta": "La sobrefusión constitucional (constitutional supercooling) en el frente de solidificación de una aleación se produce cuando el gradiente térmico real en el líquido es menor que la variación de la temperatura de liquidus debida a la acumulación de soluto expulsado al líquido.",
+    "respuesta": true,
+    "explicacion": "Cuando el coeficiente de partición k0 < 1, el sólido en crecimiento rechaza soluto hacia el líquido adyacente al frente de avance, enriqueciéndolo y reduciendo localmente su temperatura de liquidus. Si el gradiente térmico real impuesto en el líquido es suave, existe una zona por delante del frente donde la temperatura real del líquido está por debajo de su punto de equilibrio de liquidus, volviéndose termodinámicamente inestable y favoreciendo morfologías celulares y dendríticas.",
+    "palabrasClave": [
+      "Sobrefusión constitucional",
+      "Gradiente térmico",
+      "Rechazo de soluto",
+      "Interfase"
+    ],
+    "trampa": "Confundir subenfriamiento constitucional con subenfriamiento térmico uniforme del baño."
+  },
+  {
+    "id": 61,
+    "tema": "tema3",
+    "temaNombre": "Tema 3: Aluminio y Solidificación",
+    "pregunta": "A medida que se incrementa el grado de sobrefusión constitucional por delante de una interfase de solidificación, la morfología del frente evoluciona sucesivamente desde dendrítica equiaxial hacia frente plano continuo.",
+    "respuesta": false,
+    "explicacion": "La evolución ocurre exactamente en sentido contrario: sin sobrefusión constitucional (gradiente térmico muy positivo en el líquido), el frente es perfectamente plano (planar). Al aumentar la sobrefusión constitucional, la estabilidad planar se pierde, evolucionando primero a morfología celular, luego a dendritas columnares orientadas y finalmente a dendritas equiaxiales tridimensionales ramificadas.",
+    "palabrasClave": [
+      "Morfología de solidificación",
+      "Frente plano",
+      "Dendritas",
+      "Inestabilidad interfacial"
+    ],
+    "trampa": "Invertir la secuencia de pérdida de estabilidad desde frente planar a morfologías celulares y dendríticas."
+  },
+  {
+    "id": 62,
+    "tema": "tema3",
+    "temaNombre": "Tema 3: Aluminio y Solidificación",
+    "pregunta": "En la macroestructura típica de un lingote metálico colado en molde estático frío, la zona de piel o coquilla ('chill zone') está compuesta por granos equiaxiales muy finos y orientados aleatoriamente formados por el rápido enfriamiento contra la pared fría del molde.",
+    "respuesta": true,
+    "explicacion": "En el instante del llenado, el metal líquido entra en contacto directo con la pared fría del molde, alcanzando un subenfriamiento muy elevado. Esto desencadena una nucleación heterogénea masiva en la pared, formando una capa periférica delgada de granos finos equiaxiales de orientación cristalográfica aleatoria antes de que se forme el frente columnar orientado térmicamente.",
+    "palabrasClave": [
+      "Chill zone",
+      "Zona de coquilla",
+      "Estructura de lingote",
+      "Granos equiaxiales"
+    ],
+    "trampa": "Confundir la zona fina de piel con la zona columnar orientada hacia el interior del lingote."
+  },
+  {
+    "id": 63,
+    "tema": "tema3",
+    "temaNombre": "Tema 3: Aluminio y Solidificación",
+    "pregunta": "La microsegregación interdendrítica formada durante la solidificación puede reducirse mediante un tratamiento de homogeneización suficientemente largo y a temperatura adecuada, sin alcanzar el inicio de fusión.",
+    "respuesta": true,
+    "explicacion": "La difusión en estado sólido puede reducir gradientes de composición a distancias microscópicas, como las interdendríticas. El resultado depende del tiempo, la temperatura y la aleación; no debe prometerse la eliminación completa de toda segregación.",
+    "palabrasClave": [
+      "Microsegregación",
+      "Coring",
+      "Recocido de homogeneización",
+      "Difusión interdendrítica"
+    ],
+    "trampa": "Confundir microsegregación interdendrítica con macrosegregación de toda la pieza."
+  },
+  {
+    "id": 64,
+    "tema": "tema3",
+    "temaNombre": "Tema 3: Aluminio y Solidificación",
+    "pregunta": "Una homogeneización de corta duración no elimina de forma eficaz la macrosegregación química a escala de toda una pieza ni corrige las cavidades de rechupe.",
+    "respuesta": true,
+    "explicacion": "La difusión puede reducir microsegregación a distancias pequeñas, pero la macrosegregación se extiende a escalas mucho mayores y no se corrige con un recocido breve. El rechupe es una cavidad por falta de alimentación durante la solidificación, no una segregación química; se previene con diseño de alimentación y control de la solidificación.",
+    "palabrasClave": [
+      "Macrosegregación",
+      "Irreversibilidad",
+      "Mazarotas",
+      "Escala macroscópica"
+    ],
+    "trampa": "Suponer que un recocido corto corrige segregación macroscópica o cavidades de rechupe."
+  },
+  {
+    "id": 65,
+    "tema": "tema3",
+    "temaNombre": "Tema 3: Aluminio y Solidificación",
+    "pregunta": "El afino de grano mediante inoculación en aleaciones de aluminio para moldeo se consigue habitualmente mediante adiciones de titanio y boro (aleaciones maestras Al-Ti-B), que forman partículas nucleantes estables de TiB2 y TiAl3.",
+    "respuesta": true,
+    "explicacion": "Las partículas insolubles de diboruro de titanio (TiB2) y aluminuro de titanio (TiAl3) actúan como sustratos ideales para la nucleación heterogénea del aluminio alfa debido a su bajo desajuste reticular (epitaxia). Al dispersarse por todo el caldo, provocan la nucleación simultánea de millones de granos, transformando la estructura columnar en una estructura equiaxial fina que mejora las propiedades mecánicas y reduce la tendencia al agrietamiento en caliente (hot tearing).",
+    "palabrasClave": [
+      "Afino de grano",
+      "Inoculación",
+      "Al-Ti-B",
+      "TiB2",
+      "Equiaxial"
+    ],
+    "trampa": "Confundir el afino por inoculación con enfriar simplemente más lento."
+  },
+  {
+    "id": 66,
+    "tema": "tema3",
+    "temaNombre": "Tema 3: Aluminio y Solidificación",
+    "pregunta": "Las aleaciones de aluminio para moldeo de la serie Al-Si próximas a la composición eutéctica (~11.7% - 12.6% Si) presentan excelente fluidez y bajo coeficiente de contracción volumétrica de solidificación.",
+    "respuesta": true,
+    "explicacion": "El silicio puro expande aproximadamente un 9% en volumen al solidificar (contrarrestando la contracción normal del aluminio) y el eutéctico funde a una temperatura relativamente baja (577 °C) con gran intervalo de fluidez líquida y estrecho rango de solidificación pastosa, lo que las hace idóneas para piezas de fundición complejas y de paredes delgadas.",
+    "palabrasClave": [
+      "Al-Si eutéctico",
+      "Fluidez",
+      "Contracción volumétrica",
+      "Moldeo"
+    ],
+    "trampa": "Atribuir la buena colabilidad del eutéctico a una regla universal sobre contracción de todo Al-Si."
+  },
+  {
+    "id": 67,
+    "tema": "tema3",
+    "temaNombre": "Tema 3: Aluminio y Solidificación",
+    "pregunta": "La modificación química del eutéctico Al-Si mediante adiciones de trazas de sodio (Na) o estroncio (Sr) transforma la morfología acicular/laminar frágil del silicio en una estructura fibrosa fina y redondeada, aumentando la ductilidad.",
+    "respuesta": true,
+    "explicacion": "Sin modificar, el silicio eutéctico solidifica en forma de placas o agujas afiladas que fragilizan drásticamente la aleación. La adición de cantidades diminutas de Sr o Na envenena los escalones de crecimiento cristalino del silicio, forzando un crecimiento curvado y fibroso de gran finura que multiplica la elongación a rotura y la tenacidad de la pieza.",
+    "palabrasClave": [
+      "Modificación de Al-Si",
+      "Estroncio",
+      "Sodio",
+      "Silicio fibroso"
+    ],
+    "trampa": "Confundir modificar la morfología del silicio eutéctico con cambiar la composición global de la aleación."
+  },
+  {
+    "id": 68,
+    "tema": "tema3",
+    "temaNombre": "Tema 3: Aluminio y Solidificación",
+    "pregunta": "El rechupe de solidificación es una cavidad interna o superficial producida en la pieza metálica debido a la contracción volumétrica líquida y de cambio de fase del metal al solidificar si no existe una alimentación adecuada de metal líquido.",
+    "respuesta": true,
+    "explicacion": "Casi todos los metales (salvo excepciones como el bismuto o el silicio) se contraen significativamente al pasar de líquido a sólido (típicamente entre 3% y 7% de contracción volumétrica). Si las zonas que solidifican las últimas quedan aisladas del metal líquido de las mazarotas o canales de colada, se produce un vacío o cavidad concentrada denominada rechupe primario o porosidad dispersa por rechupe secundario.",
+    "palabrasClave": [
+      "Rechupe",
+      "Contracción de solidificación",
+      "Mazarota",
+      "Defectos de moldeo"
+    ],
+    "trampa": "Confundir rechupe por falta de alimentación con porosidad causada por gas atrapado."
+  },
+  {
+    "id": 69,
+    "tema": "tema3",
+    "temaNombre": "Tema 3: Aluminio y Solidificación",
+    "pregunta": "La velocidad de enfriamiento más lenta en una pieza fundida produce un menor espaciado entre brazos dendríticos secundarios (SDAS) y, en consecuencia, mayores propiedades mecánicas de tracción.",
+    "respuesta": false,
+    "explicacion": "Es exactamente lo contrario: a MAYOR velocidad de enfriamiento (tiempos de solidificación más rápidos, como en moldes metálicos o coquilla frente a moldes de arena), menor es el tiempo disponible para el engrosamiento dendrítico y MENOR es el espaciado dendrítico secundario (SDAS más fino). Un SDAS menor distribuye las microsegregaciones y segundas fases mucho más finamente, aumentando notablemente la resistencia y la ductilidad.",
+    "palabrasClave": [
+      "SDAS",
+      "Espaciado dendrítico",
+      "Velocidad de enfriamiento",
+      "Propiedades mecánicas"
+    ],
+    "trampa": "Invertir la relación entre velocidad de enfriamiento, SDAS y propiedades."
+  },
+  {
+    "id": 70,
+    "tema": "tema3",
+    "temaNombre": "Tema 3: Aluminio y Solidificación",
+    "pregunta": "En la fundición a presión en molde metálico (die casting), el llenado de la cavidad se realiza a alta velocidad y bajo presiones elevadas, permitiendo obtener tolerancias dimensionales estrechas y acabados superficiales de gran calidad.",
+    "respuesta": true,
+    "explicacion": "El proceso de inyección a presión en coquilla metálica inyecta el metal líquido (típicamente aleaciones de Al, Zn o Mg) a presiones de cientos de bares y altas velocidades, llenando secciones muy delgadas con tiempos de ciclo muy cortos y excelente precisión dimensional, aunque suele retener microburbujas de aire que desaconsejan posteriores tratamientos térmicos de solubilización a alta temperatura.",
+    "palabrasClave": [
+      "Die casting",
+      "Fundición a presión",
+      "Coquilla metálica",
+      "Precisión"
+    ],
+    "trampa": "Confundir fundición a presión con un proceso de baja velocidad y tolerancias amplias."
+  },
+  {
+    "id": 71,
+    "tema": "tema3",
+    "temaNombre": "Tema 3: Aluminio y Solidificación",
+    "pregunta": "Una mazarota en el diseño de un molde de fundición debe dimensionarse para solidificar antes que la sección crítica de la pieza que pretende alimentar, facilitando así el desmoldeo rápido.",
+    "respuesta": false,
+    "explicacion": "La mazarota debe conservar metal líquido y alimentar las regiones de la pieza que solidifican al final; su diseño debe hacer que solidifique después de la zona alimentada. La diferencia necesaria de módulo depende del proceso, la aleación, el molde y el uso de manguitos, así que no hay un porcentaje universal que deba añadirse a la pregunta.",
+    "palabrasClave": [
+      "Mazarota",
+      "Alimentación",
+      "Principio de Chvorinov",
+      "Módulo térmico"
+    ],
+    "trampa": "Diseñar la mazarota para solidificar primero, bloqueando la alimentación de la pieza."
+  },
+  {
+    "id": 72,
+    "tema": "tema3",
+    "temaNombre": "Tema 3: Aluminio y Solidificación",
+    "pregunta": "La regla o módulo geométrico de Chvorinov establece que el tiempo total de solidificación de una pieza colada es inversamente proporcional al cuadrado de la relación volumen/área superficial (V/A) de la misma.",
+    "respuesta": false,
+    "explicacion": "La regla de Chvorinov establece que el tiempo de solidificación es DIRECTAMENTE proporcional al cuadrado del módulo térmico: t_sol = B * (V / A)^n, donde n es aproximadamente 2. Una pieza con mayor relación volumen/área disipa su calor más lentamente y, por tanto, tarda mucho más tiempo en solidificar.",
+    "palabrasClave": [
+      "Regla de Chvorinov",
+      "Módulo térmico",
+      "Tiempo de solidificación",
+      "Relación V/A"
+    ],
+    "trampa": "Invertir la dependencia de Chvorinov entre módulo térmico y tiempo de solidificación."
+  },
+  {
+    "id": 73,
+    "tema": "tema3",
+    "temaNombre": "Tema 3: Aluminio y Solidificación",
+    "pregunta": "En aleaciones de aluminio, la temperatura de solubilización se elige dentro del intervalo recomendado para disolver las fases solubles, manteniéndose por debajo de la fusión incipiente y del límite seguro del material.",
+    "respuesta": true,
+    "explicacion": "La solubilización debe permitir disolver suficiente soluto para el envejecimiento posterior sin iniciar fusión local, que puede ocurrir por segregación o constituyentes de bajo punto de fusión. La temperatura y el tiempo se seleccionan según aleación, espesor, condición inicial y recomendación de proceso; no existe una regla universal de acercarse todo lo posible al solidus. Superar el límite seguro puede causar daño irreversible.",
+    "palabrasClave": [
+      "Solubilización",
+      "Quemado",
+      "Fusión incipiente",
+      "Solidus"
+    ],
+    "trampa": "Confundir aproximarse al solidus con sobrepasarlo y provocar fusión incipiente."
+  },
+  {
+    "id": 74,
+    "tema": "tema3",
+    "temaNombre": "Tema 3: Aluminio y Solidificación",
+    "pregunta": "El agrietamiento en caliente (hot tearing) durante la fundición de aleaciones metálicas ocurre a temperaturas muy por debajo de la temperatura de solidus, cuando la pieza ya está completamente sólida y fría.",
+    "respuesta": false,
+    "explicacion": "El agrietamiento en caliente se origina a temperaturas muy elevadas, en el intervalo pastoso semilíquido (cercano al final de la solidificación), cuando existe una fracción muy alta de sólido (aprox. 90-95%) unida por películas líquidas delgadas intergranulares incapaces de transmitir tensiones de tracción provocadas por la contracción restringida de la pieza contra el molde.",
+    "palabrasClave": [
+      "Hot tearing",
+      "Agrietamiento en caliente",
+      "Intervalo pastoso",
+      "Contracción restringida"
+    ],
+    "trampa": "Confundir agrietamiento en caliente en el intervalo pastoso con una grieta en una pieza fría."
+  },
+  {
+    "id": 75,
+    "tema": "tema3",
+    "temaNombre": "Tema 3: Aluminio y Solidificación",
+    "pregunta": "La adición de elementos afines al hierro, como manganeso en aleaciones de aluminio para moldeo a presión (serie Al-Si-Cu-Fe), ayuda a modificar la morfología de la fase intermetálica rica en hierro de agujas aciculares dañinas (beta-Al5FeSi) a formas más compactas poligonales o de tipo escritura china (alfa-Al15(Fe,Mn)3Si2).",
+    "respuesta": true,
+    "explicacion": "El hierro es una impureza común e insoluble en aluminio que tiende a formar plaquetas alargadas y cortantes de beta-Al5FeSi que actúan como entallas y deterioran la tenacidad y ductilidad. Al añadir manganeso en una proporción aproximada Mn/Fe >= 0.5, se estabiliza la fase alfa con morfología globulada o en escritura china mucho menos perjudicial para las propiedades mecánicas.",
+    "palabrasClave": [
+      "Hierro en aluminio",
+      "Manganeso",
+      "Beta-Al5FeSi",
+      "Escritura china"
+    ],
+    "trampa": "Confundir la fase beta acicular rica en hierro con la fase alfa más compacta favorecida por Mn."
+  },
+  {
+    "id": 76,
+    "tema": "tema1",
+    "temaNombre": "Tema 1: Siderurgia y Aceros",
+    "pregunta": "El alto horno obtiene hierro líquido al reducir los óxidos de hierro; el monóxido de carbono generado a partir del coque actúa como agente reductor importante.",
+    "respuesta": true,
+    "explicacion": "En el alto horno, el coque aporta carbono y genera monóxido de carbono al reaccionar con el oxígeno del aire caliente. El CO reduce progresivamente los óxidos de hierro y el hierro líquido absorbe carbono, dando arrabio; los fundentes ayudan a retirar parte de la ganga como escoria. La operación de convertir arrabio en acero ocurre después, en la acería, donde se oxida carbono y se ajusta la composición. Por eso reducción del mineral y afino del arrabio son etapas distintas.",
+    "palabrasClave": [
+      "alto horno",
+      "reducción",
+      "CO"
+    ],
+    "fuente": "Parcial de 2/11/2023, pregunta 1, p. 2; adaptación conceptual, no literal.",
+    "trampa": "Confundir el alto horno, donde se reduce el mineral, con el convertidor, donde se afina el arrabio."
+  },
+  {
+    "id": 77,
+    "tema": "tema1",
+    "temaNombre": "Tema 1: Siderurgia y Aceros",
+    "pregunta": "El afino en cuchara se realiza sobre el acero líquido y puede aplicarse al acero procedente de distintas rutas de fabricación para ajustar su calidad y limpieza.",
+    "respuesta": true,
+    "explicacion": "El afino en cuchara es una etapa de metalurgia secundaria que trata acero líquido después de la fabricación primaria, tanto si procede de un convertidor como de un horno eléctrico. Según la calidad buscada, permite ajustar composición y temperatura, desoxidar, desulfurar, controlar inclusiones y homogeneizar el baño mediante agitación. La secuencia concreta depende del grado y de la ruta de fabricación; no se aplica al arrabio como si fuese todavía una etapa de reducción del mineral.",
+    "palabrasClave": [
+      "afino en cuchara",
+      "acero líquido",
+      "inclusiones"
+    ],
+    "fuente": "Parcial de 2/11/2023, pregunta 2, p. 2; adaptación conceptual, no literal.",
+    "trampa": "Suponer que el afino en cuchara se realiza sobre arrabio o solo sobre acero LD."
+  },
+  {
+    "id": 78,
+    "tema": "tema1",
+    "temaNombre": "Tema 1: Siderurgia y Aceros",
+    "pregunta": "En la acería, además de reducir el contenido de carbono, se pueden eliminar impurezas como el fósforo durante el afino.",
+    "respuesta": true,
+    "explicacion": "En la acería se oxida el carbono para llevarlo al nivel especificado y también se pueden retirar otros elementos. El fósforo se oxida y pasa a una escoria suficientemente básica, normalmente con cal, que lo fija como fosfatos; temperatura, composición de escoria y potencial de oxígeno condicionan la eficacia. La eliminación de fósforo es una operación de afino, mientras que la reducción de óxidos de hierro pertenece principalmente al alto horno.",
+    "palabrasClave": [
+      "acería",
+      "afino",
+      "fósforo"
+    ],
+    "fuente": "Parcial de 3/10/2024, pregunta 21, p. 5; adaptación conceptual, no literal.",
+    "trampa": "Atribuir a la acería la reducción inicial del mineral de hierro."
+  },
+  {
+    "id": 79,
+    "tema": "tema1",
+    "temaNombre": "Tema 1: Siderurgia y Aceros",
+    "pregunta": "La adición de calcio en la metalurgia secundaria puede favorecer la desulfuración del acero.",
+    "respuesta": true,
+    "explicacion": "El calcio puede ayudar a reducir el azufre disuelto al formar compuestos sulfurados, como CaS, que pasan a la escoria si la práctica metalúrgica favorece su separación. En la cuchara también se usa para modificar inclusiones de alúmina y mejorar su comportamiento durante la colada. El efecto depende de la composición del acero y de la escoria, la forma de adición y la protección frente a reoxidación; no significa que el calcio elimine por sí solo todo el azufre.",
+    "palabrasClave": [
+      "calcio",
+      "azufre",
+      "metalurgia secundaria"
+    ],
+    "fuente": "Parcial de 3/10/2024, pregunta 27, p. 5; adaptación conceptual, no literal.",
+    "trampa": "Atribuir al calcio la eliminación principal del hierro o del magnesio del baño."
+  },
+  {
+    "id": 80,
+    "tema": "tema1",
+    "temaNombre": "Tema 1: Siderurgia y Aceros",
+    "pregunta": "En el convertidor LD, el oxígeno se inyecta para oxidar carbono y reducir su contenido en el baño metálico.",
+    "respuesta": true,
+    "explicacion": "En el proceso LD, una lanza inyecta oxígeno de alta pureza sobre el baño. El carbono disuelto se oxida principalmente a CO, con parte de CO₂ según las condiciones; estas reacciones liberan calor y contribuyen a afinar el arrabio hasta la composición de acero. La oxidación también afecta silicio, manganeso y fósforo. Aire con nitrógeno no es equivalente: introduciría nitrógeno no deseado en el baño y cambiaría la práctica de afino.",
+    "palabrasClave": [
+      "LD",
+      "oxígeno",
+      "descarburación"
+    ],
+    "fuente": "Parcial de 3/10/2024, pregunta 26, p. 5; adaptación conceptual, no literal.",
+    "trampa": "Confundir descarburación por oxidación con una reacción de reducción."
+  },
+  {
+    "id": 81,
+    "tema": "tema1",
+    "temaNombre": "Tema 1: Siderurgia y Aceros",
+    "pregunta": "La colada continua permite obtener productos de desbaste, pero eso no significa que sean necesariamente libres de defectos internos o de segregación.",
+    "respuesta": true,
+    "explicacion": "La colada continua solidifica el acero mientras se extrae de forma sostenida como planchón, bloom o billet, en lugar de formar primero un lingote aislado. Puede aumentar el rendimiento y reducir ciertas operaciones posteriores, pero no garantiza por sí sola una estructura sin defectos. Velocidad de colada, enfriamiento secundario, composición y alimentación influyen en porosidad, grietas y segregación; por tanto, el método de colada no permite inferir automáticamente que los productos estén libres de rechupe o segregación.",
+    "palabrasClave": [
+      "colada continua",
+      "segregación",
+      "rechupes"
+    ],
+    "fuente": "Parcial de 3/11/2021, pregunta 1, p. 2; adaptación conceptual, no literal.",
+    "trampa": "Tomar la colada continua como garantía automática de ausencia de defectos."
+  },
+  {
+    "id": 82,
+    "tema": "tema1",
+    "temaNombre": "Tema 1: Siderurgia y Aceros",
+    "pregunta": "Los aceros HSLA son aceros de baja aleación que pueden combinar resistencia elevada con buena tenacidad; su alta resistencia no exige un contenido muy alto de carbono.",
+    "respuesta": true,
+    "explicacion": "HSLA significa aceros de alta resistencia y baja aleación. Suelen mantener bajo el carbono para conservar soldabilidad y tenacidad, y obtienen resistencia mediante afino de grano, microaleación con Nb, V o Ti, precipitación fina y control termomecánico. La combinación permite aligerar estructuras sin recurrir necesariamente a una matriz completamente martensítica. El desempeño final depende del grado y del procesamiento, así que la sigla no fija por sí sola una resistencia única.",
+    "palabrasClave": [
+      "HSLA",
+      "baja aleación",
+      "tenacidad"
+    ],
+    "fuente": "Parcial de 2/11/2023, pregunta 12, p. 3, y parcial de 3/10/2024, pregunta 9, p. 3; adaptación conceptual, no literal.",
+    "trampa": "Interpretar alta resistencia como sinónimo de alto carbono o alta aleación."
+  },
+  {
+    "id": 83,
+    "tema": "tema1",
+    "temaNombre": "Tema 1: Siderurgia y Aceros",
+    "pregunta": "Un acero inoxidable endurecible por precipitación, como un grado 17-7 PH, puede ofrecer alta resistencia mecánica y resistencia a la corrosión.",
+    "respuesta": true,
+    "explicacion": "Los inoxidables endurecibles por precipitación, incluidos algunos grados como 17-7 PH, combinan resistencia a la corrosión con una resistencia mecánica alta después de un ciclo térmico apropiado. La solución sólida se prepara y, durante el envejecimiento, precipitados finos dificultan el movimiento de dislocaciones. No todos los inoxidables son PH: los austeníticos comunes se endurecen principalmente por deformación en frío, mientras otros grados usan transformación martensítica o mecanismos diferentes. La denominación PH señala ese mecanismo de precipitación y debe asociarse al estado de suministro especificado.",
+    "palabrasClave": [
+      "17-7 PH",
+      "endurecimiento por precipitación",
+      "inoxidable"
+    ],
+    "fuente": "Parcial de 3/10/2024, pregunta 4, p. 2; adaptación conceptual, no literal.",
+    "trampa": "Pensar que todos los inoxidables se endurecen por el mismo mecanismo o que todos alcanzan la misma resistencia."
+  },
+  {
+    "id": 84,
+    "tema": "tema1",
+    "temaNombre": "Tema 1: Siderurgia y Aceros",
+    "pregunta": "Los aceros HSLA deben su resistencia principalmente a un porcentaje de carbono muy alto y a una estructura completamente martensítica.",
+    "respuesta": false,
+    "explicacion": "Los HSLA se diseñan para ofrecer una combinación útil de resistencia, tenacidad y conformabilidad, a menudo con buena soldabilidad por su contenido de carbono moderado. La resistencia a fatiga depende además del acabado, defectos, tensiones residuales, ambiente y espectro de cargas; no se deduce solo de la resistencia estática. En aplicaciones estructurales, el afino de grano y la microaleación permiten elevar propiedades sin hacer que el acero sea necesariamente de alta aleación.",
+    "palabrasClave": [
+      "HSLA",
+      "carbono",
+      "microaleación"
+    ],
+    "fuente": "Parcial de 3/10/2024, pregunta 9, p. 3; adaptación conceptual, no literal.",
+    "trampa": "Extrapolar a HSLA el mecanismo de endurecimiento de un acero templado de alto carbono."
+  },
+  {
+    "id": 85,
+    "tema": "tema1",
+    "temaNombre": "Tema 1: Siderurgia y Aceros",
+    "pregunta": "La fundición blanca contiene el carbono principalmente en forma de grafito esferoidal dentro de una matriz ferrítica.",
+    "respuesta": false,
+    "explicacion": "En la fundición blanca, el carbono queda principalmente combinado en cementita y otros carburos, que producen una fractura clara y gran dureza. No es la fundición con grafito esferoidal: esa morfología corresponde a la nodular. El enfriamiento, la composición y los elementos grafitizantes o formadores de carburos influyen en qué ruta de solidificación domina. La elevada resistencia al desgaste de la fundición blanca se acompaña normalmente de baja ductilidad y mecanizado difícil.",
+    "palabrasClave": [
+      "fundición blanca",
+      "cementita",
+      "grafito"
+    ],
+    "fuente": "Parcial de 3/10/2024, pregunta 13, p. 4; adaptación conceptual, no literal.",
+    "trampa": "Confundir fundición blanca con fundición nodular o gris."
+  },
+  {
+    "id": 86,
+    "tema": "tema1",
+    "temaNombre": "Tema 1: Siderurgia y Aceros",
+    "pregunta": "La adición de magnesio al baño de una fundición puede modificar el grafito y favorecer la formación de nódulos.",
+    "respuesta": true,
+    "explicacion": "La nodulización se realiza tratando el metal líquido, habitualmente con magnesio, antes de la colada. El tratamiento reduce el efecto de elementos tensioactivos como azufre y oxígeno y modifica el crecimiento del grafito, que puede precipitar en partículas aproximadamente esferoidales en vez de láminas. La matriz metálica y el tratamiento posterior también determinan las propiedades. El magnesio residual, la composición y el control del proceso deben ser adecuados para mantener el efecto nodulizante.",
+    "palabrasClave": [
+      "magnesio",
+      "fundición nodular",
+      "grafito"
+    ],
+    "fuente": "Parcial de 3/10/2024, pregunta 11, p. 3; adaptación conceptual, no literal.",
+    "trampa": "Atribuir al magnesio la formación de grafito laminar en la fundición gris."
+  },
+  {
+    "id": 87,
+    "tema": "tema1",
+    "temaNombre": "Tema 1: Siderurgia y Aceros",
+    "pregunta": "La fundición nodular es una elección habitual para cigüeñales, mientras que la fundición laminar se utiliza en bancadas de máquinas.",
+    "respuesta": true,
+    "explicacion": "La fundición nodular se usa en componentes como cigüeñales porque sus nódulos de grafito reducen la concentración de tensiones respecto al grafito laminar y permiten mayor ductilidad y tenacidad. La fundición gris se usa con frecuencia en bancadas por su buen amortiguamiento de vibraciones, colabilidad y maquinabilidad. Son elecciones habituales, no reglas absolutas: geometría, carga, coste, lubricación y requisitos de fatiga pueden cambiar la selección. La aplicación concreta se valida con la carga, la geometría y la especificación del componente.",
+    "palabrasClave": [
+      "fundición nodular",
+      "fundición laminar",
+      "cigüeñales",
+      "bancada"
+    ],
+    "fuente": "Parcial de 3/10/2024, pregunta 12, p. 4; adaptación conceptual, no literal.",
+    "trampa": "Elegir una fundición solo por su nombre sin relacionar microestructura, carga y función."
+  },
+  {
+    "id": 88,
+    "tema": "tema1",
+    "temaNombre": "Tema 1: Siderurgia y Aceros",
+    "pregunta": "Las fundiciones Ni-Hard son fundiciones blancas aleadas cuya matriz puede ser martensítica.",
+    "respuesta": true,
+    "explicacion": "Las fundiciones Ni-Hard son fundiciones blancas de alto contenido de aleantes, normalmente con níquel y cromo, que favorecen una matriz dura, a menudo martensítica, y carburos resistentes al desgaste abrasivo. La combinación ofrece resistencia al desgaste, pero no la ductilidad de una fundición nodular. La composición y el tratamiento térmico determinan la proporción de matriz y carburos; por eso no se debe identificar cualquier fundición aleada con Ni-Hard.",
+    "palabrasClave": [
+      "Ni-Hard",
+      "martensita",
+      "fundición blanca"
+    ],
+    "fuente": "Parcial de 2/11/2023, pregunta 15, p. 3; adaptación conceptual, no literal.",
+    "trampa": "Suponer que toda fundición aleada es grafítica o que Ni-Hard tiene la matriz de una fundición gris."
+  },
+  {
+    "id": 89,
+    "tema": "tema1",
+    "temaNombre": "Tema 1: Siderurgia y Aceros",
+    "pregunta": "En la fabricación del aluminio primario, el proceso Bayer obtiene alúmina de la bauxita y después se obtiene aluminio mediante electrólisis.",
+    "respuesta": true,
+    "explicacion": "La producción primaria separa dos operaciones: Bayer trata la bauxita para obtener alúmina relativamente pura y la ruta Hall-Héroult reduce después esa alúmina por electrólisis. Esta distinción importa porque la alúmina es el compuesto intermedio, no el metal. La electrólisis requiere un baño fundido que permita operar a temperatura menor que la fusión de alúmina pura; el aluminio líquido se recoge en el fondo de la cuba. Las emisiones y el consumo energético dependen de la electricidad y de los materiales de los ánodos.",
+    "palabrasClave": [
+      "Bayer",
+      "bauxita",
+      "alúmina",
+      "electrólisis"
+    ],
+    "fuente": "Parcial de 3/10/2024, preguntas 23 y 25, p. 5, y parcial de 3/11/2021, pregunta 1, p. 2; adaptación conceptual, no literal.",
+    "trampa": "Intercambiar las funciones de Bayer y de la electrólisis."
+  },
+  {
+    "id": 90,
+    "tema": "tema1",
+    "temaNombre": "Tema 1: Siderurgia y Aceros",
+    "pregunta": "El proceso Bayer consiste en electrolizar directamente la bauxita para obtener aluminio metálico.",
+    "respuesta": false,
+    "explicacion": "En Bayer, la bauxita se digiere con una solución cáustica para disolver compuestos de aluminio; tras separar residuos como el lodo rojo, se precipita y calcina alúmina. La alúmina se reduce posteriormente por electrólisis Hall-Héroult en un baño fundido basado en criolita, con ánodos de carbono. Así, Bayer no es la etapa electrolítica ni convierte directamente mineral de bauxita en aluminio metálico. El refinado químico y la reducción electroquímica son operaciones consecutivas, con objetivos diferentes.",
+    "palabrasClave": [
+      "Bayer",
+      "bauxita",
+      "alúmina",
+      "Hall-Héroult"
+    ],
+    "fuente": "Parcial de 3/10/2024, pregunta 23, p. 5; adaptación conceptual, no literal.",
+    "trampa": "Confundir materia prima bauxita, producto intermedio alúmina y metal aluminio."
+  },
+  {
+    "id": 91,
+    "tema": "tema2",
+    "temaNombre": "Tema 2: Tratamientos térmicos de los aceros",
+    "pregunta": "La transformación martensítica comienza al enfriar por debajo de Ms; Mf indica la temperatura aproximada a partir de la cual la transformación se considera prácticamente finalizada.",
+    "respuesta": true,
+    "explicacion": "Ms es la temperatura a la que empieza a formarse martensita al enfriar la austenita; Mf se usa para indicar que la transformación se ha completado prácticamente. No son temperaturas de calentamiento ni de inicio simultáneo. La fracción transformada depende del subenfriamiento alcanzado y, en muchos aceros, no llega al 100 % a temperatura ambiente si Mf queda por debajo de ella; queda entonces austenita retenida. La temperatura medida puede variar con composición, tamaño de grano y velocidad de enfriamiento.",
+    "palabrasClave": [
+      "martensita",
+      "Ms",
+      "Mf"
+    ],
+    "fuente": "Parcial de 2/11/2023, pregunta 3, p. 2; adaptación conceptual, no literal.",
+    "trampa": "Intercambiar las temperaturas de inicio y final de la transformación."
+  },
+  {
+    "id": 92,
+    "tema": "tema2",
+    "temaNombre": "Tema 2: Tratamientos térmicos de los aceros",
+    "pregunta": "Al calentar un acero con martensita o bainita iniciales, la austenización transforma esos constituyentes de no equilibrio; la disolución de los carburos presentes depende de la temperatura y del tiempo.",
+    "respuesta": true,
+    "explicacion": "Al calentar una estructura de no equilibrio, el acero atraviesa cambios antes y durante la austenización: la martensita puede revenirse y los constituyentes se transforman al formarse austenita por encima de las temperaturas críticas. Los carburos presentes pueden disolverse en distinto grado; su disolución exige difusión y depende de tamaño, composición, tiempo y temperatura. Por eso no se puede suponer que todo carburo desaparezca en el instante en que empieza a formarse austenita.",
+    "palabrasClave": [
+      "austenización",
+      "martensita",
+      "carburos"
+    ],
+    "fuente": "Parcial de 2/11/2023, pregunta 4, p. 2; adaptación conceptual, no literal.",
+    "trampa": "Suponer que la martensita se convierte directamente y sin etapas en austenita al comenzar el calentamiento."
+  },
+  {
+    "id": 93,
+    "tema": "tema2",
+    "temaNombre": "Tema 2: Tratamientos térmicos de los aceros",
+    "pregunta": "Todos los recocidos de los aceros son tratamientos subcríticos e isotérmicos.",
+    "respuesta": false,
+    "explicacion": "El término recocido abarca tratamientos con objetivos distintos, no una temperatura o enfriamiento únicos. El recocido de regeneración suele austenizar y enfriar lentamente para obtener una estructura más blanda; alivio de tensiones y recristalización pueden ser subcríticos, y algunos recocidos usan mantenimiento isotérmico. La ruta correcta depende de la microestructura inicial, la composición y el objetivo metalúrgico. La ruta depende también de composición, tamaño de pieza y propiedades requeridas. y aplicación concreta.",
+    "palabrasClave": [
+      "recocido",
+      "temperatura crítica",
+      "enfriamiento"
+    ],
+    "fuente": "Parcial de 2/11/2023, pregunta 5, p. 2; adaptación conceptual, no literal.",
+    "trampa": "Generalizar las condiciones de un tipo de recocido a toda la familia."
+  },
+  {
+    "id": 94,
+    "tema": "tema2",
+    "temaNombre": "Tema 2: Tratamientos térmicos de los aceros",
+    "pregunta": "El recocido de globulización puede producir esferoidita y se utiliza para ablandar ciertos aceros y facilitar su mecanizado.",
+    "respuesta": true,
+    "explicacion": "La globulización transforma láminas de cementita de la perlita en partículas más redondeadas dispersas en ferrita, llamadas esferoidita. Esta morfología reduce la continuidad de interfaces y facilita que la matriz se deforme alrededor de los carburos, disminuyendo dureza y mejorando mecanizabilidad. Se aplica con frecuencia a aceros de alto carbono; el ciclo puede implicar calentamientos próximos a A1 o mantenimiento isotérmico, no necesariamente un único enfriamiento continuo. El tiempo necesario puede ser largo y se ajusta a composición, tamaño de pieza y microestructura inicial.",
+    "palabrasClave": [
+      "globulización",
+      "esferoidita",
+      "mecanizado"
+    ],
+    "fuente": "Parcial de 2/11/2023, pregunta 6, p. 2; adaptación conceptual, no literal.",
+    "trampa": "Creer que el recocido de globulización siempre requiere una única modalidad de enfriamiento."
+  },
+  {
+    "id": 95,
+    "tema": "tema2",
+    "temaNombre": "Tema 2: Tratamientos térmicos de los aceros",
+    "pregunta": "El austempering consiste en transformar isotérmicamente la austenita a bainita y puede reducir distorsiones respecto a un temple convencional, aunque no elimina todos los riesgos de proceso.",
+    "respuesta": true,
+    "explicacion": "En austempering, después de austenizar se enfría rápidamente a una temperatura superior a Ms y se mantiene hasta que la austenita se transforme en bainita. La transformación isotérmica evita que la superficie y el núcleo atraviesen simultáneamente un temple brusco, lo que puede reducir gradientes, tensiones y distorsión. El baño y el tiempo deben elegirse según la curva TTT del acero; no elimina todo riesgo ni produce martensita como estructura buscada.",
+    "palabrasClave": [
+      "austempering",
+      "bainita",
+      "transformación isotérmica"
+    ],
+    "fuente": "Parcial de 2/11/2023, pregunta 8, p. 2; adaptación conceptual, no literal.",
+    "trampa": "Confundir austempering, cuyo producto buscado es bainita, con martempering o con un tratamiento para obtener austenita final."
+  },
+  {
+    "id": 96,
+    "tema": "tema2",
+    "temaNombre": "Tema 2: Tratamientos térmicos de los aceros",
+    "pregunta": "El martempering incluye un mantenimiento por encima de Ms para igualar temperaturas antes de que se complete la transformación martensítica durante el enfriamiento posterior.",
+    "respuesta": true,
+    "explicacion": "El martempering enfría la pieza hasta un baño por encima de Ms y la mantiene el tiempo necesario para igualar la temperatura entre superficie y núcleo, sin completar allí la transformación. Luego se enfría a través del intervalo martensítico; la formación más uniforme de martensita puede reducir tensiones y deformaciones frente a un temple directo. El medio de enfriamiento final y el revenido posterior se seleccionan para el acero y la geometría.",
+    "palabrasClave": [
+      "martempering",
+      "Ms",
+      "distorsión"
+    ],
+    "fuente": "Parcial de 2/11/2023, pregunta 9, p. 2, y parcial de 3/11/2021, pregunta 1, p. 2; adaptación conceptual, no literal.",
+    "trampa": "Confundir el mantenimiento por encima de Ms con la transformación bainítica del austempering."
+  },
+  {
+    "id": 97,
+    "tema": "tema2",
+    "temaNombre": "Tema 2: Tratamientos térmicos de los aceros",
+    "pregunta": "Para un mismo acero y condiciones de austenización, un grano austenítico más grueso suele aumentar la templabilidad al reducir los sitios de nucleación de transformaciones difusivas en los límites de grano.",
+    "respuesta": true,
+    "explicacion": "Los límites de grano austeníticos son sitios favorables para nuclear ferrita y perlita. Al crecer el grano previo, disminuye el área de límite por unidad de volumen y esas transformaciones difusivas suelen retrasarse; la curva de transformación puede desplazarse y aumenta la templabilidad. Sin embargo, el grano grueso suele perjudicar tenacidad y resistencia al impacto, así que no es una mejora global de propiedades. Por eso se controla el tamaño de grano, aunque un ciclo de austenización excesivo puede hacerlo crecer.",
+    "palabrasClave": [
+      "tamaño de grano",
+      "templabilidad",
+      "nucleación"
+    ],
+    "fuente": "Parcial de 31/10/2022, pregunta 7, p. 2; adaptación conceptual, no literal.",
+    "trampa": "Confundir templabilidad con tenacidad: un factor que aumenta la primera puede perjudicar la segunda."
+  },
+  {
+    "id": 98,
+    "tema": "tema2",
+    "temaNombre": "Tema 2: Tratamientos térmicos de los aceros",
+    "pregunta": "En el ensayo Jominy normalizado, la probeta se templa por un extremo mediante un chorro de agua controlado, no se sumerge por completo en agua.",
+    "respuesta": true,
+    "explicacion": "Jominy compara la respuesta de distintos puntos de una probeta sometida a un gradiente de enfriamiento reproducible. Tras austenizar, un chorro de agua normalizado enfría solo una cara; al alejarse de ella disminuye la velocidad de enfriamiento. Se mide dureza a distancias definidas para construir la curva Jominy y estimar la templabilidad, no para medir directamente la dureza uniforme de una pieza industrial. Los resultados se interpretan comparando posiciones equivalentes y manteniendo constantes las condiciones del ensayo.",
+    "palabrasClave": [
+      "Jominy",
+      "templabilidad",
+      "chorro de agua"
+    ],
+    "fuente": "Parcial de 3/11/2021, pregunta 1, p. 2; adaptación conceptual, no literal.",
+    "trampa": "Confundir Jominy con una probeta enfriada uniformemente por inmersión."
+  },
+  {
+    "id": 99,
+    "tema": "tema2",
+    "temaNombre": "Tema 2: Tratamientos térmicos de los aceros",
+    "pregunta": "En un mismo acero, la bainita formada a menor temperatura suele ser más fina y dura que la bainita formada a temperatura más alta.",
+    "respuesta": true,
+    "explicacion": "En un mismo acero, la bainita inferior se forma a temperatura menor que la superior y suele presentar láminas de ferrita más finas y carburos más pequeños, por lo que normalmente alcanza mayor dureza. La dureza y las demás propiedades dependen también de composición, tamaño de grano austenítico, fracción transformada y ciclo. No debe extrapolarse la comparación de dureza a una jerarquía universal de tenacidad. Esta comparación orienta la selección, pero no sustituye los datos de dureza y tenacidad del grado concreto.",
+    "palabrasClave": [
+      "bainita superior",
+      "bainita inferior",
+      "dureza"
+    ],
+    "fuente": "Parcial de 31/10/2022, pregunta 6, p. 2, y parcial de 3/11/2021, pregunta 1, p. 2; adaptación conceptual, no literal.",
+    "trampa": "Invertir los intervalos de formación de bainita superior e inferior o comparar aceros distintos como si fueran iguales."
+  },
+  {
+    "id": 100,
+    "tema": "tema2",
+    "temaNombre": "Tema 2: Tratamientos térmicos de los aceros",
+    "pregunta": "La velocidad crítica de temple es independiente de las condiciones de austenización.",
+    "respuesta": false,
+    "explicacion": "La velocidad crítica de temple depende de la cinética de transformación de la austenita. Aleantes como Mn, Cr, Mo y B, el tamaño de grano austenítico y las condiciones de austenización pueden retrasar o adelantar las transformaciones difusivas. Si cambia la composición o el estado de la austenita, cambia la velocidad mínima de enfriamiento necesaria para evitar perlita o bainita y obtener martensita. Los diagramas de transformación muestran cómo cambian esos tiempos con la temperatura para cada composición.",
+    "palabrasClave": [
+      "velocidad crítica",
+      "austenización",
+      "temple"
+    ],
+    "fuente": "Parcial de 31/10/2022, pregunta 7, p. 2; adaptación conceptual, no literal.",
+    "trampa": "Considerar la velocidad crítica como una constante fija que depende solo del nombre del acero."
+  },
+  {
+    "id": 101,
+    "tema": "tema2",
+    "temaNombre": "Tema 2: Tratamientos térmicos de los aceros",
+    "pregunta": "El diámetro crítico ideal es el diámetro máximo de una barra templada con severidad ideal para el que el centro alcanza aproximadamente un 50 % de martensita.",
+    "respuesta": true,
+    "explicacion": "El diámetro crítico ideal es una medida de templabilidad definida para severidad ideal de temple, H tendiendo a infinito: corresponde al diámetro máximo cuya superficie alcanza martensita y cuyo centro conserva aproximadamente 50 % de martensita. El diámetro crítico real se calcula para un medio y una agitación concretos, por lo que cambia con la severidad. No confundas ambos diámetros al convertir una curva Jominy en tamaño de pieza. Se trata de una definición de referencia, no de una recomendación directa de diámetro para fabricar una pieza.",
+    "palabrasClave": [
+      "diámetro crítico",
+      "Grossmann",
+      "severidad de temple"
+    ],
+    "fuente": "Parcial de 3/10/2024, pregunta 5, p. 2; adaptación conceptual, no literal.",
+    "trampa": "Confundir el diámetro crítico real con el ideal o suponer que ambos son independientes del medio."
+  },
+  {
+    "id": 102,
+    "tema": "tema2",
+    "temaNombre": "Tema 2: Tratamientos térmicos de los aceros",
+    "pregunta": "Un revenido a temperatura intermedia siempre reduce la dureza de cualquier acero, con independencia de sus elementos de aleación.",
+    "respuesta": false,
+    "explicacion": "El revenido suele reducir la dureza de aceros al carbono, pero algunos aceros muy aleados presentan endurecimiento secundario a temperaturas elevadas. Durante el tratamiento precipitan carburos finos de elementos como Cr, Mo, W o V, que obstaculizan dislocaciones y pueden producir un máximo de dureza. El resultado depende de composición, temperatura, tiempo y ciclos previos; no se puede afirmar que toda dureza siempre disminuya. Los máximos de dureza secundaria pueden acompañarse de cambios en tenacidad y resistencia al desgaste.",
+    "palabrasClave": [
+      "revenido",
+      "endurecimiento secundario",
+      "carburos"
+    ],
+    "fuente": "Parcial de 3/10/2024, pregunta 1, p. 2; adaptación conceptual, no literal.",
+    "trampa": "Aplicar la tendencia habitual de los aceros al carbono a todos los aceros aleados."
+  },
+  {
+    "id": 103,
+    "tema": "tema2",
+    "temaNombre": "Tema 2: Tratamientos térmicos de los aceros",
+    "pregunta": "Un acero para herramientas de corte rápido alcanza dureza elevada, en parte, por los carburos presentes en su microestructura.",
+    "respuesta": true,
+    "explicacion": "Los diagramas TTT describen transformación tras llevar la austenita rápidamente a una temperatura fija; los CCT describen enfriamiento continuo. Como la muestra no permanece en cada temperatura durante CCT, cambian las incubaciones, temperaturas y productos observados. La diferencia depende del acero y de las condiciones de austenización, así que no debe trasladarse una curva TTT a un ciclo continuo sin consultar el CCT correspondiente. Un ciclo real se compara con el diagrama adecuado para evitar predecir fases a partir de un protocolo distinto.",
+    "palabrasClave": [
+      "acero rápido",
+      "carburos",
+      "herramientas"
+    ],
+    "fuente": "Parcial de 3/11/2021, pregunta 1, p. 2, y parcial de 2/11/2023, pregunta 10, p. 2; adaptación conceptual, no literal.",
+    "trampa": "Suponer que todos los aceros para herramientas tienen más de 1 % C o que solo endurece la matriz."
+  },
+  {
+    "id": 104,
+    "tema": "tema2",
+    "temaNombre": "Tema 2: Tratamientos térmicos de los aceros",
+    "pregunta": "Aumentar la severidad del temple puede permitir más dureza en el núcleo de una pieza, pero también eleva el riesgo de tensiones y grietas, especialmente con cambios de sección.",
+    "respuesta": true,
+    "explicacion": "Un enfriamiento más severo aumenta la extracción de calor y puede hacer que el núcleo de una sección alcance dureza objetivo, pero amplía gradientes térmicos y puede agravar tensiones de transformación. Cambios bruscos de sección concentran esas tensiones y elevan la probabilidad de deformación o grietas. La elección del medio debe considerar templabilidad, diámetro, geometría y margen de seguridad, no solo la dureza calculada en el núcleo. También influyen la temperatura del baño, la agitación y el tamaño de la sección.",
+    "palabrasClave": [
+      "severidad de temple",
+      "núcleo",
+      "grietas",
+      "Jominy"
+    ],
+    "fuente": "Parcial de 2/11/2023, problema de ejes, pp. 5-9; adaptación conceptual, no literal.",
+    "trampa": "Tratar un medio de temple más severo como una mejora sin coste ni riesgo."
+  },
+  {
+    "id": 105,
+    "tema": "tema2",
+    "temaNombre": "Tema 2: Tratamientos térmicos de los aceros",
+    "pregunta": "La templabilidad y la dureza máxima de martensita son sinónimos y aumentan siempre en la misma proporción al añadir aleantes.",
+    "respuesta": false,
+    "explicacion": "La templabilidad indica cuán profundamente una pieza puede desarrollar martensita bajo determinadas condiciones de temple; no es la dureza máxima de la martensita. Esta última depende principalmente del carbono disuelto, mientras que aleantes y tamaño de grano alteran la cinética y profundidad de transformación. Un acero puede tener alta templabilidad y una dureza martensítica modesta si su contenido de carbono es bajo. La curva Jominy describe penetración de temple; una medición local de dureza describe la respuesta obtenida.",
+    "palabrasClave": [
+      "templabilidad",
+      "dureza",
+      "martensita"
+    ],
+    "fuente": "Parcial de 3/10/2024, pregunta 5, p. 2, y parcial de 31/10/2022, pregunta 7, p. 2; adaptación conceptual, no literal.",
+    "trampa": "Confundir la profundidad del endurecimiento con la dureza intrínseca de la martensita."
+  },
+  {
+    "id": 106,
+    "tema": "tema3",
+    "temaNombre": "Tema 3: Aluminio y Solidificación",
+    "pregunta": "El tratamiento de solubilización, temple y maduración solo se puede aplicar a las aleaciones de aluminio.",
+    "respuesta": false,
+    "explicacion": "Solubilización, temple y envejecimiento es una ruta de endurecimiento por precipitación utilizada en varias familias de aleaciones, no una técnica exclusiva del aluminio. En aluminio se aplica solo a composiciones cuya solubilidad sólida cambia suficientemente con la temperatura. También existen aceros y aleaciones de cobre o níquel que endurecen por precipitación, con ciclos y fases distintos; por eso no se deben trasladar temperaturas ni secuencias de una familia a otra.",
+    "palabrasClave": [
+      "solubilización",
+      "maduración",
+      "precipitación"
+    ],
+    "fuente": "Parcial de 31/10/2022, pregunta 1, p. 2; adaptación conceptual, no literal.",
+    "trampa": "Confundir un tratamiento conocido en aluminio con un tratamiento exclusivo de ese metal."
+  },
+  {
+    "id": 107,
+    "tema": "tema3",
+    "temaNombre": "Tema 3: Aluminio y Solidificación",
+    "pregunta": "El aluminio puro tiene una resistividad eléctrica mayor que la del cobre puro a temperatura ambiente.",
+    "respuesta": true,
+    "explicacion": "La resistividad eléctrica del aluminio puro a temperatura ambiente es mayor que la del cobre puro, aunque su densidad mucho menor permite conductores ligeros de gran sección. La conductividad depende de pureza, aleación, temperatura y estado metalúrgico. Por eso la comparación de una pieza real no se hace solo con una tabla de metales puros: hay que considerar sección, masa, calentamiento admisible y resistencia mecánica. En aplicaciones eléctricas se compensa la diferencia de resistividad con conductores de mayor sección.",
+    "palabrasClave": [
+      "aluminio",
+      "cobre",
+      "resistividad eléctrica",
+      "conductividad"
+    ],
+    "fuente": "Parcial de 3/10/2024, pregunta 14, p. 4; adaptación conceptual, no literal.",
+    "trampa": "Confundir menor densidad del aluminio con menor resistividad o mayor conductividad que el cobre."
+  },
+  {
+    "id": 108,
+    "tema": "tema3",
+    "temaNombre": "Tema 3: Aluminio y Solidificación",
+    "pregunta": "En una aleación de aluminio endurecible por precipitación, el temple tras solubilizar puede retener una solución sólida sobresaturada para el envejecimiento posterior.",
+    "respuesta": true,
+    "explicacion": "Al calentar una aleación tratable a la temperatura de solubilización, una parte del soluto se disuelve en la matriz de aluminio. El temple rápido limita la precipitación durante el enfriamiento y retiene una solución sólida sobresaturada; el envejecimiento posterior permite formar precipitados finos que frenan dislocaciones. Este temple no busca la transformación martensítica típica de los aceros, y su eficacia depende de la composición y del control de tiempo y temperatura.",
+    "palabrasClave": [
+      "solubilización",
+      "temple",
+      "solución sobresaturada"
+    ],
+    "fuente": "Parcial de 3/10/2024, pregunta 15, p. 4; adaptación conceptual, no literal.",
+    "trampa": "Pensar que el temple de aluminio busca formar martensita como en un acero."
+  },
+  {
+    "id": 109,
+    "tema": "tema3",
+    "temaNombre": "Tema 3: Aluminio y Solidificación",
+    "pregunta": "Las aleaciones Al-Cu de la serie 2xxx pueden endurecerse por precipitación mediante solubilización, temple y maduración.",
+    "respuesta": true,
+    "explicacion": "Las aleaciones Al-Cu de la serie 2xxx responden al endurecimiento por precipitación. Se solubilizan para disolver fases, se templan para retener soluto y luego se envejecen para formar una secuencia de agrupaciones y precipitados que dificultan el movimiento de dislocaciones. El contenido óptimo de cobre y el estado de máxima resistencia dependen del diagrama, la composición total y el ciclo; un porcentaje único no sirve para todas las aleaciones 2xxx.",
+    "palabrasClave": [
+      "Al-Cu",
+      "serie 2xxx",
+      "maduración"
+    ],
+    "fuente": "Parcial de 31/10/2022, pregunta 1, p. 2, y parcial de 2/11/2023, pregunta 2, pp. 3-4; adaptación conceptual, no literal.",
+    "trampa": "Confundir el temple de la aleación de aluminio con el temple martensítico de un acero."
+  },
+  {
+    "id": 110,
+    "tema": "tema3",
+    "temaNombre": "Tema 3: Aluminio y Solidificación",
+    "pregunta": "La densidad menor del aluminio implica necesariamente una resistencia específica mayor que la de los aceros estructurales.",
+    "respuesta": false,
+    "explicacion": "La densidad baja del aluminio es una ventaja para reducir masa, pero no demuestra por sí sola una resistencia específica mayor que la de los aceros. La resistencia específica se calcula como resistencia mecánica dividida por densidad y varía mucho entre grados y tratamientos; algunos aluminios y aceros estructurales pueden tener valores del mismo orden. Para elegir hay que comparar el grado, la condición, la carga y el modo de fallo.",
+    "palabrasClave": [
+      "resistencia específica",
+      "densidad",
+      "aluminio",
+      "acero"
+    ],
+    "fuente": "Parcial de 2/11/2023, pregunta 17, p. 3; adaptación conceptual, no literal.",
+    "trampa": "Confundir resistencia específica con resistencia absoluta o deducirla solo de la densidad."
+  },
+  {
+    "id": 111,
+    "tema": "tema3",
+    "temaNombre": "Tema 3: Aluminio y Solidificación",
+    "pregunta": "Para refinar el tamaño de grano de una aleación Al-Si de moldeo, se pueden añadir inoculantes que favorecen la nucleación de nuevos granos.",
+    "respuesta": true,
+    "explicacion": "Los inoculantes aportan partículas que sirven de sustrato para nucleación heterogénea y elevan el número de granos que pueden iniciarse durante la solidificación. En aleaciones de aluminio se usan, entre otros, refinadores Al-Ti-B. Su eficacia depende de distribución, tamaño y estado de las partículas, así como del tiempo tras la adición; inocular es distinto de limitarse a cambiar el molde o enfriar lentamente. La inoculación pierde eficacia si las partículas se aglomeran, sedimentan o permanecen demasiado tiempo en el baño.",
+    "palabrasClave": [
+      "Al-Si",
+      "inoculantes",
+      "afino de grano"
+    ],
+    "fuente": "Parcial de 2/11/2023, pregunta 18, p. 3; adaptación conceptual, no literal.",
+    "trampa": "Creer que el grano se afina suprimiendo la nucleación o utilizando necesariamente un molde de arena."
+  },
+  {
+    "id": 112,
+    "tema": "tema3",
+    "temaNombre": "Tema 3: Aluminio y Solidificación",
+    "pregunta": "La ruta Hall-Héroult emplea un baño fundido basado en criolita para disolver alúmina durante la electrólisis de producción del aluminio.",
+    "respuesta": true,
+    "explicacion": "En Hall-Héroult, la alúmina se disuelve en un baño fundido basado en criolita; esto permite operar a una temperatura inferior a la fusión de alúmina pura. La corriente reduce los iones de aluminio en el cátodo y el oxígeno consume los ánodos de carbono, formando gases con carbono. La bauxita no se electroliza directamente: primero se refina para obtener alúmina mediante Bayer. Además de la composición, el baño reduce la temperatura de operación y mejora la eficiencia del proceso.",
+    "palabrasClave": [
+      "Hall-Héroult",
+      "criolita",
+      "alúmina",
+      "electrólisis"
+    ],
+    "fuente": "Parcial de 3/10/2024, pregunta 25, p. 5; adaptación conceptual, no literal.",
+    "trampa": "Confundir la criolita usada en Hall-Héroult con el reactivo cáustico del proceso Bayer."
+  },
+  {
+    "id": 113,
+    "tema": "tema3",
+    "temaNombre": "Tema 3: Aluminio y Solidificación",
+    "pregunta": "Las aleaciones próximas al eutéctico Al-Si suelen presentar buena colabilidad por su comportamiento de solidificación y su intervalo de solidificación reducido.",
+    "respuesta": true,
+    "explicacion": "La composición eutéctica Al-Si solidifica a una temperatura definida con poca separación entre el inicio y el fin de solidificación comparada con muchas composiciones fuera del eutéctico. Ese intervalo pastoso estrecho suele favorecer el llenado de secciones delgadas y la colabilidad. No garantiza ausencia de porosidad ni determina por sí sola contracción: molde, sobrecalentamiento, diseño de canales y alimentación siguen siendo importantes. La modificación del silicio eutéctico y el afino de grano son tratamientos diferentes y no deben confundirse.",
+    "palabrasClave": [
+      "Al-Si",
+      "eutéctico",
+      "colabilidad"
+    ],
+    "fuente": "Parcial de 3/11/2021, pregunta 4, p. 5, y parcial de 3/10/2024, pregunta 19, p. 4; adaptación conceptual, no literal.",
+    "trampa": "Atribuir la colabilidad solo al nombre de la aleación o suponer que la composición eutéctica resuelve todos los defectos."
+  },
+  {
+    "id": 114,
+    "tema": "tema3",
+    "temaNombre": "Tema 3: Aluminio y Solidificación",
+    "pregunta": "Una solidificación en piel cerrada es más probable en condiciones que favorecen una capa sólida continua, como ciertos moldes metálicos y composiciones eutécticas.",
+    "respuesta": true,
+    "explicacion": "La solidificación en piel cerrada describe una capa sólida continua que se forma en la pared del molde mientras el interior sigue líquido. Puede favorecer que el metal avance como frente compacto en ciertas condiciones, entre ellas determinadas composiciones eutécticas o moldes metálicos. La aparición de ese régimen depende de transferencia de calor, composición y velocidad de llenado; no es una consecuencia automática de usar metal como molde. El régimen de frente afecta el llenado, pero no elimina la necesidad de diseñar la alimentación.",
+    "palabrasClave": [
+      "piel cerrada",
+      "molde metálico",
+      "eutéctico"
+    ],
+    "fuente": "Parcial de 31/10/2022, pregunta 13, p. 3; adaptación conceptual, no literal.",
+    "trampa": "Tomar piel cerrada como sinónimo de cualquier solidificación rápida o asumir que el molde por sí solo determina el resultado."
+  },
+  {
+    "id": 115,
+    "tema": "tema3",
+    "temaNombre": "Tema 3: Aluminio y Solidificación",
+    "pregunta": "Las mazarotas se diseñan para aportar metal líquido durante la contracción de solidificación y reducir la formación de cavidades de rechupe.",
+    "respuesta": true,
+    "explicacion": "Una mazarota es una reserva conectada de metal líquido que compensa la contracción de solidificación. Se diseña para solidificar después de la región de la pieza que alimenta, de modo que el paso líquido permanezca abierto durante el tiempo necesario. Una mazarota mal dimensionada o aislada térmicamente de forma inadecuada puede no prevenir rechupe; su efecto se analiza junto con módulos térmicos, enfriadores y secuencia de solidificación. El metal debe permanecer líquido y conectado con la zona que aún se contrae.",
+    "palabrasClave": [
+      "mazarota",
+      "rechupe",
+      "alimentación"
+    ],
+    "fuente": "Parcial de 2/11/2023, pregunta 16, p. 3; adaptación conceptual, no literal.",
+    "trampa": "Confundir rechupe por contracción con porosidad gaseosa o con segregación química."
+  },
+  {
+    "id": 116,
+    "tema": "tema3",
+    "temaNombre": "Tema 3: Aluminio y Solidificación",
+    "pregunta": "Un molde metálico suele extraer calor más deprisa que uno de arena y, bajo condiciones comparables, puede refinar la estructura de solidificación.",
+    "respuesta": true,
+    "explicacion": "Un molde metálico suele extraer calor más deprisa que uno de arena, lo que puede aumentar la velocidad de enfriamiento y reducir el tamaño de grano o el espaciado dendrítico en condiciones comparables. El resultado no es automático: también se necesita nucleación suficiente y un diseño que evite gradientes y defectos. Los inoculantes y la extracción de calor actúan por mecanismos relacionados pero distintos. Para atribuir el cambio al molde, hay que comparar piezas de igual aleación, forma y condiciones de colada.",
+    "palabrasClave": [
+      "molde metálico",
+      "molde de arena",
+      "velocidad de enfriamiento",
+      "afino de grano"
+    ],
+    "fuente": "Parcial de 31/10/2022, pregunta 13, p. 3, y parcial de 2/11/2023, pregunta 18, p. 3; adaptación conceptual, no literal.",
+    "trampa": "Confundir la extracción rápida de calor con inoculación; ambos pueden afinar el grano por mecanismos diferentes."
+  },
+  {
+    "id": 117,
+    "tema": "tema3",
+    "temaNombre": "Tema 3: Aluminio y Solidificación",
+    "pregunta": "Los poros gaseosos de una pieza moldeada suelen originarse por gas atrapado o disuelto, y no son siempre superficiales.",
+    "respuesta": true,
+    "explicacion": "La porosidad gaseosa aparece cuando gas disuelto o atrapado no logra escapar antes de que el metal solidifique; puede quedar dentro de la pieza y suele tener contornos más redondeados que una cavidad de rechupe. La forma no es un criterio infalible y puede coexistir más de un defecto. Reducir turbulencia, controlar humedad y desgasificar el baño son medidas distintas de mejorar la alimentación con una mazarota. Radiografía o tomografía pueden complementar la inspección cuando la integridad interna es crítica.",
+    "palabrasClave": [
+      "porosidad",
+      "gas atrapado",
+      "moldeo"
+    ],
+    "fuente": "Parcial de 2/11/2023, pregunta 20, p. 3; adaptación conceptual, no literal.",
+    "trampa": "Confundir la forma y ubicación de poros gaseosos con cavidades de rechupe."
+  },
+  {
+    "id": 118,
+    "tema": "tema3",
+    "temaNombre": "Tema 3: Aluminio y Solidificación",
+    "pregunta": "El moldeo permite fabricar piezas con geometrías que pueden resultar difíciles o imposibles de obtener mediante procesos basados solo en deformación plástica.",
+    "respuesta": true,
+    "explicacion": "El moldeo resulta útil cuando la forma final incluye cavidades internas, secciones complejas o geometrías difíciles de obtener por deformación plástica. Esto no significa que cualquier pieza, aleación o tamaño sea viable en cualquier proceso de fundición. Ángulos de salida, espesor, contracción, alimentación, acabado y volumen de producción condicionan el diseño del molde y la ruta elegida. En fundición a presión también hay límites de espesor, porosidad, tamaño de máquina y coste de utillaje.",
+    "palabrasClave": [
+      "moldeo",
+      "geometría",
+      "conformado"
+    ],
+    "fuente": "Parcial de 3/10/2024, pregunta 10, p. 3, y parcial de 2/11/2023, pregunta 19, p. 3; adaptación conceptual, no literal.",
+    "trampa": "Interpretar la versatilidad del moldeo como capacidad ilimitada para cualquier tamaño o tolerancia."
+  },
+  {
+    "id": 119,
+    "tema": "tema3",
+    "temaNombre": "Tema 3: Aluminio y Solidificación",
+    "pregunta": "Un intervalo de solidificación pequeño puede favorecer la colabilidad respecto a una aleación que permanece mucho tiempo en estado pastoso.",
+    "respuesta": true,
+    "explicacion": "Un intervalo de solidificación reducido puede facilitar el llenado porque la aleación pasa menos tiempo en una región pastosa donde coexisten sólido y líquido. La colabilidad depende también de fluidez, sobrecalentamiento, conducción térmica del molde, velocidad de llenado y geometría. Por eso el intervalo de solidificación es un criterio útil de selección, pero no basta para afirmar que una aleación o proceso producirá una pieza sin defectos. La medición debe considerar el diagrama de fase y la velocidad real de enfriamiento.",
+    "palabrasClave": [
+      "intervalo de solidificación",
+      "colabilidad",
+      "moldeo"
+    ],
+    "fuente": "Parcial de 3/10/2024, pregunta 19, p. 4; adaptación conceptual, no literal.",
+    "trampa": "Suponer que basta comparar el intervalo de solidificación sin considerar el proceso y el molde."
+  },
+  {
+    "id": 120,
+    "tema": "tema3",
+    "temaNombre": "Tema 3: Aluminio y Solidificación",
+    "pregunta": "La fundición a presión con molde metálico puede ser adecuada para obtener piezas de aluminio complejas, con ciclos rápidos y buen acabado superficial.",
+    "respuesta": true,
+    "explicacion": "La fundición a presión inyecta metal líquido en una coquilla metálica a alta velocidad y presión, por lo que ofrece ciclos rápidos, repetibilidad y buen acabado en geometrías complejas. Es habitual para aleaciones de aluminio, zinc y magnesio compatibles con el proceso. La porosidad gaseosa atrapada puede limitar soldadura o tratamientos térmicos posteriores; tamaño, espesor, aleación y volumen de producción determinan si es una elección adecuada. El proceso es especialmente competitivo en producción repetitiva de gran volumen, no necesariamente en series cortas.",
+    "palabrasClave": [
+      "fundición a presión",
+      "molde metálico",
+      "aluminio"
+    ],
+    "fuente": "Parcial de 3/10/2024, pregunta 17, p. 4; adaptación conceptual, no literal.",
+    "trampa": "Creer que el proceso es apropiado para cualquier aleación, tamaño o tratamiento posterior."
+  }
+]

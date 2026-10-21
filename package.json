@@ -1,0 +1,19 @@
+{
+  "name": "ajudatsm",
+  "version": "1.0.0",
+  "description": "Playwright browser checks for the AjudaTSM study app",
+  "private": true,
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:report": "playwright show-report"
+  },
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.64.1",
+    "axe-core": "^4.14.0"
+  }
+}
