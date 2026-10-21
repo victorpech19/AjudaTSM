@@ -14,7 +14,7 @@ Aplicación pública: [AjudaTSM](https://victorpech19.github.io/AjudaTSM/).
 - 165 identificadores únicos: 120 afirmaciones V/F y 45 preguntas de test con cuatro alternativas.
 - Las 45 preguntas de test identifican fecha, pregunta y página del parcial fuente; sus claves se contrastaron con las marcas de solución disponibles.
 - Explicación y trampa conceptual en las 165 entradas; las preguntas de test añaden cuatro explicaciones individuales.
-- JSON válido, respuestas booleanas y sin caracteres de sustitución procedentes de la codificación.
+- JSON válido; respuestas booleanas para V/F e índices entre 0 y 3 para el test, sin caracteres de sustitución procedentes de la codificación.
 - Originales docentes y exámenes conservados fuera del repositorio público.
 
 ## Temario corregido
