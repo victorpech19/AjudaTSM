@@ -194,6 +194,7 @@ test('layout has no horizontal overflow at requested viewport sizes and landscap
     await page.evaluate(() => localStorage.setItem('ajudatsm-theme', 'dark'));
     await page.reload();
     await expect(page.locator('#card-index-badge')).toBeVisible();
+    await expect(page.locator('#statement-text')).not.toContainText('Carregant');
     const metrics = await page.evaluate(() => ({ viewport: innerWidth, document: document.documentElement.scrollWidth, body: document.body.scrollWidth }));
     expect(metrics.document, `horizontal overflow at ${width}px: ${JSON.stringify(metrics)}`).toBeLessThanOrEqual(width);
     expect(metrics.body, `body overflow at ${width}px: ${JSON.stringify(metrics)}`).toBeLessThanOrEqual(width);
