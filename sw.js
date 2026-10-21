@@ -1,5 +1,5 @@
 'use strict';
-const CACHE = 'ajudatsm-v1';
+const CACHE = 'ajudatsm-v2-multiple';
 const SHELL = ['./', './index.html', './style.css', './app.js', './preguntas.json',
   './pwa.js', './icon.svg', './icon-192.png', './icon-512.png', './manifest.webmanifest'];
 self.addEventListener('install', event => {

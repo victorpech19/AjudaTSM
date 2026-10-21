@@ -13,6 +13,12 @@ La respuesta y la explicación de cada adaptación son una síntesis didáctica 
 - UPC, *Tecnología y Selección de Materiales*, examen parcial del 2 de noviembre de 2023. [UPCommons, handle 2117/401218](https://hdl.handle.net/2117/401218). Conceptos adaptados de las preguntas sobre alto horno, metalurgia secundaria, tratamientos térmicos, fundiciones, aluminio, moldeo y porosidad.
 - UPC, *Tecnología y Selección de Materiales*, examen parcial del 3 de octubre de 2024. [UPCommons, handle 2117/420558](https://hdl.handle.net/2117/420558). Conceptos adaptados de las preguntas sobre revenido, templabilidad, inoxidables, HSLA, fundiciones, aluminio, colabilidad, siderurgia y diagramas CCT.
 
+## Banco de opción múltiple
+
+El banco único `preguntas.json` contiene las 120 afirmaciones V/F y 45 preguntas nuevas de opción múltiple adaptadas de preguntas tipo test de los parciales de 2022, 2023 y 2024 citados arriba. La distribución del test es 30 de aceros y tratamientos térmicos, 8 de aluminio y 7 de moldeo y solidificación. La pregunta sobre la ruta siderúrgica y la colada continua se incluye en el tema de aceros. Cada campo `fuente` identifica fecha, número y página del examen. Se conserva el orden de las opciones cuando se mantiene la estructura original; se han condensado o reformulado frases para estudio.
+
+Las respuestas contrastadas con la cuadrícula de soluciones o las marcas de corrección del documento fuente se identifican en `baseRespuesta`. La explicación didáctica añade el razonamiento metalúrgico y las condiciones de validez; no sustituye ni amplía una clave oficial. Las preguntas adaptadas para eliminar dependencia de una figura, acotar una afirmación demasiado absoluta o reparar una opción científicamente dudosa se señalan expresamente en `fuente` y `baseRespuesta`. En las preguntas que piden la afirmación falsa o incorrecta, las explicaciones de las opciones verdaderas indican que son ciertas pero no responden a la negación del enunciado.
+
 ## Material docente contrastado
 
 Documentos del material docente de *Tecnologia i Selecció de Materials* consultados para contrastar definiciones y mecanismos:
@@ -24,10 +30,22 @@ Documentos del material docente de *Tecnologia i Selecció de Materials* consult
 - *TSM Tema 2: Fundiciones de Fe*.
 - *Aleaciones de aluminio*.
 - *TSM Tema 3: Fundición y solidificación*.
+- *Presentació i normatives TSM 2026-2027*, p. 3: orden de los temas de la primera parte.
+
+## Organización de los temas
+
+La clasificación sigue la presentación docente de 2026-2027, p. 3:
+
+- Tema 1: aceros y fundiciones; extracción, estructura, tratamientos térmicos y clasificación.
+- Tema 2: aleaciones ligeras; aluminio, sus aleaciones y endurecimiento por precipitación.
+- Tema 3: conformado de metales por fundición; moldeo y solidificación de metales y aleaciones.
+
+La antigua numeración de la aplicación se ha corregido en ambos formatos conservando los identificadores. Los tratamientos térmicos del acero pertenecen al tema 1; el envejecimiento del aluminio, al tema 2. Composición y modificación de aleaciones Al-Si se incluyen en aluminio, como en *Aleaciones de aluminio*, pp. 44–45; nucleación, alimentación, moldes y defectos de solidificación se incluyen en el tema 3.
 
 ## Alcance y límites
 
-- Se añadieron 45 preguntas nuevas, 15 por tema; el banco queda en 120 entradas y conserva los IDs 1–75.
+- El banco completo tiene 165 entradas: 120 V/F y 45 de opción múltiple. Se conservan los IDs de las 120 afirmaciones anteriores.
 - Se corrigieron explicaciones antiguas con generalizaciones sobre cromo mínimo en inoxidables, inicio de ferrita proeutectoide, sensibilización, aceros ferríticos, dureza de martensita, diagramas CCT/TTT, microsegregación y macrosegregación, y dimensionamiento de mazarotas.
 - Los valores que dependen de composición, tratamiento, geometría o medio se expresan como tendencias o se condicionan explícitamente.
+- Ambos formatos se distribuyen en el mismo JSON; no se han copiado los PDF ni sus figuras al repositorio.
 - No se distribuyen copias de los exámenes ni extractos extensos de sus enunciados.

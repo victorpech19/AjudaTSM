@@ -2,7 +2,7 @@
   "id": "./",
   "name": "AjudaTSM — Parcial T1–T3",
   "short_name": "AjudaTSM",
-  "description": "Practica TSM amb afirmacions vertader/fals i explicacions metal·lúrgiques.",
+  "description": "Practica TSM amb V/F, preguntes de test i explicacions de cada opció.",
   "lang": "ca",
   "start_url": "./",
   "scope": "./",

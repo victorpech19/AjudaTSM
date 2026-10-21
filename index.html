@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AjudaTSM — Tecnologia i Selecció de Materials (ETSEIB UPC)</title>
-  <meta name="description" content="Eina interactiva d'estudi de preguntes vertader/fals amb explicacions metal·lúrgiques detallades per a l'assignatura Tecnologia i Selecció de Materials (TSM) - ETSEIB UPC.">
+  <meta name="description" content="Practica el parcial de Tecnologia i Selecció de Materials amb preguntes vertader/fals i d'opció múltiple, explicacions metal·lúrgiques i repàs d'errades. ETSEIB UPC.">
   <meta name="theme-color" content="#0f172a">
 
   <link rel="icon" href="icon.svg" type="image/svg+xml">
@@ -51,19 +51,27 @@
             </button>
             <button class="filter-pill" data-topic="tema1" role="tab" aria-selected="false">
               <span class="pill-dot"></span>
-              Tema 1: Siderúrgia i Acers <span class="pill-count" id="count-tema1">0</span>
+              Tema 1: Acers, fundicions i tractaments tèrmics <span class="pill-count" id="count-tema1">0</span>
             </button>
             <button class="filter-pill" data-topic="tema2" role="tab" aria-selected="false">
               <span class="pill-dot"></span>
-              Tema 2: Tractaments Tèrmics <span class="pill-count" id="count-tema2">0</span>
+              Tema 2: Alumini i aliatges <span class="pill-count" id="count-tema2">0</span>
             </button>
             <button class="filter-pill" data-topic="tema3" role="tab" aria-selected="false">
               <span class="pill-dot"></span>
-              Tema 3: Alumini i Solidificació <span class="pill-count" id="count-tema3">0</span>
+              Tema 3: Emmotllament i solidificació <span class="pill-count" id="count-tema3">0</span>
             </button>
           </div>
         </div>
 
+        <div class="format-row">
+          <label for="question-format">Format de pregunta</label>
+          <select id="question-format">
+            <option value="todos">Tots · V/F i opció múltiple</option>
+            <option value="vf">Vertader / Fals</option>
+            <option value="multiple">Opció múltiple · A, B, C, D</option>
+          </select>
+        </div>
         <div class="settings-row">
           <div class="mode-toggles">
             <button id="shuffle-toggle" class="btn-toggle active" title="Alternar entre ordre aleatori o seqüencial">
@@ -137,7 +145,7 @@
       <div class="quiz-card-wrapper">
         <div class="study-intro">
           <p class="study-kicker">PRÀCTICA DEL PARCIAL · TEMES 1–3</p>
-          <p>Respon, entén el mecanisme i repassa les errades.</p>
+          <p>Practica V/F i test, entén el mecanisme i repassa les errades.</p>
           <span id="connection-status" class="connection-status" role="status">Progrés desat en aquest navegador</span>
         </div>
         <noscript><p class="load-error">Activa JavaScript per practicar les preguntes.</p></noscript>
@@ -146,7 +154,8 @@
         <article class="quiz-card" id="quiz-card" tabindex="-1" aria-label="Pregunta de pràctica">
           <div class="card-meta">
             <span class="badge-topic" id="card-topic-badge">Tema</span>
-            <span class="badge-id" id="card-index-badge">Pregunta 1 de 25</span>
+            <span class="badge-format" id="card-format-badge">V/F · Test</span>
+            <span class="badge-id" id="card-index-badge">Carregant…</span>
           </div>
 
           <div class="statement-container">
@@ -156,7 +165,7 @@
           </div>
 
           <!-- True / False Action Buttons -->
-          <div class="actions-container">
+          <div class="actions-container" id="vf-actions">
             <button id="btn-true" class="btn-action btn-true">
               <span class="btn-icon-symbol">✓</span>
               <span class="btn-title" id="true-title">Verdader</span>
@@ -169,6 +178,8 @@
               <kbd class="shortcut-key">F o →</kbd>
             </button>
           </div>
+
+          <div class="multiple-actions" id="multiple-actions" role="group" aria-label="Opcions de resposta" lang="es" hidden></div>
 
           <!-- Theoretical Explanation Card (Appears immediately after answering) -->
           <div class="explanation-card" id="explanation-card" hidden role="region" aria-labelledby="explanation-heading">
@@ -189,6 +200,7 @@
               <p class="explanation-text" id="explanation-text" lang="es">
                 Explicació detallada...
               </p>
+              <ul class="option-explanations" id="option-explanations" aria-label="Justificació de cada opció" lang="es" hidden></ul>
               <p class="trap-text" id="trampa-text" lang="es" hidden></p>
               <p class="source-text" id="source-text" lang="es" hidden></p>
               <div class="tags-row" id="explanation-tags">
@@ -209,8 +221,8 @@
         <!-- Completion View (Shown when set finishes) -->
         <article class="completion-card" id="completion-card" tabindex="-1" hidden>
           <div class="completion-icon" aria-hidden="true">✓</div>
-          <h2 class="completion-title">Tema completat!</h2>
-          <p class="completion-subtitle">Has arribat al final de la tanda de preguntes seleccionada.</p>
+          <h2 class="completion-title" id="completion-title">Tanda completada!</h2>
+          <p class="completion-subtitle" id="completion-message">Has arribat al final de la tanda de preguntes seleccionada.</p>
 
           <div class="completion-stats">
             <div class="c-stat">
@@ -254,6 +266,7 @@
           <span class="hint-label">Atalls de teclat:</span>
           <span class="hint-item"><kbd>V</kbd> o <kbd>←</kbd> Verdader</span>
           <span class="hint-item"><kbd>F</kbd> o <kbd>→</kbd> Fals</span>
+          <span class="hint-item"><kbd>A–D</kbd> o <kbd>1–4</kbd> Opció</span>
           <span class="hint-item"><kbd>Espai</kbd> o <kbd>Enter</kbd> Següent</span>
         </div>
         <div class="footer-meta">

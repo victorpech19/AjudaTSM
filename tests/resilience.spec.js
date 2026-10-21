@@ -1,11 +1,13 @@
 const { test, expect } = require('@playwright/test');
-const questions = require('../preguntas.json');
+const allQuestions = require('../preguntas.json');
+const questions = allQuestions.filter(q => q.tipo !== 'multiple');
 
 test.describe('Recovery and complete question bank', () => {
   test.use({ serviceWorkers: 'block' });
 
   async function ready(page) {
     await page.goto('./');
+    await page.locator('#question-format').selectOption('vf');
     await expect(page.locator('#count-todos')).toHaveText(String(questions.length));
     await expect(page.locator('#btn-true')).toBeEnabled();
   }
@@ -38,7 +40,7 @@ test.describe('Recovery and complete question bank', () => {
     await page.reload();
     await expect(page.locator('[data-topic="tema2"]')).toHaveAttribute('aria-selected', 'true');
     await expect(page.locator('[data-topic="todos"]')).toHaveAttribute('aria-selected', 'false');
-    await expect(page.locator('#card-topic-badge')).toContainText(/Tractaments|Tratamientos/);
+    await expect(page.locator('#card-topic-badge')).toContainText(/Alumini|Aluminio/);
   });
 
   test('arrow keys on topic tabs navigate topics without submitting an answer', async ({ page }) => {
@@ -77,7 +79,7 @@ test.describe('Recovery and complete question bank', () => {
     await expect(page.locator('#btn-true')).toBeDisabled();
     unavailable = false;
     await page.locator('#retry-load-btn').click();
-    await expect(page.locator('#count-todos')).toHaveText(String(questions.length));
+    await expect(page.locator('#count-todos')).toHaveText(String(allQuestions.length));
     await expect(page.locator('#btn-true')).toBeEnabled();
     await expect(page.locator('#retry-load-btn')).toHaveCount(0);
   });

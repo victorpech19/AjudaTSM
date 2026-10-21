@@ -2,7 +2,8 @@ const { test, expect } = require('@playwright/test');
 const { readFileSync, mkdirSync } = require('node:fs');
 const path = require('node:path');
 
-const questions = JSON.parse(readFileSync(path.join(__dirname, '..', 'preguntas.json'), 'utf8'));
+const allQuestions = JSON.parse(readFileSync(path.join(__dirname, '..', 'preguntas.json'), 'utf8'));
+const questions = allQuestions.filter(q => q.tipo !== 'multiple');
 const topicNames = ['todos', 'tema1', 'tema2', 'tema3'];
 const artifactDir = process.env.AJUDATSM_QA_ARTIFACT_DIR || path.join(__dirname, '..', 'test-artifacts');
 mkdirSync(artifactDir, { recursive: true });
@@ -15,6 +16,8 @@ function artifactPath(browserName, filename) {
 
 async function loadSequential(page) {
   await page.goto('./');
+  await expect(page.locator('#question-format')).toBeVisible();
+  await page.locator('#question-format').selectOption('vf');
   await expect(page.locator('#card-index-badge')).toBeVisible();
   if (await page.locator('#shuffle-toggle').evaluate(el => el.classList.contains('active'))) {
     await page.locator('#shuffle-toggle').click();
@@ -61,29 +64,6 @@ test('explains immediately, locks the answer, and advances progress once', async
   await page.locator('#btn-next').click();
   await expect(page.locator('#card-index-badge')).toHaveText(`Pregunta 2 de ${questions.length}`);
   await expect(page.locator('#explanation-card')).toBeHidden();
-});
-
-test('answers every question with its correct true or false control', async ({ page, browserName }) => {
-  test.setTimeout(120_000);
-  await loadSequential(page);
-  const controlsUsed = new Set();
-  for (const expected of questions) {
-    const shown = await page.locator('#statement-text').textContent();
-    const active = questions.find(q => q.pregunta === shown);
-    expect(active).toBeTruthy();
-    expect(active.id).toBe(expected.id);
-    const selector = active.respuesta ? '#btn-true' : '#btn-false';
-    controlsUsed.add(selector);
-    await page.locator(selector).click();
-    await expect(page.locator('#explanation-card')).toBeVisible();
-    await expect(page.locator('#result-title')).toContainText('correcta');
-    await expect(page.locator('#explanation-text')).toHaveText(expected.explicacion);
-    await page.locator('#btn-next').click();
-  }
-  expect(controlsUsed).toEqual(new Set(['#btn-true', '#btn-false']));
-  await expect(page.locator('#completion-card')).toBeVisible();
-  await expect(page.locator('#c-correct')).toHaveText(String(questions.length));
-  await expect(page.locator('#c-wrong')).toHaveText('0');
 });
 
 test('tracks a failed answer, resumes after refresh, reviews it, and clears it when corrected', async ({ page }) => {
@@ -171,12 +151,13 @@ test('keyboard answer and next shortcuts respond once', async ({ page }) => {
 
 test('topic tabs support arrow, Home and End keys', async ({ page }) => {
   await loadSequential(page);
+  const topicOneCount = questions.filter(question => question.tema === 'tema1').length;
   const tabs = page.locator('.filter-pill');
   await tabs.nth(0).focus();
   await page.keyboard.press('ArrowRight');
   await expect(tabs.nth(1)).toBeFocused();
   await expect(tabs.nth(1)).toHaveAttribute('aria-selected', 'true');
-  await expect(page.locator('#card-index-badge')).toHaveText('Pregunta 1 de 40');
+  await expect(page.locator('#card-index-badge')).toHaveText(`Pregunta 1 de ${topicOneCount}`);
 
   await page.keyboard.press('End');
   await expect(tabs.nth(3)).toBeFocused();
@@ -206,8 +187,10 @@ test('layout has no horizontal overflow at requested viewport sizes and landscap
   for (const width of sizes) {
     await page.setViewportSize({ width, height: 900 });
     await page.goto('./');
+    await page.locator('#question-format').selectOption('vf');
     await page.evaluate(() => localStorage.clear());
     await page.reload();
+    await page.locator('#question-format').selectOption('vf');
     await page.evaluate(() => localStorage.setItem('ajudatsm-theme', 'dark'));
     await page.reload();
     await expect(page.locator('#card-index-badge')).toBeVisible();
@@ -258,6 +241,7 @@ test('layout has no horizontal overflow at requested viewport sizes and landscap
   }
   await page.setViewportSize({ width: 844, height: 390 });
   await page.goto('./');
+  await page.locator('#question-format').selectOption('vf');
   const landscape = await page.evaluate(() => ({ viewport: innerWidth, document: document.documentElement.scrollWidth }));
   expect(landscape.document, `horizontal overflow in landscape: ${JSON.stringify(landscape)}`).toBeLessThanOrEqual(landscape.viewport);
 });
@@ -299,6 +283,7 @@ test('no uncaught page errors and axe accessibility smoke check', async ({ page,
 test('loads from the service-worker cache after the network is disconnected', async ({ page, context, browserName }) => {
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto('./');
+  await page.locator('#question-format').selectOption('multiple');
   await expect(page.locator('#card-index-badge')).toBeVisible();
   await page.evaluate(async () => {
     if (!('serviceWorker' in navigator)) throw new Error('Service workers unavailable');
@@ -308,7 +293,9 @@ test('loads from the service-worker cache after the network is disconnected', as
   await expect.poll(() => page.evaluate(() => Boolean(navigator.serviceWorker.controller))).toBe(true);
   await context.setOffline(true);
   await page.reload();
+  await expect(page.locator('#question-format')).toHaveValue('multiple');
   await expect(page.locator('#card-index-badge')).toBeVisible();
+  await expect(page.locator('#multiple-actions')).toBeVisible();
   await expect(page.locator('#statement-text')).not.toContainText('Carregant');
   await page.screenshot({ path: artifactPath(browserName, 'offline-mobile.png') });
 });

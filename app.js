@@ -10,12 +10,13 @@
   const STORAGE_KEY = 'ajudatsm-state-v2';
   const LEGACY_THEME_KEY = 'ajudatsm-theme';
   const VALID_TOPICS = new Set(['todos', 'tema1', 'tema2', 'tema3']);
+  const VALID_FORMATS = new Set(['todos', 'vf', 'multiple']);
   let isLoading = false;
   let questionsReady = false;
 
   const state = {
     allQuestions: [], questionsById: new Map(), activeQueue: [], currentIndex: 0,
-    currentTopic: 'todos', isShuffle: true, isReviewMode: false, answered: false,
+    currentTopic: 'todos', currentFormat: 'todos', isShuffle: true, isReviewMode: false, answered: false,
     lastChoice: null, stats: createEmptyStats()
   };
 
@@ -23,6 +24,7 @@
     html: document.documentElement,
     themeToggle: document.getElementById('theme-toggle'),
     topicFilters: document.getElementById('topic-filters'),
+    questionFormat: document.getElementById('question-format'),
     shuffleToggle: document.getElementById('shuffle-toggle'),
     reviewModeBtn: document.getElementById('review-mode-btn'),
     failedCountBadge: document.getElementById('failed-count-badge'),
@@ -39,10 +41,13 @@
     progressBar: document.getElementById('progress-bar'),
     quizCard: document.getElementById('quiz-card'),
     cardTopicBadge: document.getElementById('card-topic-badge'),
+    cardFormatBadge: document.getElementById('card-format-badge'),
     cardIndexBadge: document.getElementById('card-index-badge'),
     statementText: document.getElementById('statement-text'),
     btnTrue: document.getElementById('btn-true'),
     btnFalse: document.getElementById('btn-false'),
+    vfActions: document.getElementById('vf-actions'),
+    multipleActions: document.getElementById('multiple-actions'),
     explanationCard: document.getElementById('explanation-card'),
     explanationHeading: document.getElementById('explanation-heading') || document.querySelector('.explanation-heading'),
     resultBadge: document.getElementById('result-badge'),
@@ -50,11 +55,14 @@
     resultTitle: document.getElementById('result-title'),
     verdictTag: document.getElementById('verdict-tag'),
     explanationText: document.getElementById('explanation-text'),
+    optionExplanations: document.getElementById('option-explanations'),
     explanationTags: document.getElementById('explanation-tags'),
     trampaText: document.getElementById('trampa-text'),
     sourceText: document.getElementById('source-text'),
     btnNext: document.getElementById('btn-next'),
     completionCard: document.getElementById('completion-card'),
+    completionTitle: document.getElementById('completion-title'),
+    completionMessage: document.getElementById('completion-message'),
     cCorrect: document.getElementById('c-correct'),
     cWrong: document.getElementById('c-wrong'),
     cAccuracy: document.getElementById('c-accuracy'),
@@ -129,8 +137,9 @@
       if (retryButton) retryButton.remove();
       state.allQuestions = data;
       state.questionsById = new Map(data.map(question => [String(question.id), question]));
-      updateTopicPillCounts();
       restoreSavedState();
+      updateFormatControl();
+      updateTopicPillCounts();
       setQuizControlsDisabled(false);
       updateStatsUI();
       if (state.activeQueue.length > 0 && state.currentIndex < state.activeQueue.length) {
@@ -165,10 +174,20 @@
       if (!q || typeof q !== 'object' ||
           (typeof q.id !== 'number' && typeof q.id !== 'string') || String(q.id).trim() === '' ||
           !VALID_TOPICS.has(q.tema) || q.tema === 'todos' ||
+          (q.tipo !== undefined && q.tipo !== 'vf' && q.tipo !== 'multiple') ||
           typeof q.temaNombre !== 'string' || !q.temaNombre.trim() ||
-          typeof q.pregunta !== 'string' || !q.pregunta.trim() || typeof q.respuesta !== 'boolean' ||
+          typeof q.pregunta !== 'string' || !q.pregunta.trim() ||
           typeof q.explicacion !== 'string' || !q.explicacion.trim())
         return { ok: false, message: 'La pregunta ' + (index + 1) + ' no cumple el formato requerido.' };
+      const type = getQuestionType(q);
+      if (type === 'vf' && typeof q.respuesta !== 'boolean')
+        return { ok: false, message: 'La respuesta de la pregunta VF ' + (index + 1) + ' debe ser booleana.' };
+      if (type === 'multiple' && (!Array.isArray(q.opciones) || q.opciones.length !== 4 ||
+          q.opciones.some(option => typeof option !== 'string' || !option.trim()) ||
+          !Number.isInteger(q.respuesta) || q.respuesta < 0 || q.respuesta > 3 ||
+          !Array.isArray(q.explicacionesOpciones) || q.explicacionesOpciones.length !== 4 ||
+          q.explicacionesOpciones.some(explanation => typeof explanation !== 'string' || !explanation.trim())))
+        return { ok: false, message: 'La pregunta de test ' + (index + 1) + ' necesita cuatro opciones y cuatro explicaciones válidas.' };
       const id = String(q.id);
       if (ids.has(id)) return { ok: false, message: 'Hay identificadores repetidos en el banco (id ' + id + ').' };
       ids.add(id);
@@ -177,6 +196,8 @@
       if (!data.some(question => question.tema === topic))
         return { ok: false, message: 'Falten preguntes per al filtre ' + topic + '.' };
     }
+    if (!data.some(question => getQuestionType(question) === 'multiple'))
+      return { ok: false, message: 'El banc no conté cap pregunta d’opció múltiple.' };
     return { ok: true };
   }
 
@@ -185,8 +206,8 @@
   }
 
   function setQuizControlsDisabled(disabled) {
-    [dom.btnTrue, dom.btnFalse, dom.shuffleToggle, dom.reviewModeBtn].forEach(button => {
-      if (button) button.disabled = disabled || (button === dom.reviewModeBtn && state.stats.failedIds.size === 0);
+    [dom.btnTrue, dom.btnFalse, dom.shuffleToggle, dom.reviewModeBtn, dom.questionFormat].forEach(button => {
+      if (button) button.disabled = disabled || (button === dom.reviewModeBtn && getScopedFailedQuestions().length === 0);
     });
   }
 
@@ -210,16 +231,30 @@
   }
 
   function updateTopicPillCounts() {
+    const visibleQuestions = state.allQuestions.filter(question => questionMatchesFormat(question));
     const counts = {
-      todos: state.allQuestions.length,
-      tema1: state.allQuestions.filter(q => q.tema === 'tema1').length,
-      tema2: state.allQuestions.filter(q => q.tema === 'tema2').length,
-      tema3: state.allQuestions.filter(q => q.tema === 'tema3').length
+      todos: visibleQuestions.length,
+      tema1: visibleQuestions.filter(q => q.tema === 'tema1').length,
+      tema2: visibleQuestions.filter(q => q.tema === 'tema2').length,
+      tema3: visibleQuestions.filter(q => q.tema === 'tema3').length
     };
     if (dom.countTodos) dom.countTodos.textContent = counts.todos;
     if (dom.countTema1) dom.countTema1.textContent = counts.tema1;
     if (dom.countTema2) dom.countTema2.textContent = counts.tema2;
     if (dom.countTema3) dom.countTema3.textContent = counts.tema3;
+  }
+
+  function updateFormatControl() {
+    if (dom.questionFormat) dom.questionFormat.value = state.currentFormat;
+  }
+
+  function applyFormatFilter(format) {
+    if (!questionsReady || isLoading) return;
+    state.currentFormat = VALID_FORMATS.has(format) ? format : 'todos';
+    updateFormatControl();
+    updateTopicPillCounts();
+    if (state.isReviewMode) startReviewMode();
+    else applyTopicFilter(state.currentTopic);
   }
 
   function restoreSavedState() {
@@ -243,17 +278,58 @@
         maxStreak: nonNegativeInteger(saved.maxStreak),
         failedIds: new Set(failed.map(String).filter(id => allIds.has(id)))
       };
-      state.currentTopic = VALID_TOPICS.has(saved.currentTopic) ? saved.currentTopic : 'todos';
+      const savedTopic = VALID_TOPICS.has(saved.currentTopic) ? saved.currentTopic : 'todos';
+      state.currentTopic = savedTopic;
       state.isShuffle = saved.isShuffle !== false;
+      const hasSavedFormat = VALID_FORMATS.has(saved.currentFormat);
+      state.currentFormat = hasSavedFormat ? saved.currentFormat : 'todos';
+      if (!hasSavedFormat) {
+        // Preserve public V/F progress; append the new format after its saved queue.
+        state.isReviewMode = saved.isReviewMode === true;
+        const legacyIds = Array.isArray(saved.queueIds) ? saved.queueIds.map(String) : [];
+        const legacyQueue = legacyIds.map(id => state.questionsById.get(id));
+        const legacyQueueIsValid = legacyQueue.length > 0 && legacyQueue.every(question =>
+          question && getQuestionType(question) === 'vf');
+        if (legacyQueueIsValid) {
+          const queuedTopics = new Set(legacyQueue.map(question => question.tema));
+          state.currentTopic = queuedTopics.size === 1 ? queuedTopics.values().next().value : 'todos';
+          state.activeQueue = legacyQueue;
+          if (!state.isReviewMode) {
+            let newMultiple = state.allQuestions.filter(question =>
+              getQuestionType(question) === 'multiple' &&
+              (state.currentTopic === 'todos' || question.tema === state.currentTopic));
+            if (state.isShuffle) shuffleArray(newMultiple);
+            state.activeQueue.push(...newMultiple);
+          }
+          state.currentIndex = Math.min(nonNegativeInteger(saved.currentIndex), state.activeQueue.length);
+          state.lastChoice = typeof saved.lastChoice === 'boolean' ? saved.lastChoice : null;
+          state.answered = saved.answered === true && state.currentIndex < state.activeQueue.length && state.lastChoice !== null;
+          if (!state.answered) state.lastChoice = null;
+          updateShuffleControl();
+          updateTopicFilterUI();
+          return;
+        }
+        state.currentTopic = savedTopic === 'tema2' ? 'tema1' :
+          (savedTopic === 'tema3' ? 'todos' : savedTopic);
+        if (state.isReviewMode) startReviewMode();
+        else applyTopicFilter(state.currentTopic, false);
+        return;
+      }
       state.isReviewMode = saved.isReviewMode === true;
       const queueIds = Array.isArray(saved.queueIds) ? saved.queueIds.map(String) : [];
-      if (!queueIds.length || !queueIds.every(id => allIds.has(id))) {
-        applyTopicFilter(state.currentTopic, false);
+      const queueIsValid = queueIds.length > 0 && queueIds.every(id => {
+        const question = state.questionsById.get(id);
+        return allIds.has(id) && question && questionMatchesScope(question);
+      });
+      if (!queueIsValid) {
+        if (state.isReviewMode) startReviewMode();
+        else applyTopicFilter(state.currentTopic, false);
         return;
       }
       state.activeQueue = queueIds.map(id => state.questionsById.get(id));
       state.currentIndex = Math.min(nonNegativeInteger(saved.currentIndex), state.activeQueue.length);
-      state.lastChoice = typeof saved.lastChoice === 'boolean' ? saved.lastChoice : null;
+      const currentQuestion = state.activeQueue[state.currentIndex];
+      state.lastChoice = isValidChoice(currentQuestion, saved.lastChoice) ? saved.lastChoice : null;
       state.answered = saved.answered === true && state.currentIndex < state.activeQueue.length && state.lastChoice !== null;
       if (!state.answered) state.lastChoice = null;
       updateShuffleControl();
@@ -273,10 +349,24 @@
     return Number.isInteger(value) && value >= 0 ? value : 0;
   }
 
+  function getQuestionType(question) {
+    return question && question.tipo === 'multiple' ? 'multiple' : 'vf';
+  }
+
+  function questionMatchesFormat(question, format = state.currentFormat) {
+    return format === 'todos' || getQuestionType(question) === format;
+  }
+
+  function questionMatchesScope(question) {
+    return questionMatchesFormat(question) &&
+      (state.currentTopic === 'todos' || question.tema === state.currentTopic);
+  }
+
   function persistState() {
     storageSet(STORAGE_KEY, JSON.stringify({
       version: 2,
       currentTopic: state.currentTopic,
+      currentFormat: state.currentFormat,
       isShuffle: state.isShuffle,
       isReviewMode: state.isReviewMode,
       queueIds: state.activeQueue.map(q => String(q.id)),
@@ -298,7 +388,8 @@
     state.isReviewMode = false;
     if (resetRound) state.stats = { ...state.stats, correct: 0, wrong: 0, streak: 0, maxStreak: 0 };
     updateTopicFilterUI();
-    let pool = topicKey === 'todos' ? [...state.allQuestions] : state.allQuestions.filter(q => q.tema === topicKey);
+    let pool = state.allQuestions.filter(q => questionMatchesFormat(q) &&
+      (topicKey === 'todos' || q.tema === topicKey));
     if (state.isShuffle) shuffleArray(pool);
     state.activeQueue = pool;
     state.currentIndex = 0;
@@ -311,10 +402,9 @@
 
   function startReviewMode() {
     if (!questionsReady || isLoading) return;
-    if (!state.stats.failedIds.size) return;
+    const questions = getScopedFailedQuestions();
     state.isReviewMode = true;
     state.stats = { ...state.stats, correct: 0, wrong: 0, streak: 0, maxStreak: 0 };
-    const questions = state.allQuestions.filter(q => state.stats.failedIds.has(String(q.id)));
     if (state.isShuffle) shuffleArray(questions);
     state.activeQueue = questions;
     state.currentIndex = 0;
@@ -323,7 +413,13 @@
     updateTopicFilterUI();
     renderCurrentQuestion();
     updateStatsUI();
+    if (!questions.length) showCompletionScreen(true);
     persistState();
+  }
+
+  function getScopedFailedQuestions() {
+    return state.allQuestions.filter(question =>
+      state.stats.failedIds.has(String(question.id)) && questionMatchesScope(question));
   }
 
   function shuffleArray(array) {
@@ -353,21 +449,50 @@
     state.answered = false;
     state.lastChoice = null;
     const q = state.activeQueue[state.currentIndex];
+    const isMultipleChoice = getQuestionType(q) === 'multiple';
+    dom.vfActions.hidden = isMultipleChoice;
+    dom.multipleActions.hidden = !isMultipleChoice;
+    if (isMultipleChoice) renderMultipleOptions(q);
+    else dom.multipleActions.replaceChildren();
     dom.btnTrue.disabled = false;
     dom.btnFalse.disabled = false;
     dom.btnTrue.className = 'btn-action btn-true';
     dom.btnFalse.className = 'btn-action btn-false';
     dom.explanationCard.hidden = true;
+    dom.optionExplanations.hidden = true;
+    dom.optionExplanations.replaceChildren();
+    dom.cardFormatBadge.textContent = isMultipleChoice ? 'Opció múltiple' : 'V/F';
     dom.cardTopicBadge.textContent = state.isReviewMode ? 'Mode Repàs (preguntes fallades)' : q.temaNombre;
     dom.cardIndexBadge.textContent = 'Pregunta ' + (state.currentIndex + 1) + ' de ' + state.activeQueue.length;
     dom.statementText.textContent = q.pregunta;
     updateProgressUI();
   }
 
+  function renderMultipleOptions(question) {
+    dom.multipleActions.replaceChildren();
+    const letters = ['A', 'B', 'C', 'D'];
+    question.opciones.forEach((option, index) => {
+      const button = document.createElement('button');
+      button.type = 'button';
+      button.className = 'btn-option';
+      button.dataset.choice = String(index);
+      button.setAttribute('aria-pressed', 'false');
+      const letter = document.createElement('span');
+      letter.className = 'option-letter';
+      letter.textContent = letters[index];
+      const text = document.createElement('span');
+      text.className = 'option-text';
+      text.textContent = option;
+      button.append(letter, text);
+      button.addEventListener('click', () => handleAnswer(index));
+      dom.multipleActions.appendChild(button);
+    });
+  }
+
   function handleAnswer(choice) {
     if (state.answered || !state.activeQueue.length || state.currentIndex >= state.activeQueue.length) return;
     const q = state.activeQueue[state.currentIndex];
-    if (!q || typeof choice !== 'boolean') return;
+    if (!q || !isValidChoice(q, choice)) return;
     state.answered = true;
     state.lastChoice = choice;
     const correct = choice === q.respuesta;
@@ -388,8 +513,26 @@
     showExplanationCard(correct, q, true);
   }
 
+  function isValidChoice(question, choice) {
+    if (!question) return false;
+    if (getQuestionType(question) === 'multiple')
+      return Number.isInteger(choice) && choice >= 0 && choice < question.opciones.length;
+    return typeof choice === 'boolean';
+  }
+
   function paintAnswerFeedback(choice, q) {
     const correct = choice === q.respuesta;
+    if (getQuestionType(q) === 'multiple') {
+      const buttons = Array.from(dom.multipleActions.querySelectorAll('.btn-option'));
+      buttons.forEach((button, index) => {
+        button.disabled = true;
+        button.setAttribute('aria-pressed', index === choice ? 'true' : 'false');
+        if (index === q.respuesta) button.classList.add('state-correct');
+        else if (index === choice && !correct) button.classList.add('state-wrong-chosen');
+        else button.classList.add('state-dimmed');
+      });
+      return;
+    }
     dom.btnTrue.disabled = true;
     dom.btnFalse.disabled = true;
     const correctButton = q.respuesta ? dom.btnTrue : dom.btnFalse;
@@ -402,11 +545,15 @@
     dom.resultBadge.className = correct ? 'result-badge badge-success' : 'result-badge badge-error';
     dom.resultIcon.textContent = correct ? '✓' : '✕';
     dom.resultTitle.textContent = correct ? 'Molt bé! Resposta correcta' : 'Resposta incorrecta';
-    dom.verdictTag.replaceChildren(document.createTextNode("L'afirmació és "));
+    const isMultipleChoice = getQuestionType(q) === 'multiple';
+    dom.verdictTag.replaceChildren(document.createTextNode(isMultipleChoice ? 'Respuesta correcta: ' : "L'afirmació és "));
     const verdict = document.createElement('strong');
-    verdict.textContent = q.respuesta ? 'VERDADERA' : 'FALSA';
+    verdict.textContent = isMultipleChoice
+      ? ['A', 'B', 'C', 'D'][q.respuesta] + ' · ' + q.opciones[q.respuesta]
+      : (q.respuesta ? 'VERDADERA' : 'FALSA');
     dom.verdictTag.appendChild(verdict);
     dom.explanationText.textContent = q.explicacion;
+    renderOptionExplanations(q);
     dom.explanationTags.replaceChildren();
     if (Array.isArray(q.palabrasClave)) q.palabrasClave.forEach(tag => {
       const span = document.createElement('span');
@@ -423,6 +570,24 @@
       heading.focus({ preventScroll: true });
       heading.scrollIntoView({ behavior: prefersReducedMotion() ? 'auto' : 'smooth', block: 'start' });
     }
+  }
+
+  function renderOptionExplanations(question) {
+    dom.optionExplanations.replaceChildren();
+    const isMultipleChoice = getQuestionType(question) === 'multiple';
+    dom.optionExplanations.hidden = !isMultipleChoice;
+    if (!isMultipleChoice) return;
+    const letters = ['A', 'B', 'C', 'D'];
+    question.explicacionesOpciones.forEach((explanation, index) => {
+      const item = document.createElement('li');
+      if (index === question.respuesta) item.classList.add('correct-option');
+      const label = document.createElement('strong');
+      label.textContent = letters[index] + ' · ' + (index === question.respuesta
+        ? 'Resposta que cal triar'
+        : 'No és la resposta demanada');
+      item.append(label, document.createTextNode(' — ' + explanation));
+      dom.optionExplanations.appendChild(item);
+    });
   }
 
   function prefersReducedMotion() {
@@ -470,9 +635,17 @@
     dom.cWrong.textContent = state.stats.wrong;
     dom.cAccuracy.textContent = accuracy + '%';
     dom.cStreak.textContent = state.stats.maxStreak;
-    const failedCount = state.stats.failedIds.size;
+    const failedCount = getScopedFailedQuestions().length;
     dom.cFailedCount.textContent = failedCount;
     dom.cRetryFailedBtn.hidden = !failedCount;
+    const emptyReview = state.isReviewMode && state.activeQueue.length === 0;
+    const emptyScope = !state.isReviewMode && state.activeQueue.length === 0;
+    dom.completionTitle.textContent = emptyReview ? 'No hi ha errades en aquest filtre' :
+      (emptyScope ? 'No hi ha preguntes disponibles' : 'Tanda completada!');
+    dom.completionMessage.textContent = emptyReview
+      ? 'No hi ha preguntes fallades per al tema i format seleccionats.'
+      : (emptyScope ? 'Canvia el tema o el format per trobar preguntes.' :
+        'Has arribat al final de la tanda de preguntes seleccionada.');
     updateProgressUI();
     if (shouldFocus) focusAndScroll(dom.completionCard);
   }
@@ -484,7 +657,7 @@
     dom.statWrong.textContent = state.stats.wrong;
     dom.statStreak.textContent = state.stats.streak;
     dom.statAccuracy.textContent = accuracy + '%';
-    const count = state.stats.failedIds.size;
+    const count = getScopedFailedQuestions().length;
     dom.failedCountBadge.textContent = count;
     dom.reviewModeBtn.disabled = !count;
     dom.reviewModeBtn.classList.toggle('has-failed', count > 0);
@@ -523,6 +696,7 @@
     dom.btnTrue.addEventListener('click', () => { if (questionsReady && !isLoading) handleAnswer(true); });
     dom.btnFalse.addEventListener('click', () => { if (questionsReady && !isLoading) handleAnswer(false); });
     dom.btnNext.addEventListener('click', nextQuestion);
+    dom.questionFormat.addEventListener('change', event => applyFormatFilter(event.target.value));
     dom.topicFilters.addEventListener('click', event => {
       const pill = event.target.closest('.filter-pill');
       if (pill && questionsReady && !isLoading) applyTopicFilter(pill.getAttribute('data-topic'));
@@ -564,7 +738,18 @@
       const target = event.target;
       if (target && (target.isContentEditable || ['INPUT', 'TEXTAREA', 'SELECT'].includes(target.tagName))) return;
       if (!state.answered) {
-        if (['v', 'V', 'ArrowLeft'].includes(event.key)) {
+        const question = state.activeQueue[state.currentIndex];
+        if (!question || state.currentIndex >= state.activeQueue.length) return;
+        if (getQuestionType(question) === 'multiple') {
+          const key = event.key.toUpperCase();
+          const letterChoice = ['A', 'B', 'C', 'D'].indexOf(key);
+          const numberChoice = ['1', '2', '3', '4'].indexOf(event.key);
+          const choice = letterChoice >= 0 ? letterChoice : numberChoice;
+          if (choice >= 0) {
+            event.preventDefault();
+            handleAnswer(choice);
+          }
+        } else if (['v', 'V', 'ArrowLeft'].includes(event.key)) {
           event.preventDefault();
           handleAnswer(true);
         } else if (['f', 'F', 'ArrowRight'].includes(event.key)) {
