@@ -15,7 +15,7 @@ La respuesta y la explicación de cada adaptación son una síntesis didáctica 
 
 ## Banco de opción múltiple
 
-El banco único `preguntas.json` contiene las 120 afirmaciones V/F y 45 preguntas nuevas de opción múltiple adaptadas de preguntas tipo test de los parciales de 2022, 2023 y 2024 citados arriba. La distribución del test es 30 de aceros y tratamientos térmicos, 8 de aluminio y 7 de moldeo y solidificación. La pregunta sobre la ruta siderúrgica y la colada continua se incluye en el tema de aceros. Cada campo `fuente` identifica fecha, número y página del examen. Se conserva el orden de las opciones cuando se mantiene la estructura original; se han condensado o reformulado frases para estudio.
+El banco único `preguntas.json` contiene 120 afirmaciones V/F y 171 preguntas de opción múltiple adaptadas de exámenes entre 1999 y 2026. La distribución actual es 94 preguntas del tema 1, 30 del tema 2 y 47 del tema 3. Cada pregunta identifica el examen, la fecha, el número y la página; no todos los PDF catalogados están representados. Se conserva el orden de las opciones cuando la estructura original lo permite y se reformulan algunas frases para estudio.
 
 Las respuestas contrastadas con la cuadrícula de soluciones o las marcas de corrección del documento fuente se identifican en `baseRespuesta`. La explicación didáctica añade el razonamiento metalúrgico y las condiciones de validez; no sustituye ni amplía una clave oficial. Las preguntas adaptadas para eliminar dependencia de una figura, acotar una afirmación demasiado absoluta o reparar una opción científicamente dudosa se señalan expresamente en `fuente` y `baseRespuesta`. En las preguntas que piden la afirmación falsa o incorrecta, las explicaciones de las opciones verdaderas indican que son ciertas pero no responden a la negación del enunciado.
 
@@ -42,9 +42,15 @@ La clasificación sigue la presentación docente de 2026-2027, p. 3:
 
 La antigua numeración de la aplicación se ha corregido en ambos formatos conservando los identificadores. Los tratamientos térmicos del acero pertenecen al tema 1; el envejecimiento del aluminio, al tema 2. Composición y modificación de aleaciones Al-Si se incluyen en aluminio, como en *Aleaciones de aluminio*, pp. 44–45; nucleación, alimentación, moldes y defectos de solidificación se incluyen en el tema 3.
 
+## Inventario y cobertura actual
+
+La búsqueda local reunió 62 PDF de la asignatura entre 1998 y 2026, procedentes de los registros de curso 24806 y 240151. El conjunto contiene duplicados y versiones permutadas, por lo que no equivale a 62 modelos únicos. En el catálogo y las descargas comprobadas no aparecen exámenes de 1996–1997; esto no descarta que existan copias fuera de esas fuentes.
+
+Las 171 preguntas de opción múltiple publicadas citan 20 fechas de examen en `fuente`. La cobertura es una selección trazable, no la transcripción completa de todos los PDF. Algunos exámenes antiguos son de la asignatura predecesora «Tecnología de Materiales» (24806); se incluyeron preguntas que encajan con los temas actuales 1–3. Las fuentes y la clave oficial se distinguen pregunta por pregunta.
+
 ## Alcance y límites
 
-- El banco completo tiene 165 entradas: 120 V/F y 45 de opción múltiple. Se conservan los IDs de las 120 afirmaciones anteriores.
+El banco actual tiene 291 entradas: 120 V/F y 171 de opción múltiple. Se conservan los IDs de las 120 afirmaciones anteriores.
 - Se corrigieron explicaciones antiguas con generalizaciones sobre cromo mínimo en inoxidables, inicio de ferrita proeutectoide, sensibilización, aceros ferríticos, dureza de martensita, diagramas CCT/TTT, microsegregación y macrosegregación, y dimensionamiento de mazarotas.
 - Los valores que dependen de composición, tratamiento, geometría o medio se expresan como tendencias o se condicionan explícitamente.
 - Ambos formatos se distribuyen en el mismo JSON; no se han copiado los PDF ni sus figuras al repositorio.

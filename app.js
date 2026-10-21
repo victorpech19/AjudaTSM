@@ -44,6 +44,7 @@
     cardFormatBadge: document.getElementById('card-format-badge'),
     cardIndexBadge: document.getElementById('card-index-badge'),
     statementText: document.getElementById('statement-text'),
+    questionImage: document.getElementById('question-image'),
     btnTrue: document.getElementById('btn-true'),
     btnFalse: document.getElementById('btn-false'),
     vfActions: document.getElementById('vf-actions'),
@@ -59,6 +60,7 @@
     explanationTags: document.getElementById('explanation-tags'),
     trampaText: document.getElementById('trampa-text'),
     sourceText: document.getElementById('source-text'),
+    answerBasisText: document.getElementById('answer-basis-text'),
     btnNext: document.getElementById('btn-next'),
     completionCard: document.getElementById('completion-card'),
     completionTitle: document.getElementById('completion-title'),
@@ -177,15 +179,18 @@
           (q.tipo !== undefined && q.tipo !== 'vf' && q.tipo !== 'multiple') ||
           typeof q.temaNombre !== 'string' || !q.temaNombre.trim() ||
           typeof q.pregunta !== 'string' || !q.pregunta.trim() ||
-          typeof q.explicacion !== 'string' || !q.explicacion.trim())
+          typeof q.explicacion !== 'string' || !q.explicacion.trim() ||
+          (q.imagen !== undefined && (!q.imagen || typeof q.imagen.src !== 'string' ||
+            !/^[A-Za-z0-9._/-]+\.(?:png|jpe?g|webp|svg)$/i.test(q.imagen.src) ||
+            q.imagen.src.includes('..') || typeof q.imagen.alt !== 'string' || !q.imagen.alt.trim())))
         return { ok: false, message: 'La pregunta ' + (index + 1) + ' no cumple el formato requerido.' };
       const type = getQuestionType(q);
       if (type === 'vf' && typeof q.respuesta !== 'boolean')
         return { ok: false, message: 'La respuesta de la pregunta VF ' + (index + 1) + ' debe ser booleana.' };
-      if (type === 'multiple' && (!Array.isArray(q.opciones) || q.opciones.length !== 4 ||
+      if (type === 'multiple' && (!Array.isArray(q.opciones) || q.opciones.length < 2 || q.opciones.length > 6 ||
           q.opciones.some(option => typeof option !== 'string' || !option.trim()) ||
-          !Number.isInteger(q.respuesta) || q.respuesta < 0 || q.respuesta > 3 ||
-          !Array.isArray(q.explicacionesOpciones) || q.explicacionesOpciones.length !== 4 ||
+          !Number.isInteger(q.respuesta) || q.respuesta < 0 || q.respuesta >= q.opciones.length ||
+          !Array.isArray(q.explicacionesOpciones) || q.explicacionesOpciones.length !== q.opciones.length ||
           q.explicacionesOpciones.some(explanation => typeof explanation !== 'string' || !explanation.trim())))
         return { ok: false, message: 'La pregunta de test ' + (index + 1) + ' necesita cuatro opciones y cuatro explicaciones válidas.' };
       const id = String(q.id);
@@ -353,6 +358,10 @@
     return question && question.tipo === 'multiple' ? 'multiple' : 'vf';
   }
 
+  function getOptionLetter(index) {
+    return String.fromCharCode(65 + index);
+  }
+
   function questionMatchesFormat(question, format = state.currentFormat) {
     return format === 'todos' || getQuestionType(question) === format;
   }
@@ -465,12 +474,24 @@
     dom.cardTopicBadge.textContent = state.isReviewMode ? 'Mode Repàs (preguntes fallades)' : q.temaNombre;
     dom.cardIndexBadge.textContent = 'Pregunta ' + (state.currentIndex + 1) + ' de ' + state.activeQueue.length;
     dom.statementText.textContent = q.pregunta;
+    renderQuestionImage(q.imagen);
     updateProgressUI();
+  }
+
+  function renderQuestionImage(image) {
+    if (!dom.questionImage) return;
+    dom.questionImage.hidden = true;
+    dom.questionImage.removeAttribute('src');
+    dom.questionImage.alt = '';
+    if (!image) return;
+    dom.questionImage.alt = image.alt;
+    dom.questionImage.onload = () => { dom.questionImage.hidden = false; };
+    dom.questionImage.onerror = () => { dom.questionImage.hidden = true; };
+    dom.questionImage.src = image.src;
   }
 
   function renderMultipleOptions(question) {
     dom.multipleActions.replaceChildren();
-    const letters = ['A', 'B', 'C', 'D'];
     question.opciones.forEach((option, index) => {
       const button = document.createElement('button');
       button.type = 'button';
@@ -479,7 +500,7 @@
       button.setAttribute('aria-pressed', 'false');
       const letter = document.createElement('span');
       letter.className = 'option-letter';
-      letter.textContent = letters[index];
+      letter.textContent = getOptionLetter(index);
       const text = document.createElement('span');
       text.className = 'option-text';
       text.textContent = option;
@@ -549,7 +570,7 @@
     dom.verdictTag.replaceChildren(document.createTextNode(isMultipleChoice ? 'Respuesta correcta: ' : "L'afirmació és "));
     const verdict = document.createElement('strong');
     verdict.textContent = isMultipleChoice
-      ? ['A', 'B', 'C', 'D'][q.respuesta] + ' · ' + q.opciones[q.respuesta]
+      ? getOptionLetter(q.respuesta) + ' · ' + q.opciones[q.respuesta]
       : (q.respuesta ? 'VERDADERA' : 'FALSA');
     dom.verdictTag.appendChild(verdict);
     dom.explanationText.textContent = q.explicacion;
@@ -563,6 +584,7 @@
     });
     setOptionalText(dom.trampaText, q.trampa);
     setOptionalText(dom.sourceText, q.fuente);
+    setOptionalText(dom.answerBasisText, q.baseRespuesta);
     dom.explanationCard.hidden = false;
     if (shouldScroll) {
       const heading = dom.explanationHeading || dom.explanationCard;
@@ -577,12 +599,11 @@
     const isMultipleChoice = getQuestionType(question) === 'multiple';
     dom.optionExplanations.hidden = !isMultipleChoice;
     if (!isMultipleChoice) return;
-    const letters = ['A', 'B', 'C', 'D'];
     question.explicacionesOpciones.forEach((explanation, index) => {
       const item = document.createElement('li');
       if (index === question.respuesta) item.classList.add('correct-option');
       const label = document.createElement('strong');
-      label.textContent = letters[index] + ' · ' + (index === question.respuesta
+      label.textContent = getOptionLetter(index) + ' · ' + (index === question.respuesta
         ? 'Resposta que cal triar'
         : 'No és la resposta demanada');
       item.append(label, document.createTextNode(' — ' + explanation));
@@ -742,8 +763,8 @@
         if (!question || state.currentIndex >= state.activeQueue.length) return;
         if (getQuestionType(question) === 'multiple') {
           const key = event.key.toUpperCase();
-          const letterChoice = ['A', 'B', 'C', 'D'].indexOf(key);
-          const numberChoice = ['1', '2', '3', '4'].indexOf(event.key);
+          const letterChoice = /^[A-F]$/.test(key) ? key.charCodeAt(0) - 65 : -1;
+          const numberChoice = /^[1-6]$/.test(event.key) ? Number(event.key) - 1 : -1;
           const choice = letterChoice >= 0 ? letterChoice : numberChoice;
           if (choice >= 0) {
             event.preventDefault();

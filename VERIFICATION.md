@@ -48,3 +48,11 @@ Comando local: `npx playwright test --workers=2`. Para comprobar la publicación
 ## Alcance de la evidencia
 
 Las vistas móviles se comprobaron mediante emulación de tamaño y motores de navegador. No se accedió al teléfono físico del usuario. La sesión se guarda en cada navegador; no hay sincronización de progreso entre dispositivos.
+
+## Actualización del banco ampliado · 21 de octubre de 2026
+
+Se amplió el banco desde 165 hasta 291 preguntas: 120 V/F y 171 de opción múltiple. La clasificación actual es 172 del tema 1, 50 del tema 2 y 69 del tema 3. Las preguntas de opción múltiple cubren 20 fechas de examen entre 1999 y 2026; las entradas diferencian claves oficiales de respuestas razonadas. El inventario local reúne 62 PDF con duplicados y permutaciones, no 62 modelos únicos. La cobertura de preguntas todavía no es exhaustiva sobre todos los PDF.
+
+La ejecución local de Playwright sobre este banco completó 62 de 62 pruebas en Chromium y WebKit (35,5 s). Incluye todas las alternativas disponibles de cada pregunta, explicación y veredicto, modos V/F y test, persistencia, caché sin conexión, accesibilidad automatizada y tamaños móviles.
+
+La versión ampliada está pendiente de publicación y de repetir la comprobación contra GitHub Pages. La evidencia anterior de esta página describe la publicación previa de 165 preguntas.

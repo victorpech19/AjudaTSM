@@ -1,9 +1,19 @@
 'use strict';
-const CACHE = 'ajudatsm-v2-multiple';
+const CACHE = 'ajudatsm-v4-expanded-bank';
 const SHELL = ['./', './index.html', './style.css', './app.js', './preguntas.json',
   './pwa.js', './icon.svg', './icon-192.png', './icon-512.png', './manifest.webmanifest'];
 self.addEventListener('install', event => {
-  event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(SHELL)).then(() => self.skipWaiting()));
+  event.waitUntil((async () => {
+    const cache = await caches.open(CACHE);
+    await cache.addAll(SHELL);
+    const response = await fetch('./preguntas.json');
+    const bank = await response.json();
+    const images = [...new Set(bank.flatMap(question =>
+      question.imagen && typeof question.imagen.src === 'string' ? [question.imagen.src] : []
+    ))].map(src => new URL(src, self.registration.scope).href);
+    if (images.length) await cache.addAll(images);
+    await self.skipWaiting();
+  })());
 });
 self.addEventListener('activate', event => {
   event.waitUntil(caches.keys().then(keys => Promise.all(keys

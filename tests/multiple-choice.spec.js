@@ -3,6 +3,7 @@ const { readFileSync, mkdirSync } = require('node:fs');
 const path = require('node:path');
 const allQuestions = JSON.parse(readFileSync(require.resolve('../preguntas.json'), 'utf8'));
 const multipleQuestions = allQuestions.filter(q => q.tipo === 'multiple');
+const fiveChoiceQuestions = multipleQuestions.filter(q => q.opciones.length >= 5);
 
 const vfQuestions = allQuestions.filter(q => q.tipo !== 'multiple');
 const topics = ['todos', 'tema1', 'tema2', 'tema3'];
@@ -51,7 +52,7 @@ test('starts in mixed mode and intersects format with every topic', async ({ pag
   }
 });
 
-test('correct and incorrect answers immediately show theory and all four option explanations', async ({ page }) => {
+test('correct and incorrect answers immediately show theory and every option explanation', async ({ page }) => {
   await readyMultiple(page);
   const first = byStatement(await page.locator('#statement-text').textContent());
   expect(first).toBeTruthy();
@@ -62,8 +63,8 @@ test('correct and incorrect answers immediately show theory and all four option 
   await expect(page.locator('#explanation-text')).toHaveText(first.explicacion);
   await expectOptionExplanations(page, first);
   await expect(page.locator(`.btn-option[data-choice="${first.respuesta}"]`)).toHaveClass(/state-correct/);
-  await expect(page.locator('#multiple-actions .btn-option')).toHaveCount(4);
-  await expect(page.locator('#multiple-actions .btn-option:disabled')).toHaveCount(4);
+  await expect(page.locator('#multiple-actions .btn-option')).toHaveCount(first.opciones.length);
+  await expect(page.locator('#multiple-actions .btn-option:disabled')).toHaveCount(first.opciones.length);
 
   await page.locator('#btn-next').click();
   const second = byStatement(await page.locator('#statement-text').textContent());
@@ -81,15 +82,17 @@ test('correct and incorrect answers immediately show theory and all four option 
 
 async function expectOptionExplanations(page, question) {
   const options = page.locator('#option-explanations > li');
-  await expect(options).toHaveCount(4);
-  for (let i = 0; i < 4; i++) await expect(options.nth(i)).toContainText(question.explicacionesOpciones[i]);
+  await expect(options).toHaveCount(question.opciones.length);
+  for (let i = 0; i < question.opciones.length; i++) await expect(options.nth(i)).toContainText(question.explicacionesOpciones[i]);
   if (question.trampa) await expect(page.locator('#trampa-text')).toContainText(question.trampa);
   else await expect(page.locator('#trampa-text')).toBeHidden();
   if (question.fuente) await expect(page.locator('#source-text')).toContainText(question.fuente);
   else await expect(page.locator('#source-text')).toBeHidden();
+  if (question.baseRespuesta) await expect(page.locator('#answer-basis-text')).toContainText(question.baseRespuesta);
+  else await expect(page.locator('#answer-basis-text')).toBeHidden();
 }
 
-test('all 1–4 and A–D shortcuts choose the matching option', async ({ page }) => {
+test('A-D and 1-4 shortcuts choose the matching option', async ({ page }) => {
   await readyMultiple(page);
   for (const [index, key] of ['1', '2', '3', '4', 'a', 'b', 'c', 'd'].entries()) {
     const current = byStatement(await page.locator('#statement-text').textContent());
@@ -101,6 +104,62 @@ test('all 1–4 and A–D shortcuts choose the matching option', async ({ page }
     );
     if (index < 7) await page.keyboard.press('Space');
   }
+});
+
+test('E and 5 shortcuts handle a correct and an incorrect fifth option', async ({ page }) => {
+  const correctE = fiveChoiceQuestions.find(q => q.respuesta === 4);
+  const wrongE = fiveChoiceQuestions.find(q => q.respuesta !== 4);
+  test.skip(!correctE || !wrongE, 'The bank needs five-choice questions with E both correct and incorrect');
+
+  async function reach(target) {
+    await readyMultiple(page);
+    await page.evaluate(({ bank, target }) => {
+      for (const question of bank) {
+        if (question.pregunta === target.pregunta) return;
+        if (document.getElementById('statement-text').textContent !== question.pregunta) throw new Error('Queue mismatch');
+        document.querySelector(`.btn-option[data-choice="${question.respuesta}"]`).click();
+        document.getElementById('btn-next').click();
+      }
+      throw new Error('Five-choice target not found');
+    }, { bank: multipleQuestions, target });
+  }
+
+  await page.goto('./');
+  await reach(correctE);
+  await page.keyboard.press('e');
+  await expect(page.locator('#result-badge')).toHaveClass(/badge-success/);
+  await expect(page.locator('#multiple-actions .btn-option')).toHaveCount(correctE.opciones.length);
+  await expectOptionExplanations(page, correctE);
+
+  await page.evaluate(() => localStorage.clear());
+  await page.reload();
+  await reach(wrongE);
+  await page.keyboard.press('5');
+  await expect(page.locator('#result-badge')).toHaveClass(/badge-error/);
+  await expect(page.locator('.btn-option[data-choice="4"]')).toHaveClass(/state-wrong-chosen/);
+  await expectOptionExplanations(page, wrongE);
+});
+
+test('source figures render with their accessible alternative text', async ({ page }) => {
+  const withFigure = multipleQuestions.find(q => q.imagen);
+  test.skip(!withFigure, 'No figure-referenced question in this bank snapshot');
+  await page.goto('./');
+  await page.locator('#question-format').selectOption('multiple');
+  if (await page.locator('#shuffle-toggle').evaluate(el => el.classList.contains('active'))) {
+    await page.locator('#shuffle-toggle').click();
+  }
+  await page.evaluate(({ bank, target }) => {
+    for (const question of bank) {
+      if (question.pregunta === target.pregunta) return;
+      if (document.getElementById('statement-text').textContent !== question.pregunta) throw new Error('Queue mismatch');
+      document.querySelector(`.btn-option[data-choice="${question.respuesta}"]`).click();
+      document.getElementById('btn-next').click();
+    }
+    throw new Error('Question with source figure not found');
+  }, { bank: multipleQuestions, target: withFigure });
+  await expect(page.locator('#question-image')).toHaveAttribute('alt', withFigure.imagen.alt);
+  await expect.poll(() => page.locator('#question-image').evaluate(image => image.complete && image.naturalWidth > 0)).toBe(true);
+  await expect(page.locator('#question-image')).toBeVisible();
 });
 
 test('review queue is scoped to the selected format and topic and survives refresh', async ({ page }) => {
@@ -135,39 +194,41 @@ test('review queue is scoped to the selected format and topic and survives refre
   await expect(page.locator('#failed-count-badge')).toHaveText('0');
 });
 
-test('all MC questions show exact explanations and verdicts for each of the four choices', async ({ page }) => {
+test('all MC questions show exact explanations and verdicts for each available choice', async ({ page }) => {
   test.setTimeout(60_000);
   await readyMultiple(page);
   const reviewed = await page.evaluate(bank => {
     const get = id => document.getElementById(id);
     let count = 0;
-    for (let choice = 0; choice < 4; choice++) {
+    const maxChoiceCount = Math.max(...bank.map(q => q.opciones.length));
+    for (let choice = 0; choice < maxChoiceCount; choice++) {
       document.querySelector('[data-topic="todos"]').click();
       for (const q of bank) {
         if (get('statement-text').textContent !== q.pregunta) throw new Error('Sequence mismatch: ' + q.id);
-        get('multiple-actions').querySelector(`[data-choice="${choice}"]`).click();
+        const selectedChoice = choice < q.opciones.length ? choice : q.respuesta;
+        get('multiple-actions').querySelector(`[data-choice="${selectedChoice}"]`).click();
         if (get('explanation-card').hidden) throw new Error('Explanation hidden: ' + q.id);
         if (get('explanation-text').textContent !== q.explicacion) throw new Error('Wrong theory: ' + q.id);
         const explanations = [...get('option-explanations').children].map(el => el.textContent);
-        if (explanations.length !== 4 || q.explicacionesOpciones.some(text => !explanations.some(row => row.includes(text)))) {
+        if (explanations.length !== q.opciones.length || q.explicacionesOpciones.some(text => !explanations.some(row => row.includes(text)))) {
           throw new Error('Missing option explanation: ' + q.id);
         }
         if (get('trampa-text').textContent !== (q.trampa || '') || get('trampa-text').hidden === !!q.trampa) throw new Error('Wrong trap: ' + q.id);
         if (get('source-text').textContent !== (q.fuente || '') || get('source-text').hidden === !!q.fuente) throw new Error('Wrong source: ' + q.id);
-        const success = choice === q.respuesta;
+        const success = selectedChoice === q.respuesta;
         if (get('result-badge').classList.contains('badge-success') !== success) throw new Error('Wrong verdict: ' + q.id);
         const buttons = [...get('multiple-actions').querySelectorAll('.btn-option')];
-        if (buttons.length !== 4 || buttons.some(button => !button.disabled)) throw new Error('Unlocked option: ' + q.id);
+        if (buttons.length !== q.opciones.length || buttons.some(button => !button.disabled)) throw new Error('Unlocked option: ' + q.id);
         if (!buttons[q.respuesta].classList.contains('state-correct')) throw new Error('Correct option not marked: ' + q.id);
-        if (!success && !buttons[choice].classList.contains('state-wrong-chosen')) throw new Error('Chosen wrong option not marked: ' + q.id);
+        if (!success && !buttons[selectedChoice].classList.contains('state-wrong-chosen')) throw new Error('Chosen wrong option not marked: ' + q.id);
         get('btn-next').click();
-        count++;
+        if (choice < q.opciones.length) count++;
       }
       if (get('completion-card').hidden || get('progress-bar').style.width !== '100%') throw new Error('Incomplete MC round');
     }
     return count;
   }, multipleQuestions);
-  expect(reviewed).toBe(multipleQuestions.length * 4);
+  expect(reviewed).toBe(multipleQuestions.reduce((sum, q) => sum + q.opciones.length, 0));
   await page.reload();
   await expect(page.locator('#completion-card')).toBeVisible();
   await expect(page.locator('#question-format')).toHaveValue('multiple');
@@ -196,7 +257,7 @@ test('MC layout fits narrow screens in both themes', async ({ page, browserName 
       }
       throw new Error('Could not reach question with longest options');
     }, { bank: multipleQuestions, target: longest.pregunta });
-    await expect(page.locator('#multiple-actions .btn-option')).toHaveCount(4);
+    await expect(page.locator('#multiple-actions .btn-option')).toHaveCount(longest.opciones.length);
     const before = await page.evaluate(() => document.documentElement.scrollWidth);
     expect(before, `MC layout overflow at ${width}px`).toBeLessThanOrEqual(width);
     const active = longest;
@@ -239,6 +300,28 @@ test('a malformed multiple-choice bank is rejected without enabling options', as
     explicacion: 'Explicación general',
     trampa: 'Trampa',
     fuente: 'Fuente'
+  }];
+  await page.route('**/preguntas.json', route => route.fulfill({
+    contentType: 'application/json',
+    body: JSON.stringify(malformedBank)
+  }));
+  await page.goto('./');
+  await expect(page.locator('#retry-load-btn')).toBeVisible();
+  await expect(page.locator('#multiple-actions .btn-option')).toHaveCount(0);
+});
+
+test('more than six choices are rejected instead of silently truncating them', async ({ page }) => {
+  const options = ['A', 'B', 'C', 'D', 'E', 'F', 'G'];
+  const malformedBank = [...allQuestions, {
+    id: 'too-many-options',
+    tipo: 'multiple',
+    tema: 'tema1',
+    temaNombre: 'Tema 1',
+    pregunta: 'Pregunta con siete opciones',
+    opciones: options,
+    respuesta: 6,
+    explicacionesOpciones: options.map(option => 'Explicación ' + option),
+    explicacion: 'Explicación general'
   }];
   await page.route('**/preguntas.json', route => route.fulfill({
     contentType: 'application/json',

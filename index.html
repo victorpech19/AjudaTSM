@@ -69,7 +69,7 @@
           <select id="question-format">
             <option value="todos">Tots · V/F i opció múltiple</option>
             <option value="vf">Vertader / Fals</option>
-            <option value="multiple">Opció múltiple · A, B, C, D</option>
+            <option value="multiple">Opció múltiple · A–F</option>
           </select>
         </div>
         <div class="settings-row">
@@ -162,6 +162,7 @@
             <p class="statement-text" id="statement-text" lang="es">
               Carregant preguntes...
             </p>
+            <img class="question-image" id="question-image" alt="" hidden>
           </div>
 
           <!-- True / False Action Buttons -->
@@ -203,6 +204,7 @@
               <ul class="option-explanations" id="option-explanations" aria-label="Justificació de cada opció" lang="es" hidden></ul>
               <p class="trap-text" id="trampa-text" lang="es" hidden></p>
               <p class="source-text" id="source-text" lang="es" hidden></p>
+              <p class="source-text" id="answer-basis-text" lang="es" hidden></p>
               <div class="tags-row" id="explanation-tags">
                 <!-- Badges populated by JS -->
               </div>
@@ -266,7 +268,7 @@
           <span class="hint-label">Atalls de teclat:</span>
           <span class="hint-item"><kbd>V</kbd> o <kbd>←</kbd> Verdader</span>
           <span class="hint-item"><kbd>F</kbd> o <kbd>→</kbd> Fals</span>
-          <span class="hint-item"><kbd>A–D</kbd> o <kbd>1–4</kbd> Opció</span>
+          <span class="hint-item"><kbd>A–F</kbd> o <kbd>1–6</kbd> Opció</span>
           <span class="hint-item"><kbd>Espai</kbd> o <kbd>Enter</kbd> Següent</span>
         </div>
         <div class="footer-meta">
