@@ -2,14 +2,14 @@
 
 Aplicación pública: [AjudaTSM](https://victorpech19.github.io/AjudaTSM/).
 
-## Publicación
+## Publicación inicial de la versión de 165 preguntas
 
 - Repositorio público en `victorpech19/AjudaTSM`, rama `main`, GitHub Pages desde la raíz y HTTPS obligatorio.
 - Versión con ambos formatos y temario corregido `8aebf4f`: [ejecución de Pages completada](https://github.com/victorpech19/AjudaTSM/actions/runs/39652584484).
 - Los diez recursos de la aplicación devolvieron HTTP 200 sin autenticación. Sus SHA-256 coincidieron con los archivos del commit publicado. Los textos locales se compararon normalizando CRLF a LF; los PNG, byte a byte.
 - SHA-256 del banco publicado: `4626ed24dd15f1c07b15b02f20e1822a62ee0249b5122f33419a0f9c2482b832`.
 
-## Banco
+## Banco de aquella publicación
 
 - 165 identificadores únicos: 120 afirmaciones V/F y 45 preguntas de test con cuatro alternativas.
 - Las 45 preguntas de test identifican fecha, pregunta y página del parcial fuente; sus claves se contrastaron con las marcas de solución disponibles.
@@ -55,4 +55,4 @@ Se amplió el banco desde 165 hasta 291 preguntas: 120 V/F y 171 de opción múl
 
 La ejecución local de Playwright sobre este banco completó 62 de 62 pruebas en Chromium y WebKit (35,5 s). Incluye todas las alternativas disponibles de cada pregunta, explicación y veredicto, modos V/F y test, persistencia, caché sin conexión, accesibilidad automatizada y tamaños móviles.
 
-La versión ampliada está pendiente de publicación y de repetir la comprobación contra GitHub Pages. La evidencia anterior de esta página describe la publicación previa de 165 preguntas.
+La publicación ampliada corresponde al commit `8ea6607`; Pages completó el despliegue `39662153435` y el redepliegue `39662487304`. Las pruebas públicas terminaron con 62/62 en Chromium y WebKit (37,9 s). Los recursos principales devolvieron HTTP 200; el JSON público coincide byte a byte con el archivo local (SHA-256 `3dbc7ccbf4504e84b8536ccd13aec67e4aaf363775b552345642907ab2deb36b`). El test de maquetación espera a que cargue el texto, para cubrir la latencia de GitHub Pages.

@@ -6,11 +6,11 @@ Pràctica interactiva del parcial de **Tecnologia i Selecció de Materials · 24
 
 291 preguntes: 120 V/F i 171 de test. Organització segons la presentació docent de 2026-2027: **tema 1**, acers, fundicions i tractaments tèrmics; **tema 2**, alumini i aliatges; **tema 3**, emmotllament i solidificació.
 
-- Afirmacions vertader/fals i preguntes d'opció múltiple amb quatre alternatives dels temes de siderúrgia, acers i fundicions; tractaments tèrmics; alumini i solidificació.
+- Afirmacions vertader/fals i preguntes d'opció múltiple amb entre dues i sis alternatives dels temes de siderúrgia, acers i fundicions; tractaments tèrmics; alumini i solidificació.
 - Explicació teòrica immediata després de respondre, amb el mecanisme físic i la confusió habitual. Les preguntes de test expliquen també per què cada opció és correcta o incorrecta.
 - Filtres per tema i format, pràctica mixta, ordre aleatori o seqüencial, progrés de la tanda i repàs de les errades del tema i format seleccionats.
 - Sessió, preferències i errades desades en aquest navegador. Les dades no se sincronitzen entre dispositius.
-- Interfície adaptable a mòbil, tema clar/fosc i dreceres de teclat: V/F per a les afirmacions; A–D o 1–4 per al test; espai per avançar després de llegir l'explicació.
+- Interfície adaptable a mòbil, tema clar/fosc i dreceres de teclat: V/F per a les afirmacions; A–F o 1–6 per al test; espai per avançar després de llegir l'explicació.
 - Còpia sense connexió després d'una primera càrrega completa amb internet.
 
 ## Fer servir al mòbil
@@ -45,4 +45,4 @@ npm test
 
 GitHub Pages publica la branca `main` des de l'arrel. Tots els camins de recursos són relatius per funcionar sota `/AjudaTSM/`. Si es modifica el contingut de la còpia sense connexió, cal actualitzar la versió de memòria cau de `sw.js`.
 
-El banc viu a `preguntas.json`: cada registre té un identificador estable, tema, enunciat, resposta, explicació i paraules clau. Les afirmacions tenen resposta booleana. El tipus `multiple` incorpora entre dues i sis `opciones`, una `respuesta` com a ?ndex v?lid i una explicaci? individual per opci?. Les preguntes procedents d'exàmens inclouen la font i la trampa conceptual.
+El banc viu a `preguntas.json`: cada registre té un identificador estable, tema, enunciat, resposta, explicació i paraules clau. Les afirmacions tenen resposta booleana. El tipus `multiple` incorpora entre dues i sis `opciones`, una `respuesta` com a índex vàlid i una explicació individual per opció. Les preguntes procedents d’exàmens inclouen la font i la trampa conceptual.
