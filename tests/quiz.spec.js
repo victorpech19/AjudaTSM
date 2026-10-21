@@ -64,7 +64,6 @@ test('explains immediately, locks the answer, and advances progress once', async
 });
 
 test('answers every question with its correct true or false control', async ({ page, browserName }) => {
-  test.skip(browserName !== 'chromium', 'full-bank iteration runs once in Chromium');
   test.setTimeout(120_000);
   await loadSequential(page);
   const controlsUsed = new Set();
