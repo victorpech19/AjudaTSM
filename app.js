@@ -471,7 +471,7 @@
     dom.optionExplanations.hidden = true;
     dom.optionExplanations.replaceChildren();
     dom.cardFormatBadge.textContent = isMultipleChoice ? 'Opció múltiple' : 'V/F';
-    dom.cardTopicBadge.textContent = state.isReviewMode ? 'Mode Repàs (preguntes fallades)' : q.temaNombre;
+    dom.cardTopicBadge.textContent = state.isReviewMode ? "Repàs d'errades" : q.temaNombre;
     dom.cardIndexBadge.textContent = 'Pregunta ' + (state.currentIndex + 1) + ' de ' + state.activeQueue.length;
     dom.statementText.textContent = q.pregunta;
     renderQuestionImage(q.imagen);
@@ -565,9 +565,9 @@
   function showExplanationCard(correct, q, shouldScroll) {
     dom.resultBadge.className = correct ? 'result-badge badge-success' : 'result-badge badge-error';
     dom.resultIcon.textContent = correct ? '✓' : '✕';
-    dom.resultTitle.textContent = correct ? 'Molt bé! Resposta correcta' : 'Resposta incorrecta';
+    dom.resultTitle.textContent = correct ? 'Resposta correcta' : 'Resposta incorrecta';
     const isMultipleChoice = getQuestionType(q) === 'multiple';
-    dom.verdictTag.replaceChildren(document.createTextNode(isMultipleChoice ? 'Respuesta correcta: ' : "L'afirmació és "));
+    dom.verdictTag.replaceChildren(document.createTextNode(isMultipleChoice ? 'Resposta correcta: ' : "L'afirmació és "));
     const verdict = document.createElement('strong');
     verdict.textContent = isMultipleChoice
       ? getOptionLetter(q.respuesta) + ' · ' + q.opciones[q.respuesta]
@@ -579,7 +579,7 @@
     if (Array.isArray(q.palabrasClave)) q.palabrasClave.forEach(tag => {
       const span = document.createElement('span');
       span.className = 'concept-tag';
-      span.textContent = '#' + String(tag);
+      span.textContent = String(tag);
       dom.explanationTags.appendChild(span);
     });
     setOptionalText(dom.trampaText, q.trampa);
@@ -662,7 +662,7 @@
     const emptyReview = state.isReviewMode && state.activeQueue.length === 0;
     const emptyScope = !state.isReviewMode && state.activeQueue.length === 0;
     dom.completionTitle.textContent = emptyReview ? 'No hi ha errades en aquest filtre' :
-      (emptyScope ? 'No hi ha preguntes disponibles' : 'Tanda completada!');
+      (emptyScope ? 'No hi ha preguntes disponibles' : 'Tanda completada');
     dom.completionMessage.textContent = emptyReview
       ? 'No hi ha preguntes fallades per al tema i format seleccionats.'
       : (emptyScope ? 'Canvia el tema o el format per trobar preguntes.' :
