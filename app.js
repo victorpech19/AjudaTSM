@@ -51,6 +51,9 @@
     multipleActions: document.getElementById('multiple-actions'),
     explanationCard: document.getElementById('explanation-card'),
     explanationHeading: document.getElementById('explanation-heading') || document.querySelector('.explanation-heading'),
+    explanationHeader: document.getElementById('explanation-header'),
+    explanationDetails: document.getElementById('explanation-details'),
+    btnExplain: document.getElementById('btn-explain'),
     resultBadge: document.getElementById('result-badge'),
     resultIcon: document.getElementById('result-icon'),
     resultTitle: document.getElementById('result-title'),
@@ -567,10 +570,10 @@
     dom.resultIcon.textContent = correct ? '✓' : '✕';
     dom.resultTitle.textContent = correct ? 'Resposta correcta' : 'Resposta incorrecta';
     const isMultipleChoice = getQuestionType(q) === 'multiple';
-    dom.verdictTag.replaceChildren(document.createTextNode(isMultipleChoice ? 'Resposta correcta: ' : "L'afirmació és "));
+    dom.verdictTag.replaceChildren(document.createTextNode(isMultipleChoice ? 'La bona és la ' : "L'afirmació és "));
     const verdict = document.createElement('strong');
     verdict.textContent = isMultipleChoice
-      ? getOptionLetter(q.respuesta) + ' · ' + q.opciones[q.respuesta]
+      ? getOptionLetter(q.respuesta)
       : (q.respuesta ? 'VERDADERA' : 'FALSA');
     dom.verdictTag.appendChild(verdict);
     dom.explanationText.textContent = q.explicacion;
@@ -585,13 +588,25 @@
     setOptionalText(dom.trampaText, q.trampa);
     setOptionalText(dom.sourceText, q.fuente);
     setOptionalText(dom.answerBasisText, q.baseRespuesta);
+    setExplanationOpen(false);
     dom.explanationCard.hidden = false;
     if (shouldScroll) {
-      const heading = dom.explanationHeading || dom.explanationCard;
-      if (heading === dom.explanationCard && !heading.hasAttribute('tabindex')) heading.setAttribute('tabindex', '-1');
-      heading.focus({ preventScroll: true });
-      heading.scrollIntoView({ behavior: prefersReducedMotion() ? 'auto' : 'smooth', block: 'start' });
+      dom.explanationHeader.focus({ preventScroll: true });
+      dom.explanationCard.scrollIntoView({ behavior: prefersReducedMotion() ? 'auto' : 'smooth', block: 'nearest' });
     }
+  }
+
+  // La justificació només es mostra quan es demana.
+  function setExplanationOpen(open, shouldFocus = false) {
+    dom.explanationDetails.hidden = !open;
+    dom.btnExplain.setAttribute('aria-expanded', open ? 'true' : 'false');
+    dom.btnExplain.textContent = open ? 'Amagar' : 'Explicació';
+    if (open && shouldFocus) focusAndScroll(dom.explanationHeading);
+  }
+
+  function toggleExplanation() {
+    if (!state.answered) return;
+    setExplanationOpen(dom.explanationDetails.hidden, true);
   }
 
   function renderOptionExplanations(question) {
@@ -603,10 +618,8 @@
       const item = document.createElement('li');
       if (index === question.respuesta) item.classList.add('correct-option');
       const label = document.createElement('strong');
-      label.textContent = getOptionLetter(index) + ' · ' + (index === question.respuesta
-        ? 'Resposta que cal triar'
-        : 'No és la resposta demanada');
-      item.append(label, document.createTextNode(' — ' + explanation));
+      label.textContent = getOptionLetter(index) + ')';
+      item.append(label, document.createTextNode(' ' + explanation));
       dom.optionExplanations.appendChild(item);
     });
   }
@@ -717,6 +730,7 @@
     dom.btnTrue.addEventListener('click', () => { if (questionsReady && !isLoading) handleAnswer(true); });
     dom.btnFalse.addEventListener('click', () => { if (questionsReady && !isLoading) handleAnswer(false); });
     dom.btnNext.addEventListener('click', nextQuestion);
+    dom.btnExplain.addEventListener('click', toggleExplanation);
     dom.questionFormat.addEventListener('change', event => applyFormatFilter(event.target.value));
     dom.topicFilters.addEventListener('click', event => {
       const pill = event.target.closest('.filter-pill');
@@ -779,7 +793,13 @@
         }
         return;
       }
-      const canAdvance = target === document.body || target === dom.explanationHeading || target === dom.btnNext;
+      if (['e', 'E'].includes(event.key)) {
+        event.preventDefault();
+        toggleExplanation();
+        return;
+      }
+      const canAdvance = target === document.body || target === dom.explanationHeading ||
+        target === dom.explanationHeader || target === dom.btnNext;
       if (canAdvance && [' ', 'Enter', 'ArrowDown'].includes(event.key)) {
         event.preventDefault();
         nextQuestion();

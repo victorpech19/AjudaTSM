@@ -52,7 +52,7 @@ test('starts in mixed mode and intersects format with every topic', async ({ pag
   }
 });
 
-test('correct and incorrect answers immediately show theory and every option explanation', async ({ page }) => {
+test('answers show the result at once and the theory and every option explanation on request', async ({ page }) => {
   await readyMultiple(page);
   const first = byStatement(await page.locator('#statement-text').textContent());
   expect(first).toBeTruthy();
@@ -60,6 +60,12 @@ test('correct and incorrect answers immediately show theory and every option exp
   await page.locator(`.btn-option[data-choice="${first.respuesta}"]`).click();
   await expect(page.locator('#explanation-card')).toBeVisible();
   await expect(page.locator('#result-badge')).toHaveClass(/badge-success/);
+  await expect(page.locator('#explanation-details')).toBeHidden();
+  await expect(page.locator('#btn-explain')).toHaveAttribute('aria-expanded', 'false');
+  await page.locator('#btn-explain').click();
+  await expect(page.locator('#explanation-details')).toBeVisible();
+  await expect(page.locator('#btn-explain')).toHaveAttribute('aria-expanded', 'true');
+  await expect(page.locator('#explanation-heading')).toBeFocused();
   await expect(page.locator('#explanation-text')).toHaveText(first.explicacion);
   await expectOptionExplanations(page, first);
   await expect(page.locator(`.btn-option[data-choice="${first.respuesta}"]`)).toHaveClass(/state-correct/);
@@ -72,6 +78,9 @@ test('correct and incorrect answers immediately show theory and every option exp
   const wrongChoice = second.respuesta === 0 ? 1 : 0;
   await page.locator(`.btn-option[data-choice="${wrongChoice}"]`).click();
   await expect(page.locator('#result-badge')).toHaveClass(/badge-error/);
+  await expect(page.locator('#explanation-details')).toBeHidden();
+  await page.keyboard.press('e');
+  await expect(page.locator('#explanation-details')).toBeVisible();
   await expect(page.locator('#explanation-text')).toHaveText(second.explicacion);
   await expectOptionExplanations(page, second);
   await expect(page.locator(`.btn-option[data-choice="${second.respuesta}"]`)).toHaveClass(/state-correct/);
@@ -262,9 +271,11 @@ test('MC layout fits narrow screens in both themes', async ({ page, browserName 
     expect(before, `MC layout overflow at ${width}px`).toBeLessThanOrEqual(width);
     const active = longest;
     await page.locator(`.btn-option[data-choice="${active.respuesta}"]`).click();
+    await expect(page.locator('#explanation-header')).toBeFocused();
+    await page.locator('#btn-explain').click();
+    await expect(page.locator('#explanation-heading')).toBeFocused();
     const after = await page.evaluate(() => document.documentElement.scrollWidth);
     expect(after, `MC explanation overflow at ${width}px`).toBeLessThanOrEqual(width);
-    await expect(page.locator('#explanation-heading')).toBeFocused();
     await page.locator('#theme-toggle').evaluate(el => {
       if (document.documentElement.dataset.theme !== 'dark') el.click();
     });

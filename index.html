@@ -6,7 +6,7 @@
   <title>AjudaTSM — Tecnologia i Selecció de Materials (ETSEIB UPC)</title>
   <meta name="description" content="Practica el parcial de Tecnologia i Selecció de Materials amb preguntes vertader/fals i d'opció múltiple, explicacions metal·lúrgiques i repàs d'errades. ETSEIB UPC.">
   <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#16172a" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#0e0e10" media="(prefers-color-scheme: dark)">
   <script>
     (function () {
       var saved = null;
@@ -58,7 +58,7 @@
         <p>El parcial té molta teoria i és fàcil confondre detalls: tractaments tèrmics, tipus d'acers i fundicions, sèries d'alumini, solidificació. Aquí pots practicar-ho amb preguntes com les de l'examen i veure de seguida per què la resposta és la que és.</p>
         <ul class="check-list">
           <li>Afirmacions de vertader o fals i preguntes de test extretes o adaptades dels parcials. Estan en castellà, com a l'examen.</li>
-          <li>Després de cada resposta surt la justificació teòrica i, a les de test, per què cada opció és o no és la bona.</li>
+          <li>Després de respondre pots obrir l'explicació: la teoria que hi ha darrere i, a les de test, per què cada opció és o no és la bona.</li>
           <li>Les preguntes que falles es guarden en aquest navegador per repassar-les després.</li>
         </ul>
       </div>
@@ -68,12 +68,12 @@
       <div class="container">
         <header class="section-header">
           <h2 class="section-title">Practica</h2>
-          <p>Tria un tema i el tipus de pregunta. Pots respondre amb el teclat: <kbd>V</kbd> i <kbd>F</kbd>, <kbd>A</kbd>–<kbd>F</kbd> per a les de test i <kbd>Espai</kbd> per passar a la següent.</p>
+          <p>Tria un tema i el tipus de pregunta. Amb teclat: <kbd>V</kbd> i <kbd>F</kbd>, <kbd>A</kbd>–<kbd>F</kbd> per a les de test, <kbd>E</kbd> per veure l'explicació i <kbd>Espai</kbd> per passar a la següent.</p>
         </header>
 
         <div class="topic-filters" id="topic-filters" role="tablist" aria-label="Filtres de tema">
           <button class="filter-pill active" data-topic="todos" role="tab" aria-selected="true" type="button">
-            <span class="pill-num">Tots els temes</span>
+            <span class="pill-num">Tots<span class="pill-num-extra"> els temes</span></span>
             <span class="pill-label">Temes 1, 2 i 3 barrejats</span>
             <span class="pill-count" id="count-todos">0</span>
           </button>
@@ -153,8 +153,8 @@
 
             <div class="multiple-actions" id="multiple-actions" role="group" aria-label="Opcions de resposta" lang="es" hidden></div>
 
-            <section class="explanation-card" id="explanation-card" hidden aria-labelledby="explanation-heading">
-              <div class="explanation-header" id="explanation-header">
+            <section class="explanation-card" id="explanation-card" hidden aria-labelledby="result-title">
+              <div class="explanation-header" id="explanation-header" tabindex="-1">
                 <p class="result-badge" id="result-badge">
                   <span class="result-icon" id="result-icon" aria-hidden="true">✓</span>
                   <span class="result-title" id="result-title" role="status">Resposta correcta</span>
@@ -162,7 +162,12 @@
                 <p class="verdict-tag" id="verdict-tag">L'afirmació és <strong>VERDADERA</strong></p>
               </div>
 
-              <div class="explanation-content">
+              <div class="explanation-actions">
+                <button id="btn-explain" class="btn-secondary" type="button" aria-expanded="false" aria-controls="explanation-details">Explicació</button>
+                <button id="btn-next" class="btn-next" type="button">Següent</button>
+              </div>
+
+              <div class="explanation-content" id="explanation-details" hidden>
                 <h3 class="explanation-heading" id="explanation-heading" tabindex="-1">Per què</h3>
                 <p class="explanation-text" id="explanation-text" lang="es"></p>
                 <ul class="option-explanations" id="option-explanations" aria-label="Justificació de cada opció" lang="es" hidden></ul>
@@ -170,10 +175,6 @@
                 <p class="source-text" id="source-text" lang="es" hidden></p>
                 <p class="source-text" id="answer-basis-text" lang="es" hidden></p>
                 <div class="tags-row" id="explanation-tags"></div>
-              </div>
-
-              <div class="explanation-actions">
-                <button id="btn-next" class="btn-next" type="button">Següent</button>
               </div>
             </section>
           </article>
