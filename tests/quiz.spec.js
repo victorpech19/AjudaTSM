@@ -44,7 +44,7 @@ test('loads dataset, filters every topic, and renders the matching first stateme
   await expect(page.locator('#count-todos')).toHaveText(String(questions.length));
 });
 
-test('explains immediately, locks the answer, and advances progress once', async ({ page }) => {
+test('shows the result at once, explains on request, locks the answer, and advances progress once', async ({ page }) => {
   await loadSequential(page);
   const shown = await page.locator('#statement-text').textContent();
   const current = questions.find(q => q.pregunta === shown);
@@ -53,7 +53,12 @@ test('explains immediately, locks the answer, and advances progress once', async
   await answerFor(page, current);
   await expect(page.locator('#explanation-card')).toBeVisible();
   await expect(page.locator('#result-title')).toContainText('correcta');
+  await expect(page.locator('#explanation-details')).toBeHidden();
+  await page.locator('#btn-explain').click();
+  await expect(page.locator('#explanation-details')).toBeVisible();
   await expect(page.locator('#explanation-text')).toHaveText(current.explicacion);
+  await page.locator('#btn-explain').click();
+  await expect(page.locator('#explanation-details')).toBeHidden();
   await expect(page.locator('#verdict-tag')).toContainText(current.respuesta ? 'VERDADERA' : 'FALSA');
   await expect(page.locator('#btn-true')).toBeDisabled();
   await expect(page.locator('#btn-false')).toBeDisabled();
@@ -144,7 +149,11 @@ test('keyboard answer and next shortcuts respond once', async ({ page }) => {
   expect(q).toBeTruthy();
   await page.keyboard.press(q.respuesta ? 'v' : 'f');
   await expect(page.locator('#explanation-card')).toBeVisible();
+  await expect(page.locator('#explanation-details')).toBeHidden();
   await expect(page.locator('#stat-correct')).toHaveText('1');
+  await page.keyboard.press('e');
+  await expect(page.locator('#explanation-details')).toBeVisible();
+  await expect(page.locator('#explanation-heading')).toBeFocused();
   await page.keyboard.press('Space');
   await expect(page.locator('#card-index-badge')).toHaveText(`Pregunta 2 de ${questions.length}`);
 });
@@ -208,6 +217,9 @@ test('layout has no horizontal overflow at requested viewport sizes and landscap
       expect(answered.body, `answer body overflow at ${width}px: ${JSON.stringify(answered)}`).toBeLessThanOrEqual(width);
       if (width === 320) await page.screenshot({ path: artifactPath(browserName, 'answered-mobile-320.png') });
       if (width === 390) {
+        await expect(page.locator('#explanation-header')).toBeFocused();
+        await expect(page.locator('#explanation-details')).toBeHidden();
+        await page.locator('#btn-explain').click();
         await page.locator('#explanation-heading').scrollIntoViewIfNeeded();
         await expect(page.locator('#explanation-heading')).toBeVisible();
         await expect(page.locator('#explanation-heading')).toBeFocused();

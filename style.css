@@ -30,25 +30,25 @@
 }
 
 [data-theme="dark"] {
-  --bg: #16172a;
-  --bg-alt: #1b1d33;
-  --box: #222440;
-  --line: #2f3253;
-  --line-strong: #444870;
-  --heading: #dddbf5;
-  --text: #c9cad6;
-  --muted: #a3a4bd;
+  --bg: #0e0e10;
+  --bg-alt: #141416;
+  --box: #1b1b1e;
+  --line: #2a2a2e;
+  --line-strong: #3e3e44;
+  --heading: #ececee;
+  --text: #c9c9cd;
+  --muted: #9c9ca3;
   --accent: #3cc3ea;
   --accent-dark: #3cc3ea;
   --accent-darker: #6dd3f0;
-  --accent-soft: #1d3346;
-  --on-accent: #0f1a24;
-  --shadow: 0 0 30px rgba(0, 0, 0, 0.35);
+  --accent-soft: #15262d;
+  --on-accent: #0b1418;
+  --shadow: 0 0 24px rgba(0, 0, 0, 0.5);
 
   --ok: #6fcf94;
-  --ok-soft: #1a3226;
+  --ok-soft: #13261b;
   --bad: #f08a92;
-  --bad-soft: #3a1f27;
+  --bad-soft: #2c1618;
 
   color-scheme: dark;
 }
@@ -467,8 +467,8 @@ kbd {
 
 /* Explicació */
 .explanation-card {
-  margin-top: 28px;
-  padding-top: 22px;
+  margin-top: 22px;
+  padding-top: 18px;
   border-top: 1px solid var(--line);
 }
 
@@ -477,8 +477,8 @@ kbd {
   align-items: baseline;
   flex-wrap: wrap;
   gap: 4px 16px;
-  margin-bottom: 14px;
 }
+.explanation-header:focus { outline: none; }
 
 .result-badge {
   display: inline-flex;
@@ -493,7 +493,14 @@ kbd {
 .verdict-tag { font-size: 14px; color: var(--muted); }
 .verdict-tag strong { color: var(--heading); }
 
-.explanation-content { display: flex; flex-direction: column; gap: 12px; }
+.explanation-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 22px;
+  padding-top: 18px;
+  border-top: 1px dashed var(--line);
+}
 
 .explanation-heading {
   font-size: 14px;
@@ -538,7 +545,12 @@ kbd {
   color: var(--muted);
 }
 
-.explanation-actions { margin-top: 22px; text-align: right; }
+.explanation-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 16px;
+}
 
 /* Final de tanda */
 .completion-title { font-size: 24px; font-weight: 600; }
@@ -558,7 +570,11 @@ kbd {
 
 .btn-secondary {
   padding: 10px 22px;
+  font-family: var(--font-head);
   font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
   background: var(--box);
   border: 1px solid var(--line-strong);
   border-radius: 3px;
@@ -593,23 +609,26 @@ kbd {
   .main-nav { display: none; }
   .btn-icon { margin-left: auto; }
 
-  .intro { padding: 40px 0; }
-  .intro h1 { font-size: 27px; }
-  .intro-text { font-size: 15px; margin: 12px 0 22px; }
+  .intro { padding: 44px 0; text-align: center; }
+  .intro h1 { font-size: 28px; }
+  .intro-text { font-size: 15px; margin: 14px auto 24px; }
 
   .about, .practice { padding: 40px 0; }
   .section-title { font-size: 23px; }
   .about-lead { font-size: 16px; }
 
-  .topic-filters { gap: 10px; }
-  .filter-pill { padding: 12px 12px; }
-  .pill-num { font-size: 14px; }
-  .pill-label { font-size: 12px; }
+  .topic-filters { grid-template-columns: repeat(4, 1fr); gap: 6px; }
+  .filter-pill { align-items: center; text-align: center; gap: 0; padding: 10px 4px 9px; }
+  .pill-num { font-size: 13px; }
+  .pill-num-extra, .pill-label { display: none; }
+  .pill-count { padding-top: 2px; }
+  .pill-count::after { content: ""; }
 
-  .format-row { width: 100%; }
-  .format-row select { flex: 1; }
-  .btn-toggle { flex: 1; padding: 0 8px; }
-  #reset-btn { margin-left: 0; }
+  .settings-row { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 16px 0 14px; }
+  .format-row { grid-column: 1 / -1; }
+  .format-row select { flex: 1; height: 40px; }
+  .btn-toggle { height: 40px; padding: 0 6px; }
+  #reset-btn { grid-column: 1 / -1; justify-self: end; margin: -4px 0 0; }
 
   .scoreboard { flex-direction: column; align-items: stretch; gap: 8px; padding: 12px 16px; }
   .score-list { justify-content: space-between; gap: 8px; }
@@ -620,9 +639,10 @@ kbd {
   .statement-text { font-size: 16px; }
   .badge-id { margin-left: 0; }
 
-  .actions-container .btn-action { flex: 1; min-width: 0; padding: 0 10px; }
-  .btn-option { padding: 10px 12px; }
-  .explanation-actions .btn-next { width: 100%; }
+  .actions-container { gap: 10px; margin-top: 22px; }
+  .actions-container .btn-action { flex: 1; min-width: 0; height: 54px; padding: 0 10px; font-size: 16px; }
+  .btn-option { padding: 11px 12px; }
+  .explanation-actions > button { flex: 1; padding-left: 8px; padding-right: 8px; }
 
   .completion-stats { grid-template-columns: repeat(2, 1fr); gap: 10px; }
   .completion-actions > button { width: 100%; }
