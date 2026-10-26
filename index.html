@@ -1,280 +1,210 @@
 <!DOCTYPE html>
-<html lang="ca" data-theme="dark">
+<html lang="ca" data-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AjudaTSM — Tecnologia i Selecció de Materials (ETSEIB UPC)</title>
   <meta name="description" content="Practica el parcial de Tecnologia i Selecció de Materials amb preguntes vertader/fals i d'opció múltiple, explicacions metal·lúrgiques i repàs d'errades. ETSEIB UPC.">
-  <meta name="theme-color" content="#0f172a">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#16172a" media="(prefers-color-scheme: dark)">
+  <script>
+    (function () {
+      var saved = null;
+      try { saved = localStorage.getItem('ajudatsm-theme'); } catch (error) {}
+      var dark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      document.documentElement.setAttribute('data-theme',
+        saved === 'light' || saved === 'dark' ? saved : (dark ? 'dark' : 'light'));
+    })();
+  </script>
 
   <link rel="icon" href="icon.svg" type="image/svg+xml">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="apple-touch-icon" href="icon-192.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700&family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <a class="skip-link" href="#quiz-card">Anar a la pregunta</a>
   <div class="app-layout">
-    <!-- Header -->
-    <header class="app-header">
-      <div class="header-container">
-        <div class="brand-group">
-          <div class="brand-badge">
-            <span class="brand-icon" aria-hidden="true"><img src="icon.svg" width="36" height="36" alt=""></span>
-            <div>
-              <div class="brand-title-row">
-                <h1 class="brand-title">AjudaTSM</h1>
-                <span class="sub-badge">ETSEIB · UPC</span>
-              </div>
-              <p class="brand-subtitle">Tecnologia i Selecció de Materials — Q5</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="header-actions">
-          <button id="theme-toggle" class="btn-icon" title="Alternar tema Clar / Fosc" aria-label="Alternar tema">
-            <span class="theme-icon-dark" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 13a9 9 0 0 1-10-10 9 9 0 1 0 10 10Z"/></svg></span>
-            <span class="theme-icon-light" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg></span>
-          </button>
-        </div>
+    <header class="site-header app-header">
+      <div class="container header-inner">
+        <a class="logo" href="#inici">Ajuda<span>TSM</span></a>
+        <nav class="main-nav" aria-label="Seccions">
+          <a href="#inici">Inici</a>
+          <a href="#sobre">Sobre aquesta web</a>
+          <a href="#practica">Practica</a>
+        </nav>
+        <button id="theme-toggle" class="btn-icon" type="button" title="Canviar entre tema clar i fosc" aria-label="Canviar entre tema clar i fosc">
+          <span class="theme-icon-dark" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 13a9 9 0 0 1-10-10 9 9 0 1 0 10 10Z"/></svg></span>
+          <span class="theme-icon-light" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg></span>
+        </button>
       </div>
     </header>
 
-    <!-- Main Navigation & Filters -->
-    <nav class="controls-section">
-      <div class="controls-container">
-        <div class="filters-row">
-          <div class="topic-filters" id="topic-filters" role="tablist" aria-label="Filtres de tema">
-            <button class="filter-pill active" data-topic="todos" role="tab" aria-selected="true">
-              <span class="pill-dot"></span>
-              Tots els temes <span class="pill-count" id="count-todos">0</span>
-            </button>
-            <button class="filter-pill" data-topic="tema1" role="tab" aria-selected="false">
-              <span class="pill-dot"></span>
-              Tema 1: Acers, fundicions i tractaments tèrmics <span class="pill-count" id="count-tema1">0</span>
-            </button>
-            <button class="filter-pill" data-topic="tema2" role="tab" aria-selected="false">
-              <span class="pill-dot"></span>
-              Tema 2: Alumini i aliatges <span class="pill-count" id="count-tema2">0</span>
-            </button>
-            <button class="filter-pill" data-topic="tema3" role="tab" aria-selected="false">
-              <span class="pill-dot"></span>
-              Tema 3: Emmotllament i solidificació <span class="pill-count" id="count-tema3">0</span>
-            </button>
-          </div>
-        </div>
-
-        <div class="format-row">
-          <label for="question-format">Format de pregunta</label>
-          <select id="question-format">
-            <option value="todos">Tots · V/F i opció múltiple</option>
-            <option value="vf">Vertader / Fals</option>
-            <option value="multiple">Opció múltiple · A–F</option>
-          </select>
-        </div>
-        <div class="settings-row">
-          <div class="mode-toggles">
-            <button id="shuffle-toggle" class="btn-toggle active" title="Alternar entre ordre aleatori o seqüencial">
-              <span class="toggle-icon" aria-hidden="true">⇄</span>
-              <span class="toggle-text">Aleatori: <strong>Activat</strong></span>
-            </button>
-            <button id="review-mode-btn" class="btn-toggle btn-review" disabled title="Repassar només les preguntes fallades">
-              <span class="toggle-icon" aria-hidden="true">↻</span>
-              <span class="toggle-text">Mode Repàs (<span id="failed-count-badge">0</span>)</span>
-            </button>
-          </div>
-
-          <div class="quick-actions">
-            <button id="reset-btn" class="btn-ghost" title="Reiniciar les estadístiques i començar de nou">
-              <span>↺ Reiniciar</span>
-            </button>
-          </div>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Stats Banner -->
-    <section class="stats-section">
-      <div class="stats-container">
-        <div class="stat-card stat-correct">
-          <div class="stat-icon">✓</div>
-          <div class="stat-info">
-            <span class="stat-value" id="stat-correct">0</span>
-            <span class="stat-label">Encerts</span>
-          </div>
-        </div>
-
-        <div class="stat-card stat-wrong">
-          <div class="stat-icon">✗</div>
-          <div class="stat-info">
-            <span class="stat-value" id="stat-wrong">0</span>
-            <span class="stat-label">Errades</span>
-          </div>
-        </div>
-
-        <div class="stat-card stat-streak">
-          <div class="stat-icon" aria-hidden="true">↗</div>
-          <div class="stat-info">
-            <span class="stat-value" id="stat-streak">0</span>
-            <span class="stat-label">Ratxa actual</span>
-          </div>
-        </div>
-
-        <div class="stat-card stat-accuracy">
-          <div class="stat-icon" aria-hidden="true">%</div>
-          <div class="stat-info">
-            <span class="stat-value" id="stat-accuracy">0%</span>
-            <span class="stat-label">Precisió</span>
-          </div>
-        </div>
-
-        <div class="stat-card stat-progress-card">
-          <div class="progress-header">
-            <span class="progress-title">Progrés</span>
-            <span class="progress-count" id="progress-text">0 / 0</span>
-          </div>
-          <div class="progress-bar-bg">
-            <div class="progress-bar-fill" id="progress-bar" role="progressbar" aria-label="Progrés de la tanda" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" style="width: 0%;"></div>
-          </div>
-        </div>
+    <section class="intro" id="inici">
+      <div class="container">
+        <h1>Un cop de mà per estudiar <span>Tecnologia i Selecció de Materials</span></h1>
+        <p class="intro-text">Preguntes dels parcials d'altres anys, amb l'explicació de cada resposta.</p>
+        <a class="btn-get-started" href="#practica">Vull practicar</a>
       </div>
     </section>
 
-    <!-- Main Quiz Interface -->
-    <main class="quiz-main">
-      <div class="quiz-card-wrapper">
-        <div class="study-intro">
-          <p class="study-kicker">PRÀCTICA DEL PARCIAL · TEMES 1–3</p>
-          <p>Practica V/F i test, entén el mecanisme i repassa les errades.</p>
-          <span id="connection-status" class="connection-status" role="status">Progrés desat en aquest navegador</span>
+    <section class="about" id="sobre">
+      <div class="container about-inner">
+        <h2 class="section-title">Sobre aquesta web</h2>
+        <p class="about-lead">Per preparar el parcial de TSM (240151) de l'ETSEIB, temes 1 a 3.</p>
+        <p>El parcial té molta teoria i és fàcil confondre detalls: tractaments tèrmics, tipus d'acers i fundicions, sèries d'alumini, solidificació. Aquí pots practicar-ho amb preguntes com les de l'examen i veure de seguida per què la resposta és la que és.</p>
+        <ul class="check-list">
+          <li>Afirmacions de vertader o fals i preguntes de test extretes o adaptades dels parcials. Estan en castellà, com a l'examen.</li>
+          <li>Després de cada resposta surt la justificació teòrica i, a les de test, per què cada opció és o no és la bona.</li>
+          <li>Les preguntes que falles es guarden en aquest navegador per repassar-les després.</li>
+        </ul>
+      </div>
+    </section>
+
+    <main class="practice" id="practica">
+      <div class="container">
+        <header class="section-header">
+          <h2 class="section-title">Practica</h2>
+          <p>Tria un tema i el tipus de pregunta. Pots respondre amb el teclat: <kbd>V</kbd> i <kbd>F</kbd>, <kbd>A</kbd>–<kbd>F</kbd> per a les de test i <kbd>Espai</kbd> per passar a la següent.</p>
+        </header>
+
+        <div class="topic-filters" id="topic-filters" role="tablist" aria-label="Filtres de tema">
+          <button class="filter-pill active" data-topic="todos" role="tab" aria-selected="true" type="button">
+            <span class="pill-num">Tots els temes</span>
+            <span class="pill-label">Temes 1, 2 i 3 barrejats</span>
+            <span class="pill-count" id="count-todos">0</span>
+          </button>
+          <button class="filter-pill" data-topic="tema1" role="tab" aria-selected="false" type="button">
+            <span class="pill-num">Tema 1</span>
+            <span class="pill-label">Acers, fundicions i tractaments tèrmics</span>
+            <span class="pill-count" id="count-tema1">0</span>
+          </button>
+          <button class="filter-pill" data-topic="tema2" role="tab" aria-selected="false" type="button">
+            <span class="pill-num">Tema 2</span>
+            <span class="pill-label">Alumini i aliatges</span>
+            <span class="pill-count" id="count-tema2">0</span>
+          </button>
+          <button class="filter-pill" data-topic="tema3" role="tab" aria-selected="false" type="button">
+            <span class="pill-num">Tema 3</span>
+            <span class="pill-label">Emmotllament i solidificació</span>
+            <span class="pill-count" id="count-tema3">0</span>
+          </button>
         </div>
-        <noscript><p class="load-error">Activa JavaScript per practicar les preguntes.</p></noscript>
 
-        <!-- Question View -->
-        <article class="quiz-card" id="quiz-card" tabindex="-1" aria-label="Pregunta de pràctica">
-          <div class="card-meta">
-            <span class="badge-topic" id="card-topic-badge">Tema</span>
-            <span class="badge-format" id="card-format-badge">V/F · Test</span>
-            <span class="badge-id" id="card-index-badge">Carregant…</span>
+        <div class="settings-row">
+          <div class="format-row">
+            <label for="question-format">Preguntes</label>
+            <select id="question-format">
+              <option value="todos">Vertader/fals i test</option>
+              <option value="vf">Només vertader/fals</option>
+              <option value="multiple">Només test</option>
+            </select>
+          </div>
+          <button id="shuffle-toggle" class="btn-toggle active" type="button" title="Alternar entre ordre aleatori i seqüencial">
+            <span class="toggle-text">Aleatori: <strong>Activat</strong></span>
+          </button>
+          <button id="review-mode-btn" class="btn-toggle btn-review" type="button" disabled title="Repassar només les preguntes fallades">
+            <span class="toggle-text">Repassar errades (<span id="failed-count-badge">0</span>)</span>
+          </button>
+          <button id="reset-btn" class="btn-link" type="button" title="Reiniciar les estadístiques i començar de nou">Reiniciar</button>
+        </div>
+
+        <div class="quiz-box">
+          <div class="scoreboard" aria-label="Resultats de la tanda">
+            <dl class="score-list">
+              <div class="stat-card stat-correct"><dt class="stat-label">Encerts</dt><dd class="stat-value" id="stat-correct">0</dd></div>
+              <div class="stat-card stat-wrong"><dt class="stat-label">Errades</dt><dd class="stat-value" id="stat-wrong">0</dd></div>
+              <div class="stat-card stat-streak"><dt class="stat-label">Ratxa</dt><dd class="stat-value" id="stat-streak">0</dd></div>
+              <div class="stat-card stat-accuracy"><dt class="stat-label">Percentatge</dt><dd class="stat-value" id="stat-accuracy">0%</dd></div>
+            </dl>
+            <div class="score-progress">
+              <span class="progress-count" id="progress-text">0 / 0</span>
+              <div class="progress-bar-bg">
+                <div class="progress-bar-fill" id="progress-bar" role="progressbar" aria-label="Progrés de la tanda" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" style="width: 0%;"></div>
+              </div>
+            </div>
           </div>
 
-          <div class="statement-container">
-            <p class="statement-text" id="statement-text" lang="es">
-              Carregant preguntes...
+          <noscript><p class="load-error">Activa JavaScript per practicar les preguntes.</p></noscript>
+
+          <article class="quiz-card" id="quiz-card" tabindex="-1" aria-label="Pregunta de pràctica">
+            <p class="card-meta">
+              <span class="badge-topic" id="card-topic-badge">Tema</span>
+              <span class="badge-format" id="card-format-badge">V/F</span>
+              <span class="badge-id" id="card-index-badge">Carregant…</span>
             </p>
-            <img class="question-image" id="question-image" alt="" hidden>
-          </div>
 
-          <!-- True / False Action Buttons -->
-          <div class="actions-container" id="vf-actions">
-            <button id="btn-true" class="btn-action btn-true">
-              <span class="btn-icon-symbol">✓</span>
-              <span class="btn-title" id="true-title">Verdader</span>
-              <kbd class="shortcut-key">V o ←</kbd>
-            </button>
-
-            <button id="btn-false" class="btn-action btn-false">
-              <span class="btn-icon-symbol">✕</span>
-              <span class="btn-title" id="false-title">Fals</span>
-              <kbd class="shortcut-key">F o →</kbd>
-            </button>
-          </div>
-
-          <div class="multiple-actions" id="multiple-actions" role="group" aria-label="Opcions de resposta" lang="es" hidden></div>
-
-          <!-- Theoretical Explanation Card (Appears immediately after answering) -->
-          <div class="explanation-card" id="explanation-card" hidden role="region" aria-labelledby="explanation-heading">
-            <div class="explanation-header" id="explanation-header">
-              <div class="result-badge" id="result-badge">
-                <span class="result-icon" id="result-icon">✓</span>
-                <span class="result-title" id="result-title" role="status">Encertat!</span>
-              </div>
-              <div class="verdict-tag" id="verdict-tag">
-                L'afirmació és <strong>VERDADERA</strong>
-              </div>
+            <div class="statement-container">
+              <p class="statement-text" id="statement-text" lang="es">Carregant preguntes…</p>
+              <img class="question-image" id="question-image" alt="" hidden>
             </div>
 
-            <div class="explanation-content">
-              <h3 class="explanation-heading" id="explanation-heading" tabindex="-1">
-                Fonament teòric i metal·lúrgic
-              </h3>
-              <p class="explanation-text" id="explanation-text" lang="es">
-                Explicació detallada...
-              </p>
-              <ul class="option-explanations" id="option-explanations" aria-label="Justificació de cada opció" lang="es" hidden></ul>
-              <p class="trap-text" id="trampa-text" lang="es" hidden></p>
-              <p class="source-text" id="source-text" lang="es" hidden></p>
-              <p class="source-text" id="answer-basis-text" lang="es" hidden></p>
-              <div class="tags-row" id="explanation-tags">
-                <!-- Badges populated by JS -->
-              </div>
-            </div>
-
-            <div class="explanation-actions">
-              <button id="btn-next" class="btn-next">
-                <span>Següent pregunta</span>
-                <span class="btn-next-arrow">→</span>
-                <kbd class="shortcut-next">Espai / ↵</kbd>
+            <div class="actions-container" id="vf-actions">
+              <button id="btn-true" class="btn-action btn-true" type="button">
+                <span class="btn-title" id="true-title">Vertader</span>
+              </button>
+              <button id="btn-false" class="btn-action btn-false" type="button">
+                <span class="btn-title" id="false-title">Fals</span>
               </button>
             </div>
-          </div>
-        </article>
 
-        <!-- Completion View (Shown when set finishes) -->
-        <article class="completion-card" id="completion-card" tabindex="-1" hidden>
-          <div class="completion-icon" aria-hidden="true">✓</div>
-          <h2 class="completion-title" id="completion-title">Tanda completada!</h2>
-          <p class="completion-subtitle" id="completion-message">Has arribat al final de la tanda de preguntes seleccionada.</p>
+            <div class="multiple-actions" id="multiple-actions" role="group" aria-label="Opcions de resposta" lang="es" hidden></div>
 
-          <div class="completion-stats">
-            <div class="c-stat">
-              <span class="c-stat-val" id="c-correct">0</span>
-              <span class="c-stat-lbl">Encerts</span>
-            </div>
-            <div class="c-stat">
-              <span class="c-stat-val" id="c-wrong">0</span>
-              <span class="c-stat-lbl">Errades</span>
-            </div>
-            <div class="c-stat">
-              <span class="c-stat-val" id="c-accuracy">0%</span>
-              <span class="c-stat-lbl">Precisió</span>
-            </div>
-            <div class="c-stat">
-              <span class="c-stat-val" id="c-streak">0</span>
-              <span class="c-stat-lbl">Ratxa màxima</span>
-            </div>
-          </div>
+            <section class="explanation-card" id="explanation-card" hidden aria-labelledby="explanation-heading">
+              <div class="explanation-header" id="explanation-header">
+                <p class="result-badge" id="result-badge">
+                  <span class="result-icon" id="result-icon" aria-hidden="true">✓</span>
+                  <span class="result-title" id="result-title" role="status">Resposta correcta</span>
+                </p>
+                <p class="verdict-tag" id="verdict-tag">L'afirmació és <strong>VERDADERA</strong></p>
+              </div>
 
-          <div class="completion-actions">
-            <button id="c-retry-all-btn" class="btn-primary">
-              <span>↻ Repetir aquest tema</span>
-            </button>
-            <button id="c-retry-failed-btn" class="btn-secondary" hidden>
-              <span>↻ Repassar només fallades (<span id="c-failed-count">0</span>)</span>
-            </button>
-            <button id="c-all-topics-btn" class="btn-ghost">
-              <span>Anar a Tots els temes</span>
-            </button>
-          </div>
-        </article>
+              <div class="explanation-content">
+                <h3 class="explanation-heading" id="explanation-heading" tabindex="-1">Per què</h3>
+                <p class="explanation-text" id="explanation-text" lang="es"></p>
+                <ul class="option-explanations" id="option-explanations" aria-label="Justificació de cada opció" lang="es" hidden></ul>
+                <p class="trap-text" id="trampa-text" lang="es" hidden></p>
+                <p class="source-text" id="source-text" lang="es" hidden></p>
+                <p class="source-text" id="answer-basis-text" lang="es" hidden></p>
+                <div class="tags-row" id="explanation-tags"></div>
+              </div>
 
+              <div class="explanation-actions">
+                <button id="btn-next" class="btn-next" type="button">Següent</button>
+              </div>
+            </section>
+          </article>
+
+          <article class="completion-card" id="completion-card" tabindex="-1" hidden>
+            <h3 class="completion-title" id="completion-title">Tanda completada</h3>
+            <p class="completion-subtitle" id="completion-message">Has arribat al final de la tanda de preguntes seleccionada.</p>
+
+            <dl class="completion-stats">
+              <div class="c-stat"><dt class="c-stat-lbl">Encerts</dt><dd class="c-stat-val" id="c-correct">0</dd></div>
+              <div class="c-stat"><dt class="c-stat-lbl">Errades</dt><dd class="c-stat-val" id="c-wrong">0</dd></div>
+              <div class="c-stat"><dt class="c-stat-lbl">Percentatge</dt><dd class="c-stat-val" id="c-accuracy">0%</dd></div>
+              <div class="c-stat"><dt class="c-stat-lbl">Millor ratxa</dt><dd class="c-stat-val" id="c-streak">0</dd></div>
+            </dl>
+
+            <div class="completion-actions">
+              <button id="c-retry-all-btn" class="btn-primary" type="button">Tornar a començar</button>
+              <button id="c-retry-failed-btn" class="btn-secondary" type="button" hidden>Repassar errades (<span id="c-failed-count">0</span>)</button>
+              <button id="c-all-topics-btn" class="btn-link" type="button">Tots els temes</button>
+            </div>
+          </article>
+        </div>
+
+        <p class="study-intro"><span id="connection-status" class="connection-status" role="status">El progrés es desa en aquest navegador.</span></p>
       </div>
     </main>
 
-    <!-- Footer & Keyboard Shortcut Guide -->
-    <footer class="app-footer">
-      <div class="footer-container">
-        <div class="keyboard-hints">
-          <span class="hint-label">Atalls de teclat:</span>
-          <span class="hint-item"><kbd>V</kbd> o <kbd>←</kbd> Verdader</span>
-          <span class="hint-item"><kbd>F</kbd> o <kbd>→</kbd> Fals</span>
-          <span class="hint-item"><kbd>A–F</kbd> o <kbd>1–6</kbd> Opció</span>
-          <span class="hint-item"><kbd>Espai</kbd> o <kbd>Enter</kbd> Següent</span>
-        </div>
-        <div class="footer-meta">
-          <span>Eina d'estudi independent · TSM 240151</span>
-          <a href="https://github.com/victorpech19/AjudaTSM" target="_blank" rel="noopener">Codi i fonts ↗</a>
-        </div>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>AjudaTSM · Tecnologia i Selecció de Materials (240151), ETSEIB UPC. Web d'estudi feta per un estudiant, sense relació oficial amb la UPC.</p>
+        <p>Inspirada en <a href="https://amandiiss.github.io/AjudaMaterials/" target="_blank" rel="noopener">AjudaMaterials</a> · <a href="https://github.com/victorpech19/AjudaTSM" target="_blank" rel="noopener">Codi i fonts a GitHub</a></p>
       </div>
     </footer>
   </div>

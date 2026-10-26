@@ -5479,7 +5479,7 @@
       "Correcta: el cromo permite la pasivación y es básico en los inoxidables.",
       "Incorrecta: El níquel estabiliza austenita en muchos grados, pero no es el elemento común pasivante."
     ],
-    "trampa": "Trampa habitual: confundir la opci?n ?W?. El wolframio se usa en ciertos aceros de herramienta, no es el elemento pasivante general.",
+    "trampa": "confundir la opción «W». El wolframio se usa en ciertos aceros de herramienta, no es el elemento pasivante general.",
     "palabrasClave": [],
     "fuente": "UPC, Tecnología de Materiales, 01-04-1999, p. 2, pregunta 3; UPCommons 24806.",
     "baseRespuesta": "Respuesta razonada a partir de metalurgia física y procesos de fabricación; no se presenta como clave oficial."
@@ -5506,7 +5506,7 @@
       "Incorrecta: El crecimiento dendrítico es relevante, aunque no el único factor.",
       "Correcta: composición, extracción de calor y morfología dendrítica interactúan."
     ],
-    "trampa": "Trampa habitual: confundir la opci?n ?De la composición química de la aleación.?. La composición influye en el intervalo de solidificación, pero no es el único factor.",
+    "trampa": "confundir la opción «De la composición química de la aleación.». La composición influye en el intervalo de solidificación, pero no es el único factor.",
     "palabrasClave": [],
     "fuente": "UPC, Tecnología de Materiales, 01-04-1999, p. 2, pregunta 11; UPCommons 24806.",
     "baseRespuesta": "Respuesta razonada a partir de metalurgia física y procesos de fabricación; no se presenta como clave oficial."
@@ -5533,7 +5533,7 @@
       "Correcta: es la capacidad de llenar adecuadamente el molde.",
       "Incorrecta: La definición sí aparece en la opción d."
     ],
-    "trampa": "Trampa habitual: confundir la opci?n ?La capacidad de disolver gases a alta temperatura.?. La solubilidad gaseosa es otra propiedad de la aleación y puede originar porosidad.",
+    "trampa": "confundir la opción «La capacidad de disolver gases a alta temperatura.». La solubilidad gaseosa es otra propiedad de la aleación y puede originar porosidad.",
     "palabrasClave": [],
     "fuente": "UPC, Tecnología de Materiales, 01-04-1999, p. 3, pregunta 15; UPCommons 24806.",
     "baseRespuesta": "Respuesta razonada a partir de metalurgia física y procesos de fabricación; no se presenta como clave oficial."
@@ -5560,7 +5560,7 @@
       "Incorrecta: Las mazarotas se suelen recuperar como retorno de fundición cuando la aleación y proceso lo permiten.",
       "Incorrecta: El cierre se resuelve con diseño y sujeción del molde."
     ],
-    "trampa": "Trampa habitual: confundir la opci?n ?Inserto que produce orificios en el producto final.?. Los orificios se obtienen con machos o noyos.",
+    "trampa": "confundir la opción «Inserto que produce orificios en el producto final.». Los orificios se obtienen con machos o noyos.",
     "palabrasClave": [],
     "fuente": "UPC, Tecnología de Materiales, 01-04-1999, p. 3, pregunta 17; UPCommons 24806.",
     "baseRespuesta": "Respuesta razonada a partir de metalurgia física y procesos de fabricación; no se presenta como clave oficial."
@@ -5587,7 +5587,7 @@
       "Incorrecta: V, Ti y Nb son microaleantes específicos, no el par común buscado.",
       "Incorrecta: El cromo no es parte del par habitual de elementos comunes en aceros no aleados."
     ],
-    "trampa": "Trampa habitual: confundir la opci?n ?Cr y Ni.?. Cr y Ni son aleantes típicos de aceros aleados, como muchos inoxidables.",
+    "trampa": "confundir la opción «Cr y Ni.». Cr y Ni son aleantes típicos de aceros aleados, como muchos inoxidables.",
     "palabrasClave": [],
     "fuente": "UPC, Tecnología de Materiales, 01-04-1999, p. 3, pregunta 19; UPCommons 24806.",
     "baseRespuesta": "Respuesta razonada a partir de metalurgia física y procesos de fabricación; no se presenta como clave oficial."
@@ -5614,7 +5614,7 @@
       "Incorrecta: No corresponde a los reactivos ni productos del proceso Bayer.",
       "Incorrecta: La precipitación industrial no sigue aquí una acidificación con HCl."
     ],
-    "trampa": "Trampa habitual: confundir la opci?n ?Sulfato de aluminio → H₃PO₄ → Al₂O₃.?. No corresponde a la ruta Bayer.",
+    "trampa": "confundir la opción «Sulfato de aluminio → H₃PO₄ → Al₂O₃.». No corresponde a la ruta Bayer.",
     "palabrasClave": [],
     "fuente": "UPC, Tecnología de Materiales, 01-04-1999, p. 3, pregunta 21; UPCommons 24806.",
     "baseRespuesta": "Respuesta razonada a partir de metalurgia física y procesos de fabricación; no se presenta como clave oficial."
@@ -5641,7 +5641,7 @@
       "Incorrecta: Bayer es una ruta hidrometalúrgica de refinado de bauxita.",
       "Incorrecta: La granulación de polímeros usa equipos de transformación de polímeros."
     ],
-    "trampa": "Trampa habitual: confundir la opci?n ?Obtener vidrio fundido.?. El vidrio se funde en hornos específicos para vidrio.",
+    "trampa": "confundir la opción «Obtener vidrio fundido.». El vidrio se funde en hornos específicos para vidrio.",
     "palabrasClave": [],
     "fuente": "UPC, Tecnología de Materiales, 01-04-1999, p. 3, pregunta 23; UPCommons 24806.",
     "baseRespuesta": "Respuesta razonada a partir de metalurgia física y procesos de fabricación; no se presenta como clave oficial."
@@ -5668,7 +5668,7 @@
       "Correcta: temperatura del líquido menos temperatura liquidus.",
       "Incorrecta: No exige que el calentamiento sea accidental ni sin control."
     ],
-    "trampa": "Trampa habitual: confundir la opci?n ?Diferencia entre Tsolvus y Tsolidus.?. Son temperaturas de equilibrio sólido, no la definición de sobrecalentamiento del líquido.",
+    "trampa": "confundir la opción «Diferencia entre Tsolvus y Tsolidus.». Son temperaturas de equilibrio sólido, no la definición de sobrecalentamiento del líquido.",
     "palabrasClave": [],
     "fuente": "UPC, Tecnología de Materiales, 01-04-1999, p. 3, pregunta 25; UPCommons 24806.",
     "baseRespuesta": "Respuesta razonada a partir de metalurgia física y procesos de fabricación; no se presenta como clave oficial."
@@ -5695,7 +5695,7 @@
       "Incorrecta: La magnesita es una mena de magnesio.",
       "Incorrecta: La opción c es la materia prima correcta."
     ],
-    "trampa": "Trampa habitual: confundir la opci?n ?Alúmina.?. La alúmina es producto refinado intermedio, no la mena principal del proceso.",
+    "trampa": "confundir la opción «Alúmina.». La alúmina es producto refinado intermedio, no la mena principal del proceso.",
     "palabrasClave": [],
     "fuente": "UPC, Tecnología de Materiales, 01-06-1999, p. 2, pregunta 4; UPCommons 24806.",
     "baseRespuesta": "Respuesta razonada a partir de metalurgia física y procesos de fabricación; no se presenta como clave oficial."
@@ -5722,7 +5722,7 @@
       "Incorrecta: Un gradiente bajo no es la característica que define piel cerrada en este modelo.",
       "Incorrecta: La afirmación b sí describe el mecanismo esperado."
     ],
-    "trampa": "Trampa habitual: confundir la opci?n ?La colabilidad es baja.?. La colabilidad no queda fijada solo por el modo de piel.",
+    "trampa": "confundir la opción «La colabilidad es baja.». La colabilidad no queda fijada solo por el modo de piel.",
     "palabrasClave": [],
     "fuente": "UPC, Tecnología de Materiales, 01-06-1999, p. 2, pregunta 7; UPCommons 24806.",
     "baseRespuesta": "Respuesta razonada a partir de metalurgia física y procesos de fabricación; no se presenta como clave oficial."
@@ -5749,7 +5749,7 @@
       "Incorrecta: No sólo los formadores de carburos; el carbono y varios aleantes afectan Ms.",
       "Incorrecta: Ac1 y Ac3 son temperaturas críticas distintas."
     ],
-    "trampa": "Trampa habitual: confundir la opci?n ?De la temperatura de austenización.?. La austenización condiciona la disolución y tamaño de grano, pero no es la variable primaria que define Ms.",
+    "trampa": "confundir la opción «De la temperatura de austenización.». La austenización condiciona la disolución y tamaño de grano, pero no es la variable primaria que define Ms.",
     "palabrasClave": [],
     "fuente": "UPC, Tecnología de Materiales, 01-06-1999, p. 4, pregunta 1; UPCommons 24806.",
     "baseRespuesta": "Respuesta razonada a partir de metalurgia física y procesos de fabricación; no se presenta como clave oficial."
@@ -5776,7 +5776,7 @@
       "Correcta: Al, Cr y Mo favorecen la formación de nitruros duros.",
       "Incorrecta: W puede formar nitruros, pero esta combinación no es la respuesta habitual del test."
     ],
-    "trampa": "Trampa habitual: confundir la opci?n ?Si y Mn.?. No es el conjunto característico de elementos formadores de nitruros del ítem.",
+    "trampa": "confundir la opción «Si y Mn.». No es el conjunto característico de elementos formadores de nitruros del ítem.",
     "palabrasClave": [],
     "fuente": "UPC, Tecnología de Materiales, 01-06-1999, p. 4, pregunta 3; UPCommons 24806.",
     "baseRespuesta": "Respuesta razonada a partir de metalurgia física y procesos de fabricación; no se presenta como clave oficial."
@@ -5803,7 +5803,7 @@
       "Incorrecta: No es la tendencia general del sobreenvejecimiento.",
       "Incorrecta: El tamaño y distribución de precipitados sí modifican propiedades."
     ],
-    "trampa": "Trampa habitual: confundir la opci?n ?Aumentan dureza y resistencia.?. El aumento caracteriza el envejecimiento hasta el pico, no el sobreenvejecimiento.",
+    "trampa": "confundir la opción «Aumentan dureza y resistencia.». El aumento caracteriza el envejecimiento hasta el pico, no el sobreenvejecimiento.",
     "palabrasClave": [],
     "fuente": "UPC, Tecnología de Materiales, 01-06-1999, p. 4, pregunta 4; UPCommons 24806.",
     "baseRespuesta": "Respuesta razonada a partir de metalurgia física y procesos de fabricación; no se presenta como clave oficial."
@@ -5830,7 +5830,7 @@
       "Correcta: el austemplado transforma la matriz de la fundición nodular para obtener ADI.",
       "Incorrecta: La opción d corresponde al tratamiento característico."
     ],
-    "trampa": "Trampa habitual: confundir la opci?n ?Cementación.?. La cementación es un tratamiento termoquímico superficial de aceros.",
+    "trampa": "confundir la opción «Cementación.». La cementación es un tratamiento termoquímico superficial de aceros.",
     "palabrasClave": [],
     "fuente": "UPC, Tecnología de Materiales, 01-06-1999, p. 5, pregunta 11; UPCommons 24806.",
     "baseRespuesta": "Respuesta razonada a partir de metalurgia física y procesos de fabricación; no se presenta como clave oficial."
@@ -5857,7 +5857,7 @@
       "Incorrecta: Es un rango alto para aceros de cementación.",
       "Incorrecta: La opción b da el rango típico del test."
     ],
-    "trampa": "Trampa habitual: confundir la opci?n ?C < 0,01 %.?. Es demasiado bajo para el intervalo típico citado.",
+    "trampa": "confundir la opción «C < 0,01 %.». Es demasiado bajo para el intervalo típico citado.",
     "palabrasClave": [],
     "fuente": "UPC, Tecnología de Materiales, 01-06-1999, p. 5, pregunta 12; UPCommons 24806.",
     "baseRespuesta": "Respuesta razonada a partir de metalurgia física y procesos de fabricación; no se presenta como clave oficial."
@@ -5884,7 +5884,7 @@
       "Incorrecta: ADI se fabrica a partir de fundición nodular; el grafito es esferoidal.",
       "Correcta: la familia esperada sería fundición gris, ausente."
     ],
-    "trampa": "Trampa habitual: confundir la opci?n ?Acero hipoeutectoide.?. Los aceros al carbono no presentan grafito laminar como microestructura típica.",
+    "trampa": "confundir la opción «Acero hipoeutectoide.». Los aceros al carbono no presentan grafito laminar como microestructura típica.",
     "palabrasClave": [],
     "fuente": "UPC, Tecnología de Materiales, 13-06-2001, p. 2, pregunta 2; UPCommons 24806.",
     "baseRespuesta": "Respuesta razonada a partir de metalurgia física y procesos de fabricación; no se presenta como clave oficial."
@@ -5911,7 +5911,7 @@
       "Incorrecta: El grano grueso tiende a aumentar, no reducir, templabilidad.",
       "Incorrecta: La opción b describe el desplazamiento esperado."
     ],
-    "trampa": "Trampa habitual: confundir la opci?n ?Se acercan al eje de ordenadas.?. El retraso de transformación no acerca las curvas al eje de tiempos cortos.",
+    "trampa": "confundir la opción «Se acercan al eje de ordenadas.». El retraso de transformación no acerca las curvas al eje de tiempos cortos.",
     "palabrasClave": [],
     "fuente": "UPC, Tecnología de Materiales, 13-06-2001, p. 2, pregunta 5; UPCommons 24806.",
     "baseRespuesta": "Respuesta razonada a partir de metalurgia física y procesos de fabricación; no se presenta como clave oficial."
@@ -5938,7 +5938,7 @@
       "Incorrecta: No son intercambiables para definir el ciclo de mantenimiento.",
       "Incorrecta: La opción b es la herramienta directamente pertinente."
     ],
-    "trampa": "Trampa habitual: confundir la opci?n ?Diagrama de equilibrio Fe-C.?. Fe-C muestra equilibrio, no cinética de transformación durante el ciclo.",
+    "trampa": "confundir la opción «Diagrama de equilibrio Fe-C.». Fe-C muestra equilibrio, no cinética de transformación durante el ciclo.",
     "palabrasClave": [],
     "fuente": "UPC, Tecnología de Materiales, 13-06-2001, p. 2, pregunta 6; UPCommons 24806.",
     "baseRespuesta": "Respuesta razonada a partir de metalurgia física y procesos de fabricación; no se presenta como clave oficial."
@@ -5965,7 +5965,7 @@
       "Incorrecta: La normalización es tratamiento de aceros, no aluminio.",
       "Correcta: falta la secuencia de solubilización, temple y envejecimiento."
     ],
-    "trampa": "Trampa habitual: confundir la opci?n ?Austemplado o temple bainítico.?. El austemplado corresponde a transformaciones de aceros/fundiciones ferrosas.",
+    "trampa": "confundir la opción «Austemplado o temple bainítico.». El austemplado corresponde a transformaciones de aceros/fundiciones ferrosas.",
     "palabrasClave": [],
     "fuente": "UPC, Tecnología de Materiales, 13-06-2001, p. 3, pregunta 11; UPCommons 24806.",
     "baseRespuesta": "Respuesta razonada a partir de metalurgia física y procesos de fabricación; no se presenta como clave oficial."
@@ -5992,7 +5992,7 @@
       "Incorrecta: P no es un elemento de aleación nitrurable deseable en este contexto.",
       "Incorrecta: La opción c es el grupo adecuado."
     ],
-    "trampa": "Trampa habitual: confundir la opci?n ?Mg-Ti-V.?. No es la combinación típica buscada para aceros de nitruración.",
+    "trampa": "confundir la opción «Mg-Ti-V.». No es la combinación típica buscada para aceros de nitruración.",
     "palabrasClave": [],
     "fuente": "UPC, Tecnología de Materiales, 13-06-2001, p. 3, pregunta 14; UPCommons 24806.",
     "baseRespuesta": "Respuesta razonada a partir de metalurgia física y procesos de fabricación; no se presenta como clave oficial."
@@ -6019,7 +6019,7 @@
       "Incorrecta: Demasiado alto para el diseño convencional de un núcleo tenaz cementado.",
       "Incorrecta: La opción a corresponde al rango típico."
     ],
-    "trampa": "Trampa habitual: confundir la opci?n ?0,4–0,6 %.?. Un contenido medio alto puede perjudicar la tenacidad del núcleo.",
+    "trampa": "confundir la opción «0,4–0,6 %.». Un contenido medio alto puede perjudicar la tenacidad del núcleo.",
     "palabrasClave": [],
     "fuente": "UPC, Tecnología de Materiales, 13-06-2001, p. 3, pregunta 16; UPCommons 24806.",
     "baseRespuesta": "Respuesta razonada a partir de metalurgia física y procesos de fabricación; no se presenta como clave oficial."
@@ -6046,7 +6046,7 @@
       "Incorrecta: Los métodos tienen ámbitos distintos; no son igualmente usados.",
       "Incorrecta: La opción c describe un proceso industrial común."
     ],
-    "trampa": "Trampa habitual: confundir la opci?n ?Fundición por gravedad en molde de arena.?. Se usa, pero no es el método más habitual para producción en serie de piezas complejas.",
+    "trampa": "confundir la opción «Fundición por gravedad en molde de arena.». Se usa, pero no es el método más habitual para producción en serie de piezas complejas.",
     "palabrasClave": [],
     "fuente": "UPC, Tecnología de Materiales, 13-06-2001, p. 4, pregunta 4; UPCommons 24806.",
     "baseRespuesta": "Respuesta razonada a partir de metalurgia física y procesos de fabricación; no se presenta como clave oficial."
@@ -6073,7 +6073,7 @@
       "Incorrecta: La atomización no produce aluminio metálico desde alúmina.",
       "Incorrecta: La opción c describe Hall-Héroult."
     ],
-    "trampa": "Trampa habitual: confundir la opci?n ?Hidrólisis del aluminato sódico.?. La hidrólisis forma parte de la ruta Bayer previa.",
+    "trampa": "confundir la opción «Hidrólisis del aluminato sódico.». La hidrólisis forma parte de la ruta Bayer previa.",
     "palabrasClave": [],
     "fuente": "UPC, Tecnología de Materiales, 13-06-2001, p. 4, pregunta 6; UPCommons 24806.",
     "baseRespuesta": "Respuesta razonada a partir de metalurgia física y procesos de fabricación; no se presenta como clave oficial."
@@ -6100,7 +6100,7 @@
       "Incorrecta: Una mazarota mal colocada favorece defectos de alimentación/rechupe.",
       "Incorrecta: La opción a expresa una causa directa."
     ],
-    "trampa": "Trampa habitual: confundir la opci?n ?Ausencia de aglomerante en la arena del molde.?. La falta de aglomerante afecta integridad del molde, pero no define directamente las sopladuras.",
+    "trampa": "confundir la opción «Ausencia de aglomerante en la arena del molde.». La falta de aglomerante afecta integridad del molde, pero no define directamente las sopladuras.",
     "palabrasClave": [],
     "fuente": "UPC, Tecnología de Materiales, 13-06-2001, p. 4, pregunta 8; UPCommons 24806.",
     "baseRespuesta": "Respuesta razonada a partir de metalurgia física y procesos de fabricación; no se presenta como clave oficial."
@@ -6127,7 +6127,7 @@
       "Correcta: la zona equiáxica corresponde a dendritas/granos con crecimiento en múltiples direcciones.",
       "Incorrecta: La zona columnar crece preferentemente alineada con el flujo térmico."
     ],
-    "trampa": "Trampa habitual: confundir la opci?n ?Ninguna.?. No: la zona equiáxica responde a la descripción.",
+    "trampa": "confundir la opción «Ninguna.». No: la zona equiáxica responde a la descripción.",
     "palabrasClave": [],
     "fuente": "UPC, Tecnología de Materiales, 13-06-2001, p. 4, pregunta 9; UPCommons 24806.",
     "baseRespuesta": "Respuesta razonada a partir de metalurgia física y procesos de fabricación; no se presenta como clave oficial."
@@ -6154,7 +6154,7 @@
       "Incorrecta: Dendritas cortas y estables favorecen el cierre, no la piel abierta.",
       "Incorrecta: La opción c es una condición típica."
     ],
-    "trampa": "Trampa habitual: confundir la opci?n ?Gran gradiente térmico.?. Un gradiente elevado favorece extracción de calor y cierre temprano.",
+    "trampa": "confundir la opción «Gran gradiente térmico.». Un gradiente elevado favorece extracción de calor y cierre temprano.",
     "palabrasClave": [],
     "fuente": "UPC, Tecnología de Materiales, 13-06-2001, p. 4, pregunta 10; UPCommons 24806.",
     "baseRespuesta": "Respuesta razonada a partir de metalurgia física y procesos de fabricación; no se presenta como clave oficial."
@@ -6181,7 +6181,7 @@
       "Incorrecta: Muy bajo para un acero inoxidable.",
       "Incorrecta: El cromo es esencial en estos grados."
     ],
-    "trampa": "Trampa habitual: confundir la opci?n ?5–8 %.?. Es demasiado bajo para la pasividad de 304/316.",
+    "trampa": "confundir la opción «5–8 %.». Es demasiado bajo para la pasividad de 304/316.",
     "palabrasClave": [],
     "fuente": "UPC, Tecnología de Materiales, 11-04-2002, p. 2, pregunta 1; UPCommons 24806.",
     "baseRespuesta": "Respuesta razonada a partir de metalurgia física y procesos de fabricación; no se presenta como clave oficial."
@@ -6208,7 +6208,7 @@
       "Incorrecta: El carbono combinado no aparece como dendritas de grafito.",
       "Correcta: ninguna forma de grafito libre describe la fundición blanca."
     ],
-    "trampa": "Trampa habitual: confundir la opci?n ?Nódulos de grafito.?. Los nódulos son propios de fundición nodular.",
+    "trampa": "confundir la opción «Nódulos de grafito.». Los nódulos son propios de fundición nodular.",
     "palabrasClave": [],
     "fuente": "UPC, Tecnología de Materiales, 11-04-2002, p. 2, pregunta 2; UPCommons 24806.",
     "baseRespuesta": "Respuesta razonada a partir de metalurgia física y procesos de fabricación; no se presenta como clave oficial."
@@ -6235,7 +6235,7 @@
       "Incorrecta: El carbono genera CO y puede reducir en zonas calientes, pero la respuesta gaseosa principal es CO.",
       "Incorrecta: Los fundentes forman escoria y capturan ganga."
     ],
-    "trampa": "Trampa habitual: confundir la opci?n ?SO₂.?. SO₂ no es el agente reductor del proceso.",
+    "trampa": "confundir la opción «SO₂.». SO₂ no es el agente reductor del proceso.",
     "palabrasClave": [],
     "fuente": "UPC, Tecnología de Materiales, 11-04-2002, p. 2, pregunta 6; UPCommons 24806.",
     "baseRespuesta": "Respuesta razonada a partir de metalurgia física y procesos de fabricación; no se presenta como clave oficial."
@@ -6262,7 +6262,7 @@
       "Incorrecta: Bayer no produce directamente aluminio metálico.",
       "Incorrecta: La opción b es la definición del proceso."
     ],
-    "trampa": "Trampa habitual: confundir la opci?n ?Electrólisis de la alúmina.?. La electrólisis corresponde a Hall-Héroult.",
+    "trampa": "confundir la opción «Electrólisis de la alúmina.». La electrólisis corresponde a Hall-Héroult.",
     "palabrasClave": [],
     "fuente": "UPC, Tecnología de Materiales, 11-04-2002, p. 2, pregunta 9; UPCommons 24806.",
     "baseRespuesta": "Respuesta razonada a partir de metalurgia física y procesos de fabricación; no se presenta como clave oficial."
@@ -6289,7 +6289,7 @@
       "Incorrecta: El intervalo de solidificación no es la variable directa que define el radio crítico.",
       "Incorrecta: La opción c describe la relación principal."
     ],
-    "trampa": "Trampa habitual: confundir la opci?n ?Composición química de la aleación.?. La composición influye en propiedades termodinámicas, pero la variable directa enfatizada es el subenfriamiento.",
+    "trampa": "confundir la opción «Composición química de la aleación.». La composición influye en propiedades termodinámicas, pero la variable directa enfatizada es el subenfriamiento.",
     "palabrasClave": [],
     "fuente": "UPC, Tecnología de Materiales, 11-04-2002, p. 2, pregunta 11; UPCommons 24806.",
     "baseRespuesta": "Respuesta razonada a partir de metalurgia física y procesos de fabricación; no se presenta como clave oficial."
@@ -6316,7 +6316,7 @@
       "Incorrecta: La composición determina propiedades como intervalo y fluidez.",
       "Correcta: todos los factores citados intervienen."
     ],
-    "trampa": "Trampa habitual: confundir la opci?n ?El sobrecalentamiento.?. Es un factor relevante, pero no el único.",
+    "trampa": "confundir la opción «El sobrecalentamiento.». Es un factor relevante, pero no el único.",
     "palabrasClave": [],
     "fuente": "UPC, Tecnología de Materiales, 11-04-2002, p. 2, pregunta 13; UPCommons 24806.",
     "baseRespuesta": "Respuesta razonada a partir de metalurgia física y procesos de fabricación; no se presenta como clave oficial."
@@ -6343,7 +6343,7 @@
       "Incorrecta: Una baja temperatura puede empeorar llenado, no explica específicamente porosidad gaseosa.",
       "Correcta: el gas expulsado durante solidificación puede formar poros."
     ],
-    "trampa": "Trampa habitual: confundir la opci?n ?Contracción de solidificación.?. La contracción genera cavidades de rechupe, un defecto distinto de porosidad gaseosa.",
+    "trampa": "confundir la opción «Contracción de solidificación.». La contracción genera cavidades de rechupe, un defecto distinto de porosidad gaseosa.",
     "palabrasClave": [],
     "fuente": "UPC, Tecnología de Materiales, 11-04-2002, p. 3, pregunta 17; UPCommons 24806.",
     "baseRespuesta": "Respuesta razonada a partir de metalurgia física y procesos de fabricación; no se presenta como clave oficial."
@@ -6370,7 +6370,7 @@
       "Incorrecta: La fundición a presión requiere normalmente molde metálico, no arena.",
       "Incorrecta: La opción c es la recomendación esperada del test."
     ],
-    "trampa": "Trampa habitual: confundir la opci?n ?Molde de arena y fundición por gravedad.?. La gravedad en arena es más flexible pero no la combinación típica de alta productividad para geometría compleja.",
+    "trampa": "confundir la opción «Molde de arena y fundición por gravedad.». La gravedad en arena es más flexible pero no la combinación típica de alta productividad para geometría compleja.",
     "palabrasClave": [],
     "fuente": "UPC, Tecnología de Materiales, 11-04-2002, p. 3, pregunta 18; UPCommons 24806.",
     "baseRespuesta": "Respuesta razonada a partir de metalurgia física y procesos de fabricación; no se presenta como clave oficial."
@@ -6397,7 +6397,7 @@
       "Incorrecta: Cr y Ni caracterizan ciertas familias aleadas, no los aceros al carbono generales.",
       "Incorrecta: Cr y W son aleantes de aceros especiales."
     ],
-    "trampa": "Trampa habitual: confundir la opci?n ?C, Si y Ca.?. Ca puede usarse en tratamientos específicos, pero no es habitual en todos los aceros al carbono.",
+    "trampa": "confundir la opción «C, Si y Ca.». Ca puede usarse en tratamientos específicos, pero no es habitual en todos los aceros al carbono.",
     "palabrasClave": [],
     "fuente": "UPC, Tecnología de Materiales, 30-10-2003, p. 2, pregunta 1; UPCommons 24806.",
     "baseRespuesta": "Respuesta razonada a partir del mecanismo metalúrgico o proceso; no se presenta como clave oficial."
@@ -6424,7 +6424,7 @@
       "Incorrecta: No describe la fundición gris típica.",
       "Incorrecta: La opción a corresponde a la morfología de grafito gris."
     ],
-    "trampa": "Trampa habitual: confundir la opci?n ?Exclusivamente como cementita.?. La cementita libre caracteriza la fundición blanca; la matriz perlítica puede contener cementita dentro de la perlita.",
+    "trampa": "confundir la opción «Exclusivamente como cementita.». La cementita libre caracteriza la fundición blanca; la matriz perlítica puede contener cementita dentro de la perlita.",
     "palabrasClave": [],
     "fuente": "UPC, Tecnología de Materiales, 30-10-2003, p. 2, pregunta 2; UPCommons 24806.",
     "baseRespuesta": "Respuesta razonada a partir del mecanismo metalúrgico o proceso; no se presenta como clave oficial."
@@ -6451,7 +6451,7 @@
       "Incorrecta: La asociación con mala colabilidad no sigue la descripción de zona equiáxica.",
       "Incorrecta: La opción a refleja la respuesta del modelo didáctico."
     ],
-    "trampa": "Trampa habitual: confundir la opci?n ?Aumenta la colabilidad y solidifica en piel abierta.?. Piel abierta no corresponde a dendritas cortas y estables.",
+    "trampa": "confundir la opción «Aumenta la colabilidad y solidifica en piel abierta.». Piel abierta no corresponde a dendritas cortas y estables.",
     "palabrasClave": [],
     "fuente": "UPC, Tecnología de Materiales, 30-10-2003, p. 2, pregunta 6; UPCommons 24806.",
     "baseRespuesta": "Respuesta razonada a partir del mecanismo metalúrgico o proceso; no se presenta como clave oficial."
@@ -6478,7 +6478,7 @@
       "Incorrecta: La agitación no es el mecanismo general del rechupe.",
       "Incorrecta: La opción c describe su origen."
     ],
-    "trampa": "Trampa habitual: confundir la opci?n ?Gases ocluidos.?. Los gases ocluidos originan sopladuras/porosidad gaseosa.",
+    "trampa": "confundir la opción «Gases ocluidos.». Los gases ocluidos originan sopladuras/porosidad gaseosa.",
     "palabrasClave": [],
     "fuente": "UPC, Tecnología de Materiales, 30-10-2003, p. 2, pregunta 7; UPCommons 24806.",
     "baseRespuesta": "Respuesta razonada a partir del mecanismo metalúrgico o proceso; no se presenta como clave oficial."
@@ -6505,7 +6505,7 @@
       "Incorrecta: Puede superar el rango seguro de varias aleaciones y acercarse a solidus.",
       "Incorrecta: Excesivo para iniciar la deformación en caliente de muchas aleaciones de Al."
     ],
-    "trampa": "Trampa habitual: confundir la opci?n ?20–100 °C.?. Demasiado bajo para el intervalo habitual de trabajo en caliente.",
+    "trampa": "confundir la opción «20–100 °C.». Demasiado bajo para el intervalo habitual de trabajo en caliente.",
     "palabrasClave": [],
     "fuente": "UPC, Tecnología de Materiales, 30-10-2003, p. 2, pregunta 10; UPCommons 24806.",
     "baseRespuesta": "Respuesta razonada a partir del mecanismo metalúrgico o proceso; no se presenta como clave oficial."
@@ -6532,7 +6532,7 @@
       "Incorrecta: No interviene en la producción de arrabio.",
       "Incorrecta: No todas las opciones son materias primas del alto horno."
     ],
-    "trampa": "Trampa habitual: confundir la opci?n ?Chatarra de acero.?. La chatarra se recicla en acerías, pero no es la carga principal del alto horno convencional.",
+    "trampa": "confundir la opción «Chatarra de acero.». La chatarra se recicla en acerías, pero no es la carga principal del alto horno convencional.",
     "palabrasClave": [],
     "fuente": "UPC, Tecnología de Materiales, 30-10-2003, p. 3, pregunta 17; UPCommons 24806.",
     "baseRespuesta": "Respuesta razonada a partir del mecanismo metalúrgico o proceso; no se presenta como clave oficial."
@@ -6559,7 +6559,7 @@
       "Correcta: Cr es el elemento esencial que define la resistencia inoxidable.",
       "Incorrecta: El W no es el elemento base de estos inoxidables."
     ],
-    "trampa": "Trampa habitual: confundir la opci?n ?Ni.?. El níquel no es el aleante principal de la familia ferrítica.",
+    "trampa": "confundir la opción «Ni.». El níquel no es el aleante principal de la familia ferrítica.",
     "palabrasClave": [],
     "fuente": "UPC, Tecnología de Materiales, 09-01-2004, p. 2, pregunta 1; UPCommons 24806.",
     "baseRespuesta": "Respuesta razonada a partir del mecanismo metalúrgico o proceso; no se presenta como clave oficial."
@@ -6586,7 +6586,7 @@
       "Incorrecta: Ambos factores favorecen grafitización, no cementita.",
       "Incorrecta: La combinación a describe las condiciones pro-blancas."
     ],
-    "trampa": "Trampa habitual: confundir la opci?n ?Mucho Si y velocidad de enfriamiento rápida.?. El silicio elevado favorece grafitización, aunque el enfriamiento rápido actúe en sentido contrario.",
+    "trampa": "confundir la opción «Mucho Si y velocidad de enfriamiento rápida.». El silicio elevado favorece grafitización, aunque el enfriamiento rápido actúe en sentido contrario.",
     "palabrasClave": [],
     "fuente": "UPC, Tecnología de Materiales, 09-01-2004, p. 2, pregunta 4; UPCommons 24806.",
     "baseRespuesta": "Respuesta razonada a partir del mecanismo metalúrgico o proceso; no se presenta como clave oficial."
@@ -6613,7 +6613,7 @@
       "Incorrecta: La agitación no es un factor general que mejore colabilidad.",
       "Incorrecta: La opción no es exclusiva porque a también puede mejorarla."
     ],
-    "trampa": "Trampa habitual: confundir la opci?n ?Elevado sobrecalentamiento.?. Aumentar sobrecalentamiento favorece colabilidad, así que esta opción también parece verdadera en términos físicos; por eso el ítem, tal como está redactado, puede tener más de una respuesta.",
+    "trampa": "confundir la opción «Elevado sobrecalentamiento.». Aumentar sobrecalentamiento favorece colabilidad, así que esta opción también parece verdadera en términos físicos; por eso el ítem, tal como está redactado, puede tener más de una respuesta.",
     "palabrasClave": [],
     "fuente": "UPC, Tecnología de Materiales, 09-01-2004, p. 2, pregunta 5; UPCommons 24806.",
     "baseRespuesta": "Respuesta razonada a partir del mecanismo metalúrgico o proceso; no se presenta como clave oficial."
@@ -6640,7 +6640,7 @@
       "Incorrecta: El bajo sobrecalentamiento promueve nucleación, pudiendo aumentar granos equiáxicos.",
       "Incorrecta: La opción a expresa la combinación esperada, aunque su enunciado es sensible a condiciones experimentales."
     ],
-    "trampa": "Trampa habitual: confundir la opci?n ?Intervalo pequeño y extracción de calor rápida.?. Un intervalo estrecho y extracción rápida favorecen piel cerrada y refinamiento, no una sección columnar extensa.",
+    "trampa": "confundir la opción «Intervalo pequeño y extracción de calor rápida.». Un intervalo estrecho y extracción rápida favorecen piel cerrada y refinamiento, no una sección columnar extensa.",
     "palabrasClave": [],
     "fuente": "UPC, Tecnología de Materiales, 09-01-2004, p. 3, pregunta 15; UPCommons 24806.",
     "baseRespuesta": "Respuesta razonada a partir del mecanismo metalúrgico o proceso; no se presenta como clave oficial."
@@ -6667,7 +6667,7 @@
       "Incorrecta: La combinación contiene dos procesos con moldes desechables.",
       "Incorrecta: La opción está mal extraída/impresa y no es una combinación coherente."
     ],
-    "trampa": "Trampa habitual: confundir la opci?n ?Moldeo en cáscara.?. El molde propiamente dicho es una cáscara de arena aglomerada, no una coquilla reutilizable.",
+    "trampa": "confundir la opción «Moldeo en cáscara.». El molde propiamente dicho es una cáscara de arena aglomerada, no una coquilla reutilizable.",
     "palabrasClave": [],
     "fuente": "UPC, Tecnología de Materiales, 09-01-2004, p. 3, pregunta 16; UPCommons 24806.",
     "baseRespuesta": "Respuesta razonada a partir del mecanismo metalúrgico o proceso; no se presenta como clave oficial."
@@ -6694,7 +6694,7 @@
       "Correcta: la maleable procede de fundición blanca recocida/maleabilizada.",
       "Incorrecta: La opción d describe su ruta de fabricación."
     ],
-    "trampa": "Trampa habitual: confundir la opci?n ?Fundición laminar con bonificado.?. La fundición gris laminar no se convierte en maleable por bonificado.",
+    "trampa": "confundir la opción «Fundición laminar con bonificado.». La fundición gris laminar no se convierte en maleable por bonificado.",
     "palabrasClave": [],
     "fuente": "UPC, Tecnología de Materiales, 09-01-2004, p. 6, pregunta 1; UPCommons 24806.",
     "baseRespuesta": "Respuesta razonada a partir del mecanismo metalúrgico o proceso; no se presenta como clave oficial."
@@ -6721,7 +6721,7 @@
       "Correcta: en el rango aproximado indicado por el test.",
       "Incorrecta: La opción d describe el mantenimiento isotérmico bainítico."
     ],
-    "trampa": "Trampa habitual: confundir la opci?n ?Transformación de la austenita durante enfriamiento continuo.?. Eso describe transformación bajo enfriamiento continuo, no austemperado.",
+    "trampa": "confundir la opción «Transformación de la austenita durante enfriamiento continuo.». Eso describe transformación bajo enfriamiento continuo, no austemperado.",
     "palabrasClave": [],
     "fuente": "UPC, Tecnología de Materiales, 09-01-2004, p. 6, pregunta 3; UPCommons 24806.",
     "baseRespuesta": "Respuesta razonada a partir del mecanismo metalúrgico o proceso; no se presenta como clave oficial."
@@ -6748,7 +6748,7 @@
       "Incorrecta: La globulización se aplica a estructuras de acero/cementita.",
       "Incorrecta: La opción a es el tratamiento característico."
     ],
-    "trampa": "Trampa habitual: confundir la opci?n ?Recocido de eliminación de tensiones.?. Puede usarse para aliviar tensiones, pero no es el tratamiento de endurecimiento característico.",
+    "trampa": "confundir la opción «Recocido de eliminación de tensiones.». Puede usarse para aliviar tensiones, pero no es el tratamiento de endurecimiento característico.",
     "palabrasClave": [],
     "fuente": "UPC, Tecnología de Materiales, 09-01-2004, p. 6, pregunta 6; UPCommons 24806.",
     "baseRespuesta": "Respuesta razonada a partir del mecanismo metalúrgico o proceso; no se presenta como clave oficial."
@@ -6775,7 +6775,7 @@
       "Incorrecta: La morfología vermicular y matriz martensítica no definen ADI.",
       "Incorrecta: La opción b es la definición buscada."
     ],
-    "trampa": "Trampa habitual: confundir la opci?n ?Fundición gris laminar con matriz ferrítico-perlítica.?. Describe fundición gris, no ADI.",
+    "trampa": "confundir la opción «Fundición gris laminar con matriz ferrítico-perlítica.». Describe fundición gris, no ADI.",
     "palabrasClave": [],
     "fuente": "UPC, Tecnología de Materiales, 09-01-2004, p. 6, pregunta 8; UPCommons 24806.",
     "baseRespuesta": "Respuesta razonada a partir del mecanismo metalúrgico o proceso; no se presenta como clave oficial."
@@ -6802,7 +6802,7 @@
       "Correcta: transformación isotérmica de austenita a temperatura inferior a la de austenización.",
       "Incorrecta: La opción d es la definición aproximada."
     ],
-    "trampa": "Trampa habitual: confundir la opci?n ?Transformación isotérmica de austenita por encima de A3.?. No describen una transformación isotérmica por encima de A3 en el sentido del diagrama empleado.",
+    "trampa": "confundir la opción «Transformación isotérmica de austenita por encima de A3.». No describen una transformación isotérmica por encima de A3 en el sentido del diagrama empleado.",
     "palabrasClave": [],
     "fuente": "UPC, Tecnología de Materiales, 09-01-2004, p. 7, pregunta 20; UPCommons 24806.",
     "baseRespuesta": "Respuesta razonada a partir del mecanismo metalúrgico o proceso; no se presenta como clave oficial."

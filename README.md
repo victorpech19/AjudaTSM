@@ -25,7 +25,7 @@ La pràctica de preguntes complementa la preparació del parcial; els problemes 
 
 ## Desenvolupament local
 
-Aplicació estàtica, sense compilació ni serveis externs. Per servir-la des de la carpeta del projecte:
+Aplicació estàtica, sense compilació. Les tipografies (Montserrat i Open Sans) es carreguen de Google Fonts; sense connexió es fan servir les del sistema. Per servir-la des de la carpeta del projecte:
 
 ```powershell
 python -m http.server 4173
