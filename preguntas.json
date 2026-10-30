@@ -1812,6 +1812,210 @@
     "trampa": "Creer que el proceso es apropiado para cualquier aleación, tamaño o tratamiento posterior."
   },
   {
+    "id": "vf-2021-11-03-01",
+    "tema": "tema1",
+    "temaNombre": "Tema 1: Acers, fundicions i tractaments tèrmics",
+    "pregunta": "El afino en cuchara es un proceso necesario solo para el acero obtenido en convertidores LD.",
+    "respuesta": false,
+    "explicacion": "El afino en cuchara (desgasificación, ajuste de composición, desulfuración y control de inclusiones y de temperatura) se aplica al acero líquido con independencia de su origen: convertidor LD u horno eléctrico. Su necesidad depende de la calidad exigida, no de la ruta de fabricación.",
+    "trampa": "Asociar el afino en cuchara exclusivamente al convertidor LD, cuando también se usa con acero de horno eléctrico.",
+    "palabrasClave": [
+      "afino en cuchara",
+      "convertidor LD",
+      "desgasificación",
+      "inclusiones"
+    ],
+    "fuente": "Pregunta 1, afirmación 01, parcial UPC de Tecnologia i Selecció de Materials, 03/11/2021, p. 2.",
+    "baseRespuesta": "Clave oficial: V/F marcada en la columna de respuestas del examen."
+  },
+  {
+    "id": "vf-2021-11-03-02",
+    "tema": "tema1",
+    "temaNombre": "Tema 1: Acers, fundicions i tractaments tèrmics",
+    "pregunta": "La sensibilización de los aceros inoxidables se puede evitar utilizando grados L, es decir, limitando el contenido en carbono.",
+    "respuesta": true,
+    "explicacion": "La sensibilización es la precipitación de carburos de cromo en los límites de grano cuando el acero permanece entre unos 450 y 850 °C, lo que empobrece en cromo las zonas adyacentes y favorece la corrosión intergranular. Los grados L tienen C muy bajo (≤ 0,03 %), así que hay muy poco carbono disponible para formar esos carburos.",
+    "trampa": "Pensar que la sensibilización solo se evita con temple rápido o con estabilizantes (Ti, Nb), cuando el grado L actúa limitando el carbono.",
+    "palabrasClave": [
+      "sensibilización",
+      "grados L",
+      "carburos de cromo",
+      "corrosión intergranular"
+    ],
+    "fuente": "Pregunta 1, afirmación 02, parcial UPC de Tecnologia i Selecció de Materials, 03/11/2021, p. 2.",
+    "baseRespuesta": "Clave oficial: V/F marcada en la columna de respuestas del examen."
+  },
+  {
+    "id": "vf-2021-11-03-03",
+    "tema": "tema3",
+    "temaNombre": "Tema 3: Emmotllament i solidificació",
+    "pregunta": "En la nucleación heterogénea, el agente inoculante ha de tener una temperatura de fusión superior a la del metal líquido.",
+    "respuesta": true,
+    "explicacion": "La nucleación heterogénea se produce sobre partículas sólidas presentes en el líquido. Para actuar como sustrato, el inoculante debe seguir sólido a la temperatura de colada: si se fundiera antes que el metal, no ofrecería una superficie activa. Interesa además una buena coherencia cristalográfica con la fase que nuclea (p. ej. TiB2 en aluminio).",
+    "trampa": "Creer que cualquier partícula sirve como inoculante, sin exigir que sea sólida a la temperatura de colada.",
+    "palabrasClave": [
+      "nucleación heterogénea",
+      "inoculante",
+      "temperatura de fusión",
+      "refinado de grano"
+    ],
+    "fuente": "Pregunta 1, afirmación 03, parcial UPC de Tecnologia i Selecció de Materials, 03/11/2021, p. 2.",
+    "baseRespuesta": "Clave oficial: V/F marcada en la columna de respuestas del examen."
+  },
+  {
+    "id": "vf-2021-11-03-05",
+    "tema": "tema1",
+    "temaNombre": "Tema 1: Acers, fundicions i tractaments tèrmics",
+    "pregunta": "En los convertidores, el contenido de carbono del arrabio se disminuye mediante reacciones de reducción.",
+    "respuesta": false,
+    "explicacion": "En el convertidor LD se inyecta oxígeno sobre el arrabio líquido: el carbono se elimina por oxidación (C + O → CO), igual que el silicio, el manganeso y el fósforo. La reducción de óxidos de hierro es la función del alto horno, que produce el arrabio.",
+    "trampa": "Confundir la función del alto horno (reducción de óxidos) con la del convertidor (oxidación de carbono e impurezas).",
+    "palabrasClave": [
+      "convertidor LD",
+      "arrabio",
+      "oxidación",
+      "descarburación"
+    ],
+    "fuente": "Pregunta 1, afirmación 05, parcial UPC de Tecnologia i Selecció de Materials, 03/11/2021, p. 2.",
+    "baseRespuesta": "Clave oficial: V/F marcada en la columna de respuestas del examen."
+  },
+  {
+    "id": "vf-2021-11-03-06",
+    "tema": "tema1",
+    "temaNombre": "Tema 1: Acers, fundicions i tractaments tèrmics",
+    "pregunta": "Las fundiciones de hierro nodulares son más tenaces que las laminares.",
+    "respuesta": true,
+    "explicacion": "En la fundición nodular el grafito es esferoidal, lo que reduce la concentración de tensiones y la propagación de grietas. En la fundición laminar las láminas de grafito actúan como entallas internas y la tenacidad es baja. Por eso la nodular es más dúctil y tenaz.",
+    "trampa": "Atribuir a ambas la misma tenacidad por tener grafito; lo que determina el comportamiento es la forma del grafito.",
+    "palabrasClave": [
+      "fundición nodular",
+      "fundición laminar",
+      "grafito esferoidal",
+      "tenacidad"
+    ],
+    "fuente": "Pregunta 1, afirmación 06, parcial UPC de Tecnologia i Selecció de Materials, 03/11/2021, p. 2.",
+    "baseRespuesta": "Clave oficial: V/F marcada en la columna de respuestas del examen."
+  },
+  {
+    "id": "vf-2021-11-03-07",
+    "tema": "tema1",
+    "temaNombre": "Tema 1: Acers, fundicions i tractaments tèrmics",
+    "pregunta": "Los aceros inoxidables austeníticos endurecen gracias al tratamiento térmico de temple.",
+    "respuesta": false,
+    "explicacion": "Los inoxidables austeníticos (serie 300) tienen una austenita estabilizada por níquel que no transforma en martensita: el temple desde temperatura de solución solo retiene la austenita. Su endurecimiento se consigue por deformación en frío. Los martensíticos (serie 400) sí endurecen por temple.",
+    "trampa": "Extender a todos los inoxidables la capacidad de endurecer por temple, que solo tienen los martensíticos.",
+    "palabrasClave": [
+      "inoxidable austenítico",
+      "temple",
+      "deformación en frío",
+      "martensita"
+    ],
+    "fuente": "Pregunta 1, afirmación 07, parcial UPC de Tecnologia i Selecció de Materials, 03/11/2021, p. 2.",
+    "baseRespuesta": "Clave oficial: V/F marcada en la columna de respuestas del examen."
+  },
+  {
+    "id": "vf-2021-11-03-08",
+    "tema": "tema3",
+    "temaNombre": "Tema 3: Emmotllament i solidificació",
+    "pregunta": "En el proceso de obtención del acero, los productos de desbaste obtenidos por colada continua se caracterizan por la presencia de rechupes y mínima segregación.",
+    "respuesta": false,
+    "explicacion": "La colada continua sustituye al lingote y evita el rechupe de cabeza típico de este. Pero el producto de desbaste no está libre de defectos internos: la solidificación en el núcleo genera segregación central y puede aparecer porosidad. Estos defectos se controlan con enfriamiento y agitación electromagnética, no desaparecen por el proceso en sí.",
+    "trampa": "Asumir que, por ser un proceso continuo, el producto es homogéneo y sano, cuando los defectos internos solo se controlan.",
+    "palabrasClave": [
+      "colada continua",
+      "desbaste",
+      "rechupe",
+      "segregación central"
+    ],
+    "fuente": "Pregunta 1, afirmación 08, parcial UPC de Tecnologia i Selecció de Materials, 03/11/2021, p. 2.",
+    "baseRespuesta": "Clave oficial: V/F marcada en la columna de respuestas del examen."
+  },
+  {
+    "id": "vf-2021-11-03-09",
+    "tema": "tema1",
+    "temaNombre": "Tema 1: Acers, fundicions i tractaments tèrmics",
+    "pregunta": "Las fundiciones ADI se obtienen por tratamiento de austempering de las fundiciones grises.",
+    "respuesta": false,
+    "explicacion": "Las fundiciones ADI se obtienen austemperando fundición nodular (dúctil), no gris. El tratamiento —austenizar, enfriar a la zona bainítica y mantener— produce una matriz ausferrítica (ferrita acicular y austenita rica en carbono) que combina resistencia y ductilidad. La fundición gris carece del grafito esferoidal necesario para ese comportamiento.",
+    "trampa": "Olvidar que el ADI parte de fundición nodular; el austemperado por sí solo no define el material.",
+    "palabrasClave": [
+      "ADI",
+      "austempering",
+      "fundición nodular",
+      "ausferrita"
+    ],
+    "fuente": "Pregunta 1, afirmación 09, parcial UPC de Tecnologia i Selecció de Materials, 03/11/2021, p. 2.",
+    "baseRespuesta": "Clave oficial: V/F marcada en la columna de respuestas del examen."
+  },
+  {
+    "id": "vf-2021-11-03-10",
+    "tema": "tema3",
+    "temaNombre": "Tema 3: Emmotllament i solidificació",
+    "pregunta": "Las segregaciones se producen debido a la contracción de solidificación de la mayoría de aleaciones metálicas.",
+    "respuesta": false,
+    "explicacion": "La segregación se debe a que el soluto se reparte de forma desigual entre sólido y líquido durante la solidificación (coeficiente de reparto distinto de 1): las primeras porciones sólidas son más puras y el líquido restante se enriquece. La contracción de solidificación causa rechupes y porosidad, no segregación.",
+    "trampa": "Confundir segregación (composición química) con rechupes y porosidad (defectos de volumen por contracción).",
+    "palabrasClave": [
+      "segregación",
+      "contracción de solidificación",
+      "coeficiente de reparto",
+      "rechupe"
+    ],
+    "fuente": "Pregunta 1, afirmación 10, parcial UPC de Tecnologia i Selecció de Materials, 03/11/2021, p. 2.",
+    "baseRespuesta": "Clave oficial: V/F marcada en la columna de respuestas del examen."
+  },
+  {
+    "id": "vf-2021-11-03-11",
+    "tema": "tema1",
+    "temaNombre": "Tema 1: Acers, fundicions i tractaments tèrmics",
+    "pregunta": "La martensita es una solución sólida sobresaturada de carbono en una red cúbica centrada en el cuerpo.",
+    "respuesta": false,
+    "explicacion": "La martensita es una solución sólida sobresaturada de carbono en hierro, pero con red tetragonal centrada en el cuerpo (BCT), no cúbica. Se forma sin difusión al transformar la austenita y el carbono intersticial queda atrapado, lo que distorsiona la red. La ferrita, en cambio, es cúbica centrada en el cuerpo (BCC) y casi no tiene carbono.",
+    "trampa": "Atribuir a la martensita la red BCC de la ferrita; la distorsión tetragonal es lo que la hace dura.",
+    "palabrasClave": [
+      "martensita",
+      "tetragonal",
+      "BCT",
+      "sobresaturación"
+    ],
+    "fuente": "Pregunta 1, afirmación 11, parcial UPC de Tecnologia i Selecció de Materials, 03/11/2021, p. 2.",
+    "baseRespuesta": "Clave oficial: V/F marcada en la columna de respuestas del examen."
+  },
+  {
+    "id": "vf-2021-11-03-12",
+    "tema": "tema1",
+    "temaNombre": "Tema 1: Acers, fundicions i tractaments tèrmics",
+    "pregunta": "Al prolongar el tiempo de austenización, disminuye la templabilidad.",
+    "respuesta": false,
+    "explicacion": "La templabilidad es la capacidad de formar martensita en profundidad y depende de la composición y del tamaño de grano austenítico. Un tiempo de austenización más largo, sin llegar al sobrecalentamiento, disuelve carburos y aumenta el tamaño de grano, lo que retrasa la transformación difusiva y mantiene o aumenta la templabilidad.",
+    "trampa": "Asociar austenizaciones largas con pérdida de templabilidad; el crecimiento de grano que provocan la aumenta.",
+    "palabrasClave": [
+      "templabilidad",
+      "austenización",
+      "tamaño de grano",
+      "disolución de carburos"
+    ],
+    "fuente": "Pregunta 1, afirmación 12, parcial UPC de Tecnologia i Selecció de Materials, 03/11/2021, p. 2.",
+    "baseRespuesta": "Clave oficial: V/F marcada en la columna de respuestas del examen."
+  },
+  {
+    "id": "vf-2021-11-03-14",
+    "tema": "tema1",
+    "temaNombre": "Tema 1: Acers, fundicions i tractaments tèrmics",
+    "pregunta": "En las fundiciones de hierro, la presencia de grafito se ve favorecida por el contenido en silicio y una rápida velocidad de enfriamiento.",
+    "respuesta": false,
+    "explicacion": "El silicio favorece la grafitización, es decir, el grafito en lugar de la cementita. Pero una velocidad de enfriamiento rápida favorece la solidificación metaestable: aparece cementita y la fundición es blanca. El grafito se forma con enfriamiento lento, así que la segunda parte de la afirmación es falsa.",
+    "trampa": "Creer que todo factor que favorece el grafito acelera su formación; el enfriamiento rápido es el que retiene la cementita.",
+    "palabrasClave": [
+      "grafitización",
+      "silicio",
+      "velocidad de enfriamiento",
+      "fundición blanca"
+    ],
+    "fuente": "Pregunta 1, afirmación 14, parcial UPC de Tecnologia i Selecció de Materials, 03/11/2021, p. 2.",
+    "baseRespuesta": "Clave oficial: V/F marcada en la columna de respuestas del examen."
+  },
+  {
     "id": "mc-2022-01",
     "tipo": "multiple",
     "tema": "tema2",
@@ -4821,519 +5025,6 @@
     "baseRespuesta": "Clave oficial marcada en la hoja de respuestas: D. Se conserva el planteamiento fuente; la explicación acota la afirmación sobre tiempo de solidificación, que depende también de la alimentación y del diseño térmico."
   },
   {
-    "id": "hist-2005-01-31-p2-q01",
-    "tipo": "multiple",
-    "tema": "tema2",
-    "temaNombre": "Tema 2: Alumini i aliatges",
-    "pregunta": "¿Por qué las aleaciones Al-Si con el 10 % de Si se usan para piezas fundidas?",
-    "opciones": [
-      "Por su gran intervalo de solidificación.",
-      "Por su pequeño intervalo de solidificación.",
-      "Por presentar gran zona de granos equiáxicos.",
-      "Por solidificar en piel abierta.",
-      "Por ninguna de las citadas."
-    ],
-    "respuesta": 1,
-    "explicacion": "La composición próxima al eutéctico Al-Si reduce el intervalo de solidificación y mejora la colabilidad, por lo que es común en piezas fundidas.",
-    "explicacionesOpciones": [
-      "No és correcta: Un intervalo amplio suele favorecer una zona pastosa extensa y dificultar el llenado.",
-      "Correcta. Correcta: una composición cercana al eutéctico solidifica en un intervalo estrecho y favorece la colabilidad.",
-      "No és correcta: La fracción de granos equiáxicos no es la razón general que justifica estas aleaciones.",
-      "No és correcta: La piel abierta describe un modo de solidificación y no la ventaja composicional señalada.",
-      "No és correcta: La opción b sí es la explicación metalúrgica habitual."
-    ],
-    "trampa": "Asociar mayor colabilidad con un intervalo amplio de solidificación.",
-    "palabrasClave": [],
-    "fuente": "UPC, Tecnología de Materiales, 31-01-2005, pregunta 01, p. 2; UPCommons 24806.",
-    "baseRespuesta": "Respuesta razonada a partir de metalurgia física y procesos de fabricación; el ejemplar consultado no muestra una clave oficial legible."
-  },
-  {
-    "id": "hist-2005-01-31-p2-q06",
-    "tipo": "multiple",
-    "tema": "tema1",
-    "temaNombre": "Tema 1: Acers, fundicions i tractaments tèrmics",
-    "pregunta": "La artesa o distribuidor de una instalación de colada continua tiene como función:",
-    "opciones": [
-      "Recoger el acero líquido procedente de la cuchara.",
-      "Iniciar la solidificación.",
-      "Desgasificar el acero líquido.",
-      "Ajustar la composición química del acero.",
-      "Ninguna de las citadas."
-    ],
-    "respuesta": 0,
-    "explicacion": "El distribuidor recibe el acero de la cuchara y lo reparte hacia las líneas de colada; la solidificación comienza principalmente en la lingotera.",
-    "explicacionesOpciones": [
-      "Correcta. Correcta: recibe el acero de la cuchara y alimenta los moldes de las líneas de colada.",
-      "No és correcta: La solidificación inicial controlada ocurre en la lingotera, después del distribuidor.",
-      "No és correcta: El desgasificado corresponde al tratamiento del acero en instalaciones específicas.",
-      "No és correcta: El ajuste químico se realiza en el afino secundario, no como función propia de la artesa.",
-      "No és correcta: Sí está citada la función correcta en a."
-    ],
-    "trampa": "Confundir la función de distribución con la solidificación o el afino en cuchara.",
-    "palabrasClave": [],
-    "fuente": "UPC, Tecnología de Materiales, 31-01-2005, pregunta 06, p. 2; UPCommons 24806.",
-    "baseRespuesta": "Respuesta razonada a partir de metalurgia física y procesos de fabricación; el ejemplar consultado no muestra una clave oficial legible."
-  },
-  {
-    "id": "hist-2005-01-31-p3-q11",
-    "tipo": "multiple",
-    "tema": "tema3",
-    "temaNombre": "Tema 3: Emmotllament i solidificació",
-    "pregunta": "¿Qué factores promueven la solidificación en piel abierta? I: aleación con amplio intervalo de solidificación; II: dendritas de punta larga y frágil; III: elevada extracción de calor mediante molde metálico.",
-    "opciones": [
-      "I y II.",
-      "II y III.",
-      "III y I.",
-      "Sólo III.",
-      "Ninguno de los citados."
-    ],
-    "respuesta": 0,
-    "explicacion": "Un amplio intervalo de solidificación y una red dendrítica larga y frágil dificultan el cierre temprano de la piel. Una elevada extracción de calor favorece una piel cerrada.",
-    "explicacionesOpciones": [
-      "Correcta. Correcta: las condiciones I y II mantienen una zona pastosa y pueden dejar canales líquidos interconectados.",
-      "No és correcta: La extracción de calor alta tiende a cerrar la piel; no son ciertas II y III conjuntamente.",
-      "No és correcta: La opción incorpora III, que no promueve piel abierta en el planteamiento.",
-      "No és correcta: La velocidad de enfriamiento no es el único factor: I y II también cuentan.",
-      "No és correcta: I y II sí son factores citados."
-    ],
-    "trampa": "Tratar el enfriamiento rápido como promotor de piel abierta; tiende a cerrar la piel.",
-    "palabrasClave": [],
-    "fuente": "UPC, Tecnología de Materiales, 31-01-2005, pregunta 11, p. 3; UPCommons 24806.",
-    "baseRespuesta": "Respuesta razonada a partir de metalurgia física y procesos de fabricación; el ejemplar consultado no muestra una clave oficial legible."
-  },
-  {
-    "id": "hist-2005-01-31-p3-q15",
-    "tipo": "multiple",
-    "tema": "tema3",
-    "temaNombre": "Tema 3: Emmotllament i solidificació",
-    "pregunta": "¿A qué se debe la segregación de las piezas solidificadas?",
-    "opciones": [
-      "A la retención de gases.",
-      "A la mala alimentación.",
-      "A la mala colocación de la mazarota.",
-      "A un llenado lateral.",
-      "Ninguno de los citados."
-    ],
-    "respuesta": 1,
-    "explicacion": "La segregación es una variación local de composición asociada al reparto de soluto durante la solidificación; en el enfoque de esta pregunta, se relaciona con una alimentación deficiente.",
-    "explicacionesOpciones": [
-      "No és correcta: Los gases retenidos producen porosidad, no explican por sí solos la segregación química.",
-      "Correcta. Correcta según el planteamiento del examen: la alimentación inadecuada favorece heterogeneidades de composición durante la solidificación.",
-      "No és correcta: La posición de una mazarota se relaciona sobre todo con alimentación y rechupes, pero no es la causa general que pregunta el ítem.",
-      "No és correcta: El llenado lateral no define por sí solo la segregación.",
-      "No és correcta: La opción b expresa la causa esperada en la pregunta."
-    ],
-    "trampa": "Confundir segregación química con porosidad gaseosa o rechupes.",
-    "palabrasClave": [],
-    "fuente": "UPC, Tecnología de Materiales, 31-01-2005, pregunta 15, p. 3; UPCommons 24806.",
-    "baseRespuesta": "Respuesta razonada a partir de metalurgia física y procesos de fabricación; el ejemplar consultado no muestra una clave oficial legible."
-  },
-  {
-    "id": "hist-2005-06-13-p2-q07",
-    "tipo": "multiple",
-    "tema": "tema3",
-    "temaNombre": "Tema 3: Emmotllament i solidificació",
-    "pregunta": "¿Qué dos defectos son típicos de la transformación líquido-sólido? 1) Pliegues o uniones frías; 2) defecto de entubamiento; 3) segregación química; 4) porosidad.",
-    "opciones": [
-      "1 y 2.",
-      "2 y 3.",
-      "3 y 4.",
-      "4 y 1.",
-      "Ninguna de las parejas citadas."
-    ],
-    "respuesta": 2,
-    "explicacion": "La segregación química y la porosidad son defectos que pueden originarse durante la solidificación. Los pliegues y el entubamiento se asocian principalmente a procesos de conformado.",
-    "explicacionesOpciones": [
-      "No és correcta: Los pliegues y las uniones frías se asocian a forja o llenado, no ambos a la transformación líquido-sólido.",
-      "No és correcta: El entubamiento es propio de deformación/conformado; no forma pareja con segregación.",
-      "Correcta. Correcta: segregación y porosidad son defectos de solidificación.",
-      "No és correcta: El entubamiento no es defecto de solidificación, así que la pareja no es correcta.",
-      "No és correcta: La pareja 3 y 4 sí corresponde."
-    ],
-    "trampa": "Agrupar defectos por su nombre sin atender al proceso que los genera.",
-    "palabrasClave": [],
-    "fuente": "UPC, Tecnología de Materiales, 13-06-2005, pregunta 07, p. 2; UPCommons 24806.",
-    "baseRespuesta": "Respuesta razonada a partir de metalurgia física y procesos de fabricación; el ejemplar consultado no muestra una clave oficial legible."
-  },
-  {
-    "id": "hist-2005-06-13-p2-q08",
-    "tipo": "multiple",
-    "tema": "tema3",
-    "temaNombre": "Tema 3: Emmotllament i solidificació",
-    "pregunta": "¿De qué par de valores depende la amplitud de la zona equiáxica en una solidificación? 1) Intervalo de solidificación; 2) tipo de molde, metálico o cerámico; 3) llenado por sifón; 4) existencia de mazarotas.",
-    "opciones": [
-      "1 y 2.",
-      "2 y 3.",
-      "3 y 4.",
-      "4 y 1.",
-      "Ninguna de las parejas citadas."
-    ],
-    "respuesta": 0,
-    "explicacion": "La zona equiáxica depende de las condiciones térmicas y de la aleación: el intervalo de solidificación y la extracción de calor del molde afectan el balance entre crecimiento columnar y equiáxico.",
-    "explicacionesOpciones": [
-      "Correcta. Correcta: composición/intervalo de solidificación y tipo de molde afectan la solidificación y estructura de grano.",
-      "No és correcta: El llenado por sifón no sustituye el efecto del intervalo de solidificación; no es la pareja pretendida.",
-      "No és correcta: El sistema de alimentación no define directamente la zona equiáxica.",
-      "No és correcta: La mazarota se diseña para alimentar contracción; no determina junto con el intervalo la zona equiáxica.",
-      "No és correcta: La pareja 1 y 2 sí es la indicada."
-    ],
-    "trampa": "Confundir alimentación del molde con variables que fijan el campo térmico y la zona equiáxica.",
-    "palabrasClave": [],
-    "fuente": "UPC, Tecnología de Materiales, 13-06-2005, pregunta 08, p. 2; UPCommons 24806.",
-    "baseRespuesta": "Respuesta razonada a partir de metalurgia física y procesos de fabricación; el ejemplar consultado no muestra una clave oficial legible."
-  },
-  {
-    "id": "hist-2005-06-13-p2-q09",
-    "tipo": "multiple",
-    "tema": "tema3",
-    "temaNombre": "Tema 3: Emmotllament i solidificació",
-    "pregunta": "¿De qué material es el molde en el moldeo en cáscara?",
-    "opciones": [
-      "Arcilla.",
-      "Chapa de acero inoxidable.",
-      "Caucho.",
-      "Aluminio.",
-      "Ninguno de los citados."
-    ],
-    "respuesta": 4,
-    "explicacion": "En el moldeo en cáscara, la cáscara de arena aglomerada con resina constituye el molde; ninguna de las cuatro opciones describe ese material.",
-    "explicacionesOpciones": [
-      "No és correcta: La arcilla no es el material característico de la cáscara de arena resinada.",
-      "No és correcta: La chapa puede formar el patrón o soporte, no la cáscara moldeante.",
-      "No és correcta: El caucho no es el material del molde de cáscara para fundición.",
-      "No és correcta: El aluminio puede usarse como patrón en ciertos procesos, no como material de la cáscara.",
-      "Correcta. Correcta: ninguna opción enumera arena con aglomerante resinógeno."
-    ],
-    "trampa": "Confundir el patrón metálico calentado con el material de la cáscara moldeante.",
-    "palabrasClave": [],
-    "fuente": "UPC, Tecnología de Materiales, 13-06-2005, pregunta 09, p. 2; UPCommons 24806.",
-    "baseRespuesta": "Respuesta razonada a partir de metalurgia física y procesos de fabricación; el ejemplar consultado no muestra una clave oficial legible."
-  },
-  {
-    "id": "hist-2005-06-13-p2-q10",
-    "tipo": "multiple",
-    "tema": "tema3",
-    "temaNombre": "Tema 3: Emmotllament i solidificació",
-    "pregunta": "Las grietas en caliente durante la solidificación se producen básicamente por:",
-    "opciones": [
-      "Gases atrapados.",
-      "Diferencias másicas importantes en la pieza.",
-      "Generación de rechupes abiertos.",
-      "Mal llenado del molde.",
-      "Ninguna de las citadas."
-    ],
-    "respuesta": 2,
-    "explicacion": "Las grietas en caliente aparecen cuando la contracción y las deformaciones durante las últimas etapas de solidificación no pueden acomodarse, especialmente en una red dendrítica frágil; un rechupe abierto es la opción más próxima al planteamiento original.",
-    "explicacionesOpciones": [
-      "No és correcta: Los gases atrapados originan porosidad, no explican típicamente las grietas en caliente.",
-      "No és correcta: Cambios de sección pueden aumentar tensiones, pero la opción no identifica el mecanismo como lo hace la respuesta del test.",
-      "Correcta. Correcta según el marco del ítem: la contracción de solidificación y alimentación deficiente generan discontinuidades abiertas.",
-      "No és correcta: El mal llenado causa faltas de material o uniones frías, no es la causa básica de las grietas en caliente.",
-      "No és correcta: La opción c recoge la respuesta esperada del cuestionario."
-    ],
-    "trampa": "Equiparar las grietas en caliente con porosidad gaseosa o falta de llenado.",
-    "palabrasClave": [],
-    "fuente": "UPC, Tecnología de Materiales, 13-06-2005, pregunta 10, p. 2; UPCommons 24806.",
-    "baseRespuesta": "Respuesta razonada a partir de metalurgia física y procesos de fabricación; el ejemplar consultado no muestra una clave oficial legible."
-  },
-  {
-    "id": "hist-2005-06-13-p3-q17",
-    "tipo": "multiple",
-    "tema": "tema3",
-    "temaNombre": "Tema 3: Emmotllament i solidificació",
-    "pregunta": "Para mejorar la colabilidad de una aleación metálica podemos:",
-    "opciones": [
-      "Aumentar el sobrecalentamiento.",
-      "Disminuir el sobrecalentamiento.",
-      "Aumentar el subenfriamiento.",
-      "Disminuir el subenfriamiento.",
-      "Ninguna de las anteriores."
-    ],
-    "respuesta": 0,
-    "explicacion": "Un mayor sobrecalentamiento prolonga el tiempo disponible antes de solidificar y facilita el llenado. La colabilidad también depende de composición, molde y condiciones de vertido.",
-    "explicacionesOpciones": [
-      "Correcta. Correcta: eleva la temperatura del metal respecto al liquidus y retrasa la solidificación durante el llenado.",
-      "No és correcta: Reducir el sobrecalentamiento acorta el tiempo de llenado antes de que avance la solidificación.",
-      "No és correcta: Aumentar el subenfriamiento no es la medida general para mejorar el llenado; puede favorecer nucleación/solidificación.",
-      "No és correcta: Disminuir subenfriamiento no expresa el factor operativo de sobrecalentamiento que pregunta el ítem.",
-      "No és correcta: La opción a es una medida válida para aumentar la colabilidad en condiciones comparables."
-    ],
-    "trampa": "Confundir sobrecalentamiento del líquido con subenfriamiento respecto a la temperatura de liquidus.",
-    "palabrasClave": [],
-    "fuente": "UPC, Tecnología de Materiales, 13-06-2005, pregunta 17, p. 3; UPCommons 24806.",
-    "baseRespuesta": "Respuesta razonada a partir de metalurgia física y procesos de fabricación; el ejemplar consultado no muestra una clave oficial legible."
-  },
-  {
-    "id": "hist-2008-06-27-p3-q10",
-    "tipo": "multiple",
-    "tema": "tema3",
-    "temaNombre": "Tema 3: Emmotllament i solidificació",
-    "pregunta": "En la solidificación de una aleación metálica:",
-    "opciones": [
-      "Cuanto mayor el subenfriamiento, más pequeños serán los núcleos estables.",
-      "Cuanto menor el subenfriamiento, más pequeños serán los núcleos estables.",
-      "El subenfriamiento no influye en la estabilidad de los núcleos.",
-      "Nunca puede haber solidificación si hay subenfriamiento.",
-      "Ninguna de las anteriores."
-    ],
-    "respuesta": 0,
-    "explicacion": "El radio crítico de un núcleo disminuye al aumentar el subenfriamiento: una mayor fuerza impulsora permite que núcleos más pequeños sean estables.",
-    "explicacionesOpciones": [
-      "Correcta. Correcta: un mayor subenfriamiento reduce el tamaño crítico de núcleo.",
-      "No és correcta: Con menor subenfriamiento aumenta el radio crítico, no disminuye.",
-      "No és correcta: El subenfriamiento sí modifica la fuerza impulsora y la estabilidad de núcleos.",
-      "No és correcta: El subenfriamiento favorece la solidificación; no la impide.",
-      "No és correcta: La primera opción expresa la relación física correcta."
-    ],
-    "trampa": "Invertir la relación entre subenfriamiento y radio crítico.",
-    "palabrasClave": [],
-    "fuente": "UPC, Tecnología de Materiales, 27-06-2008, pregunta 10, p. 3; UPCommons 24806.",
-    "baseRespuesta": "Respuesta razonada a partir de metalurgia física y procesos de fabricación; el ejemplar consultado no muestra una clave oficial legible."
-  },
-  {
-    "id": "hist-2008-06-27-p3-q11",
-    "tipo": "multiple",
-    "tema": "tema3",
-    "temaNombre": "Tema 3: Emmotllament i solidificació",
-    "pregunta": "Si en la solidificación de una aleación metálica predomina un crecimiento dendrítico estable: 1) se producirá solidificación en piel cerrada; 2) predominará la zona columnar; 3) habrá mala colabilidad.",
-    "opciones": [
-      "Las tres son ciertas.",
-      "Sólo 1 y 2 son ciertas.",
-      "Sólo 1 y 3 son ciertas.",
-      "Sólo la 3 es cierta.",
-      "Ninguna de las anteriores."
-    ],
-    "respuesta": 1,
-    "explicacion": "El crecimiento dendrítico estable puede formar una piel cerrada y una zona columnar predominante. La colabilidad no queda necesariamente definida como mala por esa observación, así que la tercera afirmación no se sigue.",
-    "explicacionesOpciones": [
-      "No és correcta: No: la tercera afirmación no se deduce de las dos primeras.",
-      "Correcta. Correcta: 1 y 2 describen la piel cerrada y el crecimiento columnar; 3 es demasiado general.",
-      "No és correcta: La tercera no es una consecuencia necesaria del crecimiento estable.",
-      "No és correcta: Las dos primeras sí son ciertas en el planteamiento de la pregunta.",
-      "No és correcta: La respuesta reúne las afirmaciones 1 y 2."
-    ],
-    "trampa": "Tomar la morfología de crecimiento como una medida directa de la colabilidad.",
-    "palabrasClave": [],
-    "fuente": "UPC, Tecnología de Materiales, 27-06-2008, pregunta 11, p. 3; UPCommons 24806.",
-    "baseRespuesta": "Respuesta razonada a partir de metalurgia física y procesos de fabricación; el ejemplar consultado no muestra una clave oficial legible."
-  },
-  {
-    "id": "hist-2008-06-27-p3-q12",
-    "tipo": "multiple",
-    "tema": "tema3",
-    "temaNombre": "Tema 3: Emmotllament i solidificació",
-    "pregunta": "De las siguientes afirmaciones respecto a los rechupes: 1) son un defecto de solidificación; 2) son perfectamente esféricos; 3) se deben a gas atrapado.",
-    "opciones": [
-      "Las tres son ciertas.",
-      "Sólo 1 y 2 son ciertas.",
-      "Sólo 1 y 3 son ciertas.",
-      "Sólo la 1 es cierta.",
-      "Ninguna de las anteriores."
-    ],
-    "respuesta": 3,
-    "explicacion": "El rechupe es una cavidad debida a contracción y falta de alimentación durante la solidificación. No es necesariamente esférico y no se debe al gas atrapado.",
-    "explicacionesOpciones": [
-      "No és correcta: Correcta: es un defecto de solidificación por contracción y alimentación insuficiente.",
-      "No és correcta: El rechupe puede ser irregular; no es necesariamente esférico.",
-      "No és correcta: La afirmación sobre el gas es falsa: el gas atrapado genera porosidad.",
-      "Correcta. La primera es la única afirmación correcta.",
-      "No és correcta: La opción d es la que recoge sólo la primera."
-    ],
-    "trampa": "Confundir rechupes de contracción con porosidad gaseosa.",
-    "palabrasClave": [],
-    "fuente": "UPC, Tecnología de Materiales, 27-06-2008, pregunta 12, p. 3; UPCommons 24806.",
-    "baseRespuesta": "Respuesta razonada a partir de metalurgia física y procesos de fabricación; el ejemplar consultado no muestra una clave oficial legible."
-  },
-  {
-    "id": "hist-2008-06-27-p2-q03",
-    "tipo": "multiple",
-    "tema": "tema1",
-    "temaNombre": "Tema 1: Acers, fundicions i tractaments tèrmics",
-    "pregunta": "De las siguientes afirmaciones respecto a las fundiciones de hierro: 1) la fundición nodular es más empleada industrialmente que la blanca; 2) la ADI posee las mejores propiedades mecánicas; 3) la fundición gris también se denomina laminar.",
-    "opciones": [
-      "Las tres son ciertas.",
-      "Sólo 1 y 2 son ciertas.",
-      "Sólo 2 y 3 son ciertas.",
-      "Sólo la 3 es cierta.",
-      "Ninguna de las anteriores."
-    ],
-    "respuesta": 0,
-    "explicacion": "La fundición nodular tiene aplicaciones industriales más amplias que la blanca, ADI alcanza elevada combinación de resistencia y ductilidad, y la gris se denomina laminar por la forma del grafito. La expresión “mejores” se entiende en el contexto de las familias comparadas por el test.",
-    "explicacionesOpciones": [
-      "Correcta. Correcta en la comparación general del test: las tres afirmaciones se consideran ciertas.",
-      "No és correcta: La opción omite la denominación de fundición gris.",
-      "No és correcta: La opción omite la mayor extensión de uso de la nodular frente a la blanca.",
-      "No és correcta: La ADI también presenta propiedades mecánicas destacadas, por lo que 3 no es la única cierta.",
-      "No és correcta: Las tres afirmaciones son las previstas como verdaderas en el cuestionario."
-    ],
-    "trampa": "Interpretar “mejores” como superioridad universal para cualquier propiedad y aplicación.",
-    "palabrasClave": [],
-    "fuente": "UPC, Tecnología de Materiales, 27-06-2008, pregunta 03, p. 2; UPCommons 24806.",
-    "baseRespuesta": "Respuesta razonada a partir de metalurgia física y procesos de fabricación; el ejemplar consultado no muestra una clave oficial legible."
-  },
-  {
-    "id": "hist-2008-06-27-p2-q04",
-    "tipo": "multiple",
-    "tema": "tema1",
-    "temaNombre": "Tema 1: Acers, fundicions i tractaments tèrmics",
-    "pregunta": "De las siguientes afirmaciones respecto a las fundiciones de hierro: 1) la fundición maleable está en desuso; 2) la fundición blanca es de elevada dureza; 3) la fundición nodular suele utilizarse para bancadas de máquina.",
-    "opciones": [
-      "Las tres son ciertas.",
-      "Sólo 1 y 2 son ciertas.",
-      "Sólo 2 y 3 son ciertas.",
-      "Sólo la 3 es cierta.",
-      "Ninguna de las anteriores."
-    ],
-    "respuesta": 2,
-    "explicacion": "La fundición blanca es dura por su estructura cementítica, y la nodular se usa en componentes estructurales. La fundición maleable sigue teniendo aplicaciones; afirmar que está en desuso es demasiado absoluto.",
-    "explicacionesOpciones": [
-      "No és correcta: La afirmación 1 es demasiado absoluta; por ello no pueden ser ciertas las tres.",
-      "No és correcta: Incluye la afirmación 1, que no es correcta en términos generales.",
-      "Correcta. Correcta: la dureza de la blanca y el uso de nodular en piezas mecánicas son afirmaciones compatibles.",
-      "No és correcta: La afirmación 2 también es cierta, por lo que no sólo la 3.",
-      "No és correcta: Hay dos afirmaciones correctas: 2 y 3."
-    ],
-    "trampa": "Generalizar que una familia tradicional de fundiciones carece de uso industrial.",
-    "palabrasClave": [],
-    "fuente": "UPC, Tecnología de Materiales, 27-06-2008, pregunta 04, p. 2; UPCommons 24806.",
-    "baseRespuesta": "Respuesta razonada a partir de metalurgia física y procesos de fabricación; el ejemplar consultado no muestra una clave oficial legible."
-  },
-  {
-    "id": "hist-2008-06-27-p2-q05",
-    "tipo": "multiple",
-    "tema": "tema2",
-    "temaNombre": "Tema 2: Alumini i aliatges",
-    "pregunta": "De las siguientes afirmaciones respecto al aluminio: 1) su densidad es 4,5 kg/dm³; 2) su temperatura de fusión es 1200 °C; 3) conduce bien el calor y la electricidad.",
-    "opciones": [
-      "Las tres son ciertas.",
-      "Sólo 1 y 2 son ciertas.",
-      "Sólo 2 y 3 son ciertas.",
-      "Sólo la 3 es cierta.",
-      "Ninguna de las anteriores."
-    ],
-    "respuesta": 3,
-    "explicacion": "El aluminio tiene densidad aproximada de 2,7 kg/dm³ y funde cerca de 660 °C; sí presenta buena conductividad térmica y eléctrica.",
-    "explicacionesOpciones": [
-      "No és correcta: La densidad indicada corresponde aproximadamente al titanio, no al aluminio.",
-      "No és correcta: La opción contiene dos datos falsos sobre aluminio.",
-      "No és correcta: El punto de fusión señalado es falso, aunque la conductividad sea elevada.",
-      "Correcta. Correcta: sólo la conductividad térmica y eléctrica es cierta.",
-      "No és correcta: La tercera afirmación es cierta."
-    ],
-    "trampa": "Confundir datos característicos del titanio o del acero con los del aluminio.",
-    "palabrasClave": [],
-    "fuente": "UPC, Tecnología de Materiales, 27-06-2008, pregunta 05, p. 2; UPCommons 24806.",
-    "baseRespuesta": "Respuesta razonada a partir de metalurgia física y procesos de fabricación; el ejemplar consultado no muestra una clave oficial legible."
-  },
-  {
-    "id": "hist-2014-06-11-p2-q05",
-    "tipo": "multiple",
-    "tema": "tema2",
-    "temaNombre": "Tema 2: Alumini i aliatges",
-    "pregunta": "¿Qué afirmación es cierta respecto a la obtención de aluminio?",
-    "opciones": [
-      "Con el proceso Bayer obtenemos aluminio puro.",
-      "La obtención de Al(OH)₃ es una etapa del proceso Bayer.",
-      "Mediante electrólisis obtenemos Al₂O₃.",
-      "La electrólisis del Al(OH)₃ consume mucha energía.",
-      "Ninguna de las citadas."
-    ],
-    "respuesta": 1,
-    "explicacion": "Bayer refina bauxita para obtener alúmina mediante etapas de digestión y precipitación de Al(OH)₃. Después, la electrólisis de alúmina disuelta en criolita produce aluminio metálico.",
-    "explicacionesOpciones": [
-      "No és correcta: Bayer produce alúmina, no aluminio metálico puro.",
-      "Correcta. Correcta: el hidróxido precipitado es intermedio en la ruta Bayer hacia Al₂O₃.",
-      "No és correcta: La electrólisis produce Al metálico a partir de alúmina; no produce la alúmina.",
-      "No és correcta: El proceso industrial electroliza alúmina disuelta, no directamente Al(OH)₃.",
-      "No és correcta: La opción b describe una etapa real de Bayer."
-    ],
-    "trampa": "Intercambiar los productos de Bayer y de Hall-Héroult.",
-    "palabrasClave": [],
-    "fuente": "UPC, Tecnología de Materiales, 11-06-2014, pregunta 05, p. 2; UPCommons 24806.",
-    "baseRespuesta": "Respuesta razonada a partir de metalurgia física y procesos de fabricación; el ejemplar consultado no muestra una clave oficial legible."
-  },
-  {
-    "id": "hist-2014-06-11-p3-q10",
-    "tipo": "multiple",
-    "tema": "tema2",
-    "temaNombre": "Tema 2: Alumini i aliatges",
-    "pregunta": "¿Qué aleación de aluminio es de uso más extendido para fabricar piezas fundidas?",
-    "opciones": [
-      "Al-Si.",
-      "Al-Mn.",
-      "Al-Mg.",
-      "Al-Zn.",
-      "Ninguna de las citadas."
-    ],
-    "respuesta": 0,
-    "explicacion": "Las aleaciones Al-Si ofrecen buena colabilidad y se usan ampliamente en piezas fundidas.",
-    "explicacionesOpciones": [
-      "Correcta. Correcta: las aleaciones Al-Si son las más comunes para muchas piezas de fundición.",
-      "No és correcta: Al-Mn se asocia más habitualmente a productos conformados.",
-      "No és correcta: Al-Mg puede fundirse en aplicaciones concretas, pero no es la familia más extendida citada.",
-      "No és correcta: Al-Zn no es la familia general de fundición que busca el ítem.",
-      "No és correcta: La opción a es una familia industrial ampliamente utilizada."
-    ],
-    "trampa": "Elegir una aleación de conformado para una pregunta sobre colabilidad.",
-    "palabrasClave": [],
-    "fuente": "UPC, Tecnología de Materiales, 11-06-2014, pregunta 10, p. 3; UPCommons 24806.",
-    "baseRespuesta": "Respuesta razonada a partir de metalurgia física y procesos de fabricación; el ejemplar consultado no muestra una clave oficial legible."
-  },
-  {
-    "id": "hist-2014-06-11-p3-q12",
-    "tipo": "multiple",
-    "tema": "tema3",
-    "temaNombre": "Tema 3: Emmotllament i solidificació",
-    "pregunta": "¿Cómo se aumenta la colabilidad de una aleación metálica?",
-    "opciones": [
-      "Con composiciones eutécticas.",
-      "Con aleaciones de amplio intervalo de solidificación.",
-      "Solidificando en piel abierta.",
-      "Con bajas velocidades de enfriamiento.",
-      "Con ninguna de las citadas."
-    ],
-    "respuesta": 0,
-    "explicacion": "Las composiciones eutécticas solidifican en un intervalo estrecho, reduciendo la zona pastosa y favoreciendo el llenado de secciones delgadas.",
-    "explicacionesOpciones": [
-      "Correcta. Correcta: un intervalo estrecho, como cerca del eutéctico, favorece la colabilidad.",
-      "No és correcta: Un intervalo amplio tiende a prolongar la zona pastosa y puede dificultar el llenado.",
-      "No és correcta: La piel abierta es un modo de solidificación, no una recomendación general para aumentar colabilidad.",
-      "No és correcta: La velocidad de enfriamiento influye, pero no constituye aquí la respuesta composicional buscada.",
-      "No és correcta: La opción a es la correcta en el marco de la pregunta."
-    ],
-    "trampa": "Asociar un intervalo amplio con mejor capacidad de llenar el molde.",
-    "palabrasClave": [],
-    "fuente": "UPC, Tecnología de Materiales, 11-06-2014, pregunta 12, p. 3; UPCommons 24806.",
-    "baseRespuesta": "Respuesta razonada a partir de metalurgia física y procesos de fabricación; el ejemplar consultado no muestra una clave oficial legible."
-  },
-  {
-    "id": "hist-2014-06-11-p3-q17",
-    "tipo": "multiple",
-    "tema": "tema3",
-    "temaNombre": "Tema 3: Emmotllament i solidificació",
-    "pregunta": "¿Cómo puede evitarse que una pieza fundida presente rechupe?",
-    "opciones": [
-      "Aumentando la temperatura del líquido.",
-      "Enfriando muy lentamente.",
-      "Inyectando el líquido en el molde a presión.",
-      "Utilizando mazarotas apropiadas.",
-      "Ninguna de las acciones citadas evita el rechupe."
-    ],
-    "respuesta": 3,
-    "explicacion": "Una mazarota dimensionada y colocada para solidificar después de la pieza aporta metal líquido durante la contracción de solidificación.",
-    "explicacionesOpciones": [
-      "No és correcta: Más sobrecalentamiento no sustituye el diseño de alimentación.",
-      "No és correcta: Un enfriamiento lento aislado no asegura alimentación de las zonas que contraen.",
-      "No és correcta: La inyección a presión no es la solución general indicada para una pieza de fundición convencional.",
-      "Correcta. Correcta: la mazarota alimenta la contracción mientras la pieza solidifica.",
-      "No és correcta: La opción d sí es una medida clásica de prevención."
-    ],
-    "trampa": "Confundir el rechupe con falta de llenado o con un poro gaseoso.",
-    "palabrasClave": [],
-    "fuente": "UPC, Tecnología de Materiales, 11-06-2014, pregunta 17, p. 3; UPCommons 24806. Repetida con redacción equivalente el 19-01-2015, p. 3, pregunta 13.",
-    "baseRespuesta": "Respuesta razonada a partir de metalurgia física y procesos de fabricación; el ejemplar consultado no muestra una clave oficial legible."
-  },
-  {
     "id": "mc-2023-06-12-q11",
     "tipo": "multiple",
     "tema": "tema1",
@@ -5458,1353 +5149,693 @@
     "baseRespuesta": "Clave oficial marcada en la hoja de respuestas: A."
   },
   {
-    "id": "hist-1999-04-01-q03",
+    "id": "mc-2022-10-31-q10",
     "tipo": "multiple",
     "tema": "tema1",
     "temaNombre": "Tema 1: Acers, fundicions i tractaments tèrmics",
-    "pregunta": "Además de Fe, C y Mn, ¿qué elemento de aleación común da resistencia a la corrosión a los aceros inoxidables?",
+    "pregunta": "Para la aplicación de una olla a presión de cocina, ¿qué aleación metálica elegirías?",
     "opciones": [
-      "W",
-      "Mo",
-      "V",
-      "Cr",
-      "Ni"
+      "Acero inoxidable austenítico.",
+      "Acero inoxidable ferrítico.",
+      "Aluminio serie 2000 (Al-Cu).",
+      "Acero al Cr, Mo, W, para trabajo en caliente."
     ],
-    "respuesta": 3,
-    "explicacion": "El cromo forma una película pasiva rica en óxido que confiere la resistencia a la corrosión característica de los aceros inoxidables.",
+    "respuesta": 1,
+    "explicacion": "El acero inoxidable ferrítico tiene matriz ferrítica (cúbica centrada en el cuerpo) y entre 11 y 18 % de Cr, que forma una capa pasiva de óxido de cromo resistente a la corrosión por alimentos. No contiene níquel, por lo que es más económico que el austenítico. La clave oficial lo marca como respuesta; ver _aviso.",
     "explicacionesOpciones": [
-      "Incorrecta: El wolframio se usa en ciertos aceros de herramienta, no es el elemento pasivante general.",
-      "Incorrecta: El molibdeno mejora resistencia a corrosión localizada en algunos grados, pero no reemplaza el Cr.",
-      "Incorrecta: El vanadio puede formar carburos y refinar grano; no es el elemento común que define inoxidable.",
-      "Correcta: el cromo permite la pasivación y es básico en los inoxidables.",
-      "Incorrecta: El níquel estabiliza austenita en muchos grados, pero no es el elemento común pasivante."
+      "Incorrecta: el austenítico (tipo 304/316) también resiste bien la corrosión alimentaria y es el material más habitual en ollas a presión por su tenacidad y soldabilidad; no es la opción marcada en la clave.",
+      "Correcta: matriz ferrítica con Cr, pasivable frente a la corrosión, sin níquel y más económica para menaje.",
+      "Incorrecta: las aleaciones 2xxx (Al-Cu) son de alta resistencia, pero tienen menor resistencia a la corrosión que otras series de aluminio usadas en menaje.",
+      "Incorrecta: son aceros para herramientas de trabajo en caliente (matrices), con dureza a alta temperatura; no están diseñados para contacto alimentario ni para resistir la corrosión."
     ],
-    "trampa": "confundir la opción «W». El wolframio se usa en ciertos aceros de herramienta, no es el elemento pasivante general.",
-    "palabrasClave": [],
-    "fuente": "UPC, Tecnología de Materiales, 01-04-1999, p. 2, pregunta 3; UPCommons 24806.",
-    "baseRespuesta": "Respuesta razonada a partir de metalurgia física y procesos de fabricación; no se presenta como clave oficial."
+    "trampa": "Elegir el aluminio de alta resistencia (serie 2000) por su ligereza y resistencia mecánica, olvidando la corrosión y el contacto alimentario.",
+    "palabrasClave": [
+      "acero inoxidable",
+      "ferrítico",
+      "austenítico",
+      "olla a presión",
+      "corrosión",
+      "Cr"
+    ],
+    "fuente": "Pregunta 10, parcial UPC de Tecnologia i Selecció de Materials, 31/10/2022, p. 3. Enunciado con la foto sustituida por su descripción (olla a presión de cocina); se reformula sin perder el sentido.",
+    "baseRespuesta": "Clave oficial: opción resaltada en la solución del examen (b). Matiz: La clave marca el inoxidable ferrítico, pero en ollas a presión de uso doméstico lo habitual es el austenítico (AISI 304 o 316), por su mayor tenacidad y soldabilidad en recipientes sometidos a presión y su buena resistencia a la corrosión alimentaria. Clave mantenida según el encargo; la respuesta es discutible."
   },
   {
-    "id": "hist-1999-04-01-q11",
+    "id": "mc-2022-10-31-q14",
     "tipo": "multiple",
     "tema": "tema3",
     "temaNombre": "Tema 3: Emmotllament i solidificació",
-    "pregunta": "La solidificación de una aleación puede ser de piel abierta o cerrada. ¿De qué depende cuál se produce?",
+    "pregunta": "Las segregaciones en una pieza fabricada por moldeo se pueden evitar:",
     "opciones": [
-      "De la composición química de la aleación.",
-      "De las condiciones de enfriamiento.",
-      "Del tipo de molde empleado.",
-      "Del tamaño de las dendritas.",
-      "De todas las anteriores."
-    ],
-    "respuesta": 4,
-    "explicacion": "La morfología y cierre de la piel dependen conjuntamente de la composición, del campo térmico impuesto por el molde y enfriamiento y del crecimiento dendrítico.",
-    "explicacionesOpciones": [
-      "Incorrecta: La composición influye en el intervalo de solidificación, pero no es el único factor.",
-      "Incorrecta: El enfriamiento influye, pero no es el único factor.",
-      "Incorrecta: El molde condiciona extracción de calor, pero no es el único factor.",
-      "Incorrecta: El crecimiento dendrítico es relevante, aunque no el único factor.",
-      "Correcta: composición, extracción de calor y morfología dendrítica interactúan."
-    ],
-    "trampa": "confundir la opción «De la composición química de la aleación.». La composición influye en el intervalo de solidificación, pero no es el único factor.",
-    "palabrasClave": [],
-    "fuente": "UPC, Tecnología de Materiales, 01-04-1999, p. 2, pregunta 11; UPCommons 24806.",
-    "baseRespuesta": "Respuesta razonada a partir de metalurgia física y procesos de fabricación; no se presenta como clave oficial."
-  },
-  {
-    "id": "hist-1999-04-01-q15",
-    "tipo": "multiple",
-    "tema": "tema3",
-    "temaNombre": "Tema 3: Emmotllament i solidificació",
-    "pregunta": "La colabilidad de una aleación define:",
-    "opciones": [
-      "La capacidad de disolver gases a alta temperatura.",
-      "La tendencia al rechupe.",
-      "La facilidad de desmoldeado.",
-      "La capacidad de llenar correctamente el molde.",
-      "Ninguna de las anteriores."
-    ],
-    "respuesta": 3,
-    "explicacion": "La colabilidad expresa la aptitud del metal líquido para llenar el molde y reproducir sus cavidades antes de solidificar.",
-    "explicacionesOpciones": [
-      "Incorrecta: La solubilidad gaseosa es otra propiedad de la aleación y puede originar porosidad.",
-      "Incorrecta: El rechupe es un defecto de contracción/alimentación.",
-      "Incorrecta: El desmoldeo depende del diseño del molde y pieza; no define colabilidad.",
-      "Correcta: es la capacidad de llenar adecuadamente el molde.",
-      "Incorrecta: La definición sí aparece en la opción d."
-    ],
-    "trampa": "confundir la opción «La capacidad de disolver gases a alta temperatura.». La solubilidad gaseosa es otra propiedad de la aleación y puede originar porosidad.",
-    "palabrasClave": [],
-    "fuente": "UPC, Tecnología de Materiales, 01-04-1999, p. 3, pregunta 15; UPCommons 24806.",
-    "baseRespuesta": "Respuesta razonada a partir de metalurgia física y procesos de fabricación; no se presenta como clave oficial."
-  },
-  {
-    "id": "hist-1999-04-01-q17",
-    "tipo": "multiple",
-    "tema": "tema3",
-    "temaNombre": "Tema 3: Emmotllament i solidificació",
-    "pregunta": "¿Cuál es el papel de una mazarota en un proceso de fundición?",
-    "opciones": [
-      "Inserto que produce orificios en el producto final.",
-      "Sistema que facilita el vaciado del metal en el molde.",
-      "Fuente de metal fundido que alimenta la pieza y compensa la contracción de solidificación.",
-      "Metal de desperdicio que no se recicla.",
-      "Sistema que garantiza la estanqueidad entre mitades del molde."
+      "Promoviendo la solidificación en piel abierta.",
+      "Haciendo un tratamiento de envejecimiento o maduración.",
+      "Haciendo un recocido de homogeneización.",
+      "Haciendo un recocido de globulización."
     ],
     "respuesta": 2,
-    "explicacion": "La mazarota actúa como reserva de metal líquido y debe solidificar después de la zona de la pieza que alimenta para compensar la contracción.",
+    "explicacion": "Las segregaciones de moldeo (microsegregación interdendrítica) son gradientes de soluto que aparecen durante la solidificación. Un recocido de homogeneización, a temperatura alta y durante un tiempo prolongado, activa la difusión en estado sólido y reduce esos gradientes. Ni el modo de solidificación ni el envejecimiento eliminan esa heterogeneidad química.",
     "explicacionesOpciones": [
-      "Incorrecta: Los orificios se obtienen con machos o noyos.",
-      "Incorrecta: El sistema de colada conduce el metal al molde.",
-      "Correcta: la mazarota alimenta la contracción durante la solidificación.",
-      "Incorrecta: Las mazarotas se suelen recuperar como retorno de fundición cuando la aleación y proceso lo permiten.",
-      "Incorrecta: El cierre se resuelve con diseño y sujeción del molde."
+      "Incorrecta: la solidificación en piel abierta no elimina la segregación; su control requiere difusión en estado sólido.",
+      "Incorrecta: el envejecimiento o maduración es un endurecimiento por precipitación; no reparte el soluto segregado.",
+      "Correcta: la difusión a alta temperatura homogeneiza la composición entre brazos dendríticos y entre zonas de la pieza.",
+      "Incorrecta: la globulización esferoidiza la cementita en aceros; no modifica la distribución química."
     ],
-    "trampa": "confundir la opción «Inserto que produce orificios en el producto final.». Los orificios se obtienen con machos o noyos.",
-    "palabrasClave": [],
-    "fuente": "UPC, Tecnología de Materiales, 01-04-1999, p. 3, pregunta 17; UPCommons 24806.",
-    "baseRespuesta": "Respuesta razonada a partir de metalurgia física y procesos de fabricación; no se presenta como clave oficial."
+    "trampa": "Confundir el recocido de homogeneización con el de globulización: el primero reparte la composición química, el segundo cambia la morfología de los carburos.",
+    "palabrasClave": [
+      "segregación",
+      "microsegregación",
+      "recocido de homogeneización",
+      "moldeo",
+      "solidificación"
+    ],
+    "fuente": "Pregunta 14, parcial UPC de Tecnologia i Selecció de Materials, 31/10/2022, p. 3.",
+    "baseRespuesta": "Clave oficial: opción resaltada en la solución del examen (c)."
   },
   {
-    "id": "hist-1999-04-01-q19",
+    "id": "mc-2023-11-02-q01",
     "tipo": "multiple",
     "tema": "tema1",
     "temaNombre": "Tema 1: Acers, fundicions i tractaments tèrmics",
-    "pregunta": "Los elementos comunes de aleación, además del carbono, en los aceros no aleados son:",
+    "pregunta": "La principal reacción que tiene lugar en un alto horno es:",
     "opciones": [
-      "Cr y Ni.",
-      "Cr y Mo.",
-      "Mn y Si.",
-      "V, Ti y Nb.",
-      "Cr y Mn."
-    ],
-    "respuesta": 2,
-    "explicacion": "Los aceros al carbono contienen habitualmente manganeso y silicio como elementos residuales/de proceso, dentro de los límites de acero no aleado.",
-    "explicacionesOpciones": [
-      "Incorrecta: Cr y Ni son aleantes típicos de aceros aleados, como muchos inoxidables.",
-      "Incorrecta: Cr y Mo se añaden para templabilidad y resistencia en aceros aleados.",
-      "Correcta: Mn y Si suelen estar presentes en aceros no aleados por desoxidación y control de propiedades.",
-      "Incorrecta: V, Ti y Nb son microaleantes específicos, no el par común buscado.",
-      "Incorrecta: El cromo no es parte del par habitual de elementos comunes en aceros no aleados."
-    ],
-    "trampa": "confundir la opción «Cr y Ni.». Cr y Ni son aleantes típicos de aceros aleados, como muchos inoxidables.",
-    "palabrasClave": [],
-    "fuente": "UPC, Tecnología de Materiales, 01-04-1999, p. 3, pregunta 19; UPCommons 24806.",
-    "baseRespuesta": "Respuesta razonada a partir de metalurgia física y procesos de fabricación; no se presenta como clave oficial."
-  },
-  {
-    "id": "hist-1999-04-01-q21",
-    "tipo": "multiple",
-    "tema": "tema2",
-    "temaNombre": "Tema 2: Alumini i aliatges",
-    "pregunta": "En el proceso Bayer, ¿cuál es el orden correcto de productos?",
-    "opciones": [
-      "Aluminato sódico → Al(OH)₃ → Al₂O₃.",
-      "Sulfato de aluminio → H₃PO₄ → Al₂O₃.",
-      "Al(OH)₃ → aluminato sódico → Al₂O₃.",
-      "Sulfato de aluminio → HCl → Al₂O₃.",
-      "Aluminato sódico → HCl → Al₂O₃."
+      "Reducción del mineral mediante CO",
+      "Oxidación del mineral mediante fundentes",
+      "Reducción del mineral mediante CO2",
+      "Afino de las impurezas mediante cal"
     ],
     "respuesta": 0,
-    "explicacion": "En Bayer la bauxita se digiere en sosa formando aluminato soluble; se precipita Al(OH)₃ y se calcina para obtener alúmina.",
+    "explicacion": "En el alto horno el coque se quema con el aire caliente y genera CO, que reduce los óxidos de hierro (reducción indirecta) hasta hierro metálico, que se recoge como arrabio. El CO2 es producto de la combustión y no el reductor activo. Los fundentes forman escoria con la ganga, no oxidan el mineral.",
     "explicacionesOpciones": [
-      "Correcta: recoge la secuencia de digestión, precipitación y calcinación.",
-      "Incorrecta: No corresponde a la ruta Bayer.",
-      "Incorrecta: Invierte el orden: el hidróxido precipita después de la disolución alcalina.",
-      "Incorrecta: No corresponde a los reactivos ni productos del proceso Bayer.",
-      "Incorrecta: La precipitación industrial no sigue aquí una acidificación con HCl."
+      "Correcta: el CO generado a partir del coque reduce los óxidos de hierro; es la reacción principal del alto horno.",
+      "Incorrecta: los fundentes no oxidan el mineral; forman escoria con la ganga.",
+      "Incorrecta: el CO2 es producto de la combustión del coque; el agente reductor es el CO.",
+      "Incorrecta: el afino de impurezas con cal se realiza en la acería, no en el alto horno."
     ],
-    "trampa": "confundir la opción «Sulfato de aluminio → H₃PO₄ → Al₂O₃.». No corresponde a la ruta Bayer.",
-    "palabrasClave": [],
-    "fuente": "UPC, Tecnología de Materiales, 01-04-1999, p. 3, pregunta 21; UPCommons 24806.",
-    "baseRespuesta": "Respuesta razonada a partir de metalurgia física y procesos de fabricación; no se presenta como clave oficial."
+    "trampa": "Confundir el CO2, producto de la combustión del coque, con el CO, que es el reductor activo.",
+    "palabrasClave": [
+      "alto horno",
+      "reducción indirecta",
+      "monóxido de carbono",
+      "coque"
+    ],
+    "fuente": "Pregunta 1, parcial UPC de Tecnologia i Selecció de Materials, 02/11/2023, p. 2.",
+    "baseRespuesta": "Clave oficial: opción resaltada en la solución del examen."
   },
   {
-    "id": "hist-1999-04-01-q23",
+    "id": "mc-2023-11-02-q02",
     "tipo": "multiple",
     "tema": "tema1",
     "temaNombre": "Tema 1: Acers, fundicions i tractaments tèrmics",
-    "pregunta": "El horno de cubilote se emplea para:",
+    "pregunta": "El afino en cuchara:",
     "opciones": [
-      "Obtener vidrio fundido.",
-      "Obtener acero líquido.",
-      "Procesar fundición de hierro.",
-      "Reducir aluminio en el proceso Bayer.",
-      "Producir granza de polímeros."
+      "Se efectúa al arrabio",
+      "Tiene lugar antes del convertidor LD",
+      "Permite obtener aceros más limpios de inclusiones",
+      "Ninguna de las anteriores es cierta"
     ],
     "respuesta": 2,
-    "explicacion": "El cubilote es un horno de cuba usado principalmente para fundir y mantener hierro de fundición.",
+    "explicacion": "El afino en cuchara (metalurgia secundaria) se aplica al acero líquido ya elaborado en la acería primaria, no al arrabio. Durante el tratamiento se ajusta la composición y se eliminan inclusiones y gases, lo que da aceros más limpios.",
     "explicacionesOpciones": [
-      "Incorrecta: El vidrio se funde en hornos específicos para vidrio.",
-      "Incorrecta: El cubilote no es el proceso de fabricación primaria del acero.",
-      "Correcta: funde hierro para producir piezas de fundición.",
-      "Incorrecta: Bayer es una ruta hidrometalúrgica de refinado de bauxita.",
-      "Incorrecta: La granulación de polímeros usa equipos de transformación de polímeros."
+      "Incorrecta: el afino se aplica al acero líquido, no al arrabio.",
+      "Incorrecta: se realiza después de la elaboración primaria (convertidor o horno eléctrico), no antes.",
+      "Correcta: la metalurgia en cuchara elimina inclusiones y gases y ajusta la composición, obteniendo aceros más limpios.",
+      "Incorrecta: la opción c es cierta."
     ],
-    "trampa": "confundir la opción «Obtener vidrio fundido.». El vidrio se funde en hornos específicos para vidrio.",
-    "palabrasClave": [],
-    "fuente": "UPC, Tecnología de Materiales, 01-04-1999, p. 3, pregunta 23; UPCommons 24806.",
-    "baseRespuesta": "Respuesta razonada a partir de metalurgia física y procesos de fabricación; no se presenta como clave oficial."
+    "trampa": "Situar el afino en cuchara como etapa previa al convertidor o sobre el arrabio, cuando es metalurgia secundaria sobre el acero líquido.",
+    "palabrasClave": [
+      "afino en cuchara",
+      "metalurgia secundaria",
+      "inclusiones",
+      "acero líquido"
+    ],
+    "fuente": "Pregunta 2, parcial UPC de Tecnologia i Selecció de Materials, 02/11/2023, p. 2.",
+    "baseRespuesta": "Clave oficial: opción resaltada en la solución del examen."
   },
   {
-    "id": "hist-1999-04-01-q25",
+    "id": "mc-2023-11-02-q06",
     "tipo": "multiple",
-    "tema": "tema3",
-    "temaNombre": "Tema 3: Emmotllament i solidificació",
-    "pregunta": "¿Qué significa sobrecalentamiento del metal líquido?",
+    "tema": "tema1",
+    "temaNombre": "Tema 1: Acers, fundicions i tractaments tèrmics",
+    "pregunta": "El recocido de globulización:",
     "opciones": [
-      "Diferencia entre Tsolvus y Tsolidus.",
-      "Diferencia entre Tliquidus y Tsolvus.",
-      "Calor perdido durante la solidificación.",
-      "Diferencia entre la temperatura del líquido y su temperatura liquidus.",
-      "Exceso de temperatura por calentamiento sin control."
+      "Da lugar a esferoidita",
+      "Permite ablandar el acero",
+      "Es siempre de enfriamiento continuo",
+      "Todas las anteriores son ciertas"
     ],
     "respuesta": 3,
-    "explicacion": "El sobrecalentamiento es la diferencia entre la temperatura real de vertido y la temperatura liquidus de la aleación.",
+    "explicacion": "El recocido de globulización mantiene el acero durante largo tiempo justo por debajo de A1, o con ciclos alrededor de esa temperatura, de modo que la cementita laminar de la perlita se fragmenta y se esferoidiza. El resultado es esferoidita, más blanda y fácil de mecanizar o conformar.",
     "explicacionesOpciones": [
-      "Incorrecta: Son temperaturas de equilibrio sólido, no la definición de sobrecalentamiento del líquido.",
-      "Incorrecta: Tampoco expresa el sobrecalentamiento del metal fundido.",
-      "Incorrecta: El calor latente liberado durante solidificación es otro concepto.",
-      "Correcta: temperatura del líquido menos temperatura liquidus.",
-      "Incorrecta: No exige que el calentamiento sea accidental ni sin control."
+      "Correcta: la globulización produce esferoidita, con cementita en glóbulos dentro de una matriz ferrítica.",
+      "Correcta: la esferoidita es más blanda que la perlita laminar, así que el tratamiento ablanda el acero.",
+      "Incorrecta: la globulización suele hacerse mediante mantenimiento prolongado o ciclos cerca de A1, no por enfriamiento continuo; el «siempre» es falso (ver _aviso).",
+      "Correcta según la clave oficial: incluye la opción c, que no es cierta en general (ver _aviso)."
     ],
-    "trampa": "confundir la opción «Diferencia entre Tsolvus y Tsolidus.». Son temperaturas de equilibrio sólido, no la definición de sobrecalentamiento del líquido.",
-    "palabrasClave": [],
-    "fuente": "UPC, Tecnología de Materiales, 01-04-1999, p. 3, pregunta 25; UPCommons 24806.",
-    "baseRespuesta": "Respuesta razonada a partir de metalurgia física y procesos de fabricación; no se presenta como clave oficial."
+    "trampa": "Creer que globulizar es siempre un enfriamiento lento continuo, cuando el método clásico es un mantenimiento prolongado cerca de A1.",
+    "palabrasClave": [
+      "recocido de globulización",
+      "esferoidita",
+      "cementita",
+      "ablandamiento"
+    ],
+    "fuente": "Pregunta 6, parcial UPC de Tecnologia i Selecció de Materials, 02/11/2023, p. 2.",
+    "baseRespuesta": "Clave oficial: opción resaltada en la solución del examen (d). Discrepancia: la opción c no es científicamente correcta; se mantiene la clave oficial."
   },
   {
-    "id": "hist-1999-06-01-p2-q04",
+    "id": "mc-2023-11-02-q08",
     "tipo": "multiple",
-    "tema": "tema2",
-    "temaNombre": "Tema 2: Alumini i aliatges",
-    "pregunta": "La principal materia prima del proceso Bayer es:",
+    "tema": "tema1",
+    "temaNombre": "Tema 1: Acers, fundicions i tractaments tèrmics",
+    "pregunta": "El austempering es un tratamiento térmico:",
     "opciones": [
-      "Alúmina.",
-      "Aluminio.",
-      "Bauxita.",
-      "Magnesita.",
-      "Ninguna de las anteriores."
+      "Que busca una microestructura final austenítica",
+      "En el que se transforma la austenita sin riesgo de agrietamiento y distorsiones en la pieza",
+      "De enfriamiento continuo",
+      "Ninguna de las anteriores es cierta"
     ],
-    "respuesta": 2,
-    "explicacion": "Bayer procesa bauxita para separar y purificar la alúmina.",
+    "respuesta": 1,
+    "explicacion": "El austempering austeniza el acero, lo enfría hasta una temperatura intermedia por encima de Ms y lo mantiene en isotermo hasta transformar la austenita en bainita; la microestructura final es bainítica y no austenítica. Al evitar la martensita a baja temperatura, reduce tensiones, grietas y distorsiones respecto al temple convencional, aunque no las elimina por completo.",
     "explicacionesOpciones": [
-      "Incorrecta: La alúmina es producto refinado intermedio, no la mena principal del proceso.",
-      "Incorrecta: El aluminio se produce después por electrólisis de la alúmina.",
-      "Correcta: la bauxita es la materia prima del proceso Bayer.",
-      "Incorrecta: La magnesita es una mena de magnesio.",
-      "Incorrecta: La opción c es la materia prima correcta."
+      "Incorrecta: la microestructura final buscada es bainita, no austenita.",
+      "Correcta según la clave oficial: reduce el riesgo de agrietamiento y distorsión, aunque «sin riesgo» es excesivo (ver _aviso).",
+      "Incorrecta: es un tratamiento isotérmico, no de enfriamiento continuo.",
+      "Incorrecta: la opción b es la clave oficial, con la matización indicada en _aviso."
     ],
-    "trampa": "confundir la opción «Alúmina.». La alúmina es producto refinado intermedio, no la mena principal del proceso.",
-    "palabrasClave": [],
-    "fuente": "UPC, Tecnología de Materiales, 01-06-1999, p. 2, pregunta 4; UPCommons 24806.",
-    "baseRespuesta": "Respuesta razonada a partir de metalurgia física y procesos de fabricación; no se presenta como clave oficial."
+    "trampa": "Confundir el austempering (bainita isotérmica) con el martempering o con un temple continuo; la microestructura final es bainita.",
+    "palabrasClave": [
+      "austempering",
+      "bainita",
+      "isotérmico",
+      "distorsiones"
+    ],
+    "fuente": "Pregunta 8, parcial UPC de Tecnologia i Selecció de Materials, 02/11/2023, p. 2.",
+    "baseRespuesta": "Clave oficial: opción resaltada en la solución del examen (b). Matiz: «sin riesgo» es exagerado; la opción b es la mejor de las presentadas."
   },
   {
-    "id": "hist-1999-06-01-p2-q07",
+    "id": "mc-2023-11-02-q19",
     "tipo": "multiple",
     "tema": "tema3",
     "temaNombre": "Tema 3: Emmotllament i solidificació",
-    "pregunta": "La solidificación en piel cerrada implica que:",
+    "pregunta": "Entre las desventajas del proceso de moldeo tenemos que:",
     "opciones": [
-      "La colabilidad es baja.",
-      "Las dendritas son cortas y estables.",
-      "El intervalo de solidificación es amplio.",
-      "El gradiente térmico en la zona de solidificación es bajo.",
-      "Ninguna de las anteriores."
-    ],
-    "respuesta": 1,
-    "explicacion": "En el esquema docente de piel abierta/cerrada, el crecimiento dendrítico corto y estable favorece el cierre de la piel. Las restantes afirmaciones no definen necesariamente piel cerrada.",
-    "explicacionesOpciones": [
-      "Incorrecta: La colabilidad no queda fijada solo por el modo de piel.",
-      "Correcta: dendritas cortas y estables cierran con mayor facilidad la capa solidificada.",
-      "Incorrecta: Un intervalo amplio suele prolongar la zona pastosa y favorecer piel abierta.",
-      "Incorrecta: Un gradiente bajo no es la característica que define piel cerrada en este modelo.",
-      "Incorrecta: La afirmación b sí describe el mecanismo esperado."
-    ],
-    "trampa": "confundir la opción «La colabilidad es baja.». La colabilidad no queda fijada solo por el modo de piel.",
-    "palabrasClave": [],
-    "fuente": "UPC, Tecnología de Materiales, 01-06-1999, p. 2, pregunta 7; UPCommons 24806.",
-    "baseRespuesta": "Respuesta razonada a partir de metalurgia física y procesos de fabricación; no se presenta como clave oficial."
-  },
-  {
-    "id": "hist-1999-06-01-p4-q01",
-    "tipo": "multiple",
-    "tema": "tema1",
-    "temaNombre": "Tema 1: Acers, fundicions i tractaments tèrmics",
-    "pregunta": "¿De qué dependen los valores de temperatura de inicio de transformación martensítica Ms en un acero?",
-    "opciones": [
-      "De la temperatura de austenización.",
-      "De los elementos aleantes.",
-      "De la velocidad de enfriamiento.",
-      "De los elementos aleantes carburígenos solamente.",
-      "De los valores Ac1 y Ac3."
-    ],
-    "respuesta": 1,
-    "explicacion": "Ms depende principalmente de la composición química de la austenita, especialmente del carbono y de los elementos aleantes; la velocidad de enfriamiento no define por sí misma la temperatura Ms.",
-    "explicacionesOpciones": [
-      "Incorrecta: La austenización condiciona la disolución y tamaño de grano, pero no es la variable primaria que define Ms.",
-      "Correcta: en el nivel del ítem: los elementos aleantes desplazan la temperatura Ms.",
-      "Incorrecta: La velocidad afecta la trayectoria térmica, no la temperatura característica Ms en sí.",
-      "Incorrecta: No sólo los formadores de carburos; el carbono y varios aleantes afectan Ms.",
-      "Incorrecta: Ac1 y Ac3 son temperaturas críticas distintas."
-    ],
-    "trampa": "confundir la opción «De la temperatura de austenización.». La austenización condiciona la disolución y tamaño de grano, pero no es la variable primaria que define Ms.",
-    "palabrasClave": [],
-    "fuente": "UPC, Tecnología de Materiales, 01-06-1999, p. 4, pregunta 1; UPCommons 24806.",
-    "baseRespuesta": "Respuesta razonada a partir de metalurgia física y procesos de fabricación; no se presenta como clave oficial."
-  },
-  {
-    "id": "hist-1999-06-01-p4-q03",
-    "tipo": "multiple",
-    "tema": "tema1",
-    "temaNombre": "Tema 1: Acers, fundicions i tractaments tèrmics",
-    "pregunta": "¿Qué elementos aleantes son típicos de un acero destinado a nitruración gaseosa?",
-    "opciones": [
-      "Si y Mn.",
-      "Mn, P y S.",
-      "Ni y Si.",
-      "Al, Cr y Mo.",
-      "W, Co y Ni."
+      "Solo sirve para piezas de gran tamaño",
+      "Solo sirve para piezas de geometrías muy simples",
+      "Solo sirve para series cortas",
+      "Las propiedades mecánicas son inferiores a las de piezas forjadas"
     ],
     "respuesta": 3,
-    "explicacion": "Al, Cr y Mo tienen afinidad por nitrógeno y forman nitruros que contribuyen a endurecer la capa nitrurada.",
+    "explicacion": "El moldeo admite piezas de tamaños y geometrías muy variadas y es válido tanto para series cortas como largas, así que las opciones a, b y c son falsas. Su desventaja real frente al forjado es que la solidificación produce una estructura más gruesa y puede dejar porosidad y rechupes, por lo que en general las propiedades mecánicas son inferiores.",
     "explicacionesOpciones": [
-      "Incorrecta: No es el conjunto característico de elementos formadores de nitruros del ítem.",
-      "Incorrecta: P y S no son aleantes deseables para esta función.",
-      "Incorrecta: No representa el conjunto típico de aleantes nitrurables.",
-      "Correcta: Al, Cr y Mo favorecen la formación de nitruros duros.",
-      "Incorrecta: W puede formar nitruros, pero esta combinación no es la respuesta habitual del test."
+      "Incorrecta: el moldeo sirve para piezas de tamaños muy diversos, desde muy pequeñas hasta muy grandes.",
+      "Incorrecta: el moldeo permite geometrías complejas; es una de sus ventajas.",
+      "Incorrecta: el moldeo sirve para series cortas y largas, según el molde y el proceso.",
+      "Correcta: la estructura de solidificación (grano grueso, porosidad, rechupes) suele dar propiedades mecánicas inferiores a las de piezas forjadas."
     ],
-    "trampa": "confundir la opción «Si y Mn.». No es el conjunto característico de elementos formadores de nitruros del ítem.",
-    "palabrasClave": [],
-    "fuente": "UPC, Tecnología de Materiales, 01-06-1999, p. 4, pregunta 3; UPCommons 24806.",
-    "baseRespuesta": "Respuesta razonada a partir de metalurgia física y procesos de fabricación; no se presenta como clave oficial."
+    "trampa": "Pensar que el moldeo está limitado a piezas grandes o a series cortas, cuando su limitación real son las propiedades mecánicas.",
+    "palabrasClave": [
+      "moldeo",
+      "forjado",
+      "propiedades mecánicas",
+      "solidificación"
+    ],
+    "fuente": "Pregunta 19, parcial UPC de Tecnologia i Selecció de Materials, 02/11/2023, p. 3.",
+    "baseRespuesta": "Clave oficial: opción resaltada en la solución del examen."
   },
   {
-    "id": "hist-1999-06-01-p4-q04",
+    "id": "mc-2024-04-10-q01",
     "tipo": "multiple",
     "tema": "tema2",
     "temaNombre": "Tema 2: Alumini i aliatges",
-    "pregunta": "Cuando se sobreenvejece una aleación previamente solubilizada, templada y envejecida, ¿qué ocurre habitualmente con sus propiedades mecánicas?",
+    "pregunta": "De los mecanismos de endurecimiento típicos de las aleaciones metálicas, ¿cuál de ellos no es aplicable a ninguna aleación de aluminio?",
     "opciones": [
-      "Aumentan dureza y resistencia.",
-      "Disminuyen dureza y resistencia.",
-      "Disminuye la deformabilidad.",
-      "Aumenta el límite elástico.",
-      "No afecta a las propiedades mecánicas."
+      "Endurecimiento por precipitación",
+      "Solución sólida",
+      "Transformación martensítica con temple y revenido",
+      "Endurecimiento por deformación"
     ],
-    "respuesta": 1,
-    "explicacion": "Durante el sobreenvejecimiento los precipitados crecen y pierden coherencia/eficacia para obstaculizar dislocaciones, por lo que suelen disminuir dureza y resistencia respecto al pico de envejecimiento.",
+    "respuesta": 2,
+    "explicacion": "Las aleaciones de aluminio se endurecen por solución sólida, por deformación en frío (acritud) y, en las tratables térmicamente, por precipitación de fases finas. No presentan la transformación austenita-martensita del hierro-carbono, así que el temple y revenido martensítico no se les aplica.",
     "explicacionesOpciones": [
-      "Incorrecta: El aumento caracteriza el envejecimiento hasta el pico, no el sobreenvejecimiento.",
-      "Correcta: el sobreenvejecimiento reduce usualmente dureza y resistencia respecto al máximo.",
-      "Incorrecta: La deformabilidad no suele disminuir; puede aumentar al perderse resistencia.",
-      "Incorrecta: No es la tendencia general del sobreenvejecimiento.",
-      "Incorrecta: El tamaño y distribución de precipitados sí modifican propiedades."
+      "Incorrecta: el endurecimiento por precipitación es el mecanismo característico de las aleaciones de aluminio tratables térmicamente (series 2xxx, 6xxx y 7xxx).",
+      "Incorrecta: el aluminio admite endurecimiento por solución sólida (p. ej. Al-Mg y Al-Mn).",
+      "Correcta: el aluminio no tiene transformación alotrópica tipo austenita-martensita; la martensita es propia de los aceros.",
+      "Incorrecta: el endurecimiento por deformación se aplica a las aleaciones de aluminio no tratables térmicamente (series 1xxx, 3xxx y 5xxx)."
     ],
-    "trampa": "confundir la opción «Aumentan dureza y resistencia.». El aumento caracteriza el envejecimiento hasta el pico, no el sobreenvejecimiento.",
-    "palabrasClave": [],
-    "fuente": "UPC, Tecnología de Materiales, 01-06-1999, p. 4, pregunta 4; UPCommons 24806.",
-    "baseRespuesta": "Respuesta razonada a partir de metalurgia física y procesos de fabricación; no se presenta como clave oficial."
+    "trampa": "Asociar la martensita a cualquier endurecimiento metálico; es un mecanismo exclusivo de las aleaciones ferrosas con transformación austenítica.",
+    "palabrasClave": [
+      "endurecimiento por precipitación",
+      "solución sólida",
+      "endurecimiento por deformación",
+      "martensita",
+      "aleaciones de aluminio"
+    ],
+    "fuente": "Pregunta 1, parcial UPC de Tecnologia i Selecció de Materials, 10/04/2024, p. 4.",
+    "baseRespuesta": "Clave oficial: opción resaltada en la solución del examen."
   },
   {
-    "id": "hist-1999-06-01-p5-q11",
+    "id": "mc-2024-04-10-q03",
     "tipo": "multiple",
-    "tema": "tema1",
-    "temaNombre": "Tema 1: Acers, fundicions i tractaments tèrmics",
-    "pregunta": "¿Qué tratamiento térmico es característico de las fundiciones nodulares?",
+    "tema": "tema3",
+    "temaNombre": "Tema 3: Emmotllament i solidificació",
+    "pregunta": "Existen dos mecanismos de nucleación: homogénea y heterogénea. Indica cuál de las siguientes opciones NO es correcta.",
     "opciones": [
-      "Cementación.",
-      "Envejecimiento.",
-      "Laminación controlada.",
-      "Austemplado.",
-      "Ninguno de los anteriores."
+      "En la nucleación heterogénea existe una reducción de la barrera energética asociada a la formación de los núcleos.",
+      "El valor del radio crítico es el mismo, independientemente del mecanismo.",
+      "ΔT nucleación heterogénea > ΔT nucleación homogénea.",
+      "El radio crítico del núcleo es inversamente proporcional al grado de sub-enfriamiento."
     ],
-    "respuesta": 3,
-    "explicacion": "El austemplado de fundición nodular produce ADI, fundición dúctil austemperada con matriz ausferrítica y propiedades mecánicas elevadas.",
+    "respuesta": 2,
+    "explicacion": "En la nucleación heterogénea el núcleo se forma sobre una superficie (pared del molde, inclusión, partícula) que reduce la energía de la barrera ΔG*, por lo que basta un subenfriamiento menor: ΔT heterogénea < ΔT homogénea. El radio crítico r* = 2σ/ΔG_v depende de la energía interfacial y del subenfriamiento, no del mecanismo, y es inversamente proporcional a ΔT.",
     "explicacionesOpciones": [
-      "Incorrecta: La cementación es un tratamiento termoquímico superficial de aceros.",
-      "Incorrecta: El envejecimiento no es el tratamiento característico general de la fundición nodular.",
-      "Incorrecta: La laminación controlada es un proceso de deformación de productos metálicos.",
-      "Correcta: el austemplado transforma la matriz de la fundición nodular para obtener ADI.",
-      "Incorrecta: La opción d corresponde al tratamiento característico."
+      "Incorrecta: es una afirmación cierta; el sustrato reduce la barrera ΔG* (factor de forma menor que 1).",
+      "Incorrecta: es una afirmación cierta; r* no depende del mecanismo, sino de σ y ΔG_v. La diferencia está en la barrera, no en el radio.",
+      "Correcta: es la afirmación falsa. La nucleación heterogénea necesita menos subenfriamiento, así que ΔT heterogénea es menor que ΔT homogénea.",
+      "Incorrecta: es una afirmación cierta; ΔG_v crece con ΔT, de modo que r* disminuye al aumentar el subenfriamiento."
     ],
-    "trampa": "confundir la opción «Cementación.». La cementación es un tratamiento termoquímico superficial de aceros.",
-    "palabrasClave": [],
-    "fuente": "UPC, Tecnología de Materiales, 01-06-1999, p. 5, pregunta 11; UPCommons 24806.",
-    "baseRespuesta": "Respuesta razonada a partir de metalurgia física y procesos de fabricación; no se presenta como clave oficial."
+    "trampa": "Confundir una menor barrera energética con un radio crítico distinto; el radio es el mismo, lo que cambia es el subenfriamiento necesario.",
+    "palabrasClave": [
+      "nucleación homogénea",
+      "nucleación heterogénea",
+      "radio crítico",
+      "subenfriamiento",
+      "barrera energética"
+    ],
+    "fuente": "Pregunta 3, parcial UPC de Tecnologia i Selecció de Materials, 10/04/2024, p. 4.",
+    "baseRespuesta": "Clave oficial: opción resaltada en la solución del examen."
   },
   {
-    "id": "hist-1999-06-01-p5-q12",
-    "tipo": "multiple",
-    "tema": "tema1",
-    "temaNombre": "Tema 1: Acers, fundicions i tractaments tèrmics",
-    "pregunta": "¿Qué contenido de carbono suele ser apropiado para un acero de cementación?",
-    "opciones": [
-      "C < 0,01 %.",
-      "0,1 < C < 0,2 %.",
-      "0,3 < C < 0,5 %.",
-      "0,5 < C < 1 %.",
-      "Ninguno de los valores citados."
-    ],
-    "respuesta": 1,
-    "explicacion": "Los aceros de cementación se seleccionan con bajo carbono en el núcleo, comúnmente alrededor de 0,1–0,2 %, para lograr núcleo tenaz y capa enriquecida que pueda templarse.",
-    "explicacionesOpciones": [
-      "Incorrecta: Es demasiado bajo para el intervalo típico citado.",
-      "Correcta: el bajo carbono inicial conserva tenacidad del núcleo tras endurecer la capa.",
-      "Incorrecta: Este contenido reduce la diferencia entre capa cementada y núcleo y no es el rango habitual.",
-      "Incorrecta: Es un rango alto para aceros de cementación.",
-      "Incorrecta: La opción b da el rango típico del test."
-    ],
-    "trampa": "confundir la opción «C < 0,01 %.». Es demasiado bajo para el intervalo típico citado.",
-    "palabrasClave": [],
-    "fuente": "UPC, Tecnología de Materiales, 01-06-1999, p. 5, pregunta 12; UPCommons 24806.",
-    "baseRespuesta": "Respuesta razonada a partir de metalurgia física y procesos de fabricación; no se presenta como clave oficial."
-  },
-  {
-    "id": "hist-2001-06-13-p2-q02",
-    "tipo": "multiple",
-    "tema": "tema1",
-    "temaNombre": "Tema 1: Acers, fundicions i tractaments tèrmics",
-    "pregunta": "En una muestra metalográfica se observa grafito en forma de láminas. ¿Qué aleación ferrosa corresponde?",
-    "opciones": [
-      "Acero hipoeutectoide.",
-      "Acero hipereutectoide.",
-      "Fundición blanca.",
-      "Fundición ADI.",
-      "Ninguna de las anteriores."
-    ],
-    "respuesta": 4,
-    "explicacion": "La grafita laminar es característica de fundición gris, que no aparece entre las opciones. La blanca contiene carbono combinado y ADI conserva grafito nodular.",
-    "explicacionesOpciones": [
-      "Incorrecta: Los aceros al carbono no presentan grafito laminar como microestructura típica.",
-      "Incorrecta: Tampoco es una microestructura típica de acero hipereutectoide.",
-      "Incorrecta: La fundición blanca se caracteriza por cementita/carbono combinado, no grafito laminar.",
-      "Incorrecta: ADI se fabrica a partir de fundición nodular; el grafito es esferoidal.",
-      "Correcta: la familia esperada sería fundición gris, ausente."
-    ],
-    "trampa": "confundir la opción «Acero hipoeutectoide.». Los aceros al carbono no presentan grafito laminar como microestructura típica.",
-    "palabrasClave": [],
-    "fuente": "UPC, Tecnología de Materiales, 13-06-2001, p. 2, pregunta 2; UPCommons 24806.",
-    "baseRespuesta": "Respuesta razonada a partir de metalurgia física y procesos de fabricación; no se presenta como clave oficial."
-  },
-  {
-    "id": "hist-2001-06-13-p2-q05",
-    "tipo": "multiple",
-    "tema": "tema1",
-    "temaNombre": "Tema 1: Acers, fundicions i tractaments tèrmics",
-    "pregunta": "¿Cómo afecta un tamaño de grano austenítico grueso a las curvas CCT?",
-    "opciones": [
-      "Se acercan al eje de ordenadas.",
-      "Se alejan del eje de ordenadas.",
-      "Separa los dominios de perlita y bainita.",
-      "Da menos templabilidad al acero.",
-      "Ninguna de las anteriores."
-    ],
-    "respuesta": 1,
-    "explicacion": "Un grano austenítico mayor reduce la densidad de sitios de nucleación de transformaciones difusivas, retrasa su inicio y desplaza las curvas hacia tiempos mayores, aumentando templabilidad.",
-    "explicacionesOpciones": [
-      "Incorrecta: El retraso de transformación no acerca las curvas al eje de tiempos cortos.",
-      "Correcta: las curvas se desplazan a la derecha, hacia tiempos mayores.",
-      "Incorrecta: No es el efecto característico del tamaño de grano.",
-      "Incorrecta: El grano grueso tiende a aumentar, no reducir, templabilidad.",
-      "Incorrecta: La opción b describe el desplazamiento esperado."
-    ],
-    "trampa": "confundir la opción «Se acercan al eje de ordenadas.». El retraso de transformación no acerca las curvas al eje de tiempos cortos.",
-    "palabrasClave": [],
-    "fuente": "UPC, Tecnología de Materiales, 13-06-2001, p. 2, pregunta 5; UPCommons 24806.",
-    "baseRespuesta": "Respuesta razonada a partir de metalurgia física y procesos de fabricación; no se presenta como clave oficial."
-  },
-  {
-    "id": "hist-2001-06-13-p2-q06",
-    "tipo": "multiple",
-    "tema": "tema1",
-    "temaNombre": "Tema 1: Acers, fundicions i tractaments tèrmics",
-    "pregunta": "Para diseñar el ciclo de un recocido isotérmico de acero, ¿qué gráficas son adecuadas?",
-    "opciones": [
-      "Diagrama de equilibrio Fe-C.",
-      "Gráficas TTT.",
-      "Gráficas CCT.",
-      "Cualquiera de las citadas.",
-      "Ninguna de las anteriores."
-    ],
-    "respuesta": 1,
-    "explicacion": "El recocido isotérmico implica austenizar y mantener a temperatura fija para transformar; los diagramas TTT describen transformaciones isotérmicas.",
-    "explicacionesOpciones": [
-      "Incorrecta: Fe-C muestra equilibrio, no cinética de transformación durante el ciclo.",
-      "Correcta: TTT corresponde a transformación isotérmica.",
-      "Incorrecta: CCT representa enfriamiento continuo, no el mantenimiento isotérmico del proceso.",
-      "Incorrecta: No son intercambiables para definir el ciclo de mantenimiento.",
-      "Incorrecta: La opción b es la herramienta directamente pertinente."
-    ],
-    "trampa": "confundir la opción «Diagrama de equilibrio Fe-C.». Fe-C muestra equilibrio, no cinética de transformación durante el ciclo.",
-    "palabrasClave": [],
-    "fuente": "UPC, Tecnología de Materiales, 13-06-2001, p. 2, pregunta 6; UPCommons 24806.",
-    "baseRespuesta": "Respuesta razonada a partir de metalurgia física y procesos de fabricación; no se presenta como clave oficial."
-  },
-  {
-    "id": "hist-2001-06-13-p3-q11",
+    "id": "mc-2024-04-10-q04",
     "tipo": "multiple",
     "tema": "tema2",
     "temaNombre": "Tema 2: Alumini i aliatges",
-    "pregunta": "¿Cuál es el tratamiento térmico típico del duraluminio Al-4 % Cu?",
+    "pregunta": "Uno de los mecanismos de endurecimiento que se conocen para las aleaciones metálicas es el denominado «endurecimiento por precipitación o envejecimiento». Sin embargo, no todas las aleaciones admiten este tratamiento. Diga en cuál de estos casos se podría realizar un tratamiento de endurecimiento por precipitación.",
     "opciones": [
-      "Austemplado o temple bainítico.",
-      "Recocido isotérmico.",
-      "Temple en agua y revenido a 500 °C.",
-      "Recocido de normalización.",
-      "Ninguno de los anteriores."
-    ],
-    "respuesta": 4,
-    "explicacion": "Las aleaciones Al-Cu endurecibles por precipitación se solubilizan, templan rápidamente y envejecen. Ninguna alternativa describe esa secuencia.",
-    "explicacionesOpciones": [
-      "Incorrecta: El austemplado corresponde a transformaciones de aceros/fundiciones ferrosas.",
-      "Incorrecta: El recocido isotérmico es un tratamiento de aceros.",
-      "Incorrecta: El revenido a 500 °C no es la secuencia de endurecimiento por precipitación del duraluminio.",
-      "Incorrecta: La normalización es tratamiento de aceros, no aluminio.",
-      "Correcta: falta la secuencia de solubilización, temple y envejecimiento."
-    ],
-    "trampa": "confundir la opción «Austemplado o temple bainítico.». El austemplado corresponde a transformaciones de aceros/fundiciones ferrosas.",
-    "palabrasClave": [],
-    "fuente": "UPC, Tecnología de Materiales, 13-06-2001, p. 3, pregunta 11; UPCommons 24806.",
-    "baseRespuesta": "Respuesta razonada a partir de metalurgia física y procesos de fabricación; no se presenta como clave oficial."
-  },
-  {
-    "id": "hist-2001-06-13-p3-q14",
-    "tipo": "multiple",
-    "tema": "tema1",
-    "temaNombre": "Tema 1: Acers, fundicions i tractaments tèrmics",
-    "pregunta": "¿Qué elementos especiales de aleación contienen típicamente los aceros para nitruración?",
-    "opciones": [
-      "Mg-Ti-V.",
-      "Ni-Co-W.",
-      "Al-Cr-Mo.",
-      "P-Nb-Si.",
-      "Ninguno de los grupos citados."
-    ],
-    "respuesta": 2,
-    "explicacion": "Al, Cr y Mo tienen afinidad por nitrógeno y favorecen una capa de nitruros duros durante la nitruración.",
-    "explicacionesOpciones": [
-      "Incorrecta: No es la combinación típica buscada para aceros de nitruración.",
-      "Incorrecta: No representa el conjunto común de formadores de nitruros señalado.",
-      "Correcta: Al, Cr y Mo forman nitruros y elevan dureza superficial.",
-      "Incorrecta: P no es un elemento de aleación nitrurable deseable en este contexto.",
-      "Incorrecta: La opción c es el grupo adecuado."
-    ],
-    "trampa": "confundir la opción «Mg-Ti-V.». No es la combinación típica buscada para aceros de nitruración.",
-    "palabrasClave": [],
-    "fuente": "UPC, Tecnología de Materiales, 13-06-2001, p. 3, pregunta 14; UPCommons 24806.",
-    "baseRespuesta": "Respuesta razonada a partir de metalurgia física y procesos de fabricación; no se presenta como clave oficial."
-  },
-  {
-    "id": "hist-2001-06-13-p3-q16",
-    "tipo": "multiple",
-    "tema": "tema1",
-    "temaNombre": "Tema 1: Acers, fundicions i tractaments tèrmics",
-    "pregunta": "¿Qué contenido de carbono suelen tener los aceros de cementación?",
-    "opciones": [
-      "0,1–0,2 %.",
-      "0,4–0,6 %.",
-      "0,8–1 %.",
-      "Más de 1 %.",
-      "Ninguno de los valores citados."
-    ],
-    "respuesta": 0,
-    "explicacion": "El núcleo de un acero de cementación se mantiene bajo en carbono para conservar tenacidad mientras la superficie se enriquece y se templa.",
-    "explicacionesOpciones": [
-      "Correcta: es el intervalo bajo característico de los aceros de cementación.",
-      "Incorrecta: Un contenido medio alto puede perjudicar la tenacidad del núcleo.",
-      "Incorrecta: Este rango no corresponde al acero base típico de cementación.",
-      "Incorrecta: Demasiado alto para el diseño convencional de un núcleo tenaz cementado.",
-      "Incorrecta: La opción a corresponde al rango típico."
-    ],
-    "trampa": "confundir la opción «0,4–0,6 %.». Un contenido medio alto puede perjudicar la tenacidad del núcleo.",
-    "palabrasClave": [],
-    "fuente": "UPC, Tecnología de Materiales, 13-06-2001, p. 3, pregunta 16; UPCommons 24806.",
-    "baseRespuesta": "Respuesta razonada a partir de metalurgia física y procesos de fabricación; no se presenta como clave oficial."
-  },
-  {
-    "id": "hist-2001-06-13-p4-q04",
-    "tipo": "multiple",
-    "tema": "tema3",
-    "temaNombre": "Tema 3: Emmotllament i solidificació",
-    "pregunta": "¿Cuál es el método industrial más utilizado para fabricar piezas fundidas de aleaciones de aluminio?",
-    "opciones": [
-      "Fundición por gravedad en molde de arena.",
-      "Fundición a presión en molde de arena.",
-      "Fundición a presión en molde metálico.",
-      "Todas las variantes se utilizan por igual.",
-      "Ninguna de las variantes anteriores."
-    ],
-    "respuesta": 2,
-    "explicacion": "La inyección a presión en molde metálico es un método industrial muy extendido para piezas de aluminio, especialmente de geometría compleja y series grandes.",
-    "explicacionesOpciones": [
-      "Incorrecta: Se usa, pero no es el método más habitual para producción en serie de piezas complejas.",
-      "Incorrecta: La presión no se asocia normalmente con molde de arena en este proceso.",
-      "Correcta: en el marco comparativo del test: molde permanente metálico y presión.",
-      "Incorrecta: Los métodos tienen ámbitos distintos; no son igualmente usados.",
-      "Incorrecta: La opción c describe un proceso industrial común."
-    ],
-    "trampa": "confundir la opción «Fundición por gravedad en molde de arena.». Se usa, pero no es el método más habitual para producción en serie de piezas complejas.",
-    "palabrasClave": [],
-    "fuente": "UPC, Tecnología de Materiales, 13-06-2001, p. 4, pregunta 4; UPCommons 24806.",
-    "baseRespuesta": "Respuesta razonada a partir de metalurgia física y procesos de fabricación; no se presenta como clave oficial."
-  },
-  {
-    "id": "hist-2001-06-13-p4-q06",
-    "tipo": "multiple",
-    "tema": "tema2",
-    "temaNombre": "Tema 2: Alumini i aliatges",
-    "pregunta": "¿Cuál es la última etapa de fabricación del aluminio de primera fusión?",
-    "opciones": [
-      "Hidrólisis del aluminato sódico.",
-      "Calcinación del hidróxido de aluminio a unos 1300 °C.",
-      "Electrólisis de la alúmina calcinada.",
-      "Atomización de la alúmina calcinada.",
-      "Ninguna de las anteriores."
-    ],
-    "respuesta": 2,
-    "explicacion": "Tras refinar la bauxita y calcinar Al(OH)₃ para obtener Al₂O₃, la electrólisis de la alúmina disuelta en criolita produce aluminio primario.",
-    "explicacionesOpciones": [
-      "Incorrecta: La hidrólisis forma parte de la ruta Bayer previa.",
-      "Incorrecta: La calcinación produce alúmina antes de la electrólisis.",
-      "Correcta: la reducción electrolítica es la última etapa de obtención primaria.",
-      "Incorrecta: La atomización no produce aluminio metálico desde alúmina.",
-      "Incorrecta: La opción c describe Hall-Héroult."
-    ],
-    "trampa": "confundir la opción «Hidrólisis del aluminato sódico.». La hidrólisis forma parte de la ruta Bayer previa.",
-    "palabrasClave": [],
-    "fuente": "UPC, Tecnología de Materiales, 13-06-2001, p. 4, pregunta 6; UPCommons 24806.",
-    "baseRespuesta": "Respuesta razonada a partir de metalurgia física y procesos de fabricación; no se presenta como clave oficial."
-  },
-  {
-    "id": "hist-2001-06-13-p4-q08",
-    "tipo": "multiple",
-    "tema": "tema3",
-    "temaNombre": "Tema 3: Emmotllament i solidificació",
-    "pregunta": "Las porosidades o sopladuras en piezas fundidas pueden deberse a:",
-    "opciones": [
-      "Gas retenido durante la solidificación.",
-      "Ausencia de aglomerante en la arena del molde.",
-      "Machos o noyos defectuosos.",
-      "Mazarotas mal colocadas.",
-      "Ninguna de las anteriores."
-    ],
-    "respuesta": 0,
-    "explicacion": "Las sopladuras son cavidades gaseosas; el gas puede quedar atrapado o desprenderse durante llenado y solidificación. Las mazarotas deficientes producen rechupes de contracción.",
-    "explicacionesOpciones": [
-      "Correcta: el gas retenido puede originar porosidad gaseosa.",
-      "Incorrecta: La falta de aglomerante afecta integridad del molde, pero no define directamente las sopladuras.",
-      "Incorrecta: Un macho defectuoso puede causar defectos geométricos o gases, pero la causa general explícita es el gas retenido.",
-      "Incorrecta: Una mazarota mal colocada favorece defectos de alimentación/rechupe.",
-      "Incorrecta: La opción a expresa una causa directa."
-    ],
-    "trampa": "confundir la opción «Ausencia de aglomerante en la arena del molde.». La falta de aglomerante afecta integridad del molde, pero no define directamente las sopladuras.",
-    "palabrasClave": [],
-    "fuente": "UPC, Tecnología de Materiales, 13-06-2001, p. 4, pregunta 8; UPCommons 24806.",
-    "baseRespuesta": "Respuesta razonada a partir de metalurgia física y procesos de fabricación; no se presenta como clave oficial."
-  },
-  {
-    "id": "hist-2001-06-13-p4-q09",
-    "tipo": "multiple",
-    "tema": "tema3",
-    "temaNombre": "Tema 3: Emmotllament i solidificació",
-    "pregunta": "En la estructura de una pieza metálica solidificada con zonas templada, equiáxica y columnar, ¿cuál está constituida por dendritas cortas y estables?",
-    "opciones": [
-      "Ninguna.",
-      "Todas.",
-      "La zona templada.",
-      "La zona equiáxica.",
-      "La zona columnar."
-    ],
-    "respuesta": 3,
-    "explicacion": "La zona equiáxica está formada por granos que crecen en distintas direcciones; en el modelo del test se asocia a dendritas cortas y estables.",
-    "explicacionesOpciones": [
-      "Incorrecta: No: la zona equiáxica responde a la descripción.",
-      "Incorrecta: Las zonas presentan morfologías distintas.",
-      "Incorrecta: La zona templada contiene granos finos junto a la pared del molde.",
-      "Correcta: la zona equiáxica corresponde a dendritas/granos con crecimiento en múltiples direcciones.",
-      "Incorrecta: La zona columnar crece preferentemente alineada con el flujo térmico."
-    ],
-    "trampa": "confundir la opción «Ninguna.». No: la zona equiáxica responde a la descripción.",
-    "palabrasClave": [],
-    "fuente": "UPC, Tecnología de Materiales, 13-06-2001, p. 4, pregunta 9; UPCommons 24806.",
-    "baseRespuesta": "Respuesta razonada a partir de metalurgia física y procesos de fabricación; no se presenta como clave oficial."
-  },
-  {
-    "id": "hist-2001-06-13-p4-q10",
-    "tipo": "multiple",
-    "tema": "tema3",
-    "temaNombre": "Tema 3: Emmotllament i solidificació",
-    "pregunta": "Para obtener solidificación en piel abierta es favorable:",
-    "opciones": [
-      "Gran gradiente térmico.",
-      "Pequeño intervalo de solidificación.",
-      "Gran intervalo de solidificación.",
-      "Dendritas de pequeña longitud.",
-      "Ninguna de las anteriores."
-    ],
-    "respuesta": 2,
-    "explicacion": "Un intervalo amplio de solidificación mantiene una zona pastosa extensa y dificulta cerrar la piel, favoreciendo piel abierta.",
-    "explicacionesOpciones": [
-      "Incorrecta: Un gradiente elevado favorece extracción de calor y cierre temprano.",
-      "Incorrecta: Un intervalo pequeño reduce la zona pastosa.",
-      "Correcta: el amplio intervalo mantiene líquido interconectado entre dendritas.",
-      "Incorrecta: Dendritas cortas y estables favorecen el cierre, no la piel abierta.",
-      "Incorrecta: La opción c es una condición típica."
-    ],
-    "trampa": "confundir la opción «Gran gradiente térmico.». Un gradiente elevado favorece extracción de calor y cierre temprano.",
-    "palabrasClave": [],
-    "fuente": "UPC, Tecnología de Materiales, 13-06-2001, p. 4, pregunta 10; UPCommons 24806.",
-    "baseRespuesta": "Respuesta razonada a partir de metalurgia física y procesos de fabricación; no se presenta como clave oficial."
-  },
-  {
-    "id": "hist-2002-04-11-p2-q01",
-    "tipo": "multiple",
-    "tema": "tema1",
-    "temaNombre": "Tema 1: Acers, fundicions i tractaments tèrmics",
-    "pregunta": "Los aceros inoxidables austeníticos comunes AISI 304 o 316 contienen aproximadamente un porcentaje de Cr de:",
-    "opciones": [
-      "16–20 %.",
-      "5–8 %.",
-      "30–40 %.",
-      "1–2 %.",
-      "No contienen Cr."
-    ],
-    "respuesta": 0,
-    "explicacion": "Los inoxidables austeníticos 304/316 contienen aproximadamente 16–18 % Cr; el 316 añade molibdeno.",
-    "explicacionesOpciones": [
-      "Correcta: el intervalo incluye el contenido de cromo típico de estos grados.",
-      "Incorrecta: Es demasiado bajo para la pasividad de 304/316.",
-      "Incorrecta: Es más alto que la composición usual de los grados citados.",
-      "Incorrecta: Muy bajo para un acero inoxidable.",
-      "Incorrecta: El cromo es esencial en estos grados."
-    ],
-    "trampa": "confundir la opción «5–8 %.». Es demasiado bajo para la pasividad de 304/316.",
-    "palabrasClave": [],
-    "fuente": "UPC, Tecnología de Materiales, 11-04-2002, p. 2, pregunta 1; UPCommons 24806.",
-    "baseRespuesta": "Respuesta razonada a partir de metalurgia física y procesos de fabricación; no se presenta como clave oficial."
-  },
-  {
-    "id": "hist-2002-04-11-p2-q02",
-    "tipo": "multiple",
-    "tema": "tema1",
-    "temaNombre": "Tema 1: Acers, fundicions i tractaments tèrmics",
-    "pregunta": "La fundición blanca se caracteriza por presentar una microestructura con:",
-    "opciones": [
-      "Nódulos de grafito.",
-      "Láminas de grafito.",
-      "Rosetas de grafito.",
-      "Dendritas de grafito.",
-      "Ninguna de las anteriores."
-    ],
-    "respuesta": 4,
-    "explicacion": "La fundición blanca tiene el carbono principalmente combinado en cementita y no presenta grafito libre como microestructura característica.",
-    "explicacionesOpciones": [
-      "Incorrecta: Los nódulos son propios de fundición nodular.",
-      "Incorrecta: Las láminas caracterizan la fundición gris.",
-      "Incorrecta: Las rosetas no describen la fundición blanca.",
-      "Incorrecta: El carbono combinado no aparece como dendritas de grafito.",
-      "Correcta: ninguna forma de grafito libre describe la fundición blanca."
-    ],
-    "trampa": "confundir la opción «Nódulos de grafito.». Los nódulos son propios de fundición nodular.",
-    "palabrasClave": [],
-    "fuente": "UPC, Tecnología de Materiales, 11-04-2002, p. 2, pregunta 2; UPCommons 24806.",
-    "baseRespuesta": "Respuesta razonada a partir de metalurgia física y procesos de fabricación; no se presenta como clave oficial."
-  },
-  {
-    "id": "hist-2002-04-11-p2-q06",
-    "tipo": "multiple",
-    "tema": "tema1",
-    "temaNombre": "Tema 1: Acers, fundicions i tractaments tèrmics",
-    "pregunta": "En el alto horno, ¿cuál es el agente reductor de los óxidos de hierro?",
-    "opciones": [
-      "CO.",
-      "SO₂.",
-      "O₂.",
-      "C.",
-      "Los fundentes."
-    ],
-    "respuesta": 0,
-    "explicacion": "El monóxido de carbono reduce los óxidos de hierro en las zonas principales del alto horno; el carbono sólido genera CO y participa también en reacciones de reducción.",
-    "explicacionesOpciones": [
-      "Correcta: CO es el gas reductor principal señalado por el test.",
-      "Incorrecta: SO₂ no es el agente reductor del proceso.",
-      "Incorrecta: El oxígeno oxida y participa en la combustión del coque.",
-      "Incorrecta: El carbono genera CO y puede reducir en zonas calientes, pero la respuesta gaseosa principal es CO.",
-      "Incorrecta: Los fundentes forman escoria y capturan ganga."
-    ],
-    "trampa": "confundir la opción «SO₂.». SO₂ no es el agente reductor del proceso.",
-    "palabrasClave": [],
-    "fuente": "UPC, Tecnología de Materiales, 11-04-2002, p. 2, pregunta 6; UPCommons 24806.",
-    "baseRespuesta": "Respuesta razonada a partir de metalurgia física y procesos de fabricación; no se presenta como clave oficial."
-  },
-  {
-    "id": "hist-2002-04-11-p2-q09",
-    "tipo": "multiple",
-    "tema": "tema2",
-    "temaNombre": "Tema 2: Alumini i aliatges",
-    "pregunta": "El proceso Bayer consiste en:",
-    "opciones": [
-      "Electrólisis de la alúmina.",
-      "Conversión de bauxita en alúmina.",
-      "Conversión de criolita en aluminio.",
-      "Conversión directa de bauxita en aluminio.",
-      "Ninguna de las anteriores."
-    ],
-    "respuesta": 1,
-    "explicacion": "Bayer refina la bauxita para obtener alúmina; la reducción electrolítica a metal ocurre posteriormente por Hall-Héroult.",
-    "explicacionesOpciones": [
-      "Incorrecta: La electrólisis corresponde a Hall-Héroult.",
-      "Correcta: Bayer produce alúmina a partir de bauxita.",
-      "Incorrecta: La criolita actúa como solvente electrolítico, no es el reactivo para obtener aluminio.",
-      "Incorrecta: Bayer no produce directamente aluminio metálico.",
-      "Incorrecta: La opción b es la definición del proceso."
-    ],
-    "trampa": "confundir la opción «Electrólisis de la alúmina.». La electrólisis corresponde a Hall-Héroult.",
-    "palabrasClave": [],
-    "fuente": "UPC, Tecnología de Materiales, 11-04-2002, p. 2, pregunta 9; UPCommons 24806.",
-    "baseRespuesta": "Respuesta razonada a partir de metalurgia física y procesos de fabricación; no se presenta como clave oficial."
-  },
-  {
-    "id": "hist-2002-04-11-p2-q11",
-    "tipo": "multiple",
-    "tema": "tema3",
-    "temaNombre": "Tema 3: Emmotllament i solidificació",
-    "pregunta": "Durante la nucleación de una solidificación, ¿de qué depende principalmente el tamaño crítico de los núcleos estables?",
-    "opciones": [
-      "Composición química de la aleación.",
-      "Temperatura de sobrecalentamiento.",
-      "Grado de subenfriamiento.",
-      "Intervalo de solidificación.",
+      "Aleaciones que presenten solubilidad total en estado sólido.",
+      "Aleaciones con presencia de reacciones eutectoides.",
+      "Aleaciones con solubilidad parcial en estado sólido.",
       "Ninguno de los anteriores."
     ],
     "respuesta": 2,
-    "explicacion": "El radio crítico de un núcleo sólido disminuye al aumentar el subenfriamiento, que eleva la fuerza impulsora de solidificación.",
+    "explicacion": "El endurecimiento por precipitación exige una solubilidad que disminuye al bajar la temperatura. Se disuelve el soluto a alta temperatura (solubilización), se templa para retener una solución sobresaturada y se envejece para precipitar partículas finas que bloquean las dislocaciones. Sin solubilidad parcial decreciente no hay sobresaturación controlable.",
     "explicacionesOpciones": [
-      "Incorrecta: La composición influye en propiedades termodinámicas, pero la variable directa enfatizada es el subenfriamiento.",
-      "Incorrecta: El sobrecalentamiento no determina el tamaño crítico una vez fijada la temperatura de nucleación.",
-      "Correcta: el tamaño crítico depende principalmente del subenfriamiento.",
-      "Incorrecta: El intervalo de solidificación no es la variable directa que define el radio crítico.",
-      "Incorrecta: La opción c describe la relación principal."
+      "Incorrecta: con solubilidad total no existe límite que se supere al enfriar, así que no se forma precipitado endurecedor.",
+      "Incorrecta: una reacción eutectoide describe una transformación invariante en estado sólido; no es la condición de sobresaturación que requiere la precipitación.",
+      "Correcta: la solubilidad parcial que decrece con la temperatura permite retener una solución sobresaturada tras el temple y precipitar después.",
+      "Incorrecta: la opción c cumple la condición necesaria."
     ],
-    "trampa": "confundir la opción «Composición química de la aleación.». La composición influye en propiedades termodinámicas, pero la variable directa enfatizada es el subenfriamiento.",
-    "palabrasClave": [],
-    "fuente": "UPC, Tecnología de Materiales, 11-04-2002, p. 2, pregunta 11; UPCommons 24806.",
-    "baseRespuesta": "Respuesta razonada a partir de metalurgia física y procesos de fabricación; no se presenta como clave oficial."
+    "trampa": "Pensar que cualquier aleación con cambio de fase en estado sólido (como un eutectoide) puede endurecerse por precipitación; hace falta solubilidad parcial decreciente con la temperatura.",
+    "palabrasClave": [
+      "endurecimiento por precipitación",
+      "solubilidad parcial",
+      "solubilización",
+      "envejecimiento",
+      "solución sobresaturada"
+    ],
+    "fuente": "Pregunta 4, parcial UPC de Tecnologia i Selecció de Materials, 10/04/2024, p. 4.",
+    "baseRespuesta": "Clave oficial: opción resaltada en la solución del examen."
   },
   {
-    "id": "hist-2002-04-11-p2-q13",
+    "id": "mc-2024-04-10-q05",
     "tipo": "multiple",
     "tema": "tema3",
     "temaNombre": "Tema 3: Emmotllament i solidificació",
-    "pregunta": "La colabilidad de una aleación metálica depende de:",
+    "pregunta": "En la fabricación de piezas por moldeo se requiere que la aleación metálica presente buena colabilidad. ¿Cuál de los siguientes factores la favorece?",
     "opciones": [
-      "El sobrecalentamiento.",
-      "El intervalo de solidificación.",
-      "La velocidad de enfriamiento.",
-      "La composición química.",
-      "Todas las anteriores."
-    ],
-    "respuesta": 4,
-    "explicacion": "La capacidad de llenar el molde depende de sobrecalentamiento, intervalo de solidificación, composición y condiciones de extracción de calor/enfriamiento.",
-    "explicacionesOpciones": [
-      "Incorrecta: Es un factor relevante, pero no el único.",
-      "Incorrecta: Es un factor relevante, pero no el único.",
-      "Incorrecta: Las condiciones térmicas afectan el tiempo de fluidez y llenado.",
-      "Incorrecta: La composición determina propiedades como intervalo y fluidez.",
-      "Correcta: todos los factores citados intervienen."
-    ],
-    "trampa": "confundir la opción «El sobrecalentamiento.». Es un factor relevante, pero no el único.",
-    "palabrasClave": [],
-    "fuente": "UPC, Tecnología de Materiales, 11-04-2002, p. 2, pregunta 13; UPCommons 24806.",
-    "baseRespuesta": "Respuesta razonada a partir de metalurgia física y procesos de fabricación; no se presenta como clave oficial."
-  },
-  {
-    "id": "hist-2002-04-11-p3-q17",
-    "tipo": "multiple",
-    "tema": "tema3",
-    "temaNombre": "Tema 3: Emmotllament i solidificació",
-    "pregunta": "Las porosidades de piezas fundidas pueden estar motivadas por:",
-    "opciones": [
-      "Contracción de solidificación.",
-      "Falta de llenado del molde.",
-      "Solidificación fuera del equilibrio.",
-      "Líquido excesivamente frío.",
-      "Diferencia de solubilidad de gases entre estado líquido y sólido."
-    ],
-    "respuesta": 4,
-    "explicacion": "La solubilidad de gases suele ser mayor en el metal líquido que en el sólido; al solidificar, el gas rechazado puede formar porosidad.",
-    "explicacionesOpciones": [
-      "Incorrecta: La contracción genera cavidades de rechupe, un defecto distinto de porosidad gaseosa.",
-      "Incorrecta: La falta de llenado genera una discontinuidad de llenado.",
-      "Incorrecta: El desequilibrio puede afectar microestructura, pero no es la causa directa indicada.",
-      "Incorrecta: Una baja temperatura puede empeorar llenado, no explica específicamente porosidad gaseosa.",
-      "Correcta: el gas expulsado durante solidificación puede formar poros."
-    ],
-    "trampa": "confundir la opción «Contracción de solidificación.». La contracción genera cavidades de rechupe, un defecto distinto de porosidad gaseosa.",
-    "palabrasClave": [],
-    "fuente": "UPC, Tecnología de Materiales, 11-04-2002, p. 3, pregunta 17; UPCommons 24806.",
-    "baseRespuesta": "Respuesta razonada a partir de metalurgia física y procesos de fabricación; no se presenta como clave oficial."
-  },
-  {
-    "id": "hist-2002-04-11-p3-q18",
-    "tipo": "multiple",
-    "tema": "tema2",
-    "temaNombre": "Tema 2: Alumini i aliatges",
-    "pregunta": "Para fabricar una pieza de aluminio de geometría compleja, ¿qué combinación recomienda el test?",
-    "opciones": [
-      "Molde de arena y fundición por gravedad.",
-      "Molde metálico y fundición por gravedad.",
-      "Molde metálico y fundición a presión.",
-      "Molde de arena y fundición a presión.",
-      "Ninguna de las anteriores."
-    ],
-    "respuesta": 2,
-    "explicacion": "La fundición a presión en molde metálico permite producir series de geometrías complejas con buen llenado y productividad; la selección concreta depende de aleación y requisitos.",
-    "explicacionesOpciones": [
-      "Incorrecta: La gravedad en arena es más flexible pero no la combinación típica de alta productividad para geometría compleja.",
-      "Incorrecta: Un molde metálico por gravedad puede ser adecuado, pero no es la respuesta típica de alta presión.",
-      "Correcta: molde permanente y presión favorecen llenado de cavidades complejas.",
-      "Incorrecta: La fundición a presión requiere normalmente molde metálico, no arena.",
-      "Incorrecta: La opción c es la recomendación esperada del test."
-    ],
-    "trampa": "confundir la opción «Molde de arena y fundición por gravedad.». La gravedad en arena es más flexible pero no la combinación típica de alta productividad para geometría compleja.",
-    "palabrasClave": [],
-    "fuente": "UPC, Tecnología de Materiales, 11-04-2002, p. 3, pregunta 18; UPCommons 24806.",
-    "baseRespuesta": "Respuesta razonada a partir de metalurgia física y procesos de fabricación; no se presenta como clave oficial."
-  },
-  {
-    "id": "hist-2003-10-30-q01",
-    "tipo": "multiple",
-    "tema": "tema1",
-    "temaNombre": "Tema 1: Acers, fundicions i tractaments tèrmics",
-    "pregunta": "¿Qué elementos químicos aparecen casi siempre en un acero al carbono?",
-    "opciones": [
-      "C, Mn y Si.",
-      "C, Si y Ca.",
-      "C, Ca y Ni.",
-      "C, Cr y Ni.",
-      "C, Cr y W."
+      "Un intervalo de solidificación pequeño.",
+      "Elementos aleantes de bajo punto de fusión.",
+      "Elementos aleantes de elevado punto de fusión.",
+      "Velocidad de enfriamiento baja."
     ],
     "respuesta": 0,
-    "explicacion": "Además del carbono, manganeso y silicio suelen estar presentes en aceros al carbono por materias primas y desoxidación.",
+    "explicacion": "La colabilidad es la capacidad del metal fundido para rellenar el molde antes de solidificar. Un intervalo de solidificación estrecho, propio de composiciones cercanas al eutéctico, da un frente poco pastoso con pocas dendritas que obstruyan el flujo, de modo que el líquido llega a todo el molde.",
     "explicacionesOpciones": [
-      "Correcta: Mn y Si son elementos habituales en aceros no aleados.",
-      "Incorrecta: Ca puede usarse en tratamientos específicos, pero no es habitual en todos los aceros al carbono.",
-      "Incorrecta: Ni no es elemento común en todos los aceros al carbono.",
-      "Incorrecta: Cr y Ni caracterizan ciertas familias aleadas, no los aceros al carbono generales.",
-      "Incorrecta: Cr y W son aleantes de aceros especiales."
+      "Correcta: un intervalo de solidificación pequeño reduce la zona pastosa y mejora el llenado.",
+      "Incorrecta: el punto de fusión del aleante no es el factor que define la colabilidad; lo determina el intervalo de solidificación.",
+      "Incorrecta: un punto de fusión elevado del aleante no mejora el flujo del líquido por sí mismo.",
+      "Incorrecta: una velocidad de enfriamiento baja alarga el tiempo de flujo, pero la colabilidad intrínseca de la aleación depende del intervalo de solidificación."
     ],
-    "trampa": "confundir la opción «C, Si y Ca.». Ca puede usarse en tratamientos específicos, pero no es habitual en todos los aceros al carbono.",
-    "palabrasClave": [],
-    "fuente": "UPC, Tecnología de Materiales, 30-10-2003, p. 2, pregunta 1; UPCommons 24806.",
-    "baseRespuesta": "Respuesta razonada a partir del mecanismo metalúrgico o proceso; no se presenta como clave oficial."
+    "trampa": "Confundir colabilidad (llenar el molde) con temperatura de fusión de los aleantes; el criterio es el intervalo entre liquidus y solidus.",
+    "palabrasClave": [
+      "colabilidad",
+      "intervalo de solidificación",
+      "zona pastosa",
+      "moldeo",
+      "aleantes"
+    ],
+    "fuente": "Pregunta 5, parcial UPC de Tecnologia i Selecció de Materials, 10/04/2024, p. 4.",
+    "baseRespuesta": "Clave oficial: opción resaltada en la solución del examen. Matiz: La opción d (velocidad de enfriamiento baja) puede favorecer el llenado porque alarga el tiempo de fluidez. La clave oficial es el intervalo de solidificación, que es el factor intrínseco de la aleación."
   },
   {
-    "id": "hist-2003-10-30-q02",
+    "id": "mc-2024-04-10-q06",
     "tipo": "multiple",
     "tema": "tema1",
     "temaNombre": "Tema 1: Acers, fundicions i tractaments tèrmics",
-    "pregunta": "¿Cómo aparece el carbono en una fundición gris de matriz perlítica?",
+    "pregunta": "Detecta la afirmación que NO es correcta.",
     "opciones": [
-      "Exclusivamente como grafito laminar.",
-      "Exclusivamente como cementita.",
-      "Exclusivamente como grafito nodular.",
-      "Parte como grafito laminar y parte como cementita.",
-      "Ninguna de las anteriores."
-    ],
-    "respuesta": 0,
-    "explicacion": "En la fundición gris el carbono libre aparece como grafito laminar; la matriz puede ser perlítica, pero el grafito no se convierte por ello en cementita.",
-    "explicacionesOpciones": [
-      "Correcta: el grafito laminar es la morfología característica de la fundición gris.",
-      "Incorrecta: La cementita libre caracteriza la fundición blanca; la matriz perlítica puede contener cementita dentro de la perlita.",
-      "Incorrecta: El grafito nodular caracteriza la fundición dúctil, no la gris.",
-      "Incorrecta: No describe la fundición gris típica.",
-      "Incorrecta: La opción a corresponde a la morfología de grafito gris."
-    ],
-    "trampa": "confundir la opción «Exclusivamente como cementita.». La cementita libre caracteriza la fundición blanca; la matriz perlítica puede contener cementita dentro de la perlita.",
-    "palabrasClave": [],
-    "fuente": "UPC, Tecnología de Materiales, 30-10-2003, p. 2, pregunta 2; UPCommons 24806.",
-    "baseRespuesta": "Respuesta razonada a partir del mecanismo metalúrgico o proceso; no se presenta como clave oficial."
-  },
-  {
-    "id": "hist-2003-10-30-q06",
-    "tipo": "multiple",
-    "tema": "tema3",
-    "temaNombre": "Tema 3: Emmotllament i solidificació",
-    "pregunta": "En la solidificación de un metal con dendritas cortas y estables, ¿qué combinación describe el comportamiento?",
-    "opciones": [
-      "Disminuye la colabilidad y solidifica en piel cerrada.",
-      "Aumenta la colabilidad y solidifica en piel abierta.",
-      "Predomina la zona columnar y la colabilidad es buena.",
-      "Predomina la zona equiáxica y la colabilidad es mala.",
-      "Ninguna de las anteriores."
-    ],
-    "respuesta": 0,
-    "explicacion": "Dendritas cortas y estables tienden a formar una piel cerrada; la solidificación en piel cerrada se asocia a menor colabilidad que una piel abierta.",
-    "explicacionesOpciones": [
-      "Correcta: según el modelo de solidificación del examen.",
-      "Incorrecta: Piel abierta no corresponde a dendritas cortas y estables.",
-      "Incorrecta: La estructura no corresponde al crecimiento dendrítico columnar descrito.",
-      "Incorrecta: La asociación con mala colabilidad no sigue la descripción de zona equiáxica.",
-      "Incorrecta: La opción a refleja la respuesta del modelo didáctico."
-    ],
-    "trampa": "confundir la opción «Aumenta la colabilidad y solidifica en piel abierta.». Piel abierta no corresponde a dendritas cortas y estables.",
-    "palabrasClave": [],
-    "fuente": "UPC, Tecnología de Materiales, 30-10-2003, p. 2, pregunta 6; UPCommons 24806.",
-    "baseRespuesta": "Respuesta razonada a partir del mecanismo metalúrgico o proceso; no se presenta como clave oficial."
-  },
-  {
-    "id": "hist-2003-10-30-q07",
-    "tipo": "multiple",
-    "tema": "tema3",
-    "temaNombre": "Tema 3: Emmotllament i solidificació",
-    "pregunta": "Los rechupes o cavidades de una pieza solidificada en molde se deben principalmente a:",
-    "opciones": [
-      "Gases ocluidos.",
-      "Segregación química.",
-      "Contracción líquido-sólido.",
-      "Mala agitación del molde.",
-      "Ninguna de las anteriores."
+      "La fundición blanca es una fundición cementítica obtenida por enfriamientos rápidos.",
+      "La recristalización estática tiene lugar a mayores temperaturas que la restauración estática.",
+      "Las fundiciones de hierro dúctiles absorben mejor las vibraciones que las grises.",
+      "Todas son correctas."
     ],
     "respuesta": 2,
-    "explicacion": "El rechupe se produce por contracción volumétrica al solidificar cuando la pieza no recibe alimentación suficiente de metal líquido.",
+    "explicacion": "La fundición blanca solidifica con cementita porque el enfriamiento rápido impide la grafitización. La restauración (recuperación) ocurre a temperaturas inferiores a la recristalización. Las fundiciones grises, con grafito laminar, amortiguan las vibraciones mejor que las dúctiles, cuyo grafito esferoidal transmite más la vibración.",
     "explicacionesOpciones": [
-      "Incorrecta: Los gases ocluidos originan sopladuras/porosidad gaseosa.",
-      "Incorrecta: La segregación es variación local de composición.",
-      "Correcta: el cambio de volumen al pasar de líquido a sólido origina contracción.",
-      "Incorrecta: La agitación no es el mecanismo general del rechupe.",
-      "Incorrecta: La opción c describe su origen."
+      "Incorrecta: es una afirmación cierta; el enfriamiento rápido favorece la solidificación metaestable con cementita.",
+      "Incorrecta: es una afirmación cierta; la recristalización requiere más temperatura que la restauración.",
+      "Correcta: es la afirmación falsa. La fundición gris amortigua mejor las vibraciones gracias a sus láminas de grafito.",
+      "Incorrecta: no todas son correctas, porque la afirmación tercera es falsa."
     ],
-    "trampa": "confundir la opción «Gases ocluidos.». Los gases ocluidos originan sopladuras/porosidad gaseosa.",
-    "palabrasClave": [],
-    "fuente": "UPC, Tecnología de Materiales, 30-10-2003, p. 2, pregunta 7; UPCommons 24806.",
-    "baseRespuesta": "Respuesta razonada a partir del mecanismo metalúrgico o proceso; no se presenta como clave oficial."
+    "trampa": "Suponer que la ductilidad implica mayor amortiguación; la capacidad de amortiguar depende de la forma del grafito (laminar en la gris).",
+    "palabrasClave": [
+      "fundición blanca",
+      "cementita",
+      "fundición gris",
+      "fundición dúctil",
+      "amortiguamiento de vibraciones",
+      "recristalización",
+      "restauración"
+    ],
+    "fuente": "Pregunta 6, parcial UPC de Tecnologia i Selecció de Materials, 10/04/2024, p. 5.",
+    "baseRespuesta": "Clave oficial: opción resaltada en la solución del examen."
   },
   {
-    "id": "hist-2003-10-30-q10",
-    "tipo": "multiple",
-    "tema": "tema2",
-    "temaNombre": "Tema 2: Alumini i aliatges",
-    "pregunta": "¿En qué intervalo se comienza normalmente a trabajar en caliente con aleaciones de aluminio?",
-    "opciones": [
-      "20–100 °C.",
-      "100–200 °C.",
-      "250–350 °C.",
-      "400–500 °C.",
-      "550–700 °C."
-    ],
-    "respuesta": 2,
-    "explicacion": "El trabajo en caliente del aluminio y sus aleaciones comienza a varios cientos de grados, típicamente dentro del intervalo 250–350 °C según aleación y proceso.",
-    "explicacionesOpciones": [
-      "Incorrecta: Demasiado bajo para el intervalo habitual de trabajo en caliente.",
-      "Incorrecta: Suele corresponder a trabajo en frío/templado, no al rango indicado.",
-      "Correcta: como intervalo aproximado del test; el valor depende de la aleación y temperatura de solidus.",
-      "Incorrecta: Puede superar el rango seguro de varias aleaciones y acercarse a solidus.",
-      "Incorrecta: Excesivo para iniciar la deformación en caliente de muchas aleaciones de Al."
-    ],
-    "trampa": "confundir la opción «20–100 °C.». Demasiado bajo para el intervalo habitual de trabajo en caliente.",
-    "palabrasClave": [],
-    "fuente": "UPC, Tecnología de Materiales, 30-10-2003, p. 2, pregunta 10; UPCommons 24806.",
-    "baseRespuesta": "Respuesta razonada a partir del mecanismo metalúrgico o proceso; no se presenta como clave oficial."
-  },
-  {
-    "id": "hist-2003-10-30-q17",
+    "id": "mc-2024-04-10-q07",
     "tipo": "multiple",
     "tema": "tema1",
     "temaNombre": "Tema 1: Acers, fundicions i tractaments tèrmics",
-    "pregunta": "¿Cuál de las siguientes materias primas se utiliza para producir arrabio?",
+    "pregunta": "Teniendo en cuenta el proceso siderúrgico de obtención de los aceros, selecciona la opción que propone una secuencia correcta de procesos.",
     "opciones": [
-      "Chatarra de acero.",
-      "Chatarra de fundición.",
-      "Mineral de hierro.",
-      "Chatarra de aluminio.",
-      "Todas las anteriores."
-    ],
-    "respuesta": 2,
-    "explicacion": "El alto horno reduce mineral de hierro con coque y fundentes para obtener arrabio; la chatarra no es la materia prima principal de esa ruta.",
-    "explicacionesOpciones": [
-      "Incorrecta: La chatarra se recicla en acerías, pero no es la carga principal del alto horno convencional.",
-      "Incorrecta: No es la materia prima principal para el alto horno.",
-      "Correcta: el mineral de hierro aporta el hierro a reducir.",
-      "Incorrecta: No interviene en la producción de arrabio.",
-      "Incorrecta: No todas las opciones son materias primas del alto horno."
-    ],
-    "trampa": "confundir la opción «Chatarra de acero.». La chatarra se recicla en acerías, pero no es la carga principal del alto horno convencional.",
-    "palabrasClave": [],
-    "fuente": "UPC, Tecnología de Materiales, 30-10-2003, p. 3, pregunta 17; UPCommons 24806.",
-    "baseRespuesta": "Respuesta razonada a partir del mecanismo metalúrgico o proceso; no se presenta como clave oficial."
-  },
-  {
-    "id": "hist-2004-01-09-q01",
-    "tipo": "multiple",
-    "tema": "tema1",
-    "temaNombre": "Tema 1: Acers, fundicions i tractaments tèrmics",
-    "pregunta": "¿Cuál es el elemento de aleación más importante en los aceros inoxidables ferríticos?",
-    "opciones": [
-      "Ni.",
-      "C.",
-      "Mo.",
-      "Cr.",
-      "W."
-    ],
-    "respuesta": 3,
-    "explicacion": "El cromo es el elemento que proporciona pasividad y resistencia general a la corrosión en los aceros inoxidables ferríticos.",
-    "explicacionesOpciones": [
-      "Incorrecta: El níquel no es el aleante principal de la familia ferrítica.",
-      "Incorrecta: El carbono se mantiene bajo para limitar fragilización y carburos.",
-      "Incorrecta: El Mo puede mejorar resistencia localizada en algunos grados, pero no sustituye al Cr.",
-      "Correcta: Cr es el elemento esencial que define la resistencia inoxidable.",
-      "Incorrecta: El W no es el elemento base de estos inoxidables."
-    ],
-    "trampa": "confundir la opción «Ni.». El níquel no es el aleante principal de la familia ferrítica.",
-    "palabrasClave": [],
-    "fuente": "UPC, Tecnología de Materiales, 09-01-2004, p. 2, pregunta 1; UPCommons 24806.",
-    "baseRespuesta": "Respuesta razonada a partir del mecanismo metalúrgico o proceso; no se presenta como clave oficial."
-  },
-  {
-    "id": "hist-2004-01-09-q04",
-    "tipo": "multiple",
-    "tema": "tema1",
-    "temaNombre": "Tema 1: Acers, fundicions i tractaments tèrmics",
-    "pregunta": "¿Qué condiciones favorecen que una fundición de hierro solidifique como fundición cementítica/blanca?",
-    "opciones": [
-      "Poco Si y velocidad de enfriamiento rápida.",
-      "Mucho Si y velocidad de enfriamiento rápida.",
-      "Poco Si y velocidad de enfriamiento lenta.",
-      "Mucho Si y velocidad de enfriamiento lenta.",
-      "Ninguna de las anteriores."
-    ],
-    "respuesta": 0,
-    "explicacion": "Poco silicio reduce la grafitización y un enfriamiento rápido favorece la solidificación metastable con cementita, propia de fundición blanca.",
-    "explicacionesOpciones": [
-      "Correcta: ambas condiciones suprimen la formación de grafito y favorecen cementita.",
-      "Incorrecta: El silicio elevado favorece grafitización, aunque el enfriamiento rápido actúe en sentido contrario.",
-      "Incorrecta: El enfriamiento lento favorece la ruta estable grafítica.",
-      "Incorrecta: Ambos factores favorecen grafitización, no cementita.",
-      "Incorrecta: La combinación a describe las condiciones pro-blancas."
-    ],
-    "trampa": "confundir la opción «Mucho Si y velocidad de enfriamiento rápida.». El silicio elevado favorece grafitización, aunque el enfriamiento rápido actúe en sentido contrario.",
-    "palabrasClave": [],
-    "fuente": "UPC, Tecnología de Materiales, 09-01-2004, p. 2, pregunta 4; UPCommons 24806.",
-    "baseRespuesta": "Respuesta razonada a partir del mecanismo metalúrgico o proceso; no se presenta como clave oficial."
-  },
-  {
-    "id": "hist-2004-01-09-q05",
-    "tipo": "multiple",
-    "tema": "tema3",
-    "temaNombre": "Tema 3: Emmotllament i solidificació",
-    "pregunta": "La colabilidad de una aleación metálica se favorece con:",
-    "opciones": [
-      "Elevado sobrecalentamiento.",
-      "Pequeño intervalo de solidificación.",
-      "Elevada extracción de calor por el molde.",
-      "Poca agitación del metal líquido.",
-      "Todas las anteriores."
+      "1.-Convertidor, 2.-Alto Horno, 3.-Siderurgia en cuchara, 4.-colada continua",
+      "1.-Alto Horno, 2.-Convertidor, 3.-Afino en cuchara, 4.-Colada continua",
+      "1.-Trituración y Molienda, 2.-lixiviación, 3.-clarificación y lavado, 4.-Precipitación",
+      "1.-Horno de Fusión, 2.-Horno de retención, 3.-Canal de colada, 4.-Desgasificación."
     ],
     "respuesta": 1,
-    "explicacion": "Un sobrecalentamiento mayor y un intervalo de solidificación estrecho suelen favorecer el llenado; la opción de examen que expresa el factor composicional correcto es el intervalo pequeño.",
+    "explicacion": "La ruta integral parte del alto horno, que reduce el mineral a arrabio. El convertidor (LD) oxida el carbono y las impurezas del arrabio para obtener acero líquido. El afino en cuchara ajusta composición y temperatura, y la colada continua solidifica el acero en semiproducto.",
     "explicacionesOpciones": [
-      "Incorrecta: Aumentar sobrecalentamiento favorece colabilidad, así que esta opción también parece verdadera en términos físicos; por eso el ítem, tal como está redactado, puede tener más de una respuesta.",
-      "Correcta: Un intervalo pequeño reduce la zona pastosa y favorece el flujo.",
-      "Incorrecta: Una extracción de calor elevada puede acelerar la solidificación y perjudicar el llenado.",
-      "Incorrecta: La agitación no es un factor general que mejore colabilidad.",
-      "Incorrecta: La opción no es exclusiva porque a también puede mejorarla."
+      "Incorrecta: el convertidor necesita arrabio, que sale del alto horno, así que no puede ir antes. El afino en cuchara también va después del convertidor.",
+      "Correcta: alto horno, convertidor, afino en cuchara y colada continua.",
+      "Incorrecta: trituración, lixiviación, clarificación y precipitación son operaciones hidrometalúrgicas, no la ruta siderúrgica del acero.",
+      "Incorrecta: horno de fusión, horno de retención, canal y desgasificación no forman la ruta primaria de obtención del acero."
     ],
-    "trampa": "confundir la opción «Elevado sobrecalentamiento.». Aumentar sobrecalentamiento favorece colabilidad, así que esta opción también parece verdadera en términos físicos; por eso el ítem, tal como está redactado, puede tener más de una respuesta.",
-    "palabrasClave": [],
-    "fuente": "UPC, Tecnología de Materiales, 09-01-2004, p. 2, pregunta 5; UPCommons 24806.",
-    "baseRespuesta": "Respuesta razonada a partir del mecanismo metalúrgico o proceso; no se presenta como clave oficial."
+    "trampa": "Invertir el orden de alto horno y convertidor; el alto horno produce el arrabio que alimenta al convertidor.",
+    "palabrasClave": [
+      "alto horno",
+      "arrabio",
+      "convertidor",
+      "afino en cuchara",
+      "colada continua",
+      "siderurgia"
+    ],
+    "fuente": "Pregunta 7, parcial UPC de Tecnologia i Selecció de Materials, 10/04/2024, p. 5.",
+    "baseRespuesta": "Clave oficial: opción resaltada en la solución del examen."
   },
   {
-    "id": "hist-2004-01-09-q15",
+    "id": "mc-2024-04-10-q09",
     "tipo": "multiple",
-    "tema": "tema3",
-    "temaNombre": "Tema 3: Emmotllament i solidificació",
-    "pregunta": "Para obtener un lingote de sección prácticamente toda columnar, ¿qué condiciones favorecen ese crecimiento?",
+    "tema": "tema1",
+    "temaNombre": "Tema 1: Acers, fundicions i tractaments tèrmics",
+    "pregunta": "La presencia de elementos aleantes en los aceros suele aumentar la templabilidad, debido a que:",
     "opciones": [
-      "Aleación de intervalo amplio y extracción de calor lenta.",
-      "Intervalo pequeño y extracción de calor rápida.",
-      "Intervalo amplio y sobrecalentamiento elevado.",
-      "Intervalo amplio y sobrecalentamiento bajo.",
-      "Ninguna de las anteriores."
+      "Aumenta la temperatura de fusión.",
+      "Aumenta la temperatura de recristalización.",
+      "Desplaza las curvas de transformación con difusión a la derecha del diagrama.",
+      "Desplaza las curvas de transformación con difusión a la izquierda del diagrama."
     ],
-    "respuesta": 0,
-    "explicacion": "Un intervalo de solidificación amplio y condiciones que mantengan crecimiento direccional desde la pared pueden favorecer una zona columnar extensa. La extracción lenta se conserva como lectura del ítem, aunque el balance térmico y la nucleación también importan.",
+    "respuesta": 2,
+    "explicacion": "La templabilidad es la capacidad de formar martensita en profundidad. La mayoría de aleantes (Mn, Cr, Mo, Ni...) retardan la descomposición difusiva de la austenita (ferrita, perlita, bainita), desplazando las curvas TTT y CCT hacia tiempos mayores. Así basta una velocidad de temple menor para evitar esas transformaciones y obtener martensita. El cobalto es la excepción.",
     "explicacionesOpciones": [
-      "Correcta: según el par señalado por el test, con la salvedad de que el resultado depende de gradiente y nucleación.",
-      "Incorrecta: Un intervalo estrecho y extracción rápida favorecen piel cerrada y refinamiento, no una sección columnar extensa.",
-      "Incorrecta: Un sobrecalentamiento elevado puede reducir nucleación en el baño, pero no basta por sí solo para especificar crecimiento columnar.",
-      "Incorrecta: El bajo sobrecalentamiento promueve nucleación, pudiendo aumentar granos equiáxicos.",
-      "Incorrecta: La opción a expresa la combinación esperada, aunque su enunciado es sensible a condiciones experimentales."
+      "Incorrecta: la temperatura de fusión no controla la templabilidad, que depende de la cinética de transformación.",
+      "Incorrecta: la temperatura de recristalización no determina la formación de martensita.",
+      "Correcta: al retardar la transformación difusiva, las curvas se desplazan a la derecha y la martensita aparece con velocidades de temple menores.",
+      "Incorrecta: desplazar las curvas a la izquierda acelera la transformación difusiva y reduce la templabilidad."
     ],
-    "trampa": "confundir la opción «Intervalo pequeño y extracción de calor rápida.». Un intervalo estrecho y extracción rápida favorecen piel cerrada y refinamiento, no una sección columnar extensa.",
-    "palabrasClave": [],
-    "fuente": "UPC, Tecnología de Materiales, 09-01-2004, p. 3, pregunta 15; UPCommons 24806.",
-    "baseRespuesta": "Respuesta razonada a partir del mecanismo metalúrgico o proceso; no se presenta como clave oficial."
+    "trampa": "Confundir el sentido del desplazamiento; los aleantes retardan la transformación y desplazan las curvas hacia la derecha, lo que aumenta la templabilidad.",
+    "palabrasClave": [
+      "templabilidad",
+      "aleantes",
+      "curvas TTT",
+      "curvas CCT",
+      "martensita",
+      "transformación difusiva"
+    ],
+    "fuente": "Pregunta 9, parcial UPC de Tecnologia i Selecció de Materials, 10/04/2024, p. 5.",
+    "baseRespuesta": "Clave oficial: opción resaltada en la solución del examen."
   },
   {
-    "id": "hist-2004-01-09-q16",
+    "id": "mc-2024-10-03-q06",
     "tipo": "multiple",
-    "tema": "tema3",
-    "temaNombre": "Tema 3: Emmotllament i solidificació",
-    "pregunta": "En la producción de piezas fundidas, ¿para qué proceso se utiliza típicamente el molde metálico/coquilla entre las opciones?",
+    "tema": "tema1",
+    "temaNombre": "Tema 1: Acers, fundicions i tractaments tèrmics",
+    "pregunta": "Indica la respuesta correcta respecto a la corrosión observada en este tubo soldado de acero inoxidable austenítico:\nI. Es debida a la formación de carburos de cromo en los límites de grano en la zona afectada por el calor.\nII. Es consecuencia del elevado contenido en carbono presente en el acero.\nIII. Se podría evitar añadiendo niobio y/o molibdeno.\nIV. Nunca se puede observar corrosión en un acero inoxidable soldado.",
     "opciones": [
-      "Aluminio inyectado.",
-      "Moldeo en cáscara.",
-      "Moldeo a la cera perdida.",
+      "IV.",
+      "I y II.",
       "II y III.",
-      "II y II."
+      "I, II y III."
+    ],
+    "respuesta": 3,
+    "explicacion": "La corrosión intergranular de un inoxidable austenítico soldado se produce en la zona afectada por el calor: al enfriarse, el carbono precipita como carburos de cromo en los límites de grano y empobrece en cromo las zonas adyacentes, que dejan de ser pasivas. Se evita con grados de bajo carbono o estabilizados con niobio o titanio, o con un recocido de solubilización. Por tanto, I, II y III son correctas y IV es falsa.",
+    "explicacionesOpciones": [
+      "Incorrecta: la afirmación IV es falsa; un inoxidable austenítico soldado sí puede corroerse en la zona afectada por el calor.",
+      "Incorrecta: I y II son correctas, pero la III también lo es y esta opción la omite.",
+      "Incorrecta: II y III son correctas, pero la I también lo es y esta opción la omite.",
+      "Correcta: I (carburos de cromo en límites de grano de la zona afectada por el calor), II (el carbono es necesario para formar esos carburos) y III (el niobio estabiliza el carbono y evita la sensibilización; la mención al molibdeno es discutible, ver _aviso)."
+    ],
+    "trampa": "creer que un inoxidable soldado no puede corroerse (IV) o atribuir la corrosión solo a un fallo del material, sin considerar la precipitación de carburos de cromo en la zona afectada por el calor.",
+    "palabrasClave": [
+      "corrosión intergranular",
+      "sensibilización",
+      "carburos de cromo",
+      "zona afectada por el calor",
+      "niobio",
+      "acero inoxidable austenítico"
+    ],
+    "imagen": {
+      "src": "assets/questions/2024-10-03-q06-corrosion-tubo.png",
+      "alt": "Fotografía de un tubo soldado de acero inoxidable austenítico con corrosión a lo largo de la soldadura."
+    },
+    "fuente": "Pregunta 6, parcial UPC de Tecnologia i Selecció de Materials, 03/10/2024, p. 3.",
+    "baseRespuesta": "Clave oficial: opción resaltada en la solución del examen. La afirmación III menciona el molibdeno"
+  },
+  {
+    "id": "mc-2024-10-03-q09",
+    "tipo": "multiple",
+    "tema": "tema1",
+    "temaNombre": "Tema 1: Acers, fundicions i tractaments tèrmics",
+    "pregunta": "En relación a los aceros HSLA, la afirmación correcta es:",
+    "opciones": [
+      "Son aceros de alta resistencia por su elevado contenido en carbono.",
+      "Se endurecen por temple para obtener estructura martensítica y formación de carburos.",
+      "Son tenaces y presentan alta resistencia a fatiga.",
+      "Todas las respuestas son correctas."
+    ],
+    "respuesta": 2,
+    "explicacion": "Los aceros HSLA (high-strength low-alloy) son aceros de bajo carbono con pequeñas adiciones de niobio, vanadio o titanio que refinan el grano y forman precipitados finos. Así combinan alta resistencia con buena tenacidad y resistencia a la fatiga, sin necesitar un contenido alto de carbono ni un temple martensítico.",
+    "explicacionesOpciones": [
+      "Incorrecta: su resistencia no procede de un alto contenido en carbono, que en estos aceros es bajo.",
+      "Incorrecta: no se endurecen por temple; su resistencia procede del refinado de grano y de la precipitación de carburos y carbonitruros finos.",
+      "Correcta: son tenaces y presentan alta resistencia a la fatiga, que es la característica de los HSLA.",
+      "Incorrecta: las opciones a y b son falsas."
+    ],
+    "trampa": "asociar «alta resistencia» con «alto contenido en carbono», como ocurre en los aceros de herramienta o de alto carbono.",
+    "palabrasClave": [
+      "HSLA",
+      "bajo carbono",
+      "microaleantes",
+      "refinado de grano",
+      "tenacidad",
+      "fatiga"
+    ],
+    "fuente": "Pregunta 9, parcial UPC de Tecnologia i Selecció de Materials, 03/10/2024, p. 3.",
+    "baseRespuesta": "Clave oficial: opción resaltada en la solución del examen."
+  },
+  {
+    "id": "mc-2024-10-03-q10",
+    "tipo": "multiple",
+    "tema": "tema3",
+    "temaNombre": "Tema 3: Emmotllament i solidificació",
+    "pregunta": "El moldeo o fundición se puede utilizar para:",
+    "opciones": [
+      "Obtener piezas de cualquier forma y tamaño.",
+      "Obtener componentes de fundición de hierro y también de aleaciones de aluminio.",
+      "Fabricar una pieza que no se puede obtener por procesos basados en la deformación plástica.",
+      "Todas las respuestas son correctas."
+    ],
+    "respuesta": 3,
+    "explicacion": "El moldeo da forma a la pieza solidificando metal fundido en una cavidad, lo que permite geometrías complejas, huecos y piezas que la deformación plástica no puede obtener. Se aplica tanto a fundiciones de hierro como a aleaciones de aluminio. La clave da por válida también la opción a, aunque el moldeo tiene límites reales de forma y tamaño (ver _aviso).",
+    "explicacionesOpciones": [
+      "Incorrecta en sentido estricto: el moldeo no admite cualquier forma ni tamaño, por limitaciones de colabilidad, de molde y de defectos. La clave oficial la da por válida (ver _aviso).",
+      "Incorrecta: es cierta por sí sola, pero no recoge las demás afirmaciones válidas según la clave.",
+      "Incorrecta: es cierta por sí sola, pero no recoge las demás afirmaciones válidas según la clave.",
+      "Correcta: agrupa las afirmaciones b y c, y la clave da por válida también la a."
+    ],
+    "trampa": "pensar que cualquier geometría es viable por fundición sin límites de colabilidad o de tamaño del molde.",
+    "palabrasClave": [
+      "moldeo",
+      "fundición",
+      "geometrías complejas",
+      "colabilidad",
+      "deformación plástica"
+    ],
+    "fuente": "Pregunta 10, parcial UPC de Tecnologia i Selecció de Materials, 03/10/2024, p. 3.",
+    "baseRespuesta": "Clave oficial: opción resaltada en la solución del examen. Matiz: La clave d exige que sea correcta la opción a («cualquier forma y tamaño»), que es una exageración: el moldeo tiene límites de colabilidad, de tamaño de molde y de defectos. Se mantiene la clave oficial."
+  },
+  {
+    "id": "mc-2024-10-03-q11",
+    "tipo": "multiple",
+    "tema": "tema1",
+    "temaNombre": "Tema 1: Acers, fundicions i tractaments tèrmics",
+    "pregunta": "¿Qué afirmaciones sobre las fundiciones de hierro son ciertas?\nI. El titanio actúa como degenerador del grafito dando lugar a las fundiciones compactas.\nII. El magnesio altera la morfología del grafito dando lugar a nódulos.\nIII. El cerio actúa como degenerador del grafito dando lugar a fundiciones blancas.",
+    "opciones": [
+      "I y II.",
+      "II y III.",
+      "I y III.",
+      "Todas son ciertas."
     ],
     "respuesta": 0,
-    "explicacion": "La coquilla metálica es un molde permanente utilizado en fundición a presión de aleaciones, incluido aluminio. El moldeo en cáscara y cera perdida emplea moldes desechables.",
+    "explicacion": "El magnesio cambia la forma del grafito de laminar a esferoidal (nódulos), que es la base de la fundición nodular. El titanio actúa como degenerador y produce grafito compacto. La fundición blanca no se debe al cerio: aparece al solidificar con carburos, por enfriamiento rápido o por elementos formadores de carburos, y el cerio se emplea en la práctica como nodulizante.",
     "explicacionesOpciones": [
-      "Correcta: la fundición a presión usa molde metálico permanente.",
-      "Incorrecta: El molde propiamente dicho es una cáscara de arena aglomerada, no una coquilla reutilizable.",
-      "Incorrecta: La cera perdida utiliza un molde cerámico desechable.",
-      "Incorrecta: La combinación contiene dos procesos con moldes desechables.",
-      "Incorrecta: La opción está mal extraída/impresa y no es una combinación coherente."
+      "Correcta: I y II son ciertas, y la III es falsa.",
+      "Incorrecta: incluye la afirmación III, que es falsa.",
+      "Incorrecta: incluye la afirmación III, que es falsa.",
+      "Incorrecta: incluye la afirmación III, que es falsa."
     ],
-    "trampa": "confundir la opción «Moldeo en cáscara.». El molde propiamente dicho es una cáscara de arena aglomerada, no una coquilla reutilizable.",
-    "palabrasClave": [],
-    "fuente": "UPC, Tecnología de Materiales, 09-01-2004, p. 3, pregunta 16; UPCommons 24806.",
-    "baseRespuesta": "Respuesta razonada a partir del mecanismo metalúrgico o proceso; no se presenta como clave oficial."
+    "trampa": "pensar que cualquier elemento que altera el grafito produce fundición blanca; el magnesio y el cerio son nodulizantes, y la fundición blanca depende del enfriamiento y de los formadores de carburos.",
+    "palabrasClave": [
+      "fundición de hierro",
+      "nodulizante",
+      "degenerador del grafito",
+      "fundición compacta",
+      "fundición blanca",
+      "magnesio"
+    ],
+    "fuente": "Pregunta 11, parcial UPC de Tecnologia i Selecció de Materials, 03/10/2024, p. 3.",
+    "baseRespuesta": "Clave oficial: opción resaltada en la solución del examen."
   },
   {
-    "id": "hist-2004-01-09-p6-q01",
-    "tipo": "multiple",
-    "tema": "tema1",
-    "temaNombre": "Tema 1: Acers, fundicions i tractaments tèrmics",
-    "pregunta": "La fundición de hierro maleable se obtiene mediante:",
-    "opciones": [
-      "Fundición laminar con bonificado.",
-      "Fundición nodular con temple bainítico.",
-      "Fundición nodular templada exclusivamente.",
-      "Fundición blanca tratada térmicamente.",
-      "Ninguna de las anteriores."
-    ],
-    "respuesta": 3,
-    "explicacion": "La fundición maleable se obtiene mediante tratamiento térmico de una fundición blanca, descomponiendo cementita y generando carbono de revenido.",
-    "explicacionesOpciones": [
-      "Incorrecta: La fundición gris laminar no se convierte en maleable por bonificado.",
-      "Incorrecta: La fundición nodular austemperada es ADI.",
-      "Incorrecta: El temple nodular no define fundición maleable.",
-      "Correcta: la maleable procede de fundición blanca recocida/maleabilizada.",
-      "Incorrecta: La opción d describe su ruta de fabricación."
-    ],
-    "trampa": "confundir la opción «Fundición laminar con bonificado.». La fundición gris laminar no se convierte en maleable por bonificado.",
-    "palabrasClave": [],
-    "fuente": "UPC, Tecnología de Materiales, 09-01-2004, p. 6, pregunta 1; UPCommons 24806.",
-    "baseRespuesta": "Respuesta razonada a partir del mecanismo metalúrgico o proceso; no se presenta como clave oficial."
-  },
-  {
-    "id": "hist-2004-01-09-p6-q03",
-    "tipo": "multiple",
-    "tema": "tema1",
-    "temaNombre": "Tema 1: Acers, fundicions i tractaments tèrmics",
-    "pregunta": "El austemperado o temple bainítico se obtiene por:",
-    "opciones": [
-      "Transformación de la austenita durante enfriamiento continuo.",
-      "Transformación isotérmica de la austenita alrededor de 650 °C.",
-      "Evitar la austenización durante el calentamiento.",
-      "Transformación isotérmica de la austenita alrededor de 400 °C.",
-      "Ninguna de las anteriores."
-    ],
-    "respuesta": 3,
-    "explicacion": "El austemperado mantiene la austenita a una temperatura intermedia del rango bainítico y la transforma isotérmicamente; el valor depende del acero y el ciclo.",
-    "explicacionesOpciones": [
-      "Incorrecta: Eso describe transformación bajo enfriamiento continuo, no austemperado.",
-      "Incorrecta: 650 °C suele quedar por encima del rango bainítico útil para muchos aceros.",
-      "Incorrecta: El tratamiento requiere austenización antes del mantenimiento.",
-      "Correcta: en el rango aproximado indicado por el test.",
-      "Incorrecta: La opción d describe el mantenimiento isotérmico bainítico."
-    ],
-    "trampa": "confundir la opción «Transformación de la austenita durante enfriamiento continuo.». Eso describe transformación bajo enfriamiento continuo, no austemperado.",
-    "palabrasClave": [],
-    "fuente": "UPC, Tecnología de Materiales, 09-01-2004, p. 6, pregunta 3; UPCommons 24806.",
-    "baseRespuesta": "Respuesta razonada a partir del mecanismo metalúrgico o proceso; no se presenta como clave oficial."
-  },
-  {
-    "id": "hist-2004-01-09-p6-q06",
+    "id": "mc-2024-10-03-q15",
     "tipo": "multiple",
     "tema": "tema2",
     "temaNombre": "Tema 2: Alumini i aliatges",
-    "pregunta": "¿Cuál es el tratamiento térmico típico de una aleación Al–4 % Cu (duraluminio)?",
+    "pregunta": "Indica la respuesta INCORRECTA sobre los mecanismos de endurecimiento de las aleaciones de aluminio:",
     "opciones": [
-      "Solubilización, temple y envejecimiento/maduración.",
-      "Recocido de eliminación de tensiones.",
-      "Austenización y temple.",
-      "Recocido de globulización.",
-      "Ninguno de los anteriores."
-    ],
-    "respuesta": 0,
-    "explicacion": "Al-Cu endurece por precipitación: solubilización, temple para retener solución sobresaturada y envejecimiento para precipitar fases endurecedoras.",
-    "explicacionesOpciones": [
-      "Correcta: es la secuencia de endurecimiento por precipitación de Al-Cu.",
-      "Incorrecta: Puede usarse para aliviar tensiones, pero no es el tratamiento de endurecimiento característico.",
-      "Incorrecta: Austenización es propia de aceros; aluminio no presenta esa transformación alotrópica.",
-      "Incorrecta: La globulización se aplica a estructuras de acero/cementita.",
-      "Incorrecta: La opción a es el tratamiento característico."
-    ],
-    "trampa": "confundir la opción «Recocido de eliminación de tensiones.». Puede usarse para aliviar tensiones, pero no es el tratamiento de endurecimiento característico.",
-    "palabrasClave": [],
-    "fuente": "UPC, Tecnología de Materiales, 09-01-2004, p. 6, pregunta 6; UPCommons 24806.",
-    "baseRespuesta": "Respuesta razonada a partir del mecanismo metalúrgico o proceso; no se presenta como clave oficial."
-  },
-  {
-    "id": "hist-2004-01-09-p6-q08",
-    "tipo": "multiple",
-    "tema": "tema1",
-    "temaNombre": "Tema 1: Acers, fundicions i tractaments tèrmics",
-    "pregunta": "¿Qué es una fundición de hierro ADI?",
-    "opciones": [
-      "Fundición gris laminar con matriz ferrítico-perlítica.",
-      "Fundición nodular con matriz de ferrita bainítica y austenita retenida.",
-      "Fundición nodular con matriz perlítica.",
-      "Fundición vermicular con matriz martensítica.",
-      "Ninguna de las anteriores."
+      "Las aleaciones Al-Cu son tratables térmicamente y endurecen por precipitación.",
+      "El endurecimiento por solución sólida es mayor que el conseguido por deformación en frío.",
+      "El temple tras la solubilización permite obtener una solución sólida sobresaturada.",
+      "No se pueden endurecer por transformación martensítica."
     ],
     "respuesta": 1,
-    "explicacion": "ADI es fundición dúctil/nodular austemperada; su matriz ausferrítica combina ferrita acicular y austenita enriquecida retenida.",
+    "explicacion": "En las aleaciones de aluminio el endurecimiento por precipitación (por ejemplo Al-Cu) exige solubilizar, templar para retener una solución sólida sobresaturada y envejecer. El aluminio no endurece por transformación martensítica como el acero. En las aleaciones no tratables térmicamente, la deformación en frío suele aumentar la resistencia más que la solución sólida, por lo que la opción b es la falsa.",
     "explicacionesOpciones": [
-      "Incorrecta: Describe fundición gris, no ADI.",
-      "Correcta: nodular austemperada con matriz ausferrítica, frecuentemente descrita como ferrita bainítica más austenita retenida.",
-      "Incorrecta: No incluye la transformación característica de austemperado.",
-      "Incorrecta: La morfología vermicular y matriz martensítica no definen ADI.",
-      "Incorrecta: La opción b es la definición buscada."
+      "Incorrecta: es cierta; las aleaciones Al-Cu (duraluminio) son el ejemplo clásico de endurecimiento por precipitación.",
+      "Correcta: es la afirmación falsa que se pide. En las aleaciones de aluminio la deformación en frío suele endurecer más que la solución sólida.",
+      "Incorrecta: es cierta; el temple desde la temperatura de solubilización retiene una solución sólida sobresaturada.",
+      "Incorrecta: es cierta; el aluminio no presenta transformación martensítica endurecedora como el acero."
     ],
-    "trampa": "confundir la opción «Fundición gris laminar con matriz ferrítico-perlítica.». Describe fundición gris, no ADI.",
-    "palabrasClave": [],
-    "fuente": "UPC, Tecnología de Materiales, 09-01-2004, p. 6, pregunta 8; UPCommons 24806.",
-    "baseRespuesta": "Respuesta razonada a partir del mecanismo metalúrgico o proceso; no se presenta como clave oficial."
+    "trampa": "confundir los mecanismos de endurecimiento del aluminio (precipitación, solución sólida, acritud) o aplicarle la martensita propia de los aceros.",
+    "palabrasClave": [
+      "endurecimiento por precipitación",
+      "solución sólida",
+      "deformación en frío",
+      "solubilización",
+      "temple",
+      "Al-Cu"
+    ],
+    "fuente": "Pregunta 15, parcial UPC de Tecnologia i Selecció de Materials, 03/10/2024, p. 4.",
+    "baseRespuesta": "Clave oficial: opción resaltada en la solución del examen."
   },
   {
-    "id": "hist-2004-01-09-p7-q20",
+    "id": "mc-2024-10-03-q23",
+    "tipo": "multiple",
+    "tema": "tema2",
+    "temaNombre": "Tema 2: Alumini i aliatges",
+    "pregunta": "Respecto al proceso Bayer, ¿qué afirmación es la correcta?",
+    "opciones": [
+      "Tiene lugar la electrólisis de la alúmina.",
+      "El arrabio se afina en la cuchara.",
+      "A partir de la bauxita se obtiene la alúmina.",
+      "Ninguna de las anteriores."
+    ],
+    "respuesta": 2,
+    "explicacion": "El proceso Bayer es la etapa química de la producción de aluminio: la bauxita se digiere con sosa cáustica, la alúmina pasa a la disolución como aluminato sódico, el lodo rojo se separa y la alúmina se precipita y se calcina. La electrólisis (Hall-Héroult) es una etapa posterior que convierte la alúmina en aluminio metálico, y el afino del arrabio pertenece a la acería.",
+    "explicacionesOpciones": [
+      "Incorrecta: la electrólisis de la alúmina es la etapa Hall-Héroult, posterior al proceso Bayer.",
+      "Incorrecta: el afino del arrabio en cuchara corresponde a la acería, no al proceso Bayer.",
+      "Correcta: el proceso Bayer disuelve la alúmina de la bauxita con sosa cáustica y la recupera por precipitación y calcinación.",
+      "Incorrecta: la opción c es correcta."
+    ],
+    "trampa": "confundir el proceso Bayer (obtención de alúmina a partir de bauxita) con la electrólisis Hall-Héroult (obtención de aluminio a partir de alúmina).",
+    "palabrasClave": [
+      "proceso Bayer",
+      "bauxita",
+      "alúmina",
+      "lodo rojo",
+      "sosa cáustica"
+    ],
+    "fuente": "Pregunta 23, parcial UPC de Tecnologia i Selecció de Materials, 03/10/2024, p. 5.",
+    "baseRespuesta": "Clave oficial: opción resaltada en la solución del examen."
+  },
+  {
+    "id": "mc-2024-10-03-q24",
     "tipo": "multiple",
     "tema": "tema1",
     "temaNombre": "Tema 1: Acers, fundicions i tractaments tèrmics",
-    "pregunta": "¿Qué indican las curvas TTT de un acero?",
+    "pregunta": "Se utiliza coque como agente reductor en el alto horno, pero ¿cuál es el gas reductor generado?",
     "opciones": [
-      "Transformación isotérmica de austenita por encima de A3.",
-      "Transformación de austenita durante enfriamiento continuo hasta ambiente.",
-      "Transformación de martensita a austenita.",
-      "Transformación isotérmica de austenita a temperaturas inferiores a A3.",
-      "Ninguna de las anteriores."
+      "Hexafluoruro de azufre (SF6).",
+      "Dióxido de carbono (CO2).",
+      "Monóxido de carbono (CO).",
+      "Cloro gas (Cl2)."
+    ],
+    "respuesta": 2,
+    "explicacion": "El coque arde con el aire soplado y produce CO2, que al reaccionar con el coque caliente (reacción de Boudouard) se convierte en CO. El CO es el gas que reduce los óxidos de hierro (Fe2O3 a Fe3O4, FeO y Fe) en el alto horno. El CO2 es el producto final de la oxidación, no el reductor activo.",
+    "explicacionesOpciones": [
+      "Incorrecta: el SF6 es un gas aislante sin función reductora en el alto horno.",
+      "Incorrecta: el CO2 es producto de la combustión; el reductor es el CO que se forma a partir de él.",
+      "Correcta: el CO reduce los óxidos de hierro en el alto horno.",
+      "Incorrecta: el cloro no interviene como reductor en el alto horno."
+    ],
+    "trampa": "creer que el CO2, producto de quemar el coque, es el gas reductor activo en lugar del CO.",
+    "palabrasClave": [
+      "alto horno",
+      "coque",
+      "monóxido de carbono",
+      "reducción de óxidos de hierro",
+      "Boudouard"
+    ],
+    "fuente": "Pregunta 24, parcial UPC de Tecnologia i Selecció de Materials, 03/10/2024, p. 5.",
+    "baseRespuesta": "Clave oficial: opción resaltada en la solución del examen."
+  },
+  {
+    "id": "mc-2024-10-03-q25",
+    "tipo": "multiple",
+    "tema": "tema2",
+    "temaNombre": "Tema 2: Alumini i aliatges",
+    "pregunta": "En el proceso de electrólisis de la alúmina es necesario el uso de un electrólito adecuado. Dicho electrólito es:",
+    "opciones": [
+      "Sulfato de cobre (CuSO4·(H2O)).",
+      "Ácido fluorhídrico (HF).",
+      "Sulfonato de poliestireno.",
+      "Una mezcla de alúmina y criolita (Na3AlF6)."
     ],
     "respuesta": 3,
-    "explicacion": "Las curvas TTT muestran cinética de transformación de austenita durante mantenimientos isotérmicos, normalmente por debajo de la temperatura de austenización.",
+    "explicacion": "La alúmina funde por encima de 2000 °C, demasiado para una electrólisis práctica. En el proceso Hall-Héroult se disuelve en un baño de criolita fundida (Na3AlF6) hacia 950 °C, que rebaja la temperatura de trabajo y mejora la conductividad. El aluminio se deposita en el cátodo de carbono mientras el oxígeno reacciona con el ánodo.",
     "explicacionesOpciones": [
-      "Incorrecta: No describen una transformación isotérmica por encima de A3 en el sentido del diagrama empleado.",
-      "Incorrecta: Eso corresponde a diagramas CCT/TEC.",
-      "Incorrecta: No es la transformación representada en TTT.",
-      "Correcta: transformación isotérmica de austenita a temperatura inferior a la de austenización.",
-      "Incorrecta: La opción d es la definición aproximada."
+      "Incorrecta: el sulfato de cobre es un electrolito acuoso de galvanoplastia y no sirve para reducir alúmina.",
+      "Incorrecta: el HF no es el baño de la electrólisis; el flúor del proceso procede de la criolita.",
+      "Incorrecta: el sulfonato de poliestireno es una resina de intercambio iónico, no un electrólito de la electrólisis del aluminio.",
+      "Correcta: la criolita fundida disuelve la alúmina y permite la electrólisis a unos 950 °C."
     ],
-    "trampa": "confundir la opción «Transformación isotérmica de austenita por encima de A3.». No describen una transformación isotérmica por encima de A3 en el sentido del diagrama empleado.",
-    "palabrasClave": [],
-    "fuente": "UPC, Tecnología de Materiales, 09-01-2004, p. 7, pregunta 20; UPCommons 24806.",
-    "baseRespuesta": "Respuesta razonada a partir del mecanismo metalúrgico o proceso; no se presenta como clave oficial."
+    "trampa": "creer que la electrólisis del aluminio se realiza sobre alúmina sólida o en un electrolito acuoso, en lugar de un baño fundido de criolita.",
+    "palabrasClave": [
+      "electrólisis",
+      "criolita",
+      "alúmina",
+      "Hall-Héroult",
+      "baño fundido"
+    ],
+    "fuente": "Pregunta 25, parcial UPC de Tecnologia i Selecció de Materials, 03/10/2024, p. 5.",
+    "baseRespuesta": "Clave oficial: opción resaltada en la solución del examen."
   }
 ]

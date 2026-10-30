@@ -1,5 +1,5 @@
 'use strict';
-const CACHE = 'ajudatsm-v5-redesign';
+const CACHE = 'ajudatsm-v6-bank-2021-2026';
 const SHELL = ['./', './index.html', './style.css', './app.js', './preguntas.json',
   './pwa.js', './icon.svg', './icon-192.png', './icon-512.png', './manifest.webmanifest'];
 self.addEventListener('install', event => {

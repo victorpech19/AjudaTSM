@@ -4,9 +4,9 @@ Pràctica interactiva del parcial de **Tecnologia i Selecció de Materials · 24
 
 **Aplicació:** [victorpech19.github.io/AjudaTSM](https://victorpech19.github.io/AjudaTSM/)
 
-291 preguntes: 120 V/F i 171 de test. Organització segons la presentació docent de 2026-2027: **tema 1**, acers, fundicions i tractaments tèrmics; **tema 2**, alumini i aliatges; **tema 3**, emmotllament i solidificació.
+256 preguntes: 132 V/F i 124 de test, procedents de parcials i finals del 2021 al 2026. Organització segons la presentació docent de 2026-2027: **tema 1**, acers, fundicions i tractaments tèrmics; **tema 2**, alumini i aliatges; **tema 3**, emmotllament i solidificació.
 
-- Afirmacions vertader/fals i preguntes d'opció múltiple amb entre dues i sis alternatives dels temes de siderúrgia, acers i fundicions; tractaments tèrmics; alumini i solidificació.
+- Afirmacions vertader/fals i preguntes d'opció múltiple amb quatre alternatives dels temes de siderúrgia, acers i fundicions; tractaments tèrmics; alumini i solidificació.
 - Explicació teòrica immediata després de respondre, amb el mecanisme físic i la confusió habitual. Les preguntes de test expliquen també per què cada opció és correcta o incorrecta.
 - Filtres per tema i format, pràctica mixta, ordre aleatori o seqüencial, progrés de la tanda i repàs de les errades del tema i format seleccionats.
 - Sessió, preferències i errades desades en aquest navegador. Les dades no se sincronitzen entre dispositius.
